@@ -1,0 +1,146 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>无标题文档</title>
+<style type="text/css">
+* { margin: 0px; padding: 0px; }
+body {font-family: Arial; font-size:12px; color:#000; line-height:20px;}
+a { text-decoration: none; font-size:12px; color:#000; line-height:20px; color:#000000;}
+a:hover { color: #333; text-decoration: underline; }
+ul, li { list-style-type: none; }
+img {border:0;}
+
+.ban1 { width:1200px; margin:auto; height:173px; overflow:hidden;}
+.ban1l { width:694px; float:left; padding-top:45px;}
+.ban1r { width:290px; float:right; padding-top:15px; font-size:12px; font-family:Arial;}
+.militaryForm { border: 1px solid #DFDFDF; margin-top: 10px; }
+.inputText { line-height: 30px; border: none; width: 220px; height: 30px; }
+.inputBtn { background: url(http://images.china.cn/images1/ch/2014world/images/b_1.gif) no-repeat center center; border: none; width: 30px; height: 30px; cursor: pointer; }
+.fl { float:left}
+.fr { float:right}
+.ban2 { width:100%; margin:0 auto 16px auto; height:46px; background-color:#1247a5; color:#FFFFFF; font-size:15px; font-weight:bold; line-height:28px; clear:both;}
+@media screen and (max-width: 1199px) {
+    .ban2 {
+       min-width:1200px;
+    }
+}
+.ban2 li { border-right: solid 1px #fff; text-align:center; height:28px; float:left; padding:9px 0;}
+.ban2 li a { color:#FFFFFF; font-size:15px; font-weight:bold; line-height:28px; font-family:Arial;}
+.ban2 .more {text-align:left; }
+.ban2 .more a{ display: block; padding-left: 18px; padding-bottom: 8px;}
+.ban2 ul li .listshow {width:208px;display: none; position: relative; background-color: #1247a5; opacity: .85; filter:alpha(opacity=85);}
+.ban2 ul li ul li{ float: none; padding-left: 2px; text-align:left; border-right:none;}
+.ban2 ul li ul li a{ font-size:12px; font-weight:normal;}
+
+</style>
+
+<script type="text/javascript">
+function initArray(){
+    for(i=0;i<initArray.arguments.length;i++)
+    this[i]=initArray.arguments[i];
+}
+var isnMonths=new initArray("January","February","March","April","May","June","July","August","September","October","November","December");
+var isnDays=new initArray("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday");
+today=new Date();
+hrs=today.getHours();
+min=today.getMinutes();
+sec=today.getSeconds();
+clckh=""+((hrs>12)?hrs-12:hrs);
+clckm=((min<10)?"0":"")+min;
+clcks=((sec<10)?"0":"")+sec;
+clck=(hrs>=12)?"下午":"上午";
+var stnr="";
+var ns="0123456789";
+var a="";
+</script>
+</head>
+<body>
+<div class="ban1">
+<div class="ban1l"><img src="http://images.china.cn/images1/en/gxb/tittle.png" width="694" height="90" /></div>
+
+<div class="ban1r">
+<div style="line-height:30px; text-align:right;"><a href="http://www.scio.gov.cn/index.htm" target="_blank">中文</a> | 
+
+<script type="text/javascript" language="javascript">
+function getFullYear(d){
+    yr=d.getYear();
+    if(yr<1000)
+        yr+=1900;
+    return yr;
+}
+document.write(isnDays[today.getDay()]+",&nbsp;"+isnMonths[today.getMonth()]+"&nbsp;"
++today.getDate()+",&nbsp;"+getFullYear(today));
+</script>
+</div>
+
+<div style="clear:both; height:44px; overflow:hidden;">
+<form id="formid" action="http://english.scio.gov.cn/search.htm" method="get" target="_top" class="militaryForm fr"><input type="text" name="searchText" class="inputText fl" /><img src="http://images.china.cn/images1/ch/2014world/images/b_1.gif" width="30" height="30" onclick="checkUser();" style="cursor:pointer;" /><input name="strUrl" type="hidden" value="englishscio" /></form>
+</div>
+
+<div style="clear:both; text-align:right; padding-top:10px;"><a href="https://www.facebook.com/chinascio" target="_blank"><img src="http://images.china.cn/images1/en/gxb/facebook.png" width="22" height="22" border="0" /></a> <a href="https://twitter.com/chinascio" target="_blank"><img src="http://images.china.cn/images1/en/gxb/twitter.png" width="22" height="22" border="0" /></a> <a href="https://www.youtube.com/chinascio" target="_blank"><img src="http://images.china.cn/images1/en/gxb/youtube.png" width="22" height="22" border="0" /></a> <a href="http://plus.google.com/+ChinaSCIO" target="_blank"><img src="http://images.china.cn/images1/en/gxb/g+.png" width="22" height="22" border="0" /></a></div>
+</div>
+</div>
+
+<div class="ban2">
+    <ul>
+        <li style="width:81px;"><FOUNDER-XY type="columnlist" data="{'columnid':[7247529],'columntype':'self'}"><#list columns as column><a href="${column.url!}" class=""  target="_top">HOME</a></#list></FOUNDER-XY>
+        </li>
+        
+        <li style="width:116px;"><FOUNDER-XY type="columnlist" data="{'columnid':[7247536],'columntype':'self'}"><#list columns as column><a href="${column.url!}" class=""  target="_top">TOP NEWS</a></#list></FOUNDER-XY>
+        </li>
+        
+        <li style="width:138px;"><FOUNDER-XY type="columnlist" data="{'columnid':[7247535],'columntype':'self'}"><#list columns as column><a href="${column.url!}" class=""  target="_top">PRESS ROOM</a></#list></FOUNDER-XY>
+        </li>
+        
+        <li style="width:120px;"><FOUNDER-XY type="columnlist" data="{'columnid':[7252795],'columntype':'self'}"><#list columns as column><a href="${column.url!}" class=""  target="_top">SCIO NEWS</a></#list></FOUNDER-XY>
+        </li>
+        
+        <li style="width:148px;"><FOUNDER-XY type="columnlist" data="{'columnid':[7252897],'columntype':'self'}"><#list columns as column><a href="${column.url!}" class=""  target="_top">CHINA PROJECTS</a></#list></FOUNDER-XY>
+        </li>
+        
+        <li style="width:153px;"><FOUNDER-XY type="columnlist" data="{'columnid':[7247531],'columntype':'self'}"><#list columns as column><a href="${column.url!}" class=""  target="_top">BELT AND ROAD</a></#list></FOUNDER-XY>
+        </li>
+        
+        <li style="width:100px;"><FOUNDER-XY type="columnlist" data="{'columnid':[7247534],'columntype':'self'}"><#list columns as column><a href="${column.url!}" class=""  target="_top">IN-DEPTH</a></#list></FOUNDER-XY>
+        </li>
+        
+        <li style="width:128px;"><FOUNDER-XY type="columnlist" data="{'columnid':[7247530],'columntype':'self'}"><#list columns as column><a href="${column.url!}" class=""  target="_top">ABOUT SCIO</a></#list></FOUNDER-XY>
+        </li>
+        
+        <li style="width:128px; border-right: none;" class="more"><FOUNDER-XY type="columnlist" data="{'columnid':[],'columntype':'self'}"><#list columns as column><a href="${column.url!}" class=""  target="_top">MORE +</a></#list></FOUNDER-XY>
+            <ul class="listshow">
+                <li><FOUNDER-XY type="columnlist" data="{'columnid':[7252506],'columntype':'self'}"><#list columns as column><a href="${column.url!}" class=""  target="_top">INTERNATIONAL EXCHANGES</a></#list></FOUNDER-XY></li>
+                
+                <li><FOUNDER-XY type="columnlist" data="{'columnid':[7247533],'columntype':'self'}"><#list columns as column><a href="${column.url!}" class=""  target="_top">CHINA VOICES</a></#list></FOUNDER-XY></li>
+                
+                <li><FOUNDER-XY type="columnlist" data="{'columnid':[7247539],'columntype':'self'}"><#list columns as column><a href="${column.url!}" class=""  target="_top">INFOGRAPHICS</a></#list></FOUNDER-XY></li>
+                <li><FOUNDER-XY type="columnlist" data="{'columnid':[8002866],'columntype':'self'}"><#list columns as column><a href="${column.url!}" class=""  target="_top">VIDEOS</a></#list></FOUNDER-XY></li>
+                <li><FOUNDER-XY type="columnlist" data="{'columnid':[7247532],'columntype':'self'}"><#list columns as column><a href="${column.url!}" class=""  target="_top">WHITE PAPERS</a></#list></FOUNDER-XY></li>
+                
+                <li><FOUNDER-XY type="columnlist" data="{'columnid':[7247538],'columntype':'self'}"><#list columns as column><a href="${column.url!}" class=""  target="_top">FEATURED</a></#list></FOUNDER-XY></li>
+                
+                <li><FOUNDER-XY type="columnlist" data="{'columnid':[7247634],'columntype':'self'}"><#list columns as column><a href="${column.url!}" class=""  target="_top">CHINA FACTS</a></#list></FOUNDER-XY></li>
+                </ul>
+        </li>
+        </ul>
+</div>
+<script type="text/javascript" src="http://images.china.cn/images1/resource/scripts/jquery/jquery-1.12.4.min.js">
+</script>
+<script type="text/javascript">
+    function checkUser(){
+        document.getElementById("formid").submit();
+    }
+</script>
+<script type="text/javascript">
+function menu(){
+  $('.more').hover(function(){
+    $('.listshow').show();
+  },function(){
+    $('.listshow').hide();
+  });
+}
+window.onload = menu;
+</script>
+</body>
+</html>
+
