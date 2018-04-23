@@ -157,7 +157,7 @@ img:hover { transform: scale(1.1); }
 .video2 li p a {display: table-cell; vertical-align: middle; height: 96px; text-decoration:none;}
 #featured{ margin-bottom:10px; width:250px; height:164px; cursor:pointer; position: relative; overflow:hidden;}
 #featured .featured_left{ width:48px; height:52px; position: absolute; top:58px; left:0; opacity: .3; filter:alpha(opacity=30);}
-#featured .featured_right{ width:48px; height:52px; position: absolute; top:58px; right:-23px; opacity: .3;  filter:alpha(opacity=30);}
+#featured .featured_right{ width:48px; height:52px; position: absolute; top:58px; right:-24px; opacity: .3;  filter:alpha(opacity=30);}
 #featured .featured_left img{ width:50%;}
 #featured .featured_right img{ width:50%;}
 #featured .featured_left:hover,#featured .featured_right:hover{ opacity: .7;  filter:alpha(opacity=70);}
@@ -381,10 +381,10 @@ img:hover { transform: scale(1.1); }
 
 <h1 style="margin-top: 20px;"><span><FOUNDER-XY type="columnlist" data="{'columnid':[7247538],'columntype':'self'}"><#list columns as column><a href="${column.url!}" class=""  target="_self">FEATURED</a></#list></FOUNDER-XY></span></h1>
 
-<div id="featured"><FOUNDER-XY type="articlelist" data="{'columnid':[7247649], 'articletype': 'all', 'article_attr': 'COMMON', 'columntype':'self', 'showall':'true', 'start': 0, 'count': 5}"><#list articles as article><div class="featured_img">
+<div id="featured"><FOUNDER-XY type="articlelist" data="{'columnid':[7247649], 'articletype': 'all', 'article_attr': 'COMMON', 'columntype':'self', 'showall':'true', 'start': 0, 'count': 10}"><#list articles as article><div class="featured_img">
         <a   href="${article.url}" ><img src="${article.picBig}"   border=0 width="250" height="164"></a>
     </div></#list></FOUNDER-XY>
-<div class="featured_list" style="display:none;"><ul><li class="hover">&#160;</li><li>&#160;</li><li>&#160;</li><li>&#160;</li><li>&#160;</li></ul></div>
+<div class="featured_list" style="display:none;"><ul><li class="hover">&#160;</li><li>&#160;</li><li>&#160;</li><li>&#160;</li><li>&#160;</li><li>&#160;</li><li>&#160;</li><li>&#160;</li><li>&#160;</li><li>&#160;</li></ul></div>
 <div class="featured_left"><img src="http://english.scio.gov.cn/122681.files/left.png" alt="" /></div>
 <div class="featured_right"><img src="http://english.scio.gov.cn/122681.files/right.png" alt="" /></div>
 </div>
