@@ -90,7 +90,6 @@ body {font-family: Arial; font-size:10px; color:#000; line-height:10px;width:100
                 </#list></FOUNDER-XY></div>
 </div>
 <div class="footer">Copyright © english.scio.gov.cn All rights reserved.<br>Registration Number: 14055996</div>
-<div class="topbtn" style=" display: none;position: fixed;width: 32px;bottom: 46px;right: 10px;cursor: pointer;z-index: 100000;"><img style="width: 100%;" src="http://images.china.cn/images1/en/sciophone/totop.png" /></div>
 
 
 <div style="display:none;">
@@ -109,18 +108,6 @@ wd_paramtracker("_wdxid=000000000000000000000000000000000000000000")
 </div>
 <script type="text/javascript" src="http://images.china.cn/images1/resource/scripts/jquery/jquery-1.12.4.min.js"></script>
 <script type="text/javascript">
-var BTop = ($('.topbtn').offset().top)+78;
-$(window).scroll(function () {
-        var t = $(document).scrollTop();       
-        if (t > BTop) {
-                $('.topbtn').css({ 'display': 'block' });
-        } else {
-                $('.topbtn').css({ 'display': 'none'});
-        }
-});
-$(".topbtn").click(function() {
-  $("html,body").animate({scrollTop:0}, 500);
-}); 
 function more(){
         $(".intro").css("height","auto");
         $(".more img").css("display","none");
