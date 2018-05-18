@@ -18,11 +18,11 @@ body {font-family: Arial; font-size:10px; color:#000; line-height:10px;width:100
 .banner{width: 100%;}
 .banner img{width: 100%;}
 
-.intro{width: 90%;padding: 50px 0 0 0;margin: 0 auto 40px auto;height: 452px;overflow: hidden;}
-.intro p{width: 100%;font-size: 28px;line-height:40px; color:#4a4a4a;padding: 25px 0;}
+.intro{width: 90%;padding: 50px 0 0 0;margin: 0 auto 40px auto;height: 678px;overflow: hidden;}
+.intro p{width: 100%;font-size: 40px;line-height:58px; color:#4a4a4a;padding: 20px 0;}
 
 .more{width: 90%;border-bottom: 1px solid #4a4a4a;padding: 0 0 28px 0;margin: 0 auto;}
-.more img{width: 56px;margin: 0 auto;display: block;}
+.more img{width: 14%;margin: 0 auto;display: block;}
 
 .video{width: 90%;margin: 0 auto;position: relative;}
 .video img{width: 100%;}
@@ -30,7 +30,6 @@ body {font-family: Arial; font-size:10px; color:#000; line-height:10px;width:100
 .t{font-size: 65px;line-height: 65px;font-family: Montserrat,Arial;color: #4a4a4a;margin: 50px auto;text-align: center;font-weight: bold;}
 .dx{width: 50px;height: 4px;background-color: #e55252;position: absolute;top: 70px;left: 47%;}
 .v1,.v2,.v3{width: 100%;position: relative;font-family: Montserrat,Arial;font-weight: bold;margin-bottom: 40px;}
-.list1{width: 80px;height: 80px;border-radius: 40px;background-color: #fff;font-size: 48px;line-height: 80px;text-align: center;color: #e55252;position: absolute;top: 58%;left: 47%;}
 .t1{font-size: 56px;line-height: 56px;color: #fff;position: absolute;top: 76%;left: 24%;}
 
 
@@ -75,17 +74,14 @@ body {font-family: Arial; font-size:10px; color:#000; line-height:10px;width:100
         <div class="dx"></div>
         <div class="v1"><FOUNDER-XY type="articlelist" data="{'columnid':[8005003],'articletype':'all','article_attr':'all','start':'1','count':'1'}"><#list articles as article>
                 <a href="${article.urlPad}"><img src="${article.picBig}" /></a>
-                <div class="list1">${article.introTitle}</div>
                 <div class="t1">${article.title}</div>
                 </#list></FOUNDER-XY></div>
         <div class="v2"><FOUNDER-XY type="articlelist" data="{'columnid':[8005003],'articletype':'all','article_attr':'all','start':'2','count':'1'}"><#list articles as article>
                 <a href="${article.urlPad}"><img src="${article.picBig}" /></a>
-                <div class="list1">${article.introTitle}</div>
                 <div class="t1">${article.title}</div>
                 </#list></FOUNDER-XY></div>
         <div class="v3"><FOUNDER-XY type="articlelist" data="{'columnid':[8005003],'articletype':'all','article_attr':'all','start':'3','count':'1'}"><#list articles as article>
                 <a href="${article.urlPad}"><img src="${article.picBig}" /></a>
-                <div class="list1">${article.introTitle}</div>
                 <div class="t1" style="left: 34%;">${article.title}</div>
                 </#list></FOUNDER-XY></div>
 </div>

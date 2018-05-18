@@ -32,7 +32,6 @@ h3{font-size: 24px;}
 .dx{width: 38px;height: 4px;background-color: #e55252;position: absolute;top: 67px;left: 49%;}
 .v1,.v2,.v3{width: 31%;position: relative;font-family: Montserrat,Arial;display: inline-block;font-weight: bold;}
 .v1,.v2{margin-right: 2.9%;}
-.list1{width: 50px;height: 50px;border-radius: 25px;background-color: #fff;font-size: 24px;line-height: 50px;text-align: center;color: #e55252;position: absolute;top: 58%;left: 47%;}
 .t1{font-size: 24px;line-height: 24px;color: #fff;position: absolute;top: 80%;left: 30%;}
 
 .box-shadow{box-shadow: 0 0 36px  rgba(0,0,0,.4)}
@@ -76,18 +75,15 @@ h3{font-size: 24px;}
     <div class="dx"></div>
     <div class="v1"><FOUNDER-XY type="articlelist" data="{'columnid':[8005003],'articletype':'all','article_attr':'all','start':'1','count':'1'}"><#list articles as article>
         <a href="${article.url}"><img src="${article.picBig}" /></a>
-        <div class="list1">${article.introTitle}</div>
-        <div class="t1">${article.title}</div>
+        <a href="${article.url}" class="t1">${article.title}</a>
         </#list></FOUNDER-XY></div>
     <div class="v2"><FOUNDER-XY type="articlelist" data="{'columnid':[8005003],'articletype':'all','article_attr':'all','start':'2','count':'1'}"><#list articles as article>
         <a href="${article.url}"><img src="${article.picBig}" /></a>
-        <div class="list1">${article.introTitle}</div>
-        <div class="t1">${article.title}</div>
+        <a href="${article.url}" class="t1">${article.title}</a>
         </#list></FOUNDER-XY></div>
     <div class="v3"><FOUNDER-XY type="articlelist" data="{'columnid':[8005003],'articletype':'all','article_attr':'all','start':'3','count':'1'}"><#list articles as article>
         <a href="${article.url}"><img src="${article.picBig}" /></a>
-        <div class="list1">${article.introTitle}</div>
-        <div class="t1" style="left: 40%;">${article.title}</div>
+        <a href="${article.url}" class="t1" style="left: 40%;">${article.title}</a>
         </#list></FOUNDER-XY></div>
 </div>
 
