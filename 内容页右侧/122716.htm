@@ -21,8 +21,6 @@ a{color: #000;}
 .box_1{margin-bottom: 30px;}
 .box_1 img{ width:100%;}
 .box_1 p{font-size: 20px;line-height: 20px;}
-.qr_zone{text-align: center;}
-.qr_zone img{margin: 0 12px;}
 #featured{ margin-bottom:10px; width:250px; height:164px; cursor:pointer; position: relative; overflow:hidden;}
 #featured .featured_left{ width:48px; height:52px; position: absolute; top:58px; left:0; opacity: .3; filter:alpha(opacity=30);}
 #featured .featured_right{ width:48px; height:52px; position: absolute; top:58px; right:-23px; opacity: .3;  filter:alpha(opacity=30);}
@@ -92,7 +90,16 @@ function changeIframeHeight() {
 <div style="margin-bottom:10px; width:250px; height:164px; overflow:hidden;"><FOUNDER-XY type="articlelist" data="{'columnid':[7247648], 'articletype': 'all', 'article_attr': 'COMMON', 'columntype':'self', 'showall':'true', 'start': 2, 'count': 1}"><#list articles as article><a   href="${article.url}"  target="_self"><img src="${article.picBig}"   border=0 width="250" height="164"> </a></#list></FOUNDER-XY></div>
 </div>
 
-<div class="qr_zone"><img src="http://images.china.cn/images1/ch/2017gxb/images/ifrimg_1.jpg" alt="" /> <img src="http://images.china.cn/images1/ch/2017gxb/images/ifrimg_2.jpg" alt="" /></div>
+<div style="text-align:center; padding-top:20px;">
+        <div style="display: inline-block;margin-right: 15px;">
+            <a href="http://english.scio.gov.cn/m/index.htm" style="display: block;"><img src="http://images.china.cn/images1/en/gxb/LOGO高清.png" width="100" height="100" style=" transform: scale(1);border: 1px solid #000;" /></a>
+            <span style="font-size: 12px;line-height: 28px;">Visit our mobile version</span>
+        </div>
+        <div style="display: inline-block;">
+            <img src="http://images.china.cn/images1/en/gxb/erweima.jpg" width="100" height="100" style=" transform: scale(1);display: block;border: 1px solid #000;" />
+            <span style="font-size: 12px;line-height: 28px;">Download our app</span>
+        </div>   
+    </div>
 </div>
 
 <script type="text/javascript" src="http://images.china.cn/images1/resource/scripts/jquery/jquery-1.9.1.min.js">
