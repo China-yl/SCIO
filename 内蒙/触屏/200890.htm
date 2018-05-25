@@ -21,12 +21,6 @@ body {font-family: Arial; font-size:10px; color:#000; line-height:10px;width:100
 .abstract{width: 100%;}
 .abstract p{width: 90%;margin: 56px auto;font-size: 35px;line-height:45px;color: #111010; }
 
-.video{width: 100%;}
-.video1{width: 90%;margin: 0 auto;position: relative;}
-
-.tittle{width: 100%;margin: 56px 0;}
-.tittle img{width: 405px;height: 95px;display: block;margin: 0 auto;}
-
 .content{width: 100%;margin-bottom: 56px;;}
 .c1,.c2{width: 90%;    margin: 0 auto; }
 .c1{margin-bottom: 56px;}
@@ -64,25 +58,14 @@ body {font-family: Arial; font-size:10px; color:#000; line-height:10px;width:100
     </script>
   </div>
   <div class="top"><img src="http://images.china.cn/images1/en/innermongolia/banner-m.jpg"></div> 
-<div class="abstract"><FOUNDER-XY type="articlelist" data="{'columnid':[8005150],'articletype':'all','article_attr':'all','start':'1','count':'1'}"><#list articles as article><p>${article.summary}</p></#list></FOUNDER-XY></div> 
-<div class="video">
-  <div class="video1"><FOUNDER-XY type="articlelist" data="{'columnid':[8005150],'articletype':'all','article_attr':'all','start':'0','count':'1'}"><#list articles as article>
-    <video style="width: 100%;"  controls>
-      <source src="http://mp42.china.com.cn/video_tide/video/2018/5/22/20185221526956812896_369_3.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
-    <img src="${article.picBig}" style="width: 100%;height:100%;position: absolute;top: 0;left: 0;cursor:pointer;" class="img1" onclick="show()" >
-    <img src="http://images.china.cn/images1/en/gxb/24.png" style="position: absolute;top: 40%;left: 45%;cursor:pointer;" onclick="show()" class="img2"/>
-  </#list></FOUNDER-XY></div>  
-</div>
-<div class="tittle"><img src="http://images.china.cn/images1/en/innermongolia/tit-m.jpg"></div>
+<div class="abstract"><FOUNDER-XY type="articlelist" data="{'columnid':[8005150],'articletype':'all','article_attr':'all','start':'0','count':'1'}"><#list articles as article><p>${article.summary}</p></#list></FOUNDER-XY></div> 
 <div class="content">
-  <div class="c1"><FOUNDER-XY type="articlelist" data="{'columnid':[8005150],'articletype':'all','article_attr':'all','start':'2','count':'1'}"><#list articles as article>     
+  <div class="c1"><FOUNDER-XY type="articlelist" data="{'columnid':[8005150],'articletype':'all','article_attr':'all','start':'1','count':'1'}"><#list articles as article>     
       <a href="${article.url}">
         <img src="http://images.china.cn/images1/en/innermongolia/v1.jpg">
       </a>  
   </#list></FOUNDER-XY></div>
-  <div class="c2"><FOUNDER-XY type="articlelist" data="{'columnid':[8005150],'articletype':'all','article_attr':'all','start':'3','count':'1'}"><#list articles as article>
+  <div class="c2"><FOUNDER-XY type="articlelist" data="{'columnid':[8005150],'articletype':'all','article_attr':'all','start':'2','count':'1'}"><#list articles as article>
       <a href="${article.url}">
         <img src="http://images.china.cn/images1/en/innermongolia/v2.jpg">
       </a>  
@@ -108,10 +91,5 @@ body {font-family: Arial; font-size:10px; color:#000; line-height:10px;width:100
       $("html,body").animate({scrollTop:0}, 500);
     });
   })
-  function show(){
-    $(".img1").hide();
-    $(".img2").hide();
-    $("video").trigger("play");
-  }
   </script>
 </html>
