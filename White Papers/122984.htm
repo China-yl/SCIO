@@ -122,7 +122,7 @@ a{color: #000;}
 <p><a   href="${article.url}"  target="_self">${article.title}</a></p></#list></FOUNDER-XY>
 </div>
 
-<div class="usual"><FOUNDER-XY type="articlelistpage" data="{'columnid':[], 'articletype': 'all', 'article_attr': 'COMMON', 'columntype':'self', 'showall':'true', 'start': 0, 'count': 10}"><#list articles as article><#if article_index == 0><ul>
+<div class="usual"><FOUNDER-XY type="articlelistpage" data="{'columnid':[], 'articletype': 'all', 'article_attr': 'COMMON', 'columntype':'self', 'showall':'true', 'start': 0, 'count': 30}"><#list articles as article><#if article_index == 0><ul>
 </#if><li>
     <#if article.picBig != ""><a   href="${article.url}"  target="_self"><img src="${article.picBig}"    border="0"> </a></#if>
 <h3><span class="mmmm">${article.subTitle}</span> <#setting locale="en_US">${article.pubTime?string("MMMM d, yyyy")}</h3>
