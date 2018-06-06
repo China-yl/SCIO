@@ -42,7 +42,7 @@
         if (t >= wTop) {
             $('.ban2').css({ 'position': 'fixed', 'z-index': '99999', 'top': '0' });
         } else {
-            $('.ban2').css({ 'position': 'static', 'margin': '0 auto 30px auto' });
+            $('.ban2').css({ 'position': 'static', 'margin': '0 auto 16px auto' });
         }
     });
 })(jQuery);
