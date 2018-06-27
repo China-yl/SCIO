@@ -10,6 +10,7 @@
 <meta name="publishedtype" content="1" />
 <meta name="pagetype" content="2" /><FOUNDER-XY type="columnlist" data="{'columnid':[],'columntype':'self'}"><#list columns as column><meta name="catalogs" content="${column.id}"></meta></#list></FOUNDER-XY>
 
+<link rel="stylesheet" href="http://images.china.cn/images1/en/gxb/css/swiper.min.css">
 <style type="text/css">
 * { margin: 0px; padding: 0px; }
 body {font-family: Arial; font-size:16px; color:#000; line-height:20px; width: 100%;min-width: 1200px;}
@@ -155,15 +156,17 @@ img:hover { transform: scale(1.1); }
 .video2 li:hover ,.video2 li.hover {  transition:transform .5s,background .8s; -moz-transition:transform .5s,background .8s; -webkit-transition:transform .5s,background .8s; -o-transition:transform .5s,background .8s; transform:translate(0,0); -moz-transform:translate(0,0); -webkit-transform: translate(0,0); background:#e1e1e1;}
 .video2 li p{padding: 0px 10px 0px 10px;} 
 .video2 li p a {display: table-cell; vertical-align: middle; height: 96px; text-decoration:none;}
-#featured{ margin-bottom:10px; width:250px; height:164px; cursor:pointer; position: relative; overflow:hidden;}
-#featured .featured_left{ width:48px; height:52px; position: absolute; top:58px; left:0; opacity: .3; filter:alpha(opacity=30);}
-#featured .featured_right{ width:48px; height:52px; position: absolute; top:58px; right:-24px; opacity: .3;  filter:alpha(opacity=30);}
-#featured .featured_left img{ width:50%;}
-#featured .featured_right img{ width:50%;}
-#featured .featured_left:hover,#featured .featured_right:hover{ opacity: .7;  filter:alpha(opacity=70);}
-#featured .featured_img{ position: absolute; display:none;}
-#featured .featuredshow{ display: block;}
-#featured img:hover { transform: scale(1); }
+
+.carousel{width: 250px;height:164px;display: inline-block;margin-bottom:10px;}
+.swiper-slide{width: 100%;}
+.swiper-slide img{width: 250px;height: 164px;}
+.swiper-button-next, .swiper-button-prev {position: absolute;top: 54%;width: 17px;height: 30px;margin-top: -22px;z-index: 10;cursor: pointer;-moz-background-size: 27px 44px;-webkit-background-size: 27px 44px;background-size: 27px 44px;background-position: center;background-repeat: no-repeat;}
+.swiper-button-next{background-image: url(http://images.china.cn/images1/en/zhejiangvillages/right.png);background-size: 100% 100%;right: 0px;left: auto;}
+.swiper-button-prev{background-image: url(http://images.china.cn/images1/en/zhejiangvillages/left.png);background-size: 100% 100%;left: 0px;right: auto;}
+.swiper-button-next:hover{background-image: url(http://images.china.cn/images1/en/zhejiangvillages/right-onclick.png);}
+.swiper-button-prev:hover{background-image: url(http://images.china.cn/images1/en/zhejiangvillages/left-onclick.png);}
+
+
 /* #chunjieBox { overflow: hidden; margin: 0px auto;box-shadow: 10px 10px 40px rgba(0,0,0,0.4);;    height: 603px; }
 #chunjieBox img:hover{ transform: scale(1); } */
 </style>
@@ -391,19 +394,40 @@ img:hover { transform: scale(1.1); }
             </ul></#if></#list></FOUNDER-XY>
 
 <h1 style="margin-top: 20px;"><span><FOUNDER-XY type="columnlist" data="{'columnid':[7247538],'columntype':'self'}"><#list columns as column><a href="${column.url!}" class=""  target="_self">FEATURED</a></#list></FOUNDER-XY></span></h1>
+<div class="carousel">
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <FOUNDER-XY type="articlelist" data="{'columnid':[7247649],'articletype':'all','article_attr':'all','start':'0','count':'18'}"><#list articles as article>
+        <div class="swiper-slide">
+          <a href="${article.url}"><img src="${article.picBig}"   border=0></a>
+        </div>
+        </#list></FOUNDER-XY>
+      </div>
+      <!-- Add Arrows -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+  </div>
 
-<div id="featured"><FOUNDER-XY type="articlelist" data="{'columnid':[7247649], 'articletype': 'all', 'article_attr': 'COMMON', 'columntype':'self', 'showall':'true', 'start': 0, 'count': 20}"><#list articles as article><div class="featured_img">
-        <a   href="${article.url}" ><img src="${article.picBig}"   border=0 width="250" height="164"></a>
-    </div></#list></FOUNDER-XY>
-<div class="featured_list" style="display:none;"><ul id="uls"><li class="hover">&#160;</li></ul></div>
-<div class="featured_left"><img src="http://english.scio.gov.cn/122681.files/left.png" alt="" /></div>
-<div class="featured_right"><img src="http://english.scio.gov.cn/122681.files/right.png" alt="" /></div>
-</div>
 
 <div style="clear:both;">
 <h1><span><FOUNDER-XY type="columnlist" data="{'columnid':[7247634],'columntype':'self'}"><#list columns as column><a href="${column.url!}" class=""  target="_self">CHINA FACTS</a></#list></FOUNDER-XY></span></h1>
 </div>
-<div style="margin-bottom:20px; width:250px; height:164px; overflow:hidden;"><FOUNDER-XY type="articlelist" data="{'columnid':[7247647], 'articletype': 'all', 'article_attr': 'all', 'columntype':'self', 'showall':'true', 'start': 0, 'count': 1}"><#list articles as article><a   href="${article.url}" ><img src="${article.picBig}"   border=0 width="250" height="164"> </a></#list></FOUNDER-XY></div>
+<div class="carousel">
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <FOUNDER-XY type="articlelist" data="{'columnid':[7247647],'articletype':'all','article_attr':'all','start':'0','count':'3'}"><#list articles as article>
+        <div class="swiper-slide">
+          <a href="${article.url}"><img src="${article.picBig}"   border=0></a>
+        </div>
+        </#list></FOUNDER-XY>
+      </div>
+      <!-- Add Arrows -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+  </div>
+
 <h1><span><FOUNDER-XY type="columnlist" data="{'columnid':[7247539],'columntype':'self'}"><#list columns as column><a href="${column.url!}" class=""  target="_self">INFOGRAPHICS</a></#list></FOUNDER-XY></span></h1>
 <div style="margin-bottom:24px; width:250px; height:164px; overflow:hidden;"><FOUNDER-XY type="articlelist" data="{'columnid':[7247648], 'articletype': 'all', 'article_attr': 'COMMON', 'columntype':'self', 'showall':'true', 'start': 0, 'count': 1}"><#list articles as article><a   href="${article.url}" ><img src="${article.picBig}"   border=0 width="250" height="164"> </a></#list></FOUNDER-XY></div>
 <div style="margin-bottom:24px; width:250px; height:164px; overflow:hidden;"><FOUNDER-XY type="articlelist" data="{'columnid':[7247648], 'articletype': 'all', 'article_attr': 'COMMON', 'columntype':'self', 'showall':'true', 'start': 1, 'count': 1}"><#list articles as article><a   href="${article.url}" ><img src="${article.picBig}"   border=0 width="250" height="164"> </a></#list></FOUNDER-XY></div>
@@ -517,6 +541,7 @@ wd_paramtracker("_wdxid=000000000000000000000000000000000000000000")
 </script>
 <script type="text/javascript" src="http://english.scio.gov.cn/122681.files/index.js">
 </script>
+<script type="text/javascript" src="http://images.china.cn/images1/en/gxb/js/swiper.min.js"></script>
 <script type="text/javascript">
 function menu(){
     $('.more').hover(function(){
@@ -596,73 +621,18 @@ $(function(){
     }
 </script>
 <script type="text/javascript">
-var featured_divs=document.querySelectorAll("#featured .featured_img");
-var featured_ul=document.getElementById("uls");
-var timers=null;
-var intervals=4000;
-//封装共用函数
-for(var q=1;q<featured_divs.length;q++){
-    var li = document.createElement("li");
-    li.innerHTML = "&#160;";
-    featured_ul.appendChild(li);
-}
-var featured_lis=document.querySelectorAll("#featured .featured_list li");
-function featured_show(a){
-	//找到每个li对应的div
-	for(var k=0;k<featured_divs.length;k++){
-		featured_divs[k].className="featured_img"; //设置div初始化
-		featured_divs[a].className="featured_img featuredshow"; //设置移入li对应的div
-		featured_lis[k].className="";
-	}
-}
-for(var g=0,h=0;g<featured_lis.length;g++){
-	//给每个li绑定鼠标移入事件
-	featured_lis[g].onmouseover=function(){
-		//找到当前li的下标
-		for(var f=0;f<featured_lis.length;f++){
-			if(this==featured_lis[f]){
-				n=f;
-				featured_show(h);
-                clearTimeout(timers);
-	            timers=null;
-			}
-		}
-	}
-	//给每个li绑定鼠标移出事件
-	featured_lis[g].onmouseout=function(){
-		featured_lis[h].className="hover";
-        timers=setTimeout(featured_cale,intervals);
-	}
-}
-//点击左边div绑定事件
-document.querySelectorAll("#featured .featured_left")[0].onclick=function(){
-	h-=1;
-	(h==-1)&&(h=featured_lis.length-1);
-    clearTimeout(timers);
-	timers=null;
-	featured_show(h);
-	featured_lis[h].className="hover";
-    timers=setTimeout(featured_cale,intervals);
-}
-//点击右边div绑定事件
-document.querySelectorAll("#featured .featured_right")[0].onclick=featured_right;
-function featured_right(){
-	h+=1;
-	(h==featured_lis.length)&&(h=0);
-    clearTimeout(timers);
-	timers=null;
-	featured_show(h);
-	featured_lis[h].className="hover";
-    timers=setTimeout(featured_cale,intervals);
-}
-//设置定时器
-timers=setTimeout(featured_cale,intervals);
-function featured_cale(){
-	featured_right();
-}
-$(function(){
-    $(".featured_img:first").addClass("featuredshow");
-})
+var swiper = new Swiper('.swiper-container', {
+    nextButton: '.swiper-button-next',
+    prevButton: '.swiper-button-prev',
+    speed: 2000,
+    observer:true,
+    observeParents:true,
+    autoplayDisableOnInteraction : false,
+    autoplay:1500,
+    slidesPerView: 1,
+    spaceBetween: 10,
+    loop: true
+});
 </script>
 <script type="text/javascript"> 
     function changeColor(){ 
@@ -671,6 +641,7 @@ $(function(){
         document.getElementById("blink").style.color=color[parseInt(Math.random() * color.length)]; 
     } 
     setInterval("changeColor()",200); 
-    </script>
+</script>
+
 </body>
 </html>
