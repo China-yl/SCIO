@@ -76,3 +76,6 @@
 .w28 { color: red; font-size:12px; padding:0 4px; line-height:18px; font-weight:bold; font-family:Georgia; font-style:italic;}
 .w28 a{ color: red; font-size:12px; padding:0 4px; line-height:18px; font-weight:bold; font-family:Georgia; font-style:italic;}
 .w28:hover { color: #fff; background: red; font-size:12px; padding:0 3px; line-height:18px; font-weight:bold;}
+.w29 { color: #6495ED; font-size:14px; padding:0 4px; line-height:18px; font-weight:bold; font-family:Georgia; font-style:italic;}
+.w29 a{ color: #6495ED; font-size:14px; padding:0 4px; line-height:18px; font-weight:bold; font-family:Georgia; font-style:italic;}
+.w29:hover { color: #fff; background: #6495ED; font-size:14px; padding:0 3px; line-height:18px; font-weight:bold;}
