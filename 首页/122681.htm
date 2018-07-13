@@ -338,7 +338,7 @@ img:hover { transform: scale(1.1); }
 </div>
 <div class="newbox">
 <h1><span><FOUNDER-XY type="columnlist" data="{'columnid':[7247535],'columntype':'self'}"><#list columns as column><a href="${column.url!}" class=""  target="_self">PRESS ROOM >></a></#list></FOUNDER-XY></span></h1>
-<div class="newbox1" style="height:330px; margin-bottom:30px;"><div class="btnClose" onclick="closebtn()" style="font-size: 30px;font-weight: bold;color: #000000;font-family: 宋体,serif;width:594px;text-align: right;display:none;cursor: pointer;" title="关闭窗口">×</div><iframe id="sp" src="http://english.scio.gov.cn/node_7249683.htm" width="594" height="330" scrolling="no" marginheight="0" frameborder="0"></iframe></div>
+<div class="newbox1" style="height:330px; margin-bottom:30px;"><div class="v1"><div class="btnClose" onclick="closebtn()" style="font-size: 30px;font-weight: bold;color: #000000;font-family: 宋体,serif;width:594px;text-align: right;display:none;cursor: pointer;" title="关闭窗口">×</div><iframe id="sp" src="http://english.scio.gov.cn/node_7249683.htm" width="594" height="330" scrolling="no" marginheight="0" frameborder="0"></iframe></div></div>
 <div class="newbox2"><FOUNDER-XY type="articlelist" data="{'columnid':[7247651], 'articletype': 'all', 'article_attr': 'COMMON', 'columntype':'self', 'showall':'true', 'start': 0, 'count': 1}"><#list articles as article><dl>
     <dt><a   href="${article.url}" ><img src="${article.picBig}"   border=0> </a></dt>
     <dd><span class="mmmm" style="margin-bottom:3px;">${article.subTitle}</span><br><a   href="${article.url}"  class="lljj">${article.title}</a></dd>
@@ -596,26 +596,26 @@ $(function(){
 </script>
 <script type="text/javascript">
     (function($) {
-        var wTop = $('.newbox1').offset().top;
+        var wTop = $('.v1').offset().top;
         $(window).scroll(function () {
             var t = $(document).scrollTop();
             if (t >= wTop) {
                 if($('.btnClose').hasClass("recovery")){
-                    $('.newbox1').css({ 'position': 'static','transform': 'scale(1,1)','width':'594px'});
+                    $('.v1').css({ 'position': 'static','transform': 'scale(1,1)','width':'594px'});
                     $('.btnClose').css({ 'display': 'none'});
                 }else{
-                   $('.newbox1').css({ 'position': 'fixed', 'z-index': '99999','bottom': '60px','right': '100px','width':'300px','transform': 'scale(.5,.5)'});
+                   $('.v1').css({ 'position': 'fixed', 'z-index': '9999','bottom': '60px','right': '100px','width':'300px','transform': 'scale(.5,.5)'});
                     $('.btnClose').css({ 'display': 'block'}); 
                 }  
             } else{
-                $('.newbox1').css({ 'position': 'static','transform': 'scale(1,1)','width':'594px'});
+                $('.v1').css({ 'position': 'static','transform': 'scale(1,1)','width':'594px'});
                 $('.btnClose').css({ 'display': 'none'});
                 $('.btnClose').removeClass("recovery");
             }
         });         
     })(jQuery);
     function closebtn(){
-        $('.newbox1').css({ 'position': 'static','transform': 'scale(1,1)','width':'594px'});
+        $('.v1').css({ 'position': 'static','transform': 'scale(1,1)','width':'594px'});
         $('.btnClose').css({ 'display': 'none'});
         $('.btnClose').addClass("recovery");
     }
