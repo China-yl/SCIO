@@ -60,7 +60,6 @@ a{color: #000;}
 .box5 a { font-size:14px;}
 
 .ad{width: 600px;border: 3px solid #1247a5; padding: 10px 0;}
-
 </style>
 
 <script type="text/javascript">
@@ -190,7 +189,7 @@ a{color: #000;}
 </div>
 
 <div class="cp"><FOUNDER-XY type="article" data="{}"><div id="vf">
-    <div class="btnClose" onclick="closebtn()" style="font-size: 30px;font-weight: bold;color: #000000;font-family: 宋体,serif;width: 600px; margin-left:140px;text-align: right;display:none;cursor: pointer;" title="关闭窗口">×</div> 
+    <div class="btnClose" onclick="closebtn()" style="font-size: 30px;font-weight: bold;color: #000000;font-family: 宋体,serif;width: 700px; margin-left:140px;text-align: right;display:none;cursor: pointer;" title="关闭窗口">×</div> 
       <div id="videoarea" style="width: 800px; height: 450px; margin-left:40px;" align="center"></div>
      </div>
     
@@ -208,7 +207,9 @@ a{color: #000;}
 </div>
 
 <div class='footer'><FOUNDER-XY type="columnlist" data="{'columnid':[7248726],'columntype':'self'}"><#list columns as column><iframe id="bottomifr" src="${column.url!}" width="100%" height="610" scrolling="no" marginheight="0" frameborder="0"></iframe></#list></FOUNDER-XY></div>
+<div class="homebtn" style="position: fixed;width: 50px;height: 50px;bottom:70px;right: 0;cursor: pointer;z-index: 100000;display:none;" onclick="window.open(&#39;http://english.scio.gov.cn/&#39;,&#39;_self&#39;)"><img style="width: 50px;height:50px;" src="http://images.china.cn/images1/en/gxb/20171211/home.png" /></div>
 
+<div class="topbtn" style="position: fixed;width: 50px;height: 50px;bottom:15px;right: 0;cursor: pointer;z-index: 100000;display:none;"><img style="width: 50px;height:50px;" src="http://images.china.cn/images1/en/brics2018/totop.png" /></div>
 <div id="webdig_source" style="display:none"><FOUNDER-XY type="article" data="{}">${article.source}</FOUNDER-XY></div>
 
 <div style="display:none">
@@ -274,25 +275,47 @@ window.onload = menu;
         $(window).scroll(function () {
             var t = $(document).scrollTop();
             if (t >= wTop) {
-                if($('.btnClose').hasClass("recovery")){
-                    $('#vf').css({ 'position': 'static','transform': 'scale(1,1)'});
-                    $('.btnClose').css({ 'display': 'none'});
+                if($("#videoarea").html()==""){
+                
                 }else{
-                    $('#vf').css({ 'position': 'fixed', 'z-index': '99999','bottom': '60px','right': '-160px','transform': 'scale(.5,.5)' });
-                    $('.btnClose').css({ 'display': 'block'});
-                }
+                    if($('.btnClose').hasClass("recovery")){
+                        $('#vf').css({ 'position': 'static','transform': 'scale(1,1)'});
+                        $('.btnClose').css({ 'display': 'none'});
+                    }else{
+                        $('#vf').css({ 'position': 'fixed', 'z-index': '99999','bottom': '60px','right': '-160px','transform': 'scale(.5,.5)' });
+                        $('.btnClose').css({ 'display': 'block'});
+                    }
+                }    
             } else {
                 $('#vf').css({ 'position': 'static','transform': 'scale(1,1)'});
                 $('.btnClose').css({ 'display': 'none'});
                 $('.btnClose').removeClass("recovery");
             }
-        });         
+        });      
     })(jQuery);
     function closebtn(){
         $('#vf').css({ 'position': 'static','transform': 'scale(1,1)'});
         $('.btnClose').css({ 'display': 'none'});
         $('.btnClose').addClass("recovery");
     }
+    var BTop = $('.topbtn').offset().top;
+    var BHome = $('.homebtn').offset().top;
+    $(window).scroll(function () {
+            var bt = $(document).scrollTop();
+            if (bt > BTop) {
+                    $('.topbtn').css({ 'display': 'block' });
+            } else {
+                    $('.topbtn').css({ 'display': 'none'});
+            }
+            if (bt > BHome) {
+                    $('.homebtn').css({ 'display': 'block' });
+            } else {
+                    $('.homebtn').css({ 'display': 'none'});
+            }
+    });
+    $(".topbtn").click(function() {
+        $("html,body").animate({scrollTop:0}, 500);
+    });
 </script>
 </body>
 </html>
