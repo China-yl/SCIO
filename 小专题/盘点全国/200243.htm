@@ -6,7 +6,9 @@
 <meta name="filetype" content="1" />
 <meta name="publishedtype" content="1" />
 <meta name="pagetype" content="2" /><FOUNDER-XY type="columnlist" data="{'columnid':[],'columntype':'self'}"><#list columns as column><meta name="catalogs" content="${column.id}"></meta></#list></FOUNDER-XY>
-
+<meta name="format-detection" content="telephone=no" />
+<meta http-equiv="Cache-Control" content="no-cache, must-revalidate" />
+<meta http-equiv="Pragma" content="no-cache" />
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112741182-1"></script>
 <script>
@@ -37,15 +39,18 @@
 		margin: 0;
 		width: 100%;
 		height: 100%;
+		background: url("http://images.china.cn/images1/en/gxb/20180112/CHINA-MAP.jpg") repeat-x top center;
 	}
 	#map{
 		width: 100%;
 		height: 100%;
-		background: url("http://images.china.cn/images1/en/gxb/20180112/CHINA-MAP.jpg") repeat-x top center;
-		background-size: 100% 100%;
+		
 	}
 	.list{ width: 48px;height: 208px;position: absolute;top: 308px;right:10px;}
 	@media screen and (max-width: 980px) and (min-width: 328px){
+		html,body{
+			background: url("http://images.china.cn/images1/en/gxb/20180112/map.jpg") no-repeat top center;
+		}
 		.list { right:-220px;}
 	}
 	.list img {margin-bottom: 5px;}
@@ -103,7 +108,7 @@ $(function() {
 	["Shandong","East China's Shandong sets up 150 learning centers for Confucianism"],["Ningxia","Western China leads fight against poverty"],
 	["Chongqing","Chongqing lures high-level global talent"],["Hongkong","HK ramps up role in Belt, Road"],
 	["Macao","Macao, Alibaba to build smart city by cloud computing"],["Taiwan","Taiwan economy to grow 2.53 pct. in 2017: Think tank"]];
-	var kMap = new kMap('map',4.1,'en');
+	var kMap = new kMap('map',4.2,'en');
 	var configureData = {
 		type: 1, // 这个是配置configureData的必须项
 	}
@@ -113,7 +118,7 @@ $(function() {
 		tooltip: {
 			show: true,
 			formatter: function(params) {
-				return params.value[0] + '：' + params.value[1];
+				return params.value[0] +': ' + params.value[1];
 		},
 				trigger: 'item'}
 	}

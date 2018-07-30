@@ -170,6 +170,10 @@ a{color: #000;}
 
 <div class='footer'><FOUNDER-XY type="columnlist" data="{'columnid':[7248726],'columntype':'self'}"><#list columns as column><iframe id="bottomifr" src="${column.url!}" width="100%" height="610" scrolling="no" marginheight="0" frameborder="0"></iframe></#list></FOUNDER-XY></div>
 
+<div class="homebtn" style="position: fixed;width: 50px;height: 50px;bottom:70px;right: 0;cursor: pointer;z-index: 100000;display:none;" onclick="window.open(&#39;http://english.scio.gov.cn/&#39;,&#39;_self&#39;)"><img style="width: 50px;height:50px;" src="http://images.china.cn/images1/en/gxb/20171211/home.png" /></div>
+
+<div class="topbtn" style="position: fixed;width: 50px;height: 50px;bottom:15px;right: 0;cursor: pointer;z-index: 100000;display:none;"><img style="width: 50px;height:50px;" src="http://images.china.cn/images1/en/brics2018/totop.png" /></div>
+
 <div id="webdig_source" style="display:none"><FOUNDER-XY type="article" data="{}">${article.source}</FOUNDER-XY></div>
 
 <div style="display:none">
@@ -230,6 +234,24 @@ window.onload = menu;
 </script>
 <script type="text/javascript">
   if (!!window.ActiveXObject || "ActiveXObject" in window){}else{$("audio").addClass("ad");}
+  var BTop = $('.topbtn').offset().top;
+    var BHome = $('.homebtn').offset().top;
+    $(window).scroll(function () {
+            var bt = $(document).scrollTop();
+            if (bt > BTop) {
+                    $('.topbtn').css({ 'display': 'block' });
+            } else {
+                    $('.topbtn').css({ 'display': 'none'});
+            }
+            if (bt > BHome) {
+                    $('.homebtn').css({ 'display': 'block' });
+            } else {
+                    $('.homebtn').css({ 'display': 'none'});
+            }
+    });
+    $(".topbtn").click(function() {
+        $("html,body").animate({scrollTop:0}, 500);
+    });
    </script>
 </body>
 </html>
