@@ -23,7 +23,7 @@ img {border:0;}
 .box2 dd h1 a { font-size:28px; line-height:30px;}
 .box2 h2 { background:url(http://images.china.cn/images1/en/gxb/20.jpg); line-height:35px; padding-left:10px; font-size:24px; margin-bottom:20px;}
 .box2 h2 a { line-height:35px; font-size:24px;}
-.box2 li { height:46px;padding:27px 0 15px 10px; font-size:18px; font-weight:bold; line-height:24px; border-bottom: solid 1px #e5e5e5; float:left; width:560px; margin-right:25px;}
+.box2 li { height:46px;padding:27px 0 15px 10px; font-size:18px; font-weight:bold; line-height:24px; border-bottom: solid 1px #e5e5e5; display: inline-block; width:560px; margin-right:25px;}
 .ban2 { width:100%; margin:0 auto 16px auto; height:46px; background-color:#1247a5; color:#FFFFFF; font-size:15px; font-weight:bold; line-height:28px; clear:both;}
 @media screen and (max-width: 1199px) {
     .ban2 {
@@ -119,32 +119,21 @@ img {border:0;}
 <div class="box2">
 <p><img src="http://images.china.cn/images1/en/gxb/19.jpg" width="1200" height="28" /></p>
 
-<!-- <FOUNDER-XY type="articlelist" data="{'columnid':[7248020], 'articletype': 'all', 'article_attr': 'HEADLINE', 'columntype':'self', 'showall':'true', 'start': 0, 'count': 1}"><#list articles as article><dl>
+<div>
+<FOUNDER-XY type="articlelist" data="{'columnid':[8006742], 'articletype': 'all', 'article_attr': 'HEADLINE', 'columntype':'self', 'showall':'true', 'start': 0, 'count': 1}"><#list articles as article><dl>
 <dt><a   href="${article.url}" ><img src="${article.picBig}"   border=0> </a></dt>
 <dd>
 <h1><a   href="${article.url}" >${article.title}</a></h1>
 ${article.summary}
 </dd>
 </dl></#list></FOUNDER-XY>
-<h2><FOUNDER-XY type="columnlist" data="{'columnid':[7248020],'columntype':'self'}"><#list columns as column><a href="${column.url!}" class=""  target="_self">News</a></#list></FOUNDER-XY>
+<h2><FOUNDER-XY type="columnlist" data="{'columnid':[8006742],'columntype':'self'}"><#list columns as column><a href="${column.url!}" class=""  target="_self">News</a></#list></FOUNDER-XY>
 </h2>
-<FOUNDER-XY type="articlelist" data="{'columnid':[7248020], 'articletype': 'all', 'article_attr': 'COMMON', 'columntype':'self', 'showall':'true', 'start': 0, 'count': 4}"><#list articles as article><#if article_index % 2 == 0><ul>
-<li><a   href="${article.url}" >${article.title}</a></li><#else><li><a   href="${article.url}" >${article.title}</a></li>
-</ul></#if></#list></FOUNDER-XY> -->
+<ul><FOUNDER-XY type="articlelist" data="{'columnid':[8006742], 'articletype': 'all', 'article_attr': 'COMMON', 'columntype':'self', 'showall':'true', 'start': 0, 'count': 4}"><#list articles as article>
+<li><a   href="${article.url}" >${article.title}</a></li></#list></FOUNDER-XY></ul>
+</div>
 
-<!-- <FOUNDER-XY type="articlelist" data="{'columnid':[7248019], 'articletype': 'all', 'article_attr': 'HEADLINE', 'columntype':'self', 'showall':'true', 'start': 0, 'count': 1}"><#list articles as article><dl>
-<dt><a   href="${article.url}" ><img src="${article.picBig}"   border=0> </a></dt>
-<dd>
-<h1><a   href="${article.url}" >${article.title}</a></h1>
-${article.summary}
-</dd>
-</dl></#list></FOUNDER-XY>
-<h2><FOUNDER-XY type="columnlist" data="{'columnid':[7248019],'columntype':'self'}"><#list columns as column><a href="${column.url!}" class=""  target="_self">News</a></#list></FOUNDER-XY>
-</h2>
-<FOUNDER-XY type="articlelist" data="{'columnid':[7248019], 'articletype': 'all', 'article_attr': 'COMMON', 'columntype':'self', 'showall':'true', 'start': 0, 'count': 4}"><#list articles as article><#if article_index % 2 == 0><ul>
-<li><a   href="${article.url}" >${article.title}</a></li><#else><li><a   href="${article.url}" >${article.title}</a></li>
-</ul></#if></#list></FOUNDER-XY> -->
-
+<div>
 <FOUNDER-XY type="articlelist" data="{'columnid':[7248018], 'articletype': 'all', 'article_attr': 'HEADLINE', 'columntype':'self', 'showall':'true', 'start': 0, 'count': 1}"><#list articles as article><dl>
 <dt><a   href="${article.url}" ><img src="${article.picBig}"   border=0> </a></dt>
 <dd>
@@ -154,9 +143,10 @@ ${article.summary}
 </dl></#list></FOUNDER-XY>
 <h2><FOUNDER-XY type="columnlist" data="{'columnid':[7248018],'columntype':'self'}"><#list columns as column><a href="${column.url!}" class=""  target="_self">News</a></#list></FOUNDER-XY>
 </h2>
-<FOUNDER-XY type="articlelist" data="{'columnid':[7248018], 'articletype': 'all', 'article_attr': 'COMMON', 'columntype':'self', 'showall':'true', 'start': 0, 'count': 4}"><#list articles as article><#if article_index % 2 == 0><ul>
-<li><a   href="${article.url}" >${article.title}</a></li><#else><li><a   href="${article.url}" >${article.title}</a></li>
-</ul></#if></#list></FOUNDER-XY>
+<ul><FOUNDER-XY type="articlelist" data="{'columnid':[7248018], 'articletype': 'all', 'article_attr': 'COMMON', 'columntype':'self', 'showall':'true', 'start': 0, 'count': 4}"><#list articles as article>
+<li><a   href="${article.url}" >${article.title}</a></li></#list></FOUNDER-XY></ul>
+</div>
+
 </div>
 
 <div class='footer'><FOUNDER-XY type="columnlist" data="{'columnid':[7248726],'columntype':'self'}"><#list columns as column><iframe id="bottomifr" src="${column.url!}" width="100%" height="610" scrolling="no" marginheight="0" frameborder="0"></iframe></#list></FOUNDER-XY>
