@@ -11,6 +11,7 @@
 
 body{font-family: Arial;}
 a{color: #000;}
+a:hover {text-decoration: none; }
 .top{margin-bottom: 30px;}
 .wrap{width: 1200px;height: 1%;overflow: hidden;zoom: 1;margin:30px auto 0 auto;font-size: 40px;line-height: 48px;clear:both;}
 .wrapl{width: 900px;float: left;padding: 0;}
@@ -61,7 +62,7 @@ a{color: #000;}
 .mv h3 span{float: right;padding-left: 15px;color: #999;line-height: 18px;}
 .mv p{font-size: 20px;line-height: 20px;}
 
-.box_1{margin-bottom: 30px; background-color:##F5F5F5;}
+.box_1{margin-bottom: 30px; background-color: #F5F5F5;}
 .box_1 img{ width:100%; margin-bottom:10px;}
 .box_1 p{font-size: 20px;line-height: 20px;}
 .boxm a { font-size:16px; line-height:24px; font-weight:normal;}
@@ -177,7 +178,7 @@ a{color: #000;}
 <div class="box_1">
 <div class="title_1"><a class="">BACKGROUND</a></div>
 
-<FOUNDER-XY type="articlelist" data="{'columnid':[7247629], 'articletype': 'all', 'article_attr': 'all', 'columntype':'self', 'showall':'true', 'start': 0, 'count': 1}"><#list articles as article><#if article_index == 0><div class="boxm"></#if><a class=""><img src="${article.picBig}"    border="0"> <br>${article.summary}</a><#if article_has_next=false></div></#if></#list></FOUNDER-XY></div>
+<FOUNDER-XY type="articlelist" data="{'columnid':[7247629], 'articletype': 'all', 'article_attr': 'all', 'columntype':'self', 'showall':'true', 'start': 0, 'count': 1}"><#list articles as article><#if article_index == 0><div class="boxm"></#if><a class="">${article.summary}</a><#if article_has_next=false></div></#if></#list></FOUNDER-XY></div>
 
 <div class="box_1">
 <div class="title_1"><a class="">HISTORY</a></div>
