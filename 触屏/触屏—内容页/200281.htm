@@ -46,6 +46,7 @@ dd span.mmmm { border-left: 2px solid #5792fc; display: inline-block; padding-le
 .box1l span.mmmm { border-left: 2px solid #5792fc; display: inline-block; padding-left: 4px; }
 .box1r {color: #666;    font-size: 1.4em;   line-height: 1.25em;}
 .box2{color: #999; padding:10px 0;    clear: both;}
+.box2 p{margin-bottom: 10px;}
 .box2 span{color: #999;padding: 0 10px;}
 .sharebar{ float:right; position: relative; bottom: 5px;}
 
@@ -178,7 +179,7 @@ dd span.mmmm { border-left: 2px solid #5792fc; display: inline-block; padding-le
 <div class="box1l"><span class="mmmm">${article.subTitle}</span></div>
 <div class="box1r">${article.summary}</div>
 </div></FOUNDER-XY>
-<div class='box2'><FOUNDER-XY type="article" data="{}"><div style='display: inline-block;'>${article.source}<span>丨</span>Updated:&nbsp;<#setting locale="en_US">${article.pubTime?string("MMMM d, yyyy")}</div></FOUNDER-XY>
+<div class='box2'><FOUNDER-XY type="article" data="{}"><p>${article.author}</p><div style='display: inline-block;'>${article.source}<span>丨</span>Updated:&nbsp;<#setting locale="en_US">${article.pubTime?string("MMMM d, yyyy")}</div></FOUNDER-XY>
 <div class="sharebar">
 <div class="bshare-custom"><a title="分享到Facebook" class="bshare-facebook" href="javascript:void(0);" style="background: url(http://images.china.cn/images1/en/gxb/facebook-blue.png) no-repeat;width:19px;height:19px;"></a><a title="分享到Twitter" class="bshare-twitter" href="javascript:void(0);" style="background: url(http://images.china.cn/images1/en/gxb/twitter-blue.png) no-repeat;width:19px;height:19px;"></a><a title="更多平台" class="bshare-more bshare-more-icon more-style-addthis" style="background: url(http://images.china.cn/images1/en/gxb/share-blue.png) no-repeat;width:19px;height:19px;"></a></div>
 
