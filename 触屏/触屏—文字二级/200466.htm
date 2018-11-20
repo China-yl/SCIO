@@ -149,7 +149,7 @@ dd span.mmmm { border-left: 2px solid #5792fc; display: inline-block; padding-le
 
 <div class="wrap">
 
-<div class="usual"><FOUNDER-XY type="articlelistpage" data="{'columnid':[], 'articletype': 'all', 'article_attr': 'COMMON', 'columntype':'self', 'showall':'true', 'start': 0, 'count': 50}"><#list articles as article><#if article_index == 0><ul>
+<div class="usual"><FOUNDER-XY type="articlelistpage" data="{'columnid':[], 'articletype': 'all', 'article_attr': 'all', 'columntype':'self', 'showall':'true', 'start': 0, 'count': 50}"><#list articles as article><#if article_index == 0><ul>
 </#if><li>
         <a   href="${article.urlPad}"  target="_self">${article.title}</a>
 </li><#if article_has_next=false>
