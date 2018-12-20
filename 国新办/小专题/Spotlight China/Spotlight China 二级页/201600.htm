@@ -1,7 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title><FOUNDER-XY type="columnlist" data="{'columnid':[],'columntype':'self'}"><#list columns as column>${column.name}</#list></FOUNDER-XY> | english.scio.gov.cn</title>
+<title>Spotlight China | english.scio.gov.cn</title>
 <base target="_self" />
 <meta name="filetype" content="1" />
 <meta name="publishedtype" content="1" />
@@ -36,6 +36,9 @@ a{color: #000;}
 .ban2 ul li .listshow {width:208px;display: none; position: relative; background-color: #1247a5; opacity: .85; filter:alpha(opacity=85);}
 .ban2 ul li ul li{ float: none; padding-left: 2px; text-align:left; border-right:none;}
 .ban2 ul li ul li a{ font-size:12px; font-weight:normal;}
+
+.box5 { font-size:14px; padding-bottom:10px;color: #666;font-weight: normal;}
+.box5 a { font-size:14px;color: #666;}
 </style>
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -112,7 +115,7 @@ a{color: #000;}
 
 <div class="wrap">
 <div class="wrapl">
-
+<div class="box5"><a href="http://english.scio.gov.cn/index.htm">Home</a>&nbsp;>&nbsp;<FOUNDER-XY type="position" data="{}"><#list columns as column><a href="${column.url}" target="_self" class="" >${column.name}</a>&nbsp;>&nbsp;</#list></FOUNDER-XY></div>
 <div class="usual"><FOUNDER-XY type="articlelistpage" data="{'columnid':[], 'articletype': 'all', 'article_attr': 'COMMON', 'columntype':'self', 'showall':'true', 'start': 0, 'count': 30}"><#list articles as article><#if article_index == 0><ul>
 </#if><li>
 <a   href="${article.url}"  target="_self"><img src="${article.picBig}"    border="0"> </a>
