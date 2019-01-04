@@ -14,8 +14,8 @@
 .boxb2l dl { padding:30px 0; border-bottom: solid 1px #5c5c5c; height:1%; overflow:hidden; clear:both;}
 .boxb2l dt { float:left; width:90px;}
 .boxb2l dd { width:360px; float:left;}
-.boxb2l dd h4{ font-size:16px; line-height:32px; color:#f3f3f3; font-family:Arial;}
-.boxb2l dd h4 a{ font-size:16px; line-height:32px; color:#f3f3f3; font-family:Arial;}
+.boxb2l dd p{ font-size:16px; line-height:32px; color:#f3f3f3; font-family:Arial;font-weight: 600;}
+.boxb2l dd p a{ font-size:16px; line-height:32px; color:#f3f3f3; font-family:Arial;font-weight: 600;}
 .boxb2l dd h5 { color:#939393; padding-top:5px; font-size:12px;}
 .boxb2l h2 { font-size:25px; line-height:40px; color:#d6d6d6; font-family:Arial; font-weight:normal; padding-left:90px;}
 .boxb2l h3 { font-size:15px; line-height:40px; color:#d6d6d6; font-family:Arial; font-weight:normal; padding-right:15px; float:left; margin-bottom:15px;}
@@ -70,7 +70,7 @@ function changeIframeHeight() {
 
 <FOUNDER-XY type="articlelist" data="{'columnid':[7247762], 'articletype': 'all', 'article_attr': 'HEADLINE', 'columntype':'self', 'showall':'true', 'start': 0, 'count': 2}"><#list articles as article><dl>
 <dt><img src="${article.picBig}"   border=0> </dt>
-<dd><h4>${article.title}</h4><br><h5><#setting locale="en_US">${article.pubTime?string("MMMM d, yyyy")}</h5></dd>
+<dd><p>${article.title}</p><br><h5><#setting locale="en_US">${article.pubTime?string("MMMM d, yyyy")}</h5></dd>
 </dl></#list></FOUNDER-XY>
 <div style="height:20px;">&#160;</div>
 
