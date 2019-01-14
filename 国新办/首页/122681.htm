@@ -633,13 +633,16 @@ $(function(){
 </script>
 <script type="text/javascript">
 var swiper = new Swiper('.swiper-container', {
-    nextButton: '.swiper-button-next',
-    prevButton: '.swiper-button-prev',
-    speed: 1000,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
     observer:true,
     observeParents:true,
-    autoplayDisableOnInteraction : false,
-    autoplay:5000,
+    autoplay : {
+        delay:3000
+    },
+    speed : 2000,
     slidesPerView: 1,
     spaceBetween: 10,
     loop: true

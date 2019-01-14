@@ -19,7 +19,17 @@
         totalPage = Math.ceil(len / pageSize);
         $('#yInfo').html('Results ' + (startpage * pageSize - pageSize + 1) + ' - ' + startpage * pageSize + ' of ' + len);
         for (var i = 0; i < data.list.length; i++) {
-            temp.push('<li><h3><span class="mmmm">' + data.list[i].sub + '</span>' + data.list[i].date + '</h3><h1><a href="' + data.list[i].url.replace(/http:\/\/www.china.org.cn\/englishscio\//, "http://english.scio.gov.cn/") + '">' + data.list[i].title + '</a></h1><p>' + data.list[i].abstract + '</p></li>');
+            var re=new RegExp(" amp ","g");
+            var re1=new RegExp("BampR","g");
+            var newstr="";
+            if(data.list[i].abstract.match(re)){
+               newstr=data.list[i].abstract.replace(re," & "); 
+            }else if(data.list[i].abstract.match(re1)){
+                newstr=data.list[i].abstract.replace(re1,"B&R");
+            }else{
+                newstr=data.list[i].abstract;
+            }
+            temp.push('<li><h3><span class="mmmm">' + data.list[i].sub + '</span>' + data.list[i].date + '</h3><h1><a href="' + data.list[i].url.replace(/http:\/\/www.china.org.cn\/englishscio\//, "http://english.scio.gov.cn/") + '">' + data.list[i].title + '</a></h1><p>' + newstr + '</p></li>');
         }
         $('#yList').html(temp.join(''));
         pageObj();
