@@ -354,13 +354,16 @@ $(".topbtn").click(function() {
 </script>
 <script type="text/javascript">
   var swiper = new Swiper('.swiper-container', {
-      nextButton: '.swiper-button-next',
-      prevButton: '.swiper-button-prev',
-      speed: 2000,
-      observer:true,
-      observeParents:true,
-      autoplayDisableOnInteraction : false,
-      autoplay:1500,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    observer:true,
+    observeParents:true,
+    autoplay : {
+        delay:1500
+    },
+    speed : 2000,
       slidesPerView: 1,
       spaceBetween: 10,
       loop: true
