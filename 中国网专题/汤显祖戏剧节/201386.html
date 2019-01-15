@@ -311,15 +311,19 @@ $(function(){
     });
 });
 var swiper = new Swiper('.swiper-container', {
-  pagination: '.swiper-pagination',
-  paginationType : 'custom',
-  paginationCustomRender: function (swiper, current, total) {
+  pagination: {
+    el: '.swiper-pagination',
+    type : 'custom',
+    renderCustom: function (swiper, current, total) {
       return ' < '+current + ' / ' + total+' > ';
+    },
+    clickable :true,
   },
-  nextButton: '.swiper-button-next',
-  prevButton: '.swiper-button-prev',
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
   slidesPerView: 1,
-  paginationClickable: true,
   loop: true
 });
 
