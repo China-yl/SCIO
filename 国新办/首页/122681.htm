@@ -184,8 +184,10 @@ background-image: -o-linear-gradient(right,blue,#E2339A 75%);-o-text-fill-color:
 }
 #gradual img:hover{ transform: scale(1);} 
 #blink img:hover{ transform: scale(1);} 
-/* #chunjieBox { overflow: hidden; margin: 0px auto;box-shadow: 10px 10px 40px rgba(0,0,0,0.4);;    height: 603px; }
-#chunjieBox img:hover{ transform: scale(1); } */
+
+.new2019{width: 100%;height: 100vh;display: none;}
+.new2019 img{width: 100%;}
+.new2019 img:hover { transform: scale(1); }
 </style>
 
 <script type="text/javascript">
@@ -261,7 +263,7 @@ background-image: -o-linear-gradient(right,blue,#E2339A 75%);-o-text-fill-color:
 <link type="text/css" rel="stylesheet" href="http://images.china.cn/images1/en/gxb/ctjs.css" />
 </head>
 <body>
-<!-- <div id="chunjieBox" class="wauto" style=" width: 1200px;"><img src="http://images.china.cn/images1/en/gxb/20180211-02.jpg" width="1200" height="603" /></div> -->
+<div class="new2019"><img src="http://images.china.cn/images1/en/gxb/newshappy2019.jpg"></div>
 <div class="box1" style="padding-bottom:25px;"><FOUNDER-XY type="columnlist" data="{'columnid':[7247655],'columntype':'self'}"><#list columns as column><iframe id="Top" src="${column.url!}" width="100%" height="130" scrolling="no" marginheight="0" frameborder="0"></iframe></#list></FOUNDER-XY></div>
 <div class="ban2">
 <div style="width:1200px; margin:auto;">
@@ -665,6 +667,36 @@ function changeColor(){
     color=color.split("|"); 
     document.getElementById("blink").style.color=color[parseInt(Math.random() * color.length)]; 
 } 
+
+document.onreadystatechange = completeLoading;
+
+function completeLoading() {
+    if (document.readyState == "complete") {
+        checkEndTime();
+    }
+}
+
+function checkEndTime(){
+    var nowDate=new Date();
+    var  assign = "2019-02-03 00:00:00";
+    var  assign1 = "2019-02-11 00:00:00";
+    var assignTime=new Date(assign.replace("-", "/").replace("-", "/"));
+    var assignTime1=new Date(assign1.replace("-", "/").replace("-", "/"));
+
+    if(assignTime<nowDate && nowDate<assignTime1){
+        newsben();
+        return true;
+    }else{
+        return false;
+    }
+}
+function newsben(){
+    $(".new2019").slideDown(1500);
+    function hidenews(){
+        $(".new2019").slideUp(1500);
+    }
+    setTimeout(hidenews,5000);
+}
 
 </script>
 </body>
