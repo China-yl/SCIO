@@ -21,7 +21,9 @@
         for (var i = 0; i < data.list.length; i++) {
             var re=new RegExp(" amp ","g");
             var re1=new RegExp("BampR","g");
+            var re2=new RegExp("2019NPCampCPPCC","g");
             var newstr="";
+            var newsub="";
             if(data.list[i].abstract.match(re)){
                newstr=data.list[i].abstract.replace(re," & "); 
             }else if(data.list[i].abstract.match(re1)){
@@ -29,7 +31,12 @@
             }else{
                 newstr=data.list[i].abstract;
             }
-            temp.push('<li><h3><span class="mmmm">' + data.list[i].sub + '</span>' + data.list[i].date + '</h3><h1><a href="' + data.list[i].url.replace(/http:\/\/www.china.org.cn\/englishscio\//, "http://english.scio.gov.cn/") + '">' + data.list[i].title + '</a></h1><p>' + newstr + '</p></li>');
+            if(data.list[i].sub.match(re2)){
+               newsub=data.list[i].sub.replace(re,"2019NPC&CPPCC"); 
+            }else{
+                newsub=data.list[i].sub;
+            }
+            temp.push('<li><h3><span class="mmmm">' + newsub + '</span>' + data.list[i].date + '</h3><h1><a href="' + data.list[i].url.replace(/http:\/\/www.china.org.cn\/englishscio\//, "http://english.scio.gov.cn/") + '">' + data.list[i].title + '</a></h1><p>' + newstr + '</p></li>');
         }
         $('#yList').html(temp.join(''));
         pageObj();
@@ -138,7 +145,8 @@
             "International Exchanges": 'w26',
             "Aid": 'w27',
             "Two Sessions 2018": 'w28',
-            "Press Minutes": 'w29'
+            "Press Minutes": 'w29',
+            "2019NPC&CPPCC": 'w30'
         };
         $('.mmmm').each(function () {
             var curTitle = $.trim($(this).text());
