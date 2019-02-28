@@ -21,7 +21,6 @@
         for (var i = 0; i < data.list.length; i++) {
             var re=new RegExp(" amp ","g");
             var re1=new RegExp("BampR","g");
-            var re2=new RegExp("2019NPCampCPPCC","g");
             var newstr="";
             var newsub="";
             if(data.list[i].abstract.match(re)){
@@ -31,8 +30,8 @@
             }else{
                 newstr=data.list[i].abstract;
             }
-            if(data.list[i].sub.match(re2)){
-               newsub=data.list[i].sub.replace(re,"2019NPC&CPPCC"); 
+            if(data.list[i].sub.match(re)){
+               newsub=data.list[i].sub.replace(re," & "); 
             }else{
                 newsub=data.list[i].sub;
             }
@@ -146,7 +145,7 @@
             "Aid": 'w27',
             "Two Sessions 2018": 'w28',
             "Press Minutes": 'w29',
-            "2019NPC&CPPCC": 'w30'
+            "2019 NPC & CPPCC": 'w30'
         };
         $('.mmmm').each(function () {
             var curTitle = $.trim($(this).text());
