@@ -79,9 +79,9 @@ background-color:#f7202f;  background: -webkit-linear-gradient(left,#f7202f ,#ff
 .box3r{ width: 582px; float: right;}
 .box3 dl{ height: 473px; border:1px solid #c7c7c7;}
 .box3 dl:hover{border:1px solid #111010;}
-.box3 dt{ height: 290px; }
-.box3 dt img{width: 580px;height: 290px;}
-.box3 dd{ height: 169px; width:570px; padding-top: 14px; padding-left: 10px;background-color: #fff;}
+.box3 dt{ height: 387px; }
+.box3 dt img{width: 580px;height: 387px;}
+.box3 dd{ height: 81px; width:570px; padding-top: 5px; padding-left: 10px;background-color: #fff;}
 .box3 dd h3{ margin-bottom: 12px; font-size: 22px;line-height: 38px;}
 .box3 dd p{ font-size: 14px;line-height: 24px;overflow: hidden;text-overflow:ellipsis;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;}
 .box3 li{ height: 127px;width: 560px; padding: 10px; margin-bottom: 20px;background-color: #fff;border:1px solid #c7c7c7;}
@@ -308,7 +308,7 @@ background-color:#f7202f;  background: -webkit-linear-gradient(left,#f7202f ,#ff
 
 <div class="box3l"><FOUNDER-XY type="articlelist" data="{'columnid':[7253630], 'articletype': 'all', 'article_attr': 'HEADLINE', 'columntype':'self', 'showall':'true', 'start': 0, 'count': 1}"><#list articles as article><dl style="margin-bottom:20px;">
             <dt><a   href="${article.url}" ><img src="${article.picBig}"   border=0> </a></dt>
-            <dd><h3><a   href="${article.url}" >${article.title}</a></h3><p id="three">${article.summary}</p></dd>
+            <dd><h3><a   href="${article.url}" >${article.title}</a></h3></dd>
             </dl></#list></FOUNDER-XY><FOUNDER-XY type="articlelist" data="{'columnid':[7253630], 'articletype': 'all', 'article_attr': 'COMMON', 'columntype':'self', 'showall':'true', 'start': 0, 'count': 2}"><#list articles as article><#if article_index == 0><ul></#if><li><h3><a   href="${article.url}" >${article.title}</a></h3>
             <p id="three">${article.summary}</p></li><#if article_has_next=false>
             </ul>
@@ -316,7 +316,7 @@ background-color:#f7202f;  background: -webkit-linear-gradient(left,#f7202f ,#ff
 
 <div class="box3r"><FOUNDER-XY type="articlelist" data="{'columnid':[7253630], 'articletype': 'all', 'article_attr': 'HEADLINE', 'columntype':'self', 'showall':'true', 'start': 1, 'count': 1}"><#list articles as article><dl style="margin-bottom:20px;">
             <dt><a   href="${article.url}" ><img src="${article.picBig}"   border=0> </a></dt>
-            <dd><h3><a   href="${article.url}" >${article.title}</a></h3><p id="three">${article.summary}</p></dd>
+            <dd><h3><a   href="${article.url}" >${article.title}</a></h3></dd>
             </dl></#list></FOUNDER-XY><FOUNDER-XY type="articlelist" data="{'columnid':[7253630], 'articletype': 'all', 'article_attr': 'COMMON', 'columntype':'self', 'showall':'true', 'start': 2, 'count': 2}"><#list articles as article><#if article_index == 0><ul>  </#if><li><h3><a   href="${article.url}" >${article.title}</a></h3><p id="three">${article.summary}</p>
 </li><#if article_has_next=false>
             </ul></#if></#list></FOUNDER-XY></div>
