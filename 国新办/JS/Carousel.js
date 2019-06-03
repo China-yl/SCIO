@@ -1,15 +1,16 @@
 function lun(a,b,c,d,e,f,g,w,p){
-  var i = 0;
+    var i = 0;
     var clone = $(c).first().clone();
     $(b).append(clone);
     var size = $(c).size();
     for (var j = 0; j < size-1; j++) {
         $(d).append("<li></li>");
     }
+    $(c).first().addClass("show");
     $(e).first().addClass("on");
     if(p=="true"){
-       var t = setInterval(function () { i++; move();},2000); 
-       $(a).hover(function () {
+        var t = setInterval(function () { i++; move();},2000); 
+        $(a).hover(function () {
             clearInterval(t);
         }, function () {
             t = setInterval(function () { i++; move(); }, 2000);
@@ -19,6 +20,7 @@ function lun(a,b,c,d,e,f,g,w,p){
         var index = $(this).index();
         i = index;
         $(b).stop().animate({ left: -index * w }, 500);
+        $(c).eq(i).addClass("show").siblings().removeClass("show");
         $(this).addClass("on").siblings().removeClass("on");
     });
 
@@ -47,8 +49,10 @@ function lun(a,b,c,d,e,f,g,w,p){
         $(b).stop().animate({ left: -i * w }, 500);
 
         if (i == size - 1) {
+            $(c).eq(0).addClass("show").siblings().removeClass("show");
             $(e).eq(0).addClass("on").siblings().removeClass("on");
         } else {
+            $(c).eq(i).addClass("show").siblings().removeClass("show");
             $(e).eq(i).addClass("on").siblings().removeClass("on");
         }
     }

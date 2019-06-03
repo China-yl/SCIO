@@ -9,7 +9,6 @@
 <meta name="pagetype" content="2" /><FOUNDER-XY type="columnlist" data="{'columnid':[],'columntype':'self'}"><#list columns as column><meta name="catalogs" content="${column.id}"></meta></#list></FOUNDER-XY>
 <meta itemprop="name" content="Conference on Dialogue of Civilizations " /> 
 
-<link rel="stylesheet" href="http://images.china.cn/images1/en/gxb/css/swiper.min.css">
 <style type="text/css">
 * { margin: 0px; padding: 0px; }
 body {font-family: Arial; font-size:16px; color:#000; line-height:20px; width: 100%;min-width: 1200px;background: url("http://images.china.cn/images1/en/CDAC2019/bg_main.jpg") repeat;background-size:100% 100%;} 
@@ -36,22 +35,22 @@ img { border:0; transition: all 0.6s; }
 .div1{width: 100%;background: url("http://images.china.cn/images1/en/CDAC2019/bg1.png") no-repeat;background-size:100% 100%;}
 .d{width: 1150px;margin: 55px auto;padding: 40px 60px;background: url("http://images.china.cn/images1/en/CDAC2019/moji_bg.png") no-repeat;background-size:100% 100%;}
 .dl{width: 1135px;height: 513px;display: inline-block;}
-.dl .swiper-container {width: 100%;height: 100%;}
-.dl .swiper-container .swiper-slide{width: 100%;}
-.dl .swiper-container .swiper-slide a{display: block;}
-.dl .swiper-container .swiper-slide img{width: 770px;height: 513px;}
-.dl .swiper-container .swiper-slide div{width: 335px;padding: 15px;position: absolute;top:0;right:0;}
-.dl .swiper-container .swiper-slide p{width: 320px;padding-left: 30px;}
-.dl .swiper-container .swiper-slide p a{color: #fff;font-size: 36px;line-height: 50px;font-weight: bold;}
-.dl .swiper-container .swiper-slide p a:hover { text-decoration: underline; }
-.dl .swiper-container-horizontal>.swiper-pagination-bullets{width: 770px;left:0;bottom: 45px;}
-.dl .swiper-container .swiper-pagination-bullet {width: 8px;height: 8px;display: inline-block;border-radius: 100%;background: #fff;opacity: 1;-webkit-transition: all 0.3s ease-in-out;-moz-transition: all 0.3s ease-in-out;-ms-transition: all 0.3s ease-in-out;-o-transition: all 0.3s ease-in-out;transition: all 0.3s ease-in-out;}
-.dl .swiper-container .swiper-pagination-bullet-active {width: 22px;border-radius: 5px;opacity: 1;background: #ecce72;}
-.dl .swiper-container .swiper-button-next,.dl .swiper-container .swiper-button-prev {position: absolute;top: 50%;width: 82px;height: 65px;margin-top: -22px;z-index: 10;cursor: pointer;background-position: center;background-repeat: no-repeat;}
-.dl .swiper-container .swiper-button-next{background-image: url("http://images.china.cn/images1/en/CDAC2019/right.png");background-size: 100% 100%;right: 375px;left: auto;}
-.dl .swiper-container .swiper-button-prev{background-image: url("http://images.china.cn/images1/en/CDAC2019/left.png");background-size: 100% 100%;left: 10px;right: auto;}
-.dl .swiper-container .swiper-button-next:hover{background-image: url("http://images.china.cn/images1/en/CDAC2019/right_hover.png");}
-.dl .swiper-container .swiper-button-prev:hover{background-image: url("http://images.china.cn/images1/en/CDAC2019/left_hover.png");}
+.dl .carousel{width: 1135px;height: 513px;display: inline-block;margin-bottom:10px;overflow: hidden;position: relative;}
+.dl .carousel .img{width:100000px; position:absolute; left:0px;top:0px;}
+.dl .carousel .img img{width: 770px;height: 513px;}
+.dl .carousel .img li{float:left;padding: 0;margin-right: 365px;border: 0;position: relative;display: block;}
+.dl .carousel .img li div{width: 335px;padding: 15px;position: absolute;top:0;right:-365px;}
+.dl .carousel .img li p{width: 320px;padding-left: 30px;}
+.dl .carousel .img li p a{color: #fff;font-size: 36px;line-height: 50px;font-weight: bold;}
+.dl .carousel .img li p a:hover{ text-decoration: underline; }
+.dl .carousel .num { width: 770px;left:35%;bottom: 45px;position: absolute;}
+.dl .carousel .num li{width: 8px;height: 8px;display: inline-block;border-radius: 100%;background: #fff;opacity: 1;-webkit-transition: all 0.3s ease-in-out;-moz-transition: all 0.3s ease-in-out;-ms-transition: all 0.3s ease-in-out;-o-transition: all 0.3s ease-in-out;transition: all 0.3s ease-in-out;margin: 0 4px;}
+.dl .carousel .num .on{width: 22px;border-radius: 5px;opacity: 1;background: #ecce72;}
+.dl .carousel .btn {position: absolute;top: 50%;width: 82px;height: 65px;margin-top: -22px;z-index: 10;cursor: pointer;background-position: center;background-repeat: no-repeat;}
+.dl .carousel .btn_l { background-image: url("http://images.china.cn/images1/en/CDAC2019/left.png");background-size: 100% 100%;left: 10px;right: auto;}
+.dl .carousel .btn_r { background-image: url("http://images.china.cn/images1/en/CDAC2019/right.png");background-size: 100% 100%;right: 375px;left: auto;}
+.dl .carousel .btn_r:hover{background-image: url("http://images.china.cn/images1/en/CDAC2019/right_hover.png");}
+.dl .carousel .btn_l:hover{background-image: url("http://images.china.cn/images1/en/CDAC2019/left_hover.png");}
 
 
 .div2{width: 100%;margin: 50px 0;background: url("http://images.china.cn/images1/en/CDAC2019/bg2.png") no-repeat 0px 130px;background-size:100% 100%;}
@@ -100,20 +99,20 @@ img { border:0; transition: all 0.6s; }
 .t4 img:hover { transform: scale(1.1); }
 .bg{width: 100%;height: 760px;}
 .ph{width: 1140px;height: 760px;margin: 0 auto;position: relative;}
-.ph .swiper-container {width: 100%;height: 100%;overflow: unset;}
-.ph .swiper-container .swiper-slide{width: 100%;display: -webkit-box;display: -ms-flexbox;display: -webkit-flex;display: flex;-webkit-box-pack: center;-ms-flex-pack: center;-webkit-justify-content: center;justify-content: center;-webkit-box-align: center;-ms-flex-align: center;-webkit-align-items: center;align-items: center;}
-.ph .swiper-container .swiper-slide a{display: block;}
-.ph .swiper-container .swiper-slide img{width: 1140px;height: 760px;}
-.ph .swiper-container .swiper-slide p{position: absolute;left: 0;bottom: 0;width: 1080px;padding: 10px 30px;background: rgba(0,0,0,0.2);display: none;}
-.ph .swiper-container .swiper-slide-active p{display: block;}
-.ph .swiper-container .swiper-slide p a{color: #fff;font-size: 36px;line-height: 50px;font-weight: bold;}
-.ph .swiper-container .swiper-slide p a:hover { text-decoration: underline; }
-.ph .swiper-container-horizontal>.swiper-pagination-bullets{display: none;}
-.ph .swiper-container .swiper-button-next,.ph .swiper-container .swiper-button-prev {position: absolute;top: 50%;width: 82px;height: 65px;margin-top: -22px;z-index: 10;cursor: pointer;background-position: center;background-repeat: no-repeat;}
-.ph .swiper-container .swiper-button-next{background-image: url("http://images.china.cn/images1/en/CDAC2019/right.png");background-size: 100% 100%;right: 10px;left: auto;}
-.ph .swiper-container .swiper-button-prev{background-image: url("http://images.china.cn/images1/en/CDAC2019/left.png");background-size: 100% 100%;left: 10px;right: auto;}
-.ph .swiper-container .swiper-button-next:hover{background-image: url("http://images.china.cn/images1/en/CDAC2019/right_hover.png");}
-.ph .swiper-container .swiper-button-prev:hover{background-image: url("http://images.china.cn/images1/en/CDAC2019/left_hover.png");}
+.ph .carousel1{width: 1140px;height: 760px;display: inline-block;position: relative;}
+.ph .carousel1 .img{width:100000px; position:absolute; left:0px;top:0px;}
+.ph .carousel1 .img img{width: 1140px;height: 760px;}
+.ph .carousel1 .img li{float:left;padding: 0;margin:0;border: 0;position: relative;display: block;}
+.ph .carousel1 .img li p{position: absolute;left: 0;bottom: 0;width: 1080px;padding: 10px 30px;background: rgba(0,0,0,0.2);display: none;}
+.ph .carousel1 .img li.show p{display: block;}
+.ph .carousel1 .img li p a{color: #fff;font-size: 36px;line-height: 50px;font-weight: bold;}
+.ph .carousel1 .img li p a:hover{ text-decoration: underline; }
+.ph .carousel1 .num { display: none;}
+.ph .carousel1 .btn {position: absolute;top: 50%;width: 82px;height: 65px;margin-top: -22px;z-index: 10;cursor: pointer;background-position: center;background-repeat: no-repeat;}
+.ph .carousel1 .btn_l { background-image: url("http://images.china.cn/images1/en/CDAC2019/left.png");background-size: 100% 100%;left: 10px;right: auto;}
+.ph .carousel1 .btn_r {background-image: url("http://images.china.cn/images1/en/CDAC2019/right.png");background-size: 100% 100%;right: 10px;left: auto;}
+.ph .carousel1 .btn_r:hover{background-image: url("http://images.china.cn/images1/en/CDAC2019/right_hover.png");}
+.ph .carousel1 .btn_l:hover{background-image: url("http://images.china.cn/images1/en/CDAC2019/left_hover.png");}
 
 .footer{width: 100%;font-size: 14px;line-height: 32px;color:#fff;text-align: center;background: url("http://images.china.cn/images1/en/CDAC2019/footer.jpg") no-repeat; background-size: 100% 100%;padding: 11px 0;}
 </style>
@@ -223,20 +222,18 @@ img { border:0; transition: all 0.6s; }
 <div class="div1">
     <div class="d">
         <div class="dl">
-            <div class="swiper-container">
-                <div class="swiper-wrapper">
-                <FOUNDER-XY type="articlelist" data="{'columnid':[8012073],'articletype':'all','article_attr':'HEADLINE','start':'0','count':'3'}"><#list articles as article>
-                <div class="swiper-slide">
-                    <a   href="${article.url}" ><img src="${article.picBig}"   border=0></a>
-                    <div><p><a   href="${article.url}" >${article.title}</a></p></div>
-                </div>
-                </#list></FOUNDER-XY>
-                </div>
-                <!-- Add Pagination -->
-                <div class="swiper-pagination"></div>
-                <!-- Add Arrows -->
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
+            <div class="carousel">
+                <ul class="img">
+                    <FOUNDER-XY type="articlelist" data="{'columnid':[8012073],'articletype':'all','article_attr':'HEADLINE','start':0,'count':'3'}"><#list articles as article>
+                        <li>
+                            <a   href="${article.url}" ><img src="${article.picBig}"   border=0></a>
+                            <div><p><a   href="${article.url}" >${article.title}</a></p></div>
+                        </li>
+                    </#list></FOUNDER-XY>
+                    </ul>
+                <ul class="num"></ul>
+                <div class="btn btn_l"></div>
+                <div class="btn btn_r"></div>
             </div>
         </div>
     </div>
@@ -273,20 +270,18 @@ img { border:0; transition: all 0.6s; }
     <div class="t4"><FOUNDER-XY type="columnlist" data="{'columnid':[8012085],'columntype':'self'}"><#list columns as column><a href="${column.url!}" class=""  target="_top"><img src="http://images.china.cn/images1/en/CDAC2019/photos.png"></a></#list></FOUNDER-XY></div>
     <div class="bg">
         <div class="ph">
-            <div class="swiper-container">
-                <div class="swiper-wrapper">
-                <FOUNDER-XY type="articlelist" data="{'columnid':[8012085],'articletype':'all','article_attr':'COMMON','start':'0','count':'3'}"><#list articles as article>
-                <div class="swiper-slide">
-                    <a   href="${article.url}" ><img src="${article.picBig}"   border=0></a>
-                    <p><a   href="${article.url}" >${article.title}</a></p>
-                </div>
-                </#list></FOUNDER-XY>
-                </div>
-                <!-- Add Pagination -->
-                <div class="swiper-pagination"></div>
-                <!-- Add Arrows -->
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
+            <div class="carousel1">
+                <ul class="img">
+                    <FOUNDER-XY type="articlelist" data="{'columnid':[8012085],'articletype':'all','article_attr':'COMMON','start':0,'count':'3'}"><#list articles as article>
+                        <li>
+                            <a   href="${article.url}" ><img src="${article.picBig}"   border=0></a>
+                            <p><a   href="${article.url}" >${article.title}</a></p>
+                        </li>
+                    </#list></FOUNDER-XY>
+                    </ul>
+                <ul class="num"></ul>
+                <div class="btn btn_l"></div>
+                <div class="btn btn_r"></div>
             </div>
             <div style="background: #fff;opacity: 0.4;width: 33%;height: 760px;position: absolute;top: 0;left: -33%;z-index: 100;"></div>
             <div style="background: #fff;opacity: 0.4;width: 33%;height: 760px;position: absolute;top: 0;right: -33%;z-index: 100;"></div>
@@ -312,29 +307,22 @@ img { border:0; transition: all 0.6s; }
 </div>
 
 <script type="text/javascript" src="http://images.china.cn/images1/resource/scripts/jquery/jquery-1.9.1.min.js"></script>
-<script type="text/javascript" src="http://images.china.cn/images1/en/gxb/js/swiper.min.js"></script>
+<script type="text/javascript" src="http://images.china.cn/images1/en/gxb/Carousel.js"></script>
+<script type="text/javascript">
+lun(".carousel",".carousel .img",".carousel .img li",".carousel .num",".carousel .num li",".carousel .btn_r",".carousel .btn_l",1135,"true")
+lun(".carousel1",".carousel1 .img",".carousel1 .img li",".carousel1 .num",".carousel1 .num li",".carousel1 .btn_r",".carousel1 .btn_l",1140,"true")
+</script>
 <script type="text/javascript">
 $(function(){ 
 　　$(".s1").animate({height:'118px',opacity:'1'},1000);
     $(".s2").animate({height:'118px',opacity:'1'},1000);
 }); 
-var swiper = new Swiper('.swiper-container', {
-    spaceBetween: 0,
-    centeredSlides: true,
-    autoplay: {
-    delay: 2500,
-    disableOnInteraction: false,
-    },
-    pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
-    },
-    navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-    },
-    loop: true
-});
+if(navigator.appName == "Microsoft Internet Explorer" && navigator.appVersion .split(";")[1].replace(/[ ]/g,"")=="MSIE7.0") 
+{ 
+    $(".num li").css("float","left");
+    $(".d2 dl").css("margin-right","20px");
+    $(".d3 dl").css("margin-right","15px");
+} 
 
 $(".topbtn").click(function() {
   $("html,body").animate({scrollTop:0}, 500);
