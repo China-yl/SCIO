@@ -42,7 +42,7 @@
     $(window).scroll(function () {
         var t = $(document).scrollTop();
         if (t >= wTop) {
-            $('.ban2').css({ 'position': 'fixed', 'z-index': '99999', 'top': '0' });
+            $('.ban2').css({ 'position': 'fixed', 'z-index': '99999', 'top': '0' , 'left': '0' });
         } else {
             $('.ban2').css({ 'position': 'static', 'margin': '0 auto 16px auto' });
         }
