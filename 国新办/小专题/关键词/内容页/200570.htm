@@ -118,11 +118,13 @@ img { border:0; height: auto;}
     <div class="list fr" onclick="showlist()"><span>K</span>EYWORDS LIST<img src="http://images.china.cn/images1/en/China_Keywords/Triangular.png" /></div>
     <div class="listshow" id="listshow">
         <ul>
-            <li><FOUNDER-XY type="columnlist" data="{'columnid':[8003654],'columntype':'self'}"><#list columns as column><a href="${column.url!}" class=""  target="_top">The Belt and Road Initiative</a></#list></FOUNDER-XY></li>
+            <li><FOUNDER-XY type="columnlist" data="{'columnid':[8013353],'columntype':'self'}"><#list columns as column><a href="${column.url!}" class=""  target="_top">The Belt and Road Initiative 2019</a></#list></FOUNDER-XY></li>
+            <li><FOUNDER-XY type="columnlist" data="{'columnid':[8013354],'columntype':'self'}"><#list columns as column><a href="${column.url!}" class=""  target="_top">On Governance</a></#list></FOUNDER-XY></li>
+            <!-- <li><FOUNDER-XY type="columnlist" data="{'columnid':[8003654],'columntype':'self'}"><#list columns as column><a href="${column.url!}" class=""  target="_top">The Belt and Road Initiative</a></#list></FOUNDER-XY></li> -->
             <li><FOUNDER-XY type="columnlist" data="{'columnid':[8003653],'columntype':'self'}"><#list columns as column><a href="${column.url!}" class=""  target="_top">Ethnic groups and religions</a></#list></FOUNDER-XY></li>
             <li><FOUNDER-XY type="columnlist" data="{'columnid':[8003652],'columntype':'self'}"><#list columns as column><a href="${column.url!}" class=""  target="_top">13th Five-year Plan</a></#list></FOUNDER-XY></li>
             <li><FOUNDER-XY type="columnlist" data="{'columnid':[8003651],'columntype':'self'}"><#list columns as column><a href="${column.url!}" class=""  target="_top">Streamlining Governance and Devolving Powers</a></#list></FOUNDER-XY></li>
-            <li><FOUNDER-XY type="columnlist" data="{'columnid':[8003650],'columntype':'self'}"><#list columns as column><a href="${column.url!}" class=""  target="_top">The Chinese People's War of Resistance Against Japanese Aggression</a></#list></FOUNDER-XY></li>
+            <!-- <li><FOUNDER-XY type="columnlist" data="{'columnid':[8003650],'columntype':'self'}"><#list columns as column><a href="${column.url!}" class=""  target="_top">The Chinese People's War of Resistance Against Japanese Aggression</a></#list></FOUNDER-XY></li> -->
             <li><FOUNDER-XY type="columnlist" data="{'columnid':[8003649],'columntype':'self'}"><#list columns as column><a href="${column.url!}" class=""  target="_top">China-US relaitons</a></#list></FOUNDER-XY></li>
             <li><FOUNDER-XY type="columnlist" data="{'columnid':[8003648],'columntype':'self'}"><#list columns as column><a href="${column.url!}" class=""  target="_top">Ecological Conservation and Social Governance</a></#list></FOUNDER-XY></li>
             <li><FOUNDER-XY type="columnlist" data="{'columnid':[8003647],'columntype':'self'}"><#list columns as column><a href="${column.url!}" class=""  target="_top">Party Building</a></#list></FOUNDER-XY></li>
@@ -158,6 +160,18 @@ img { border:0; height: auto;}
 <div class='footer'><FOUNDER-XY type="columnlist" data="{'columnid':[7248726],'columntype':'self'}"><#list columns as column><iframe id="bottomifr" src="${column.url!}" width="100%" height="610" scrolling="no" marginheight="0" frameborder="0"></iframe></#list></FOUNDER-XY></div>
 <script type="text/javascript" src="http://images.china.cn/images1/resource/scripts/jquery/jquery-1.9.1.min.js"></script>
 
+<script type="text/javascript">
+    (function($) {
+        $('.cp p:first()').addClass('cp_f');
+    })(jQuery);
+    function showlist(){
+        if(document.getElementById('listshow').style.display=='none'){
+            document.getElementById('listshow').style.display='block';
+        }else{
+            document.getElementById('listshow').style.display='none';
+        }      
+    }
+</script>
 <script src="https://www.scio.gov.cn/PageShare/Scripts/sciowxshareplugin.js" type="text/javascript"></script>
 <script type="text/javascript">
     $(function() {
@@ -172,19 +186,5 @@ img { border:0; height: auto;}
         $(document).SCIOWXShare({imageUrl:b,entry:"en"});
     });
 </script>
-
-<script type="text/javascript">
-    (function($) {
-        $('.cp p:first()').addClass('cp_f');
-    })(jQuery);
-    function showlist(){
-        if(document.getElementById('listshow').style.display=='none'){
-            document.getElementById('listshow').style.display='block';
-        }else{
-            document.getElementById('listshow').style.display='none';
-        }      
-    }
-</script>
-
 </body>
 </html>
