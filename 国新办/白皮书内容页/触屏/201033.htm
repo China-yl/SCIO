@@ -204,6 +204,10 @@ wd_paramtracker("_wdxid=000000000000000000000000000000000000000000")
 
 (function($) {
     $('.cp p:first()').addClass('cp_f');
+    if($('.cp p:first()').find("span").length > 0){
+        $('.cp p:first()').removeClass('cp_f');
+        $('.cp p:first() span').css({"font-size":"1.6em","line-height":"1.25em"});     
+    };
 })(jQuery);
 
 var BTop = ($('.topbtn').offset().top)+78;
