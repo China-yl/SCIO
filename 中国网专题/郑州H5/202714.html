@@ -141,10 +141,16 @@ body{overflow: hidden;}
     <div class="t3"><img src="http://images.china.cn/images1/en/train1/tip_save.png" style="margin-bottom: 5vh;"><img src="http://images.china.cn/images1/en/train1/btn_rechic.png" style="margin-bottom: 5vh;width: 80%;" onclick="turn()"><img src="http://images.china.cn/images1/en/train1/back.png" onclick="backimg()"></div>
     <div class="postcardimg"><img src="" ></div>
   </div>
+  <audio src="http://mp42.china.com.cn/video_tide/video/2019/9/30/20199301569841229876_369.mp3" id="audio" loop="true"></audio>
 </body>  
 <script type="text/javascript" src="http://images.china.cn/images1/resource/scripts/jquery/jquery-1.12.4.min.js"></script>
 
 <script>
+  $(function() {
+    var music = document.getElementById("audio");
+    music.play();
+  });
+  
   function go(){
     $(".box").css("display","none");
     $(".box1").css("display","block");
