@@ -1,0 +1,497 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title><FOUNDER-XY type="columnlist" data="{'columnid':[],'columntype':'self'}"><#list columns as column>${column.name}</#list></FOUNDER-XY> | english.scio.gov.cn</title>
+    <meta name="filetype" content="1" />
+    <meta name="publishedtype" content="1" />
+    <meta name="pagetype" content="2" /><FOUNDER-XY type="columnlist" data="{'columnid':[],'columntype':'self'}"><#list columns as column><meta name="catalogs" content="${column.id}"></meta></#list></FOUNDER-XY>
+    <meta itemprop="name" content="China's moments in 2019" /> 
+    <style>
+        * { margin: 0px; padding: 0px;box-sizing: border-box;}
+        body {font-family: Arial; font-size:10px; color:#000; line-height:10px;; width:100%;min-width: 1200px; overflow:hidden;background: #333 ;padding-top: 54px;position: relative;margin: 0;}
+        ul, li { list-style-type: none; }
+        a{  text-decoration: none; color: #000;}
+        a:hover {  text-decoration: none; }
+        .fr{float:right;margin-left:20px;}
+        .fl{float:left;margin-right:20px;}
+        h3{font-size: 24px;}
+
+        .toplist{ width: 100%;height: 54px; background-color:#191e3f;position: fixed;top:0;left:0;z-index: 99999;}
+        .toplist a{display: inline-block;margin-right: 6px;}
+        .video{width: 100%;height: 100vh;position: relative;}
+        .close{width: 300px;height: 80px;opacity: 0.5; cursor: pointer;position: absolute;bottom: 15%;right: 0;}
+        .close:hover{opacity: 1;}
+        .close img{width: 100%;}
+        .flipbook{display: block;position: relative;}
+        #flipbook{ margin-left: -100vw !important;}
+        #flipbook .page{background-color:white;}
+        #flipbook .page-wrapper{ -webkit-perspective:2000px;-moz-perspective:2000px;-ms-perspective:2000px;-o-perspective:2000px;perspective:2000px;}
+        #flipbook .hard{background:#ccc !important;color:#333;-webkit-box-shadow:inset 0 0 5px #666;-moz-box-shadow:inset 0 0 5px #666;-o-box-shadow:inset 0 0 5px #666;-ms-box-shadow:inset 0 0 5px #666;box-shadow:inset 0 0 5px #666;font-weight:bold;}
+        #flipbook .odd{background:-webkit-gradient(linear, right top, left top, color-stop(0.95, #FFF), color-stop(1, #DADADA));background-image:-webkit-linear-gradient(right, #FFF 95%, #C4C4C4 100%);background-image:-moz-linear-gradient(right, #FFF 95%, #C4C4C4 100%);background-image:-ms-linear-gradient(right, #FFF 95%, #C4C4C4 100%);background-image:-o-linear-gradient(right, #FFF 95%, #C4C4C4 100%);background-image:linear-gradient(right, #FFF 95%, #C4C4C4 100%);-webkit-box-shadow:inset 0 0 5px #666;-moz-box-shadow:inset 0 0 5px #666;-o-box-shadow:inset 0 0 5px #666;-ms-box-shadow:inset 0 0 5px #666;box-shadow:inset 0 0 5px #666;}
+        #flipbook .even{background:-webkit-gradient(linear, left top, right top, color-stop(0.95, #fff), color-stop(1, #dadada));background-image:-webkit-linear-gradient(left, #fff 95%, #dadada 100%);background-image:-moz-linear-gradient(left, #fff 95%, #dadada 100%);background-image:-ms-linear-gradient(left, #fff 95%, #dadada 100%);background-image:-o-linear-gradient(left, #fff 95%, #dadada 100%);background-image:linear-gradient(left, #fff 95%, #dadada 100%);-webkit-box-shadow:inset 0 0 5px #666;-moz-box-shadow:inset 0 0 5px #666;-o-box-shadow:inset 0 0 5px #666;-ms-box-shadow:inset 0 0 5px #666;box-shadow:inset 0 0 5px #666;}
+        .next-button,.previous-button{width: 48px;height: 38px;background: #FFF;position: absolute;top:45%;cursor: pointer;z-index: 100;}
+        .previous-button{left: 5%;background: url("http://images.china.cn/images1/en/2019pandian/img/left1.png") no-repeat;}
+        .previous-button:hover{background: url("http://images.china.cn/images1/en/2019pandian/img/left_hover.png") no-repeat;}
+        .next-button{right: 2%;background: url("http://images.china.cn/images1/en/2019pandian/img/right.png") no-repeat;}
+        .next-button:hover{background: url("http://images.china.cn/images1/en/2019pandian/img/right_hover.png") no-repeat}
+        .left{background: url("http://images.china.cn/images1/en/2019pandian/img/left.png") no-repeat;width: 5%;height: 100%;position: absolute;top: 0; left: 0;background-size: 100% 100%;z-index: 100;}
+
+        .month{background: rgba(0,0,0,0.3);box-shadow: 3px 5px 7px rgba(0,0,0,0.35);}
+        .month p{font-size: 60px;line-height: 60px; color: #fff;}
+        .month span{font-size: 25px;line-height: 25px; color: rgba(255,255,255,0.8);}
+        .vertical {width: 20%;height: 100%;margin-left: 10%;padding-top: 5%;text-align:center;position: absolute;}
+        .vertical p{padding-top: 5%;margin-top: 12px;}
+        .transverse{width: 100%;height: 11%;padding-left: 10%;}
+        .transverse p{display: inline-block;padding-top: 1%;margin-right: 12px;}
+
+        .box{position: relative;top: 50%;transform: translateY(-50%);margin-left: 10%;}
+        .img{width: 35%;}
+        .img a{display:block;}
+        .img img{width: 100%;}
+        .minbox{width: 40%;padding: 1%;background: rgba(255,255,255,0.3);position: absolute;top: 50%;transform: translateY(-50%);margin-left: 40%;}
+        .minbox img{width: 26px;height: 26px;position: absolute;top: 0;left: 0;}
+        .words{background: rgba(255,255,255,0.8);padding: 3% 7%;}
+        .words p{margin-bottom: 2%;}
+        .words p a{font-size: 20px;line-height: 30px; font-weight: bold; color: #000;}
+        .words span{font-size: 16px;line-height: 24px;color: #181818;}
+
+        .box1{position: relative;top: 5%;margin-left: 10%;}
+        .img1{margin-bottom: 2%;width: 30%;}
+        .minbox1{width: 55%;padding: 1%;background: rgba(255,255,255,0.3);position: absolute; top: 0;left: 35%;}
+        .minbox1 img{width: 26px;height: 26px;position: absolute;bottom: 0;left: 0;}
+        .minbox2{width: 55%;padding: 1%;background: rgba(255,255,255,0.3);position: relative;}
+        .minbox2 img{width: 26px;height: 26px;position: absolute;top: 0;right: 0;}
+        .img2{position: absolute; bottom: 0;left: 60%;width: 30%;}
+
+        .code{width: 25%;position: relative;top: 40%;transform: translateY(-40%);margin:0 auto 3% auto;}
+        .turn{width: 18%;height: 8%;position: relative;top: 30%;transform: translateY(-30%);margin:0 auto;background: url("http://images.china.cn/images1/en/2019pandian/img/back.png") no-repeat;cursor: pointer;}
+        .turn:hover{background: url("http://images.china.cn/images1/en/2019pandian/img/back_hover.png") no-repeat;}
+
+        .spinner {margin: 100px auto;width: 60px;height: 60px;position: relative;}
+        .container1 > div, .container2 > div, .container3 > div {width: 16px;height: 16px;background-color: #0f4498;border-radius: 100%;position: absolute;-webkit-animation: bouncedelay 1.2s infinite ease-in-out; animation: bouncedelay 1.2s infinite ease-in-out;-webkit-animation-fill-mode: both;animation-fill-mode: both;} 
+        .spinner .spinner-container {position: absolute;width: 100%;height: 100%;}
+        .container2 {-webkit-transform: rotateZ(45deg);transform: rotateZ(45deg);}
+        .container3 {-webkit-transform: rotateZ(90deg);transform: rotateZ(90deg);}
+        .circle1 { top: 0; left: 0; }
+        .circle2 { top: 0; right: 0; }
+        .circle3 { right: 0; bottom: 0; }
+        .circle4 { left: 0; bottom: 0; }
+        .container2 .circle1 {-webkit-animation-delay: -1.1s;animation-delay: -1.1s;}
+        .container3 .circle1 {-webkit-animation-delay: -1.0s;animation-delay: -1.0s;}
+        .container1 .circle2 {-webkit-animation-delay: -0.9s;animation-delay: -0.9s;}
+        .container2 .circle2 {-webkit-animation-delay: -0.8s;animation-delay: -0.8s;}
+        .container3 .circle2 {-webkit-animation-delay: -0.7s;animation-delay: -0.7s;}
+        .container1 .circle3 {-webkit-animation-delay: -0.6s;animation-delay: -0.6s;}
+        .container2 .circle3 {-webkit-animation-delay: -0.5s;animation-delay: -0.5s;}
+        .container3 .circle3 {-webkit-animation-delay: -0.4s;animation-delay: -0.4s;}
+        .container1 .circle4 {-webkit-animation-delay: -0.3s;animation-delay: -0.3s;}
+        .container2 .circle4 {-webkit-animation-delay: -0.2s;animation-delay: -0.2s;}
+        .container3 .circle4 {-webkit-animation-delay: -0.1s;animation-delay: -0.1s;}
+        @-webkit-keyframes bouncedelay {
+            0%, 80%, 100% { -webkit-transform: scale(0.0) }
+            40% { -webkit-transform: scale(1.0) }
+        }
+        @keyframes bouncedelay {
+            0%, 80%, 100% {transform: scale(0.0);-webkit-transform: scale(0.0);} 
+            40% {transform: scale(1.0);-webkit-transform: scale(1.0);}
+        }
+    </style>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112741182-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-112741182-1');
+    </script>
+
+    <!-- 百度统计 -->
+    <script>
+    var _hmt = _hmt || [];
+    (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?fd2d485bd31a1b437014f46624329f5b";
+        var s = document.getElementsByTagName("script")[0]; 
+        s.parentNode.insertBefore(hm, s);
+    })();
+    </script>
+    <script type="text/javascript" src="http://images.china.cn/images1/resource/scripts/jquery/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="http://images.china.cn/images1/resource/scripts/jquery/turn.js"></script>
+</head>
+<body>
+    <div class="toplist" id="toplist">
+        <a href="http://english.scio.gov.cn/" style="margin-top: 0.7%;margin-left: 1%;"><img src="http://images.china.cn/images1/en/2019cc/logo.png" width="194" height="25" border="0" /></a>
+        <div class="bshare-custom icon-medium-plus" style="float: right; margin-top: 0.3%;margin-right: 1%;">
+            <a title="分享到Facebook" class="bshare-facebook" href="javascript:void(0);" style="width: 44px;height: 44px;background:url(http://images.china.cn/images1/en/2019cc/facebook1.png) no-repeat;padding: 0px;"></a>
+            <a title="分享到Twitter" class="bshare-twitter" href="javascript:void(0);"style="width: 44px;height: 44px;background:url(http://images.china.cn/images1/en/2019cc/twitter1.png) no-repeat;padding: 0px;"></a>
+            <a title="分享到微信" class="bshare-weixin" href="javascript:void(0);"style="width: 44px;height: 44px;background:url(http://images.china.cn/images1/en/2019cc/微信1.png) no-repeat;padding: 0px;;"></a>
+            <a title="分享到微博" class="bshare-sinaminiblog" href="javascript:void(0);"style="width: 44px;height: 44px;background:url(http://images.china.cn/images1/en/2019cc/微博1.png) no-repeat;padding: 0px;"></a>
+        </div>
+        <script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/buttonLite.js#style=-1&amp;uuid=72352d86-8c1b-4361-8d6b-12862c1a6656&amp;pophcol=2&amp;lang=zh"></script>
+        <script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/bshareC0.js"></script>
+    </div>      
+    <div class="video">
+        <video  webkit-playsinline style="opacity: 1;width: 100%;" muted id="video">
+            <source type="video/mp4" src="http://mp42.china.com.cn/video_tide/video/2020/1/3/2020131578030671343_369.mp4">  
+        </video>
+        <div class="close"><img src="http://images.china.cn/images1/en/2019pandian/img/skip.png"></div>
+    </div>
+    <div class="flipbook">
+        <div id="flipbook">           
+            <div style="background: url('http://images.china.cn/images1/en/2019pandian/img/bg_1.jpg') no-repeat;background-size: 100% 100%;">
+                <div class="month vertical">
+                    <span>China's moments in 2019</span><p>January</p>
+                </div>
+                <div class="box">
+                    <div class="img"><a href="http://english.scio.gov.cn/in-depth/2019-02/02/content_74625710.htm" target="_blank"><img src="http://images.china.cn/images1/en/2019pandian/img/1_sm.jpg"></a></div>
+                    <div class="minbox">
+                        <img src="http://images.china.cn/images1/en/2019pandian/img/1_jiao.png">
+                        <div class="words">
+                            <p><a href="http://english.scio.gov.cn/in-depth/2019-02/02/content_74625710.htm" target="_blank">China's lunar exploration: Venturing into the unknown</a></p>
+                            <span>On Jan. 3, China's Chang'e-4 probe touched down on the far side of the moon, becoming the first spacecraft soft-landing on the moon's uncharted side never visible from Earth.</span>
+                        </div>  
+                    </div>
+                </div> 
+            </div>
+            <div></div>
+            <div style="background: url('http://images.china.cn/images1/en/2019pandian/img/bg_2.jpg') no-repeat;background-size: 100% 100%;">
+                <div class="month vertical">
+                    <span>China's moments in 2019</span><p>February</p>
+                </div>
+                <div class="box">
+                    <div class="img"><a href="http://english.scio.gov.cn/in-depth/2019-02/19/content_74479259.htm" target="_blank"><img src="http://images.china.cn/images1/en/2019pandian/img/2_sm.jpg"></a></div>
+                    <div class="minbox">
+                        <img src="http://images.china.cn/images1/en/2019pandian/img/2_jiao.png">
+                        <div class="words">
+                            <p><a href="http://english.scio.gov.cn/in-depth/2019-02/19/content_74479259.htm" target="_blank">China unveils development plan for Guangdong-Hong Kong-Macao Greater Bay Area</a></p>
+                            <span>Chinese authorities unveiled the outline development plan for the Guangdong-Hong Kong-Macao Greater Bay Area on Feb. 18, aiming to develop the region into "a role model of high-quality development."</span>
+                        </div>  
+                    </div>
+                </div> 
+            </div>
+            <div></div>
+            <div style="background: url('http://images.china.cn/images1/en/2019pandian/img/bg_3.jpg') no-repeat;background-size: 100% 100%;">
+                <div class="month vertical">
+                    <span>China's moments in 2019</span><p>March</p>
+                </div>
+                <div class="box">
+                    <div class="img"><a href="http://english.scio.gov.cn/NPC_CPPCC_2019/node_8010719.htm" target="_blank"><img src="http://images.china.cn/images1/en/2019pandian/img/3_sm.jpg"></a></div>
+                    <div class="minbox">
+                        <img src="http://images.china.cn/images1/en/2019pandian/img/3_jiao.png">
+                        <div class="words">
+                            <p><a href="http://english.scio.gov.cn/NPC_CPPCC_2019/node_8010719.htm" target="_blank">Major topics at China's 2019 NPC & CPPCC</a></p>
+                            <span>The second session of the 13th National People's Congress and the second session of the 13th National Committee of the Chinese People's Political Consultative Conference were held in March. The "two sessions" passed the foreign investment law, which will become effective on Jan. 1, 2020. The adoption of the law was an important step toward the country's plans to expand opening up and promote foreign investment.</span>
+                        </div>  
+                    </div>
+                </div> 
+            </div>
+            <div></div>
+            <div style="background: url('http://images.china.cn/images1/en/2019pandian/img/bg_4.jpg') no-repeat;background-size: 100% 100%;">
+                <div class="month transverse">
+                    <p>April</p><span>China's moments in 2019</span>
+                </div>
+                <div class="box1">
+                    <div class="img img1"><a href="http://english.scio.gov.cn/BRF2019/node_8011299.html" target="_blank"><img src="http://images.china.cn/images1/en/2019pandian/img/4_sm1.jpg"></a></div>
+                    <div class="minbox1">
+                        <img src="http://images.china.cn/images1/en/2019pandian/img/4_jiao1.png">
+                        <div class="words">
+                            <p><a href="http://english.scio.gov.cn/BRF2019/node_8011299.html" target="_blank">The second Belt and Road Forum for International Cooperation</a></p>
+                            <span>The second Belt and Road Forum for International Cooperation, held in Beijing from April 25 to 27, saw the participation of over 6,000 foreign guests from 150 countries and 92 international organizations. The event opened a new chapter of high-quality cooperation for building the Belt and Road.</span>
+                        </div>  
+                    </div>
+                    <div class="minbox2">
+                        <img src="http://images.china.cn/images1/en/2019pandian/img/4_jiao2.png">
+                        <div class="words">
+                            <p><a href="http://english.scio.gov.cn/in-depth/2019-05/05/content_74751758.htm" target="_blank">Beijing Expo sets new stage for global cooperation on green development</a></p>
+                            <span>With the theme of "Live Green, Live Better," the 2019 Beijing International Horticultural Expo was held from April 29 to Oct. 7. Visitors to numerous parks of the expo were treated to a wide variety of horticultural arrangements and displays.</span>
+                        </div>  
+                    </div>
+                    <div class="img img2"><a href="http://english.scio.gov.cn/in-depth/2019-05/05/content_74751758.htm" target="_blank"><img src="http://images.china.cn/images1/en/2019pandian/img/4_sm2.jpg"></a></div>
+                </div>
+            </div>
+            <div></div>
+            <div style="background: url('http://images.china.cn/images1/en/2019pandian/img/bg_5.jpg') no-repeat;background-size: 100% 100%;">
+                <div class="month transverse">
+                    <p>May</p><span>China's moments in 2019</span>
+                </div>
+                <div class="box1">
+                    <div class="img img1"><a href="http://english.scio.gov.cn/portraits_of_youth/node_8012862.html" target="_blank"><img src="http://images.china.cn/images1/en/2019pandian/img/5_sm1.jpg"></a></div>
+                    <div class="minbox1">
+                        <img src="http://images.china.cn/images1/en/2019pandian/img/5_jiao1.png">
+                        <div class="words">
+                            <p><a href="http://english.scio.gov.cn/portraits_of_youth/node_8012862.html" target="_blank">Portraits of youth</a></p>
+                            <span>This year marks the 100th anniversary of the May Fourth Movement. Chinese President Xi Jinping praised the country's youth for their great aspirations, patriotism, and innovative abilities.</span>
+                        </div>  
+                    </div>
+                    <div class="minbox2">
+                        <img src="http://images.china.cn/images1/en/2019pandian/img/5_jiao2.png">
+                        <div class="words">
+                            <p><a href="http://english.scio.gov.cn/CDAC2019/node_8012072.html" target="_blank">Conference on Dialogue of Asian Civilizations</a></p>
+                            <span>The Conference on Dialogue of Asian Civilizations was held in Beijing from May 15 to 22. With the theme of exchange and mutual learning among Asian countries, the conference included an opening ceremony and various sub-forums. More than 2,000 government officials and representatives of various circles from 47 Asian countries and other countries outside the region attended the opening ceremony and forums.</span>
+                        </div>  
+                    </div>
+                    <div class="img img2"><a href="http://english.scio.gov.cn/CDAC2019/node_8012072.html" target="_blank"><img src="http://images.china.cn/images1/en/2019pandian/img/5_sm2.jpg"></a></div>
+                </div>
+            </div>
+            <div></div>
+            <div style="background: url('http://images.china.cn/images1/en/2019pandian/img/bg_6.jpg') no-repeat;background-size: 100% 100%;">
+                <div class="month vertical">
+                    <span>China's moments in 2019</span><p>June</p>
+                </div>
+                <div class="box">
+                    <div class="img"><a href="http://english.scio.gov.cn/videos/2019-08/06/content_75072097.htm" target="_blank"><img src="http://images.china.cn/images1/en/2019pandian/img/6_sm.jpg"></a></div>
+                    <div class="minbox">
+                        <img src="http://images.china.cn/images1/en/2019pandian/img/6_jiao.png">
+                        <div class="words">
+                            <p><a href="http://english.scio.gov.cn/videos/2019-08/06/content_75072097.htm" target="_blank">5G is here!</a></p>
+                            <span>The Ministry of Industry and Information Technology on June 6 officially rolled out commercial 5G licenses, making a crucial step for the commercial use of the next-generation mobile network.</span>
+                        </div>  
+                    </div>
+                </div>
+            </div>
+            <div></div>
+            <div style="background: url('http://images.china.cn/images1/en/2019pandian/img/bg_7.jpg') no-repeat;background-size: 100% 100%;">
+                <div class="month transverse">
+                    <p>July</p><span>China's moments in 2019</span>
+                </div>
+                <div class="box1">
+                    <div class="img img1"><a href="http://english.scio.gov.cn/videos/2019-07/18/content_75006011.htm" target="_blank"><img src="http://images.china.cn/images1/en/2019pandian/img/7_sm1.jpg"></a></div>
+                    <div class="minbox1">
+                        <img src="http://images.china.cn/images1/en/2019pandian/img/7_jiao1.png">
+                        <div class="words">
+                            <p><a href="http://english.scio.gov.cn/videos/2019-07/18/content_75006011.htm" target="_blank">From trash to treasure: China steps up garbage sorting rules</a></p>
+                            <span>Shanghai enacted a set of regulations on household garbage sorting and recycling from July 1, followed by various cities across China. The country plans to establish a garbage sorting system in 46 major cities by the end of 2020 and expand it to cover all cities at the prefecture-level and above by 2025.</span>
+                        </div>  
+                    </div>
+                    <div class="minbox2">
+                        <img src="http://images.china.cn/images1/en/2019pandian/img/7_jiao2.png">
+                        <div class="words">
+                            <p><a href="http://english.scio.gov.cn/in-depth/2019-07/08/content_74963366.htm" target="_blank">China claims 55 of UNESCO world heritages with new elected site</a></p>
+                            <span>China's Migratory Bird Sanctuaries along the Coast of the Yellow Sea-Bohai Gulf (Phase I) and the Archaeological Ruins of Liangzhu City in Hangzhou, Zhejiang province, were inscribed onto the UNESCO World Heritage list during the 43rd session of the World Heritage Committee in Baku, Azerbaijan, on July 5 and 6. China now has 55 entries to the World Heritage list, leading the world along with Italy.</span>
+                        </div>  
+                    </div>
+                    <div class="img img2"><a href="http://english.scio.gov.cn/in-depth/2019-07/08/content_74963366.htm" target="_blank"><img src="http://images.china.cn/images1/en/2019pandian/img/7_sm2.jpg"></a></div>
+                </div>
+            </div>
+            <div></div>
+            <div style="background: url('http://images.china.cn/images1/en/2019pandian/img/bg_8.jpg') no-repeat;background-size: 100% 100%;">
+                <div class="month vertical">
+                    <span>China's moments in 2019</span><p>August</p>
+                </div>
+                <div class="box">
+                    <div class="img"><a href="http://english.scio.gov.cn/spotlight_China/2019-09/11/content_75196683.htm" target="_blank"><img src="http://images.china.cn/images1/en/2019pandian/img/8_sm.jpg"></a></div>
+                    <div class="minbox">
+                        <img src="http://images.china.cn/images1/en/2019pandian/img/8_jiao.png">
+                        <div class="words">
+                            <p><a href="http://english.scio.gov.cn/spotlight_China/2019-09/11/content_75196683.htm" target="_blank">China expands FTZs for further reform, opening up</a></p>
+                            <span>On Aug. 26, China announced a master plan to establish six new pilot free trade zones (FTZs), as part of the country's continued efforts of reform and opening up. The six new pilot FTZs are located in the provinces of Shandong, Jiangsu, Guangxi, Hebei, Yunnan, and Heilongjiang, bringing the total number of the country's pilot FTZs to 18.</span>
+                        </div>  
+                    </div>
+                </div>
+            </div>
+            <div></div>
+            <div style="background: url('http://images.china.cn/images1/en/2019pandian/img/bg_9.jpg') no-repeat;background-size: 100% 100%;">
+                <div class="month vertical">
+                    <span>China's moments in 2019</span><p>September</p>
+                </div>
+                <div class="box">
+                    <div class="img"><a href="http://english.scio.gov.cn/topnews/2019-09/25/content_75245083.htm" target="_blank"><img src="http://images.china.cn/images1/en/2019pandian/img/9_sm.jpg"></a></div>
+                    <div class="minbox">
+                        <img src="http://images.china.cn/images1/en/2019pandian/img/9_jiao.png">
+                        <div class="words">
+                            <p><a href="http://english.scio.gov.cn/topnews/2019-09/25/content_75245083.htm" target="_blank">Xi announces opening of Beijing Daxing International Airport</a></p>
+                            <span>Chinese President Xi Jinping announced the official opening of the Beijing Daxing International Airport on Sept. 25. With four runways, 268 airport stands, and a vast terminal area covering 700,000 square meters, the new airport is expected to handle 45 million passenger trips a year by 2022 and 72 million by 2025.</span>
+                        </div>  
+                    </div>
+                </div>
+            </div>
+            <div></div>
+            <div style="background: url('http://images.china.cn/images1/en/2019pandian/img/bg_10.jpg') no-repeat;background-size: 100% 100%;">
+                <div class="month vertical">
+                    <span>China's moments in 2019</span><p>October</p>
+                </div>
+                <div class="box">
+                    <div class="img"><a href="http://english.scio.gov.cn/topnews/2019-10/01/content_75566466.htm" target="_blank"><img src="http://images.china.cn/images1/en/2019pandian/img/10_sm.jpg"></a></div>
+                    <div class="minbox">
+                        <img src="http://images.china.cn/images1/en/2019pandian/img/10_jiao.png">
+                        <div class="words">
+                            <p><a href="http://english.scio.gov.cn/topnews/2019-10/01/content_75566466.htm" target="_blank">President Xi reviews armed forces on National Day</a></p>
+                            <span>A grand gathering to celebrate the 70th founding anniversary of the People's Republic of China was held on Oct. 1 at the Tian'anmen Square in Beijing. More than 200,000 people joined the celebrations featuring a military parade and mass pageantry. President Xi Jinping delivered a speech and reviewed the troops.</span>
+                        </div>  
+                    </div>
+                </div>
+            </div>
+            <div></div>
+            <div style="background: url('http://images.china.cn/images1/en/2019pandian/img/bg_11.jpg') no-repeat;background-size: 100% 100%;">
+                <div class="month vertical">
+                    <span>China's moments in 2019</span><p>November</p>
+                </div>
+                <div class="box">
+                    <div class="img"><a href="http://english.scio.gov.cn/Second_CIIE/node_8015011.htm" target="_blank"><img src="http://images.china.cn/images1/en/2019pandian/img/11_sm.jpg"></a></div>
+                    <div class="minbox">
+                        <img src="http://images.china.cn/images1/en/2019pandian/img/11_jiao.png">
+                        <div class="words">
+                            <p><a href="http://english.scio.gov.cn/Second_CIIE/node_8015011.htm" target="_blank">CIIE signals China's opening up to world</a></p>
+                            <span>The second China International Import Expo (CIIE) was held in Shanghai from Nov. 5 to 10. With the theme of "New Era, Shared Future," the expo signaled China's determination to pursue high-quality opening up and work with other countries to build an open world economy.</span>
+                        </div>  
+                    </div>
+                </div>
+            </div>
+            <div></div>
+            <div style="background: url('http://images.china.cn/images1/en/2019pandian/img/bg_12.jpg') no-repeat;background-size: 100% 100%;">
+                <div class="month transverse">
+                    <p>December</p><span>China's moments in 2019</span>
+                </div>
+                <div class="box1">
+                    <div class="img img1"><a href="http://english.scio.gov.cn/pressroom/2019-12/15/content_75514082.htm" target="_blank"><img src="http://images.china.cn/images1/en/2019pandian/img/12_sm1.jpg"></a></div>
+                    <div class="minbox1">
+                        <img src="http://images.china.cn/images1/en/2019pandian/img/12_jiao1.png">
+                        <div class="words">
+                            <p><a href="http://english.scio.gov.cn/pressroom/2019-12/15/content_75514082.htm" target="_blank">China, US agree on text of phase one trade deal</a></p>
+                            <span>China and the U.S. agreed on the text of a phase-one economic and trade agreement based on the principle of equality and mutual respect. The State Council Information Office of China held a press conference about China-U.S. trade talks on Dec. 13. </span>
+                        </div>  
+                    </div>
+                    <div class="minbox2">
+                        <img src="http://images.china.cn/images1/en/2019pandian/img/12_jiao2.png">
+                        <div class="words">
+                            <p><a href="http://english.scio.gov.cn/macao_20_years/node_8015585.html" target="_blank">Macao, 20 years on</a></p>
+                            <span>On Dec. 20, a gathering marking the 20th anniversary of Macao's return to the motherland was held in Macao. The fifth-term government of Macao Special Administrative Region was also inaugurated on that day.</span>
+                        </div>  
+                    </div>
+                    <div class="img img2"><a href="http://english.scio.gov.cn/macao_20_years/node_8015585.html" target="_blank"><img src="http://images.china.cn/images1/en/2019pandian/img/12_sm2.jpg"></a></div>
+                </div>
+            </div>
+            <div></div>
+            <div style="background: url('http://images.china.cn/images1/en/2019pandian/img/bg_end.jpg') no-repeat;background-size: 100% 100%;">
+                <div class="code"><img src="http://images.china.cn/images1/en/2019pandian/img/logo_code.png"></div>
+                <div class="turn" onclick="javascript:location.reload();"></div>
+            </div>
+        </div>
+        <div class="left"></div>
+        <!-- Next button -->
+        <div ignore="1" class="next-button"></div>
+        <!-- Previous button -->
+        <div ignore="1" class="previous-button"></div>   
+    </div>
+    <audio src="http://mp42.china.com.cn/video_tide/video/2020/1/3/2020131578029223274_369.mp3" id="audio" loop="true"></audio>
+    <img src="http://images.china.cn/images1/en/2019pandian/img/voice.png" onClick="play()" id="musicImg" style="width: 48px;height: 48px;position: absolute;top: 80px;right: 50px;z-index: 2000;cursor: pointer;"> 
+</body>
+<script type="text/javascript">
+    $(document).ready(function(){
+        if(/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
+                window.location.href= 'http://english.scio.gov.cn/m/China2019/node_8015880.html';
+            }
+    });
+    $(window).resize(function(){
+        window.location.reload();
+    });
+    var audio = document.getElementById('audio');
+    var video = document.getElementById('video');
+    //获取浏览器页面可见高度和宽度  
+    var _PageHeight = document.documentElement.clientHeight,
+        _PageWidth = document.documentElement.clientWidth;
+    //计算loading框距离顶部和左部的距离（loading框小部件的宽度为90px，高度为90px）  
+    var _LoadingTop = _PageHeight > 90 ? (_PageHeight - 90) / 2 : 0,
+        _LoadingLeft = _PageWidth > 90 ? (_PageWidth - 90) / 2 : 0;
+    //在页面未加载完毕之前显示的loading Html自定义内容  
+    var _LoadingHtml = '<div id="loadingDiv" style="position:absolute;left:0;width:100%;height:' + _PageHeight + 'px;top:0;background:#FFFFFF;opacity:1.0;filter:alpha(opacity=80);z-index:10000;"><div class="spinner" style="position: top: 60px; margin:' + _LoadingTop + 'px auto ;"><div class="spinner-container container1"><div class="circle1"></div><div class="circle2"></div><div class="circle3"></div><div class="circle4"></div></div><div class="spinner-container container2"><div class="circle1"></div><div class="circle2"></div><div class="circle3"></div><div class="circle4"></div></div><div class="spinner-container container3"><div class="circle1"></div><div class="circle2"></div><div class="circle3"></div><div class="circle4"></div></div></div></div>';
+    //呈现loading效果  
+    document.write(_LoadingHtml);
+
+    //监听加载状态改变  
+    document.onreadystatechange = completeLoading;
+
+    //加载状态为complete时移除loading效果  
+    function completeLoading() {
+        if (document.readyState == "complete") {
+            $("#loadingDiv").css("display","none");
+            audio.play();
+            video.play();
+        }
+    }
+    //监听播放时间
+    
+    //使用事件监听方式捕捉事件
+    video.addEventListener("timeupdate",function(){
+        var timeDisplay;
+        //用秒数来显示当前播放进度
+        timeDisplay = Math.floor(video.currentTime);
+        if(timeDisplay == 15){
+            $(".video").fadeOut(1000);
+            $(".flipbook").fadeIn(2000);
+        }
+    });
+
+    $(".close").click(function(){
+        $(".video").fadeOut(1000);
+        $(".flipbook").fadeIn(2000);
+    });
+
+    var w = $(window).width() * 2;
+    var h = $(window).height() - 54;
+	$("#flipbook").turn({
+		width: w, 
+        height: h, 
+        elevation: 10, 
+        duration:600,
+        gradients: true, 
+        autoCenter: true,
+        when:{
+　　　　　　turned: function(e, page) {
+                if (page == 1) $('.previous-button').hide();
+                else $('.previous-button').show();
+
+                if (page == 24) $('.next-button').hide();
+                else $('.next-button').show();
+　　　　　　}
+　　　　}
+    });
+    $("#flipbook").bind("start",function(event,pageobject,corner){
+        if(corner=="tr"){
+            event.preventDefault();　　　
+        }
+    })
+    $(function(){
+        var next_button = $(".next-button");              //初始化左右箭头
+        var previous_button = $(".previous-button");
+    });
+    
+	// Events for the next button
+
+	$('.next-button').bind($.mouseEvents.over, function() {
+        $(this).addClass('next-button-hover');
+    }).bind($.mouseEvents.out, function() {
+        $(this).removeClass('next-button-hover');
+    }).bind($.mouseEvents.down, function() {
+        $(this).addClass('next-button-down');
+    }).bind($.mouseEvents.up, function() {
+        $(this).removeClass('next-button-down');
+    }).click(function() {
+        $('#flipbook').turn('next');
+    });
+
+    // Events for the previous button	
+
+    $('.previous-button').bind($.mouseEvents.over, function() {	
+        $(this).addClass('previous-button-hover');
+    }).bind($.mouseEvents.out, function() {
+        $(this).removeClass('previous-button-hover');
+    }).bind($.mouseEvents.down, function() {
+        $(this).addClass('previous-button-down');
+    }).bind($.mouseEvents.up, function() {
+        $(this).removeClass('previous-button-down');
+    }).click(function() {
+        $('#flipbook').turn('previous'); 
+    });
+    function play() {
+        if (audio.paused) {
+            audio.play();
+            document.getElementById('musicImg').src="http://images.china.cn/images1/en/2019pandian/img/voice.png";
+        }else{
+            audio.pause();
+            document.getElementById('musicImg').src="http://images.china.cn/images1/en/2019pandian/img/Novoice.png";
+        }
+    }
+</script>
+</html>
