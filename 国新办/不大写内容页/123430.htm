@@ -165,10 +165,12 @@ a{color: #000;}
 </div>
 
 <div class="cp"><FOUNDER-XY type="article" data="{}"><div id="vf">
-      <div id="videoarea" style="width: 480px; height: 360px; margin-left:200px;" align="center"></div>
-     </div>
-     <br />
-     ${article.content}</FOUNDER-XY></div>
+  <div class="btnClose" onclick="closebtn()" style="font-size: 30px;font-weight: bold;color: #000000;font-family: 宋体,serif;width: 700px; margin-left:140px;text-align: right;display:none;cursor: pointer;" title="关闭窗口">×</div> 
+    <div id="videoarea" style="width: 800px; height: 450px; margin-left:40px;" align="center"></div>
+   </div>
+  
+   <br />
+   ${article.content}</FOUNDER-XY></div>
 
 <div class="box3"><FOUNDER-XY type="article" data="{}"><h2>MORE FROM <span>China SCIO</span></h2>
 <ul>
@@ -225,6 +227,34 @@ window.onload = menu;
 </script>
 <script type="text/javascript">
   if (!!window.ActiveXObject || "ActiveXObject" in window){}else{$("audio").addClass("ad");}
+  (function ($) {
+        var wTop = $('#vf').offset().top;
+        $(window).scroll(function () {
+            var t = $(document).scrollTop();
+            if (t >= wTop) {
+                if($("#videoarea").html()==""){
+                
+                }else{
+                    if($('.btnClose').hasClass("recovery")){
+                        $('#vf').css({ 'position': 'static','transform': 'scale(1,1)'});
+                        $('.btnClose').css({ 'display': 'none'});
+                    }else{
+                        $('#vf').css({ 'position': 'fixed', 'z-index': '99999','bottom': '60px','right': '-160px','transform': 'scale(.5,.5)' });
+                        $('.btnClose').css({ 'display': 'block'});
+                    }
+                }    
+            } else {
+                $('#vf').css({ 'position': 'static','transform': 'scale(1,1)'});
+                $('.btnClose').css({ 'display': 'none'});
+                $('.btnClose').removeClass("recovery");
+            }
+        });      
+    })(jQuery);
+    function closebtn(){
+        $('#vf').css({ 'position': 'static','transform': 'scale(1,1)'});
+        $('.btnClose').css({ 'display': 'none'});
+        $('.btnClose').addClass("recovery");
+    }
   var BTop = $('.topbtn').offset().top;
     var BHome = $('.homebtn').offset().top;
     $(window).scroll(function () {
