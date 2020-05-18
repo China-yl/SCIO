@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en" id="ht">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <meta http-equiv="content-language" content="en" />
@@ -15,7 +15,7 @@
 <meta http-equiv="Pragma" content="no-cache" />
 <link rel="stylesheet" href="http://images.china.cn/images1/en/gxb/css/swiper.min.css">
 <style type="text/css">
-/* html {-webkit-filter: grayscale(100%);-moz-filter: grayscale(100%);-ms-filter: grayscale(100%);-o-filter: grayscale(100%);filter:progid:DXImageTransform.Microsoft.BasicImage(grayscale=1);_filter:none;}  */
+.html {-webkit-filter: grayscale(100%);-moz-filter: grayscale(100%);-ms-filter: grayscale(100%);-o-filter: grayscale(100%);filter:progid:DXImageTransform.Microsoft.BasicImage(grayscale=1);_filter:none;} 
 * { margin: 0px; padding: 0px; box-sizing: border-box; }
 body {font-family: Arial; font-size:10px; color:#000; line-height:10px;-webkit-touch-callout: none; -webkit-text-size-adjust: none; min-height:550px;_height:550px;width:100%;background-color: #e7e7e7;}
 @media screen and (min-width:550px) and (max-width:1024px) {
@@ -418,8 +418,8 @@ function completeLoading() {
 
 function checkEndTime(){
     var nowDate=new Date();
-    var  assign = "2020-01-24 00:00:00";
-    var  assign1 = "2020-01-31 00:00:00";
+    var  assign = "2020-04-04 00:00:00";
+    var  assign1 = "2020-04-05 00:00:00";
     var assignTime=new Date(assign.replace("-", "/").replace("-", "/"));
     var assignTime1=new Date(assign1.replace("-", "/").replace("-", "/"));
 
@@ -430,12 +430,16 @@ function checkEndTime(){
         return false;
     }
 }
+// function newsben(){
+//     $(".new2020").slideDown(1500);
+//     function hidenews(){
+//         $(".new2020").slideUp(1500);
+//     }
+//     setTimeout(hidenews,5000);
+// }
 function newsben(){
-    $(".new2020").slideDown(1500);
-    function hidenews(){
-        $(".new2020").slideUp(1500);
-    }
-    setTimeout(hidenews,5000);
+    $("#ht").addClass("html");
+    $(".top_img").hide()
 }
 </script>
 <!-- <script src="https://www.scio.gov.cn/PageShare/Scripts/sciowxshareplugin.js" type="text/javascript"></script>
