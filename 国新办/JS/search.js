@@ -145,7 +145,8 @@
             "Aid": 'w27',
             "Two Sessions 2018": 'w28',
             "Press Minutes": 'w29',
-            "2019 NPC & CPPCC": 'w30'
+            "2019 NPC & CPPCC": 'w30',
+            "2020 NPC & CPPCC": 'w31'
         };
         $('.mmmm').each(function () {
             var curTitle = $.trim($(this).text());
