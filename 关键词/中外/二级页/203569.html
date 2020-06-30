@@ -1,0 +1,147 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta http-equiv="content-language" content="en" />
+        <title><FOUNDER-XY type="columnlist" data="{'columnid':[],'columntype':'self'}"><#list columns as column>${column.name}</#list></FOUNDER-XY></title>
+        <!-- <meta http-equiv="X-UA-Compatible" content="IE=8"> -->
+        <base target="_self" />
+        <meta name="filetype" content="1" />
+        <meta name="publishedtype" content="1" />
+        <meta name="pagetype" content="2" /><FOUNDER-XY type="columnlist" data="{'columnid':[],'columntype':'self'}"><#list columns as column><meta name="catalogs" content="${column.id}"></meta></#list></FOUNDER-XY>
+        <style type="text/css">
+            /* 初始化 */
+            * { margin: 0px; padding: 0px;cursor:default;}
+            body { width: 100%;min-width: 1200px;background-color: #fcfcfe;}
+            a { text-decoration: none;cursor:pointer;}
+            a:hover {  text-decoration: none; }
+            ul, li { list-style-type: none; }
+            img { border:0;transition: all 0.6s;}
+            /* top */
+            .top{width: 100%;height: 100px;border-bottom:1px solid #d3d3d3;clear: both;background-color: #fff;}
+            .logo{width: 371px;height: 54px;display: inline-block;margin-top: 23px;margin-left: 30px;}
+            .logo img{width: 100%;}
+            .list{float: right;margin-right: 30px;}
+            .list ul li{height: 100px; float: left;padding: 0 66px 0 20px;cursor:pointer;}
+            .list ul li:hover,.show{background-color: #b81f1f;} 
+            .list ul li a{width: 100%;height: 100px;display: table-cell;vertical-align: middle;cursor:pointer;}
+            .list ul li a p{font-family:  "MicrosoftYaHei"; font-size:20px;line-height: 25px;margin-bottom: 8px;cursor:pointer;}
+            .list ul li a span{font-family: Arial, Helvetica, sans-serif; font-size:12px;line-height: 15px;cursor:pointer;}
+            /* content */
+            .wrap{width: 1200px;height: 1%;overflow: hidden;zoom: 1;margin: 0 auto;padding: 70px 0 0 0;}
+            .wrapl{width: 885px;display: inline-block;}
+            .usual{width: 885px;}
+            .usual li{overflow: hidden;width: 883px;height:198px;margin-bottom: 10px;border: 1px solid #d3d3d3;background-color: #fff; clear: both;}
+            .usual li:hover{border: 1px solid #b81f1f;}
+            .img{padding: 10px 0 10px 10px;display: inline-block;}
+            .img a{display: inline-block;}
+            .img img{width: 270px;height: 180px;cursor:pointer;}
+            .title{float: right;}
+            .title a{height: 198px;display: table-cell;vertical-align: middle;}
+            .title p{font-family:  "MicrosoftYaHei"; font-size:20px;line-height: 25px;margin-bottom: 8px;color: #333333;font-weight:bold;cursor:pointer;}
+            .title span{font-family: Arial, Helvetica, sans-serif; font-size:18px;line-height: 22.5px;color: #666666;cursor:pointer;}
+            .wrapr{width: 285px;float: right;}
+            .latest{margin-bottom: 15px;}
+            .latest p{font-family:  "MicrosoftYaHei"; font-size:20px;line-height: 25px;margin-bottom: 8px;color: #b81f1f;}
+            .latest span{font-family: Arial, Helvetica, sans-serif; font-size:18px;line-height: 22.5px;color: #666666;}
+            .wrapr ul{display: block;border-top: 1px solid #333;border-bottom: 1px solid #333;padding: 10px 0;}
+            .wrapr ul li{padding: 10px 0;}
+            .wrapr ul li p a{font-family:  "MicrosoftYaHei"; font-size:16px;line-height: 20px;margin-bottom: 8px;color: #666;}
+            .wrapr ul li span a{font-family: Arial, Helvetica, sans-serif; font-size:13px;line-height: 16.25px;color: #666666;}
+            .home a{display: block;margin-top: 20px;}
+            .home img{width: 33px;height: 30px;margin-right: 15px;float: left;cursor:pointer;}
+            .home p{font-family:  "MicrosoftYaHei"; font-size:15px;line-height: 18.75px;color: #666;cursor:pointer;}
+            .home span{font-family: Arial, Helvetica, sans-serif; font-size:13px;line-height: 16.25px;color: #666666;cursor:pointer;}
+            #autopage { clear: both; }
+            #autopage a { color: #fff; background: url(http://images.china.cn/images1/ch/2017gxb/images/autopage_2.png) left top repeat-x; padding:0 11px 11px 11px; font-size: 26px;line-height: 35px;}
+            #autopage span { color: #FFF; background: url(http://images.china.cn/images1/ch/2017gxb/images/autopage_1.png) left top repeat-x; padding:0 11px 11px 11px; font-size: 26px;line-height: 35px;}
+            /* footer */  
+            .footer{background-color: #e6ebea;font-size: 16px;line-height: 60px;color: #333333;text-align: center;}
+
+        </style>
+        <script type="text/javascript" src="http://images.china.cn/images1/en/gxb/ie7.js"></script>
+        <script type="text/javascript" src="http://images.china.cn/images1/resource/scripts/jquery/jquery-1.12.4.min.js"></script>
+    </head>
+    <body>
+        <div class="top">
+            <div class="logo"><a href="http://tppckte.org.cn/index.htm"><img src="http://images.china.cn/images1/en/gxb/platform1/logo.png"></a></div>
+            <div class="list">
+                <ul>
+                    <li><FOUNDER-XY type="columnlist" data="{'columnid':[8018943],'columntype':'self'}"><#list columns as column><a href="${column.url!}"><p>业界资讯</p><span>News</span></a></#list></FOUNDER-XY></li>
+                    <li><FOUNDER-XY type="columnlist" data="{'columnid':[8018948],'columntype':'self'}"><#list columns as column><a href="${column.url!}"><p>多语种党政文献简写本及专家解读文库</p><span>Multilingual Database of Essentials and Expert Commentaries<br>on CPC and Government Documents</span></a></#list></FOUNDER-XY></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="wrap">
+            <div class="wrapl">            
+                <div class="usual">
+                <FOUNDER-XY type="articlelistpage" data="{'columnid':[], 'articletype': 'all', 'article_attr': 'all', 'columntype':'self', 'showall':'true', 'start': 0, 'count': 30}"><#list articles as article><#if article_index == 0>
+                    <ul></#if>
+                        <li>
+                            <div class="img"><a   href="${article.url}"  target="_self"><img src="${article.picBig}"    border="0"> </a></div>
+                            <div class="title">
+                                <a   href="${article.url}"  target="_self"><p>${article.title}</p><span>${article.subTitle}</span></a>
+                            </div>
+                        </li><#if article_has_next=false>
+                    </ul>
+                </#if></#list></FOUNDER-XY>
+                </div>
+            </div>
+            
+            <div class="wrapr">
+                <div class="latest">
+                    <p>最新权威发布</p>
+                    <span>Latest Release</span>
+                </div>
+                <ul>
+                    <FOUNDER-XY type="articlelist" data="{'columnid':[8018942],'articletype':'all','article_attr':'all','start':'0','count':'4'}"><#list articles as article>
+                    <li>
+                        <p><a   href="${article.url}"  target="_self">${article.title}</a></p>
+                        <span><a   href="${article.url}"  target="_self">${article.subTitle}</a></span>
+                    </li>
+                    </#list></FOUNDER-XY>
+                </ul>
+                <div class="home">
+                    <a href="http://tppckte.org.cn/index.htm">
+                        <img src="http://images.china.cn/images1/en/gxb/platform1/home.png">
+                        <p>首页</p>
+                        <span>Home</span>   
+                    </a>
+                </div>
+            </div>
+        </div>
+   
+        <div class="footer">版权所有：当代中国与世界研究院&nbsp;&nbsp;&nbsp;地址：北京市西城区百万庄大街24号&nbsp;&nbsp;&nbsp;邮编：100037&nbsp;&nbsp;&nbsp;电邮：cicszbs@yahoo.com.cn&nbsp;&nbsp;&nbsp;电话：86-10-68995925&nbsp;&nbsp;&nbsp;传真：86-10-68329770</div>
+
+
+        <script type="text/javascript">
+            $('.list li').each(function() {
+                if($(this).find('p').text() == $(document).attr("title")){
+                    $(this).addClass("show");
+                    $(this).find('p').css("color","#fff");
+                    $(this).find('span').css("color","#fff");
+                }else{
+                    $(this).removeClass("show");
+                    $(this).find('p').css("color","#333333");
+                    $(this).find('span').css("color","#666666");
+                    $(this).hover(function () {
+                        $(this).find('p').css("color","#fff");
+                        $(this).find('span').css("color","#fff");
+                    },function () {
+                        $(this).find('p').css("color","#333333");
+                        $(this).find('span').css("color","#666666");
+                    });
+                }
+            });
+            $('.usual li').each(function() {
+                if($(this).find('img').attr('src') == ""){
+                    $(this).find('.img').css("display","none");
+                    $(this).find('.title').css({"float":"none","padding":"0 60px"});
+                }else{
+                    $(this).find('.title').css({"width":"543px","padding":"0 30px"});
+                }    
+            });
+        </script>
+    </body>
+</html>
