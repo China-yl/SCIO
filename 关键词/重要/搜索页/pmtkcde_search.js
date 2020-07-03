@@ -1,15 +1,10 @@
 (function ($) {
     var startpage = getQueryString('page') ? parseInt(getQueryString('page')) : 1;
     var searchText = getQueryString('searchText') ? getQueryString('searchText') : '';
-    var sub = getQueryString('sub');
+    var  searchText1 = escape(searchText);
     var pageSize = 40;
     var totalPage = 0;
-    var getUrl = '';
-    if (sub) {
-        getUrl = 'http://search.china.org.cn/hlftiweb/en/jsonfn.jsp?strUrl=pmtkcde.org.cn&channel=1&page=' + startpage + '&nItem=' + pageSize + '&sub=' + sub;
-    } else {
-        getUrl = 'http://search.china.org.cn/hlftiweb/en/jsonfn.jsp?strUrl=pmtkcde.org.cn&channel=1&page=' + startpage + '&nItem=' + pageSize + '&searchText=' + searchText;
-    }
+    var getUrl = 'http://search.china.org.cn/hlftiweb/en/jsonfn.jsp?strUrl=pmtkcde.org.cn&channel=1&page=' + startpage + '&nItem=' + pageSize + '&searchText=' + searchText1;
 
     $.getScript(getUrl);
     window.searchRes = function (data) {
@@ -20,22 +15,6 @@
         $('#yText').html(searchText)
         $('#yInfo').html('Results ' + (startpage * pageSize - pageSize + 1) + ' - ' + startpage * pageSize + ' of ' + len);
         for (var i = 0; i < data.list.length; i++) {
-            var re=new RegExp(" amp ","g");
-            var re1=new RegExp("BampR","g");
-            var newstr="";
-            var newsub="";
-            if(data.list[i].abstract.match(re)){
-               newstr=data.list[i].abstract.replace(re," & "); 
-            }else if(data.list[i].abstract.match(re1)){
-                newstr=data.list[i].abstract.replace(re1,"B&R");
-            }else{
-                newstr=data.list[i].abstract;
-            }
-            if(data.list[i].sub.match(re)){
-               newsub=data.list[i].sub.replace(re," & "); 
-            }else{
-                newsub=data.list[i].sub;
-            }
             temp.push('<li><p>' + data.list[i].title + '</p><span>'+data.list[i].sub+'</span></li>');
         }
         $('#yList').html(temp.join(''));
@@ -43,13 +22,9 @@
     };
 
     function pageObj() {
-        var i, key = '';
+        var i = 0; 
+        var key = 'searchText';
         var pageHref = [];
-        if (sub) {
-            key = 'sub';
-        } else {
-            key = 'searchText';
-        }
         var txt = getQueryString(key) ? getQueryString(key) : '';
 
         var pagination_buf = [];
@@ -111,8 +86,7 @@
     function getQueryString(name) {
         var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
         var r = window.location.search.substr(1).match(reg);
-        if (r != null) return window.decodeURIComponent(r[2]); return null;
+        if (r != null) return window.decodeURIComponent(r[2]); return false;
     }
 })(jQuery);
-
 
