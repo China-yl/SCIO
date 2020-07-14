@@ -34,6 +34,6 @@
         };
         $('.mmmm').each(function () {
                 var curTitle = $.trim($(this).text());
-                $(this).addClass(arr[curTitle]).html('<a href="http://english.scio.gov.cn/m/search.htm?strUrl=englishscio&sub='+ curTitle +'" target="_top">'+ curTitle +'</a>')
+                $(this).addClass(arr[curTitle]).html('<a href="http://english.scio.gov.cn/search.htm?searchText='+ curTitle +'&strUrl=englishscio" target="_top">'+ curTitle +'</a>');
         });
 })(jQuery);
