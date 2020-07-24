@@ -69,12 +69,12 @@
             .titleb:hover{bottom: 0px;}
             .titleb p{margin-bottom: 16px;}
             .titleb p a{font-family:  "Source Han Sans"; font-size:20px;line-height: 25px;font-weight: bold; color:#fff;}
-            .titleb span a{font-family: Arial, Helvetica, sans-serif; font-size:14px;line-height: 17.5px; color:rgba(255,255,255,0.7);}
+            .titleb span a{font-family: Arial, Helvetica, sans-serif; font-size:16px;line-height: 22px; color:rgba(255,255,255,0.7);}
             .divr{width: 570px;height: 400px;border-top: 1px solid #cecece;border-bottom: 1px solid #cecece;float: right;}
             .table{width: 570px;height: 199px;display: table-cell;vertical-align: middle;background-color: rgba(255,255,255,0.8);}
             .table p a{font-family:  "Source Han Sans"; font-size:20px;line-height: 25px;font-weight: bold; color:#000;}
             .line{width: 58px;height: 3px;background-color: #435cc3;margin: 20px 0;}
-            .table span a{font-family: Arial, Helvetica, sans-serif; font-size:14px;line-height: 17.5px; color:#626470;}
+            .table span a{font-family: Arial, Helvetica, sans-serif; font-size:16px;line-height: 22px; color:#626470;}
             .table:hover p a,.table:hover span a{color: #435cc3;}
             /* box3 */  
             .aboutl,.aboutr{width: 380px;padding: 20px 0;}
@@ -328,7 +328,7 @@
                     <li><div class="sign"></div><div class="tt"><p>经济</p><span>ECONOMY</span></div></li>
                     <li><div class="sign"></div><div class="tt"><p>法治</p><span>THE RULE OF LAW</span></div></li>
                     <li><div class="sign"></div><div class="tt"><p>文化</p><span>CULTURE</span></div></li>
-                    <li><div class="sign"></div><div class="tt"><p>科技</p><span>SCIENCE & TECHNOLOGY</span></div></li>
+                    <li><div class="sign"></div><div class="tt"><p>医疗</p><span>MEDICAL CARE</span></div></li>
                     <li><div class="sign"></div><div class="tt"><p>外交</p><span>DIPLOMACY</span></div></li>
                     <li><div class="sign"></div><div class="tt"><p>民生</p><span>PEOPLE'S LIVELIHOOD</span></div></li>
                     <li><div class="sign"></div><div class="tt"><p>生态</p><span>ECOLOGY</span></div></li>
@@ -670,7 +670,7 @@
                         $(".Choices_banner ul").css({left:-(size - 1)*imgWidth});
                         i=size-2;
                     }
-                    $(".Choices_banner ul").animate({left:-i*imgWidth},1500);
+                    $(".Choices_banner ul").animate({left:-i*imgWidth},1000);
                     $(".Choicestel div").eq(i).addClass("onclick").siblings().removeClass("onclick");
                 };
 
@@ -680,7 +680,7 @@
                         $(".Choices_banner ul").css({left:0});
                         i=1;
                     }
-                    $(".Choices_banner ul").stop().animate({left: -i * imgWidth}, 1500);
+                    $(".Choices_banner ul").stop().animate({left: -i * imgWidth}, 1000);
                     if(i == size-1){
                         $(".Choicestel div").eq(0).addClass("onclick").siblings().removeClass("onclick");
 
