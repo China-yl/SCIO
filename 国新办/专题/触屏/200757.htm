@@ -110,7 +110,6 @@ dd a {font-size: 1.6em;line-height: 1.25em;}
 .box26 dl dd p{font-size: 1.2em;line-height: 1.25em;color:#6c6c6c;padding-top: 6px;}
 
 .span1 a{color: #000;}
-.span1::first-letter{color:#d52a38;}
 
 .box27{padding: 0;}
 .box28 img{width: 49.4%;border: 1px solid #000;}
@@ -197,13 +196,13 @@ dd a {font-size: 1.6em;line-height: 1.25em;}
 
 <div class="box24">
 <FOUNDER-XY type="articlelist" data="{'columnid':[7248448], 'articletype': 'all', 'article_attr': 'COMMON', 'columntype':'self', 'showall':'true', 'start': 0, 'count': 1}"><#list articles as article><div class="box24l">
-<h2><span style="color:#d52a38;">A</span>BOUT THE BOOKS</h2>
+<h2>ABOUT THE BOOKS</h2>
 <ul><li style="color:#d52a38;border-right: 1px solid #d1d1d1;">Ⅰ</li><li>Ⅱ</li></ul>
 <div class="books"><img src="${article.picBig}"   border=0> </div>
 <p><a   href="${article.urlPad}" >${article.summary}&nbsp;</a></p>
 </div></#list></FOUNDER-XY>
 <FOUNDER-XY type="articlelist" data="{'columnid':[7248448], 'articletype': 'all', 'article_attr': 'COMMON', 'columntype':'self', 'showall':'true', 'start': 1, 'count': 1}"><#list articles as article><div class="box24r">
-<h2><span style="color:#d52a38;">A</span>BOUT THE BOOKS</h2>
+<h2>ABOUT THE BOOKS</h2>
 <ul><li style="border-right: 1px solid #d1d1d1;">Ⅰ</li><li style="color:#d52a38;">Ⅱ</li></ul>
 <div class="books"><img src="${article.picBig}"   border=0> </div>
 <p><a   href="${article.urlPad}" >${article.summary}</a></p>
@@ -212,8 +211,8 @@ dd a {font-size: 1.6em;line-height: 1.25em;}
 
 <h1><span class="fl"><FOUNDER-XY type="columnlist" data="{'columnid':[7253445],'columntype':'self'}"><#list columns as column><a href="${column.urlPad!}" class=""  target="_self" style="font-weight: bold;">XI IN THE NEWS</a></#list></FOUNDER-XY></span><span class="fr"><FOUNDER-XY type="columnlist" data="{'columnid':[7253445],'columntype':'self'}"><#list columns as column><a href="${column.urlPad!}" class=""  target="_self"><img src="http://images.china.cn/images1/en/xigovernance/more2.png" /></a></#list></FOUNDER-XY></span></h1>
 <div class="box25">
-<FOUNDER-XY type="articlelist" data="{'columnid':[7253630], 'articletype': 'all', 'article_attr': 'HEADLINE', 'columntype':'self', 'showall':'true', 'start': 0, 'count': 1}"><#list articles as article><dl><dt><a   href="${article.urlPad}" ><img src="${article.picBig}"   border=0> </a></dt><dd><a   href="${article.urlPad}" >${article.title}</a></dd></dl></#list></FOUNDER-XY>
-<FOUNDER-XY type="articlelist" data="{'columnid':[7253630], 'articletype': 'all', 'article_attr': 'COMMON', 'columntype':'self', 'showall':'true', 'start': 0, 'count': 5}"><#list articles as article><#if article_index == 0><ul>   </#if><li><a   href="${article.urlPad}" >${article.title}</a></li><#if article_has_next=false></ul></#if></#list></FOUNDER-XY>
+<FOUNDER-XY type="articlelist" data="{'columnid':[7253630], 'articletype': 'all', 'article_attr': 'all', 'columntype':'self', 'showall':'true', 'start': 0, 'count': 1}"><#list articles as article><dl><dt><a   href="${article.urlPad}" ><img src="${article.picBig}"   border=0> </a></dt><dd><a   href="${article.urlPad}" >${article.title}</a></dd></dl></#list></FOUNDER-XY>
+<FOUNDER-XY type="articlelist" data="{'columnid':[7253630], 'articletype': 'all', 'article_attr': 'all', 'columntype':'self', 'showall':'true', 'start': 1, 'count': 5}"><#list articles as article><#if article_index == 0><ul>   </#if><li><a   href="${article.urlPad}" >${article.title}</a></li><#if article_has_next=false></ul></#if></#list></FOUNDER-XY>
 </div>
 
 <h1><span class="fl"><FOUNDER-XY type="columnlist" data="{'columnid':[7253447],'columntype':'self'}"><#list columns as column><a href="${column.urlPad!}" class=""  target="_self" style="font-weight: bold;">SPEECHES</a></#list></FOUNDER-XY></span><span class="fr"><FOUNDER-XY type="columnlist" data="{'columnid':[7253447],'columntype':'self'}"><#list columns as column><a href="${column.urlPad!}" class=""  target="_self"><img src="http://images.china.cn/images1/en/xigovernance/more2.png" /></a></#list></FOUNDER-XY></span></h1>

@@ -33,7 +33,6 @@ background-color:#f7202f;  background: -webkit-linear-gradient(left,#f7202f ,#ff
 }
 .top { margin-bottom:80px;}
 .wrap {width: 100%;margin:0 auto;}
-.wrap span {color: #f7202f;}
 .wrap h1{ font-size: 27px;}
 .wrap h3{font-weight: bold;}
 .wrap p{font-size: 18px; color: #111101; line-height: 30px;}
@@ -235,16 +234,16 @@ background-color:#f7202f;  background: -webkit-linear-gradient(left,#f7202f ,#ff
 <div style="height:845px;background:url(http://images.china.cn/images1/en/gxb/20171116/highlights-background.jpg)no-repeat;">
 <div class="box1">
 <div style="width: 1180px;height: 190px;background:url(http://images.china.cn/images1/en/gxb/20171116/tittle-hightlights.png) 0px 50px no-repeat;">
-<h1 style="padding-top: 88px;padding-left: 505px;"><FOUNDER-XY type="columnlist" data="{'columnid':[7253442],'columntype':'self'}"><#list columns as column><a href="${column.url!}" class=""  target="_self"><span>H</span>IGHLIGHTS</a></#list></FOUNDER-XY>
+<h1 style="padding-top: 88px;padding-left: 505px;"><FOUNDER-XY type="columnlist" data="{'columnid':[7253442],'columntype':'self'}"><#list columns as column><a href="${column.url!}" class=""  target="_self">HIGHLIGHTS</a></#list></FOUNDER-XY>
 </h1>
 </div>
 
-<div class="film_focus"><FOUNDER-XY type="articlelist" data="{'columnid':[7253450], 'articletype': 'all', 'article_attr': 'HEADLINE', 'columntype':'self', 'showall':'true', 'start': 0, 'count': 4}"><#list articles as article><#if article_index == 0><div class="film_focus_imgs_wrap">
+<div class="film_focus"><FOUNDER-XY type="articlelist" data="{'columnid':[7253450], 'articletype': 'all', 'article_attr': 'all', 'columntype':'self', 'showall':'true', 'start': 0, 'count': 4}"><#list articles as article><#if article_index == 0><div class="film_focus_imgs_wrap">
             <ul class="film_focus_imgs">
                 </#if><li><a   href="${article.url}" ><img src="${article.picBig}"   border=0> </a></li>
 <#if article_has_next=false>         </ul>
         </div></#if></#list></FOUNDER-XY>
-<div class="film_focus_desc"><FOUNDER-XY type="articlelist" data="{'columnid':[7253450], 'articletype': 'all', 'article_attr': 'HEADLINE', 'columntype':'self', 'showall':'true', 'start': 0, 'count': 4}"><#list articles as article><#if article_index == 0><ul class="film_focus_nav">
+<div class="film_focus_desc"><FOUNDER-XY type="articlelist" data="{'columnid':[7253450], 'articletype': 'all', 'article_attr': 'all', 'columntype':'self', 'showall':'true', 'start': 0, 'count': 4}"><#list articles as article><#if article_index == 0><ul class="film_focus_nav">
                 </#if><li><p><a   href="${article.url}" >${article.title}</a></p></li><#if article_has_next=false>
             </ul></#if></#list></FOUNDER-XY></div>
 </div>
@@ -256,7 +255,7 @@ background-color:#f7202f;  background: -webkit-linear-gradient(left,#f7202f ,#ff
 <div style="margin-top:80px;background:url(http://images.china.cn/images1/en/gxb/20171116/bg-line.png) 0px 48px no-repeat;height:835px;">
 <div class="box2">
 <div style="width: 1180px;height: 190px;background:url(http://images.china.cn/images1/en/gxb/20171116/tittle-comments.png) 0 45px no-repeat;">
-<h1 style="padding-top: 88px;padding-left: 509px;"><FOUNDER-XY type="columnlist" data="{'columnid':[7253444],'columntype':'self'}"><#list columns as column><a href="${column.url!}" class=""  target="_self"><span>C</span>OMMENTS</a></#list></FOUNDER-XY>
+<h1 style="padding-top: 88px;padding-left: 509px;"><FOUNDER-XY type="columnlist" data="{'columnid':[7253444],'columntype':'self'}"><#list columns as column><a href="${column.url!}" class=""  target="_self">COMMENTS</a></#list></FOUNDER-XY>
 </h1>
 </div>
 
@@ -272,7 +271,7 @@ background-color:#f7202f;  background: -webkit-linear-gradient(left,#f7202f ,#ff
 
 <div class="box2b"><FOUNDER-XY type="articlelist" data="{'columnid':[7248448], 'articletype': 'all', 'article_attr': 'COMMON', 'columntype':'self', 'showall':'true', 'start': 0, 'count': 1}"><#list articles as article><div class="box2bl">
             <div class="books"><img src="${article.picBig}"   border=0> </div>
-            <h2><span>A</span>BOUT THE BOOKS</h2>
+            <h2>ABOUT THE BOOKS</h2>
             <div style="background-color:#f7202f;width:54px;height:4px;margin-left:303px;">&nbsp;</div>
             <p><a   href="${article.url}" >${article.summary}&nbsp;</a></p>
             <ul><li><img src="http://images.china.cn/images1/en/gxb/20171116/page-on.png"></li>
@@ -280,7 +279,7 @@ background-color:#f7202f;  background: -webkit-linear-gradient(left,#f7202f ,#ff
             <div class="rbtn"><img src="http://images.china.cn/images1/en/gxb/20171116/left-arrow.png"></div>
             </div></#list></FOUNDER-XY><FOUNDER-XY type="articlelist" data="{'columnid':[7248448], 'articletype': 'all', 'article_attr': 'COMMON', 'columntype':'self', 'showall':'true', 'start': 1, 'count': 1}"><#list articles as article><div class="box2br">
             <div class="books"><img src="${article.picBig}"   border=0> </div>
-            <h2><span>A</span>BOUT THE BOOKS</h2>
+            <h2>ABOUT THE BOOKS</h2>
             <div style="background-color:#f7202f;width:54px;height:4px;margin-left:303px;">&nbsp;</div>
             <p><a   href="${article.url}" >${article.summary}</a></p>
             <ul><li><img src="http://images.china.cn/images1/en/gxb/20171116/page-off.png"></li>
@@ -294,29 +293,34 @@ background-color:#f7202f;  background: -webkit-linear-gradient(left,#f7202f ,#ff
 <div style="margin-top:139px;background:url(http://images.china.cn/images1/en/gxb/20171116/background-xiinthenews.png) no-repeat;height:880px;">
 <div class="box3">
 <div style="width: 1180px;height: 108px;background:url(http://images.china.cn/images1/en/gxb/20171116/tittle-xiinthenews.png) no-repeat;position: relative;top: -85px;">
-<h1 style="padding-top: 39px;padding-left: 495px;"><FOUNDER-XY type="columnlist" data="{'columnid':[7253445],'columntype':'self'}"><#list columns as column><a href="${column.url!}" class=""  target="_self"><span>X</span>I IN THE NEWS</a></#list></FOUNDER-XY></h1>
+<h1 style="padding-top: 39px;padding-left: 495px;"><FOUNDER-XY type="columnlist" data="{'columnid':[7253445],'columntype':'self'}"><#list columns as column><a href="${column.url!}" class=""  target="_self">XI IN THE NEWS</a></#list></FOUNDER-XY></h1>
 </div>
 
-<div class="box3l"><FOUNDER-XY type="articlelist" data="{'columnid':[7253630], 'articletype': 'all', 'article_attr': 'HEADLINE', 'columntype':'self', 'showall':'true', 'start': 0, 'count': 1}"><#list articles as article><dl style="margin-bottom:20px;">
+<div class="box3l"><FOUNDER-XY type="articlelist" data="{'columnid':[7253630], 'articletype': 'all', 'article_attr': 'all', 'columntype':'self', 'showall':'true', 'start': 0, 'count': 1}"><#list articles as article><dl style="margin-bottom:20px;">
             <dt><a   href="${article.url}" ><img src="${article.picBig}"   border=0> </a></dt>
             <dd><h3><a   href="${article.url}" >${article.title}</a></h3></dd>
-            </dl></#list></FOUNDER-XY><FOUNDER-XY type="articlelist" data="{'columnid':[7253630], 'articletype': 'all', 'article_attr': 'COMMON', 'columntype':'self', 'showall':'true', 'start': 0, 'count': 2}"><#list articles as article><#if article_index == 0><ul></#if><li><h3><a   href="${article.url}" >${article.title}</a></h3>
-            <p id="three">${article.summary}</p></li><#if article_has_next=false>
+            </dl></#list></FOUNDER-XY>
+            <ul>
+                <FOUNDER-XY type="articlelist" data="{'columnid':[7253630], 'articletype': 'all', 'article_attr': 'all', 'columntype':'self', 'showall':'true', 'start': 2, 'count': 1}"><#list articles as article><li><h3><a   href="${article.url}" >${article.title}</a></h3><p id="three">${article.summary}</p></li></#list></FOUNDER-XY>
+                <FOUNDER-XY type="articlelist" data="{'columnid':[7253630], 'articletype': 'all', 'article_attr': 'all', 'columntype':'self', 'showall':'true', 'start': 4, 'count': 1}"><#list articles as article><li><h3><a   href="${article.url}" >${article.title}</a></h3><p id="three">${article.summary}</p></li></#list></FOUNDER-XY>
             </ul>
-</#if></#list></FOUNDER-XY></div>
+</div>
 
-<div class="box3r"><FOUNDER-XY type="articlelist" data="{'columnid':[7253630], 'articletype': 'all', 'article_attr': 'HEADLINE', 'columntype':'self', 'showall':'true', 'start': 1, 'count': 1}"><#list articles as article><dl style="margin-bottom:20px;">
+<div class="box3r"><FOUNDER-XY type="articlelist" data="{'columnid':[7253630], 'articletype': 'all', 'article_attr': 'all', 'columntype':'self', 'showall':'true', 'start': 1, 'count': 1}"><#list articles as article><dl style="margin-bottom:20px;">
             <dt><a   href="${article.url}" ><img src="${article.picBig}"   border=0> </a></dt>
             <dd><h3><a   href="${article.url}" >${article.title}</a></h3></dd>
-            </dl></#list></FOUNDER-XY><FOUNDER-XY type="articlelist" data="{'columnid':[7253630], 'articletype': 'all', 'article_attr': 'COMMON', 'columntype':'self', 'showall':'true', 'start': 2, 'count': 2}"><#list articles as article><#if article_index == 0><ul>  </#if><li><h3><a   href="${article.url}" >${article.title}</a></h3><p id="three">${article.summary}</p>
-</li><#if article_has_next=false>
-            </ul></#if></#list></FOUNDER-XY></div>
+            </dl></#list></FOUNDER-XY>
+            <ul>
+                <FOUNDER-XY type="articlelist" data="{'columnid':[7253630], 'articletype': 'all', 'article_attr': 'all', 'columntype':'self', 'showall':'true', 'start': 3, 'count': 1}"><#list articles as article><li><h3><a   href="${article.url}" >${article.title}</a></h3><p id="three">${article.summary}</p></li></#list></FOUNDER-XY>
+                <FOUNDER-XY type="articlelist" data="{'columnid':[7253630], 'articletype': 'all', 'article_attr': 'all', 'columntype':'self', 'showall':'true', 'start': 5, 'count': 1}"><#list articles as article><li><h3><a   href="${article.url}" >${article.title}</a></h3><p id="three">${article.summary}</p></li></#list></FOUNDER-XY>
+            </ul>
+        </div>
 </div>
 </div>
 
 <div class="box4">
 <div style="width: 1180px;height: 160px;background:url(http://images.china.cn/images1/en/gxb/20171116/tittle-SPEECHES.png) no-repeat;">
-<h1 style="padding-top: 43px;padding-left: 516px;"><FOUNDER-XY type="columnlist" data="{'columnid':[7253447],'columntype':'self'}"><#list columns as column><a href="${column.url!}" class=""  target="_self"><span>S</span>PEECHES</a></#list></FOUNDER-XY></h1>
+<h1 style="padding-top: 43px;padding-left: 516px;"><FOUNDER-XY type="columnlist" data="{'columnid':[7253447],'columntype':'self'}"><#list columns as column><a href="${column.url!}" class=""  target="_self">SPEECHES</a></#list></FOUNDER-XY></h1>
 </div>
 
 <FOUNDER-XY type="articlelist" data="{'columnid':[7253447], 'articletype': 'all', 'article_attr': 'COMMON', 'columntype':'self', 'showall':'true', 'start': 0, 'count': 3}"><#list articles as article><dl>
@@ -357,7 +361,7 @@ background-color:#f7202f;  background: -webkit-linear-gradient(left,#f7202f ,#ff
 <div style="background:url(http://images.china.cn/images1/en/gxb/20171116/bg-line.png) no-repeat;height: 800px;">
 <div class="box6">
 <div style="width: 1180px;height: 112px;background:url(http://images.china.cn/images1/en/gxb/20171116/tittle-INFOGRAPHICS.png) no-repeat;position: relative;top: -120px;">
-<h1 style="padding-top: 40px;padding-left: 485px;"><FOUNDER-XY type="columnlist" data="{'columnid':[7253448],'columntype':'self'}"><#list columns as column><a href="${column.url!}" class=""  target="_self"><span>I</span>NFOGRAPHICS</a></#list></FOUNDER-XY></h1>
+<h1 style="padding-top: 40px;padding-left: 485px;"><FOUNDER-XY type="columnlist" data="{'columnid':[7253448],'columntype':'self'}"><#list columns as column><a href="${column.url!}" class=""  target="_self">INFOGRAPHICS</a></#list></FOUNDER-XY></h1>
 </div>
 <div class="carousel">
     <ul class="img">

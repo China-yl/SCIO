@@ -39,7 +39,6 @@
   ];
     exec = function () {
       $.each(arr,function(index,value){
-        console.log(searchText == value)
          if(searchText == value){
             $.getScript('http://query.china.com.cn/news/queryFn?index=ciic_en_scio&noFields=channel&nokws=2&startPage=' + startpage + '&pageSize=' + pageSize + '&field=subtitle&kw=' + searchText );
             return false;
