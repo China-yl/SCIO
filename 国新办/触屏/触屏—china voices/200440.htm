@@ -61,7 +61,10 @@ dd span.mmmm { border-left: 2px solid #5792fc; display: inline-block; padding-le
 .column h1 a{color: #fff;float: left;}
 
 .wrap{width: 100%;overflow: hidden;zoom: 1;margin: 0 auto;padding: 10px 2.5%;}
-
+.main{width: 100%;position: relative;margin-bottom: 10px; overflow:hidden;}
+.main img{width: 100%;}
+.main p{position: absolute;left: 0;bottom: 0;width: 100%;padding:2%;background: url(http://images.china.cn/images1/ch/2017gxb/images/filter_1.png) left no-repeat;}
+.main a{font-size: 1.6em; color: #fff; line-height: 1.25em; font-weight: bold;}
 .usual{width: 100%;}
 .usual li{overflow: hidden;width: 100%;;}
 .usual img{float: left;width: 100%;}
@@ -118,11 +121,11 @@ dd span.mmmm { border-left: 2px solid #5792fc; display: inline-block; padding-le
                 <li><FOUNDER-XY type="columnlist" data="{'columnid':[7247536],'columntype':'self'}"><#list columns as column><a href="${column.urlPad!}" class=""  target="_top">TOP NEWS</a></#list></FOUNDER-XY></li>
                 <li><FOUNDER-XY type="columnlist" data="{'columnid':[7247535],'columntype':'self'}"><#list columns as column><a href="${column.urlPad!}" class=""  target="_top">PRESS ROOM</a></#list></FOUNDER-XY></li>
                 <li><FOUNDER-XY type="columnlist" data="{'columnid':[7252795],'columntype':'self'}"><#list columns as column><a href="${column.urlPad!}" class=""  target="_top">SCIO NEWS</a></#list></FOUNDER-XY></li>
-                <li><FOUNDER-XY type="columnlist" data="{'columnid':[7252897],'columntype':'self'}"><#list columns as column><a href="${column.urlPad!}" class=""  target="_top">CHINA PROJECTS</a></#list></FOUNDER-XY></li>
+                <li><FOUNDER-XY type="columnlist" data="{'columnid':[7247533],'columntype':'self'}"><#list columns as column><a href="${column.urlPad!}" class=""  target="_top">CHINA VOICES</a></#list></FOUNDER-XY></li>
                 <li><FOUNDER-XY type="columnlist" data="{'columnid':[7247531],'columntype':'self'}"><#list columns as column><a href="${column.urlPad!}" class=""  target="_top">BELT AND ROAD</a></#list></FOUNDER-XY></li>
                 <li><FOUNDER-XY type="columnlist" data="{'columnid':[7247534],'columntype':'self'}"><#list columns as column><a href="${column.urlPad!}" class=""  target="_top">IN-DEPTH</a></#list></FOUNDER-XY></li>
                 <li><FOUNDER-XY type="columnlist" data="{'columnid':[7252506],'columntype':'self'}"><#list columns as column><a href="${column.urlPad!}" class=""  target="_top">INTERNATIONAL EXCHANGES</a></#list></FOUNDER-XY></li>
-                <li><FOUNDER-XY type="columnlist" data="{'columnid':[7247533],'columntype':'self'}"><#list columns as column><a href="${column.urlPad!}" class=""  target="_top">CHINA VOICES</a></#list></FOUNDER-XY></li>
+                <li><FOUNDER-XY type="columnlist" data="{'columnid':[7252897],'columntype':'self'}"><#list columns as column><a href="${column.urlPad!}" class=""  target="_top">CHINA PROJECTS</a></#list></FOUNDER-XY></li>
                 <li><FOUNDER-XY type="columnlist" data="{'columnid':[7247539],'columntype':'self'}"><#list columns as column><a href="${column.urlPad!}" class=""  target="_top">INFOGRAPHICS</a></#list></FOUNDER-XY></li>
                 <li><FOUNDER-XY type="columnlist" data="{'columnid':[8002866],'columntype':'self'}"><#list columns as column><a href="${column.urlPad!}" class=""  target="_top">VIDEOS</a></#list></FOUNDER-XY></li>
                 <li><FOUNDER-XY type="columnlist" data="{'columnid':[7247532],'columntype':'self'}"><#list columns as column><a href="${column.urlPad!}" class=""  target="_top">WHITE PAPERS</a></#list></FOUNDER-XY></li>
@@ -137,7 +140,8 @@ dd span.mmmm { border-left: 2px solid #5792fc; display: inline-block; padding-le
 
 <div class="wrap">
 
-
+        <div class="main"><FOUNDER-XY type="articlelist" data="{'columnid':[], 'articletype': 'all', 'article_attr': 'HEADLINE', 'columntype':'self', 'showall':'true', 'start': 0, 'count': 1}"><#list articles as article><a   href="${article.urlPad}"  target="_self"><img src="${article.picBig}"    border="0"> </a>
+                <p><a   href="${article.urlPad}"  target="_self">${article.title}</a></p></#list></FOUNDER-XY></div>
 
 <div class="usual"><FOUNDER-XY type="articlelist" data="{'columnid':[], 'articletype': 'all', 'article_attr': 'COMMON', 'columntype':'self', 'showall':'true', 'start': 0, 'count': '50'}"><#list articles as article><#if article_index == 0><ul>
 </#if><li>

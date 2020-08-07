@@ -38,14 +38,12 @@
             "2020 NPC & CPPCC"
   ];
     exec = function () {
-      $.each(arr,function(index,value){
-         if(searchText == value){
+        var index = $.inArray(searchText, arr);
+         if(index >= 0){
             $.getScript('http://query.china.com.cn/news/queryFn?index=ciic_en_scio&noFields=channel&nokws=2&startPage=' + startpage + '&pageSize=' + pageSize + '&field=subtitle&kw=' + searchText );
-            return false;
          }else{
            $.getScript('http://query.china.com.cn/news/queryFn?index=ciic_en_scio&noFields=channel&nokws=2&startPage=' + startpage + '&pageSize=' + pageSize + '&kw=' + searchText );
          }
-      });
       
     };
     exec();
@@ -194,6 +192,18 @@
         });
     }
     
+})(jQuery);
+
+(function ($) {
+    var wTop = $('.ban2').offset().top;
+    $(window).scroll(function () {
+        var t = $(document).scrollTop();
+        if (t >= wTop) {
+            $('.ban2').css({ 'position': 'fixed', 'z-index': '99999', 'top': '0' });
+        } else {
+            $('.ban2').css({ 'position': 'static', 'margin': '0 auto 30px auto' });
+        }
+    });
 })(jQuery);
 
 (function ($) {
