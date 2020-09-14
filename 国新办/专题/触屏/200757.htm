@@ -89,13 +89,13 @@ dd a {font-size: 1.6em;line-height: 1.25em;}
 .box24{height: 15rem;}
 .box24 h2{width: 42%;float: left;font-size: 1.3em;background-color: #fae376;border: 1px solid #fae376;line-height: 3.1em;text-align: center;}
 .box24 ul{width: 58%;border-bottom: 1px solid #fae376;border-top: 1px solid #fae376;}
-.box24 ul li{width: 50%;float: left;text-align: center;font-size: 1.6em;line-height: 1.25em;border: 0;}
+.box24 ul li{width: 33%;float: left;text-align: center;font-size: 1.6em;line-height: 1.25em;border: 0;}
 .box24 .books {width: 35%;float: left;margin-top: 12px;}
 .box24 .books img{width: 90%;display: block;margin: 0 auto;}
 .box24 p{display: inline-block;width: 65%;margin-top: 12px;}
-.box24l,.box2br{ width: 100%; background-color: #fff;float: left;}
+.box24l,.box24r1,.box24r2{ width: 100%; background-color: #fff;float: left;}
 .box24l{display: block;}
-.box24r{display: none;}
+.box24r1,.box24r2{display: none;}
 
 .box25 dd{background-color: #ececec;height: 4rem;padding-top: 8px;}
 .box25 dd a{font-size: 1.8em;line-height: 1.25em;}
@@ -197,13 +197,19 @@ dd a {font-size: 1.6em;line-height: 1.25em;}
 <div class="box24">
 <FOUNDER-XY type="articlelist" data="{'columnid':[7248448], 'articletype': 'all', 'article_attr': 'COMMON', 'columntype':'self', 'showall':'true', 'start': 0, 'count': 1}"><#list articles as article><div class="box24l">
 <h2>ABOUT THE BOOKS</h2>
-<ul><li style="color:#d52a38;border-right: 1px solid #d1d1d1;">Ⅰ</li><li>Ⅱ</li></ul>
+<ul><li style="color:#d52a38;border-right: 1px solid #d1d1d1;">Ⅰ</li><li style="border-right: 1px solid #d1d1d1;">Ⅱ</li><li>Ⅲ</li></ul>
 <div class="books"><img src="${article.picBig}"   border=0> </div>
 <p><a   href="${article.urlPad}" >${article.summary}&nbsp;</a></p>
 </div></#list></FOUNDER-XY>
-<FOUNDER-XY type="articlelist" data="{'columnid':[7248448], 'articletype': 'all', 'article_attr': 'COMMON', 'columntype':'self', 'showall':'true', 'start': 1, 'count': 1}"><#list articles as article><div class="box24r">
+<FOUNDER-XY type="articlelist" data="{'columnid':[7248448], 'articletype': 'all', 'article_attr': 'COMMON', 'columntype':'self', 'showall':'true', 'start': 1, 'count': 1}"><#list articles as article><div class="box24r1">
 <h2>ABOUT THE BOOKS</h2>
-<ul><li style="border-right: 1px solid #d1d1d1;">Ⅰ</li><li style="color:#d52a38;">Ⅱ</li></ul>
+<ul><li style="border-right: 1px solid #d1d1d1;">Ⅰ</li><li style="color:#d52a38;border-right: 1px solid #d1d1d1;">Ⅱ</li><li>Ⅲ</li></ul>
+<div class="books"><img src="${article.picBig}"   border=0> </div>
+<p><a   href="${article.urlPad}" >${article.summary}</a></p>
+</div></#list></FOUNDER-XY>
+<FOUNDER-XY type="articlelist" data="{'columnid':[7248448], 'articletype': 'all', 'article_attr': 'COMMON', 'columntype':'self', 'showall':'true', 'start': 2, 'count': 1}"><#list articles as article><div class="box24r2">
+<h2>ABOUT THE BOOKS</h2>
+<ul><li style="border-right: 1px solid #d1d1d1;">Ⅰ</li><li style="border-right: 1px solid #d1d1d1;">Ⅱ</li><li style="color:#d52a38;">Ⅲ</li></ul>
 <div class="books"><img src="${article.picBig}"   border=0> </div>
 <p><a   href="${article.urlPad}" >${article.summary}</a></p>
 </div></#list></FOUNDER-XY>
@@ -299,13 +305,36 @@ $(window).scroll(function () {
                 $('.topbtn').css({ 'display': 'none'});
         }
 });
+
 $(".box24 ul li:eq(1)").click(function(){
         $(".box24l").hide();
-        $(".box24r").show();
+        $(".box24r1").show();
+        $(".box24r2").hide();
 })
 $(".box24 ul li:eq(2)").click(function(){
+        $(".box24l").hide();
+        $(".box24r1").hide();
+        $(".box24r2").show();
+})
+$(".box24 ul li:eq(3)").click(function(){
         $(".box24l").show();
-        $(".box24r").hide();
+        $(".box24r1").hide();
+        $(".box24r2").hide();
+})
+$(".box24 ul li:eq(5)").click(function(){
+        $(".box24l").hide();
+        $(".box24r1").hide();
+        $(".box24r2").show();
+})
+$(".box24 ul li:eq(6)").click(function(){
+        $(".box24l").show();
+        $(".box24r1").hide();
+        $(".box24r2").hide();
+})
+$(".box24 ul li:eq(7)").click(function(){
+        $(".box24l").hide();
+        $(".box24r1").show();
+        $(".box24r2").hide();
 })
 $(".topbtn").click(function() {
   $("html,body").animate({scrollTop:0}, 500);

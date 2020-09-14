@@ -147,40 +147,31 @@ img { border:0; height: auto;width: 100%;}
 <div class="box3"><a href="javascript:;" onClick="javascript:history.back(-1);">BACK</a></div>
 
 <div class='footer'>
-<div class="boxb">
-<div class="boxb1">Watch This: <font style="font-size:15px; font-weight:bold; color:#bfae61">CGTN</font> <a href="http://www.cctvplus.com/live/channel1.shtml" target="_blank"><img src="http://images.china.cn/images1/en/gxb/170628-01.jpg" width="37" height="13" border="0" /></a></div>
-<div class="boxb2">
-<FOUNDER-XY type="articlelist" data="{'columnid':[7247762], 'articletype': 'all', 'article_attr': 'HEADLINE', 'columntype':'self', 'showall':'true', 'start': 0, 'count': 2}"><#list articles as article><dl>
-<dt><img src="${article.picBig}"   border=0> </dt>
-<dd><h4>${article.title}</h4><br><h5><#setting locale="en_US">${article.pubTime?string("MMMM d, yyyy")}</h5></dd>
-</dl></#list></FOUNDER-XY>
-</div>
-<div class="boxb3">
+    <div class="boxb">
+      <div class="boxb3">
         <ul>
-        <li><a href="https://www.facebook.com/chinascio"><img src="http://images.china.cn/images1/en/gxb/facebook.png" width="15" height="15" border="0"/></a> &#160;<a href="https://www.facebook.com/chinascio">Facebook</a></li>
-        <li><a href="https://twitter.com/chinascio"><img src="http://images.china.cn/images1/en/gxb/twitter.png" width="15" height="15" border="0" /></a> &#160;<a href="https://twitter.com/chinascio">Twitter</a></li>
-        <li><a href="https://www.youtube.com/chinascio"><img src="http://images.china.cn/images1/en/gxb/youtube.png" width="15" height="15" border="0" /></a> &#160;<a href="https://www.youtube.com/chinascio">Youtube</a></li>
-        <li><a href="https://plus.google.com/+ChinaSCIO"><img src="http://images.china.cn/images1/en/gxb/g+.png" width="15" height="15" border="0"/></a> &#160;<a href="https://plus.google.com/+ChinaSCIO">Google+</a></li>
+          <li><a href="https://www.facebook.com/chinascio"><img src="http://images.china.cn/images1/en/gxb/facebook.png" width="15" height="15" border="0"/></a> &#160;<a href="https://www.facebook.com/chinascio">Facebook</a></li>
+          <li><a href="https://twitter.com/chinascio"><img src="http://images.china.cn/images1/en/gxb/twitter.png" width="15" height="15" border="0" /></a> &#160;<a href="https://twitter.com/chinascio">Twitter</a></li>
+          <li><a href="https://www.youtube.com/chinascio"><img src="http://images.china.cn/images1/en/gxb/youtube.png" width="15" height="15" border="0" /></a> &#160;<a href="https://www.youtube.com/chinascio">YouTube</a></li>
         </ul>
-</div>
-<div class="boxb4">
-<span>Government Websites</span><div class="fr" id="btn1" onclick="show1()">+</div>
-</div>
-<div class="boxb41" id="box41">
-<FOUNDER-XY type="articlelist" data="{'columnid':[7247900], 'articletype': 'all', 'article_attr': 'all', 'columntype':'self', 'showall':'true', 'start': 0, 'count': 30}"><#list articles as article><#if article_index == 0><ul></#if><li><a   href="${article.urlPad}" >${article.title}</a></li><#if article_has_next=false></ul></#if></#list></FOUNDER-XY>    
-</div>
-<div class="boxb5">
-<span>Media Links</span><div class="fr" id="btn2" onclick="show2()">+</div>
-</div>
-<div class="boxb51" id="box51">
-<FOUNDER-XY type="articlelist" data="{'columnid':[7247763], 'articletype': 'all', 'article_attr': 'all', 'columntype':'self', 'showall':'true', 'start': 0, 'count': 30}"><#list articles as article><#if article_index == 0><ul></#if><li><a   href="${article.urlPad}" >${article.title}</a></li><#if article_has_next=false></ul></#if></#list></FOUNDER-XY>    
-</div>
-<div class="boxb6"><a href="http://english.scio.gov.cn/m/2017-05/31/content_40931065.htm" target="_top">About Us</a></div>
-<div class="boxb7"><a href="http://english.scio.gov.cn/m/2017-05/31/content_40931182.htm" target="_top">Contact Us</a></div>
-<div class="boxb8">Copyright © english.scio.gov.cn&nbsp;&nbsp;All rights reserved. <br />
-    Registration Number: 14055996</div>
-</div>
-</div>
+      </div>
+      <div class="boxb4">
+        <span>Government Websites</span><div class="fr" id="btn1" onclick="show1()">+</div>
+      </div>
+      <div class="boxb41" id="box41">
+        <FOUNDER-XY type="articlelist" data="{'columnid':[7247900], 'articletype': 'all', 'article_attr': 'all', 'columntype':'self', 'showall':'true', 'start': 0, 'count': 30}"><#list articles as article><#if article_index == 0><ul></#if><li><a   href="${article.url}" >${article.title}</a></li><#if article_has_next=false></ul></#if></#list></FOUNDER-XY>    
+      </div>
+      <div class="boxb5">
+        <span>Media Links</span><div class="fr" id="btn2" onclick="show2()">+</div>
+      </div>
+      <div class="boxb51" id="box51">
+        <FOUNDER-XY type="articlelist" data="{'columnid':[7247763], 'articletype': 'all', 'article_attr': 'all', 'columntype':'self', 'showall':'true', 'start': 0, 'count': 30}"><#list articles as article><#if article_index == 0><ul></#if><li><a   href="${article.url}" >${article.title}</a></li><#if article_has_next=false></ul></#if></#list></FOUNDER-XY>    
+      </div>
+      <div class="boxb6"><a href="http://english.scio.gov.cn/m/2017-05/31/content_40931065.htm" target="_top">About Us</a></div>
+      <div class="boxb7"><a href="http://english.scio.gov.cn/m/2017-05/31/content_40931182.htm" target="_top">Contact Us</a></div>
+      <div class="boxb8">Copyright © english.scio.gov.cn&nbsp;&nbsp;All rights reserved. <br />Registration Number: 14055996</div>
+    </div>
+  </div>
 <script type="text/javascript" src="http://images.china.cn/images1/resource/scripts/jquery/jquery-1.12.4.min.js"></script>
 
 <script type="text/javascript">

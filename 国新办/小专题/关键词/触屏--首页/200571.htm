@@ -107,6 +107,8 @@ dd a{font-size: 1.6em;line-height: 1.25em;color: #472113;font-weight: bold;}
     <div class="list fr" onclick="showlist()"><span>K</span>EYWORDS LIST<img src="http://images.china.cn/images1/en/China_Keywords/Triangular.png" /></div>
     <div class="listshow" id="listshow">
         <ul>
+            <li><FOUNDER-XY type="columnlist" data="{'columnid':[8019884],'columntype':'self'}"><#list columns as column><a href="${column.urlPad!}" class=""  target="_top">The Fight Against COVID-19</a></#list></FOUNDER-XY></li>
+            <li><FOUNDER-XY type="columnlist" data="{'columnid':[8016242],'columntype':'self'}"><#list columns as column><a href="${column.urlPad!}" class=""  target="_top">Foreign Affairs in the New Era</a></#list></FOUNDER-XY></li>
             <li><FOUNDER-XY type="columnlist" data="{'columnid':[8013353],'columntype':'self'}"><#list columns as column><a href="${column.urlPad!}" class=""  target="_top">The Belt and Road Initiative 2019</a></#list></FOUNDER-XY></li>
             <li><FOUNDER-XY type="columnlist" data="{'columnid':[8013354],'columntype':'self'}"><#list columns as column><a href="${column.urlPad!}" class=""  target="_top">On Governance</a></#list></FOUNDER-XY></li>
             <!-- <li><FOUNDER-XY type="columnlist" data="{'columnid':[8003654],'columntype':'self'}"><#list columns as column><a href="${column.urlPad!}" class=""  target="_top">The Belt and Road Initiative</a></#list></FOUNDER-XY></li> -->
@@ -129,10 +131,15 @@ dd a{font-size: 1.6em;line-height: 1.25em;color: #472113;font-weight: bold;}
     </div>                   
 </div>
 <div class="top"><FOUNDER-XY type="articlelist" data="{'columnid':[8003639], 'articletype': 'all', 'article_attr': 'HEADLINE', 'columntype':'self', 'showall':'true', 'start': 0, 'count': 1}"><#list articles as article><dl><dt>${article.title}</dt><dd>${article.summary}</dd></dl></#list></FOUNDER-XY><ul><FOUNDER-XY type="articlelist" data="{'columnid':[8003639], 'articletype': 'all', 'article_attr': 'COMMON', 'columntype':'self', 'showall':'true', 'start': 0, 'count': 3}"><#list articles as article><li>${article.title}</li></#list></FOUNDER-XY></ul></div>
-<!-- <div class="box1">
-    <h1><span><FOUNDER-XY type="columnlist" data="{'columnid':[8003654],'columntype':'self'}"><#list columns as column><a href="${column.urlPad!}" class=""  target="_self" ><img src="http://images.china.cn/images1/en/China_Keywords/list.png" style="width:4%;height:4%;" />The Belt and Road Initiative</a></#list></FOUNDER-XY></span><span class="fr"><FOUNDER-XY type="columnlist" data="{'columnid':[8003654],'columntype':'self'}"><#list columns as column><a href="${column.urlPad!}" class=""  target="_self"><img src="http://images.china.cn/images1/en/China_Keywords/arrow.png"  style="width:75%;height:75%;" /></a></#list></FOUNDER-XY></span></h1>
-    <FOUNDER-XY type="articlelist" data="{'columnid':[8003654], 'articletype': 'all', 'article_attr': 'HEADLINE', 'columntype':'self', 'showall':'true', 'start': 0, 'count': 3}"><#list articles as article><dl><dt><a   href="${article.urlPad}" ><img src="${article.picBig}"   border=0> </a></dt><dd><p><a   href="${article.urlPad}">${article.title}</a></p></dd></dl></#list></FOUNDER-XY>
-</div> -->
+
+<div class="box1">
+    <h1><span><FOUNDER-XY type="columnlist" data="{'columnid':[8019884],'columntype':'self'}"><#list columns as column><a href="${column.urlPad!}" class=""  target="_self" ><img src="http://images.china.cn/images1/en/China_Keywords/list.png" style="width:16px;height:21px;" />The Fight Against COVID-19</a></#list></FOUNDER-XY></span><span class="fr"><FOUNDER-XY type="columnlist" data="{'columnid':[8019884],'columntype':'self'}"><#list columns as column><a href="${column.urlPad!}" class=""  target="_self"><img src="http://images.china.cn/images1/en/China_Keywords/arrow.png"  style="width:12px;height:19px;" /></a></#list></FOUNDER-XY></span></h1>
+    <FOUNDER-XY type="articlelist" data="{'columnid':[8019884], 'articletype': 'all', 'article_attr': 'HEADLINE', 'columntype':'self', 'showall':'true', 'start': 0, 'count': 3}"><#list articles as article><dl><dt><a   href="${article.urlPad}" ><img src="${article.picBig}"   border=0> </a></dt><dd><p><a   href="${article.urlPad}">${article.title}</a></p></dd></dl></#list></FOUNDER-XY>
+</div>
+<div class="box1">
+    <h1><span><FOUNDER-XY type="columnlist" data="{'columnid':[8016242],'columntype':'self'}"><#list columns as column><a href="${column.url!}" class=""  target="_self" ><img src="http://images.china.cn/images1/en/China_Keywords/list.png" style="width:16px;height:21px;" />Foreign Affairs in the New Era</a></#list></FOUNDER-XY></span><span class="fr"><FOUNDER-XY type="columnlist" data="{'columnid':[8016242],'columntype':'self'}"><#list columns as column><a href="${column.urlPad!}" class=""  target="_self"><img src="http://images.china.cn/images1/en/China_Keywords/arrow.png"  style="width:12px;height:19px;" /></a></#list></FOUNDER-XY></span></h1>
+    <FOUNDER-XY type="articlelist" data="{'columnid':[8016242], 'articletype': 'all', 'article_attr': 'HEADLINE', 'columntype':'self', 'showall':'true', 'start': 0, 'count': 3}"><#list articles as article><dl><dt><a   href="${article.urlPad}" ><img src="${article.picBig}"   border=0> </a></dt><dd><p><a   href="${article.urlPad}">${article.title}</a></p></dd></dl></#list></FOUNDER-XY>
+</div>
 <div class="box1">
     <h1><span><FOUNDER-XY type="columnlist" data="{'columnid':[8013353],'columntype':'self'}"><#list columns as column><a href="${column.urlPad!}" class=""  target="_self" ><img src="http://images.china.cn/images1/en/China_Keywords/list.png" style="width:4%;height:4%;" />The Belt and Road Initiative 2019</a></#list></FOUNDER-XY></span><span class="fr"><FOUNDER-XY type="columnlist" data="{'columnid':[8013353],'columntype':'self'}"><#list columns as column><a href="${column.urlPad!}" class=""  target="_self"><img src="http://images.china.cn/images1/en/China_Keywords/arrow.png"  style="width:75%;height:75%;" /></a></#list></FOUNDER-XY></span></h1>
     <FOUNDER-XY type="articlelist" data="{'columnid':[8013353], 'articletype': 'all', 'article_attr': 'HEADLINE', 'columntype':'self', 'showall':'true', 'start': 0, 'count': 3}"><#list articles as article><dl><dt><a   href="${article.urlPad}" ><img src="${article.picBig}"   border=0> </a></dt><dd><p><a   href="${article.urlPad}">${article.title}</a></p></dd></dl></#list></FOUNDER-XY>
@@ -145,54 +152,34 @@ dd a{font-size: 1.6em;line-height: 1.25em;color: #472113;font-weight: bold;}
     <h1><span><FOUNDER-XY type="columnlist" data="{'columnid':[8003653],'columntype':'self'}"><#list columns as column><a href="${column.urlPad!}" class=""  target="_self" ><img src="http://images.china.cn/images1/en/China_Keywords/list.png" style="width:4%;height:4%;" />Ethnic groups and religions</a></#list></FOUNDER-XY></span><span class="fr"><FOUNDER-XY type="columnlist" data="{'columnid':[8003653],'columntype':'self'}"><#list columns as column><a href="${column.urlPad!}" class=""  target="_self"><img src="http://images.china.cn/images1/en/China_Keywords/arrow.png"  style="width:75%;height:75%;" /></a></#list></FOUNDER-XY></span></h1>
     <FOUNDER-XY type="articlelist" data="{'columnid':[8003653], 'articletype': 'all', 'article_attr': 'HEADLINE', 'columntype':'self', 'showall':'true', 'start': 0, 'count': 3}"><#list articles as article><dl><dt><a   href="${article.urlPad}" ><img src="${article.picBig}"   border=0> </a></dt><dd><p><a   href="${article.urlPad}">${article.title}</a></p></dd></dl></#list></FOUNDER-XY>
 </div>
-<div class="box1">
-    <h1><span><FOUNDER-XY type="columnlist" data="{'columnid':[8003652],'columntype':'self'}"><#list columns as column><a href="${column.urlPad!}" class=""  target="_self" ><img src="http://images.china.cn/images1/en/China_Keywords/list.png" style="width:4%;height:4%;" />13th Five-year Plan</a></#list></FOUNDER-XY></span><span class="fr"><FOUNDER-XY type="columnlist" data="{'columnid':[8003652],'columntype':'self'}"><#list columns as column><a href="${column.urlPad!}" class=""  target="_self"><img src="http://images.china.cn/images1/en/China_Keywords/arrow.png"  style="width:75%;height:75%;" /></a></#list></FOUNDER-XY></span></h1>
-    <FOUNDER-XY type="articlelist" data="{'columnid':[8003652], 'articletype': 'all', 'article_attr': 'HEADLINE', 'columntype':'self', 'showall':'true', 'start': 0, 'count': 3}"><#list articles as article><dl><dt><a   href="${article.urlPad}" ><img src="${article.picBig}"   border=0> </a></dt><dd><p><a   href="${article.urlPad}">${article.title}</a></p></dd></dl></#list></FOUNDER-XY>
-</div>
-<div class="box1">
-    <h1><span><FOUNDER-XY type="columnlist" data="{'columnid':[8003651],'columntype':'self'}"><#list columns as column><a href="${column.urlPad!}" class=""  target="_self" ><img src="http://images.china.cn/images1/en/China_Keywords/list.png" style="width:4%;height:4%;" />Streamlining Governance and Devolving Powers</a></#list></FOUNDER-XY></span><span class="fr"><FOUNDER-XY type="columnlist" data="{'columnid':[8003651],'columntype':'self'}"><#list columns as column><a href="${column.urlPad!}" class=""  target="_self"><img src="http://images.china.cn/images1/en/China_Keywords/arrow.png"  style="width:75%;height:75%;" /></a></#list></FOUNDER-XY></span></h1>
-    <FOUNDER-XY type="articlelist" data="{'columnid':[8003651], 'articletype': 'all', 'article_attr': 'HEADLINE', 'columntype':'self', 'showall':'true', 'start': 0, 'count': 3}"><#list articles as article><dl><dt><a   href="${article.urlPad}" ><img src="${article.picBig}"   border=0> </a></dt><dd><p><a   href="${article.urlPad}">${article.title}</a></p></dd></dl></#list></FOUNDER-XY>
-</div>
-<!-- <div class="box1">
-    <h1><span><FOUNDER-XY type="columnlist" data="{'columnid':[8003650],'columntype':'self'}"><#list columns as column><a href="${column.urlPad!}" class=""  target="_self" ><img src="http://images.china.cn/images1/en/China_Keywords/list.png" style="width:4%;height:4%;" />The Chinese People's War of Resistance Against Japanese Aggression</a></#list></FOUNDER-XY></span><span class="fr"><FOUNDER-XY type="columnlist" data="{'columnid':[8003650],'columntype':'self'}"><#list columns as column><a href="${column.urlPad!}" class=""  target="_self"><img src="http://images.china.cn/images1/en/China_Keywords/arrow.png"  style="width:75%;height:75%;" /></a></#list></FOUNDER-XY></span></h1>
-    <FOUNDER-XY type="articlelist" data="{'columnid':[8003650], 'articletype': 'all', 'article_attr': 'HEADLINE', 'columntype':'self', 'showall':'true', 'start': 0, 'count': 3}"><#list articles as article><dl><dt><a   href="${article.urlPad}" ><img src="${article.picBig}"   border=0> </a></dt><dd><p><a   href="${article.urlPad}">${article.title}</a></p></dd></dl></#list></FOUNDER-XY>
-</div> -->
+
 <div class="box2"><FOUNDER-XY type="columnlist" data="{'columnid':[8003755],'columntype':'self'}"><#list columns as column><a href="${column.urlPad!}" class=""  target="_self" >View More +</a></#list></FOUNDER-XY></div>
 <div class='footer'>
-<div class="boxb">
-<div class="boxb1">Watch This: <font style="font-size:15px; font-weight:bold; color:#bfae61">CGTN</font> <a href="http://www.cctvplus.com/live/channel1.shtml" target="_blank"><img src="http://images.china.cn/images1/en/gxb/170628-01.jpg" width="37" height="13" border="0" /></a></div>
-<div class="boxb2">
-<FOUNDER-XY type="articlelist" data="{'columnid':[7247762], 'articletype': 'all', 'article_attr': 'HEADLINE', 'columntype':'self', 'showall':'true', 'start': 0, 'count': 2}"><#list articles as article><dl>
-<dt><img src="${article.picBig}"   border=0> </dt>
-<dd><h4>${article.title}</h4><br><h5><#setting locale="en_US">${article.pubTime?string("MMMM d, yyyy")}</h5></dd>
-</dl></#list></FOUNDER-XY>
-</div>
-<div class="boxb3">
+    <div class="boxb">
+      <div class="boxb3">
         <ul>
-        <li><a href="https://www.facebook.com/chinascio"><img src="http://images.china.cn/images1/en/gxb/facebook.png" width="15" height="15" border="0"/></a> &#160;<a href="https://www.facebook.com/chinascio">Facebook</a></li>
-        <li><a href="https://twitter.com/chinascio"><img src="http://images.china.cn/images1/en/gxb/twitter.png" width="15" height="15" border="0" /></a> &#160;<a href="https://twitter.com/chinascio">Twitter</a></li>
-        <li><a href="https://www.youtube.com/chinascio"><img src="http://images.china.cn/images1/en/gxb/youtube.png" width="15" height="15" border="0" /></a> &#160;<a href="https://www.youtube.com/chinascio">Youtube</a></li>
-        <li><a href="https://plus.google.com/+ChinaSCIO"><img src="http://images.china.cn/images1/en/gxb/g+.png" width="15" height="15" border="0"/></a> &#160;<a href="https://plus.google.com/+ChinaSCIO">Google+</a></li>
+          <li><a href="https://www.facebook.com/chinascio"><img src="http://images.china.cn/images1/en/gxb/facebook.png" width="15" height="15" border="0"/></a> &#160;<a href="https://www.facebook.com/chinascio">Facebook</a></li>
+          <li><a href="https://twitter.com/chinascio"><img src="http://images.china.cn/images1/en/gxb/twitter.png" width="15" height="15" border="0" /></a> &#160;<a href="https://twitter.com/chinascio">Twitter</a></li>
+          <li><a href="https://www.youtube.com/chinascio"><img src="http://images.china.cn/images1/en/gxb/youtube.png" width="15" height="15" border="0" /></a> &#160;<a href="https://www.youtube.com/chinascio">YouTube</a></li>
         </ul>
-</div>
-<div class="boxb4">
-<span>Government Websites</span><div class="fr" id="btn1" onclick="show1()">+</div>
-</div>
-<div class="boxb41" id="box41">
-<FOUNDER-XY type="articlelist" data="{'columnid':[7247900], 'articletype': 'all', 'article_attr': 'all', 'columntype':'self', 'showall':'true', 'start': 0, 'count': 30}"><#list articles as article><#if article_index == 0><ul></#if><li><a   href="${article.urlPad}" >${article.title}</a></li><#if article_has_next=false></ul></#if></#list></FOUNDER-XY>    
-</div>
-<div class="boxb5">
-<span>Media Links</span><div class="fr" id="btn2" onclick="show2()">+</div>
-</div>
-<div class="boxb51" id="box51">
-<FOUNDER-XY type="articlelist" data="{'columnid':[7247763], 'articletype': 'all', 'article_attr': 'all', 'columntype':'self', 'showall':'true', 'start': 0, 'count': 30}"><#list articles as article><#if article_index == 0><ul></#if><li><a   href="${article.urlPad}" >${article.title}</a></li><#if article_has_next=false></ul></#if></#list></FOUNDER-XY>    
-</div>
-<div class="boxb6"><a href="http://english.scio.gov.cn/m/2017-05/31/content_40931065.htm" target="_top">About Us</a></div>
-<div class="boxb7"><a href="http://english.scio.gov.cn/m/2017-05/31/content_40931182.htm" target="_top">Contact Us</a></div>
-<div class="boxb8">Copyright © english.scio.gov.cn&nbsp;&nbsp;All rights reserved. <br />
-    Registration Number: 14055996</div>
-</div>
-</div>
+      </div>
+      <div class="boxb4">
+        <span>Government Websites</span><div class="fr" id="btn1" onclick="show1()">+</div>
+      </div>
+      <div class="boxb41" id="box41">
+        <FOUNDER-XY type="articlelist" data="{'columnid':[7247900], 'articletype': 'all', 'article_attr': 'all', 'columntype':'self', 'showall':'true', 'start': 0, 'count': 30}"><#list articles as article><#if article_index == 0><ul></#if><li><a   href="${article.url}" >${article.title}</a></li><#if article_has_next=false></ul></#if></#list></FOUNDER-XY>    
+      </div>
+      <div class="boxb5">
+        <span>Media Links</span><div class="fr" id="btn2" onclick="show2()">+</div>
+      </div>
+      <div class="boxb51" id="box51">
+        <FOUNDER-XY type="articlelist" data="{'columnid':[7247763], 'articletype': 'all', 'article_attr': 'all', 'columntype':'self', 'showall':'true', 'start': 0, 'count': 30}"><#list articles as article><#if article_index == 0><ul></#if><li><a   href="${article.url}" >${article.title}</a></li><#if article_has_next=false></ul></#if></#list></FOUNDER-XY>    
+      </div>
+      <div class="boxb6"><a href="http://english.scio.gov.cn/m/2017-05/31/content_40931065.htm" target="_top">About Us</a></div>
+      <div class="boxb7"><a href="http://english.scio.gov.cn/m/2017-05/31/content_40931182.htm" target="_top">Contact Us</a></div>
+      <div class="boxb8">Copyright © english.scio.gov.cn&nbsp;&nbsp;All rights reserved. <br />Registration Number: 14055996</div>
+    </div>
+  </div>
 <div class="topbtn" style=" display: none;position: fixed;width: 32px;bottom: 46px;right: 10px;cursor: pointer;z-index: 100000;"><img style="width: 100%;" src="http://images.china.cn/images1/en/sciophone/totop.png" /></div>
 <script type="text/javascript" src="http://images.china.cn/images1/resource/scripts/jquery/jquery-1.12.4.min.js"></script>
 

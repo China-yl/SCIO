@@ -63,15 +63,15 @@ background-color:#f7202f;  background: -webkit-linear-gradient(left,#f7202f ,#ff
 .box2r li:last-child{ height: 55px; border-bottom: 0px;}
 .box2r li a{display: inline-block;}
 .box2b {position: relative;margin-top: 15px;}
-.box2bl,.box2br{ width: 1180px; height: 268px; border:1px solid #c7c7c7;  background-color: #fff;float: left;}
+.box2bl,.box2br1,.box2br2{ width: 1180px; height: 268px; border:1px solid #c7c7c7;  background-color: #fff;float: left;}
 .box2bl{display: block;}
-.box2br{display: none;}
+.box2br1,.box2br2{display: none;}
 .box2b .books img{width: 222px; height: 288px; position: relative; top: 20px;  left: 42px; float: left;}
 .box2b h2{font-size: 30px;padding-left:285px;margin:20px 0px 12px 18px;line-height: 52px;}
 .box2b p{margin: 12px 68px 0px 18px; line-height: 30px; padding-left: 285px; font-size: 18px;height: 161px;}
 .box2b ul{position: relative; left: 470px; top: -18px;}
 .box2b li{width: 10px; height: 10px; float: left;margin-right:10px;cursor:pointer;}
-.box2b .rbtn{width: 26px; height: 42px; position: relative; left:1140px;;bottom: 165px;cursor:pointer; }
+.box2b .rbtnl,.box2b .rbtnr{width: 26px; height: 42px; position: relative; left:1140px;;bottom: 165px;cursor:pointer; }
 
 .box3 {height: 880px; padding-top: 36px;position: relative;top: -106px;}
 .box3l{ width: 582px; float: left;}
@@ -275,17 +275,29 @@ background-color:#f7202f;  background: -webkit-linear-gradient(left,#f7202f ,#ff
             <div style="background-color:#f7202f;width:54px;height:4px;margin-left:303px;">&nbsp;</div>
             <p><a   href="${article.url}" >${article.summary}&nbsp;</a></p>
             <ul><li><img src="http://images.china.cn/images1/en/gxb/20171116/page-on.png"></li>
+                <li><img src="http://images.china.cn/images1/en/gxb/20171116/page-off.png"></li>
             <li><img src="http://images.china.cn/images1/en/gxb/20171116/page-off.png"></li></ul>
-            <div class="rbtn"><img src="http://images.china.cn/images1/en/gxb/20171116/left-arrow.png"></div>
-            </div></#list></FOUNDER-XY><FOUNDER-XY type="articlelist" data="{'columnid':[7248448], 'articletype': 'all', 'article_attr': 'COMMON', 'columntype':'self', 'showall':'true', 'start': 1, 'count': 1}"><#list articles as article><div class="box2br">
+            <div class="rbtnl"><img src="http://images.china.cn/images1/en/gxb/20171116/left-arrow.png"></div>
+            </div></#list></FOUNDER-XY><FOUNDER-XY type="articlelist" data="{'columnid':[7248448], 'articletype': 'all', 'article_attr': 'COMMON', 'columntype':'self', 'showall':'true', 'start': 1, 'count': 1}"><#list articles as article><div class="box2br1">
             <div class="books"><img src="${article.picBig}"   border=0> </div>
             <h2>ABOUT THE BOOKS</h2>
             <div style="background-color:#f7202f;width:54px;height:4px;margin-left:303px;">&nbsp;</div>
             <p><a   href="${article.url}" >${article.summary}</a></p>
             <ul><li><img src="http://images.china.cn/images1/en/gxb/20171116/page-off.png"></li>
-            <li><img src="http://images.china.cn/images1/en/gxb/20171116/page-on.png"></li></ul>
-            <div class="rbtn"><img src="http://images.china.cn/images1/en/gxb/20171116/right-arrow.png"></div>
-            </div></#list></FOUNDER-XY>
+            <li><img src="http://images.china.cn/images1/en/gxb/20171116/page-on.png"></li>
+            <li><img src="http://images.china.cn/images1/en/gxb/20171116/page-off.png"></li></ul>
+            <div class="rbtnl" style="bottom: 196px;"><img src="http://images.china.cn/images1/en/gxb/20171116/left-arrow.png"></div>
+            <div class="rbtnr" style="bottom: 150px;"><img src="http://images.china.cn/images1/en/gxb/20171116/right-arrow.png"></div>
+            </div></#list></FOUNDER-XY><FOUNDER-XY type="articlelist" data="{'columnid':[7248448], 'articletype': 'all', 'article_attr': 'COMMON', 'columntype':'self', 'showall':'true', 'start': 2, 'count': 1}"><#list articles as article><div class="box2br2">
+                <div class="books"><img src="${article.picBig}"   border=0> </div>
+                <h2>ABOUT THE BOOKS</h2>
+                <div style="background-color:#f7202f;width:54px;height:4px;margin-left:303px;">&nbsp;</div>
+                <p><a   href="${article.url}" >${article.summary}</a></p>
+                <ul><li><img src="http://images.china.cn/images1/en/gxb/20171116/page-off.png"></li>
+                    <li><img src="http://images.china.cn/images1/en/gxb/20171116/page-off.png"></li>
+                <li><img src="http://images.china.cn/images1/en/gxb/20171116/page-on.png"></li></ul>
+                <div class="rbtnr"><img src="http://images.china.cn/images1/en/gxb/20171116/right-arrow.png"></div>
+                </div></#list></FOUNDER-XY>
 </div>
 </div>
 </div>
@@ -490,22 +502,57 @@ function lun(a,b,c,d,e,f,g,w,p){
     });
     $(".box4 dl:last-child").css("margin-right","0");
 })(jQuery);
-$(".rbtn").click(function(){
+$(".rbtnl").click(function(){
     if($(".box2bl").css("display")=="block"){
         $(".box2bl").hide();
-        $(".box2br").show();
-    }else{
+        $(".box2br1").show();
+        $(".box2br2").hide();
+    }else if($(".box2br1").css("display")=="block"){
+        $(".box2bl").hide();
+        $(".box2br1").hide();
+        $(".box2br2").show();
+    }
+})
+$(".rbtnr").click(function(){
+    if($(".box2br1").css("display")=="block"){
         $(".box2bl").show();
-        $(".box2br").hide();
+        $(".box2br1").hide();
+        $(".box2br2").hide();
+    }else if($(".box2br2").css("display")=="block"){
+        $(".box2bl").hide();
+        $(".box2br1").show();
+        $(".box2br2").hide();
     }
 })
 $(".box2b ul li:eq(1)").click(function(){
         $(".box2bl").hide();
-        $(".box2br").show();
+        $(".box2br1").show();
+        $(".box2br2").hide();
 })
 $(".box2b ul li:eq(2)").click(function(){
+        $(".box2bl").hide();
+        $(".box2br1").hide();
+        $(".box2br2").show();
+})
+$(".box2b ul li:eq(3)").click(function(){
         $(".box2bl").show();
-        $(".box2br").hide();
+        $(".box2br1").hide();
+        $(".box2br2").hide();
+})
+$(".box2b ul li:eq(5)").click(function(){
+        $(".box2bl").hide();
+        $(".box2br1").hide();
+        $(".box2br2").show();
+})
+$(".box2b ul li:eq(6)").click(function(){
+        $(".box2bl").show();
+        $(".box2br1").hide();
+        $(".box2br2").hide();
+})
+$(".box2b ul li:eq(7)").click(function(){
+        $(".box2bl").hide();
+        $(".box2br1").show();
+        $(".box2br2").hide();
 })
 
 $(".topbtn").click(function() {
