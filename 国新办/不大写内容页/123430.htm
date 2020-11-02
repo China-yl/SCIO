@@ -69,6 +69,38 @@ a{color: #000;}
 .ad{width: 600px;border: 3px solid #1247a5; padding: 10px 0;}
 </style>
 
+<script type="text/javascript">
+
+  function browserRedirect() {
+      var sUserAgent= navigator.userAgent.toLowerCase();
+      var bIsIpad= sUserAgent.match(/ipad/i) == "ipad";
+      var bIsIphoneOs= sUserAgent.match(/iphone os/i) == "iphone os";
+      var bIsMidp= sUserAgent.match(/midp/i) == "midp";
+      var bIsUc7= sUserAgent.match(/rv:1.2.3.4/i) == "rv:1.2.3.4";
+      var bIsUc= sUserAgent.match(/ucweb/i) == "ucweb";
+      var bIsAndroid= sUserAgent.match(/android/i) == "android";
+      var bIsCE= sUserAgent.match(/windows ce/i) == "windows ce";
+      var bIsWM= sUserAgent.match(/windows mobile/i) == "windows mobile";
+      var str=window.location.href;//取地址参数部分
+      var strurl=[];
+      strArr = str.split("/");
+      for(var i=3;i<strArr.length;i++){
+        strurl.push(strArr[i]);
+      }
+      var lasturl="http://english.scio.gov.cn/m/"+strurl.join("/");
+      if (bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM) {
+        if(strArr[3]!="m"){
+          window.location.href= lasturl;
+        }          
+      } else {
+          // window.location= 'http://english.scio.gov.cn/index.htm ';
+      }
+  }
+  browserRedirect();//调用自身，页面一打开就开始跳转
+</script>
+
+
+
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112741182-1"></script>
 <script>
