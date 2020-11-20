@@ -27,12 +27,6 @@ img{border: none;}
 .banner img{width: 100%;}
 .wrap{width: 900px;height: 1%;overflow: hidden;zoom: 1;margin: 0 auto;padding: 30px 0;font-size: 40px;line-height: 48px;font-weight: bold;}
 .wrap h1{font-size: 40px;line-height: 48px;margin-bottom: 20px;font-weight: bold;}
-.box1{width: 100%;overflow: hidden;zoom: 1;padding-bottom: 20px;}
-.box1r {font-size: 20px;line-height: 24px;color: #666;font-weight: normal;}
-.box2{line-height: 22px;font-size: 14px;color: #999; padding:10px 0;}
-.box2 span{color: #999;padding: 0 10px;line-height: 22px;font-size: 14px;}
-.box2 p{width:100%;line-height: 22px;font-size: 14px; clear:both;}
-.sharebar{ height:22px; float:right;}
 .cp { clear:both; padding-top:20px;}
 .cp p{font-size: 18px;line-height: 32px;color: #000;margin-bottom: 25px;font-weight: normal;}
 .footer{text-align: center;font-size: 16px;line-height: 20px;color: #fff;background-color: #434343;padding: 15px 0;}
@@ -89,16 +83,6 @@ img{border: none;}
 
 <div class="wrap">
     <FOUNDER-XY type="articlelist" data="{'columnid':[8020739],'articletype':'all','article_attr':'all','start':'0','count':'1'}"><#list articles as article><h1>${article.title}</h1>
-    <div class='box1'>
-        <h2 class="box1r">${article.summary}</h2>
-    </div>
-    <div class='box2'><p>${article.author}</p><div style=' height:22px;float:left;'>${article.source}<span>丨</span>Updated:&nbsp;<#setting locale="en_US">${article.pubTime?string("MMMM d, yyyy")}</div>
-        <div class="sharebar">
-            <div class="bshare-custom"><a title="分享到Facebook" class="bshare-facebook" href="javascript:void(0);"></a><a title="分享到Twitter" class="bshare-twitter" href="javascript:void(0);"></a><a title="更多平台" class="bshare-more bshare-more-icon more-style-addthis"></a></div>
-            <script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/buttonLite.js#style=-1&amp;uuid=72352d86-8c1b-4361-8d6b-12862c1a6656&amp;pophcol=2&amp;lang=zh"></script>
-            <script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/bshareC0.js">   </script>
-        </div>
-    </div>
     <div class="cp">${article.content}</div></#list></FOUNDER-XY>
 </div>
 
