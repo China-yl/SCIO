@@ -67,6 +67,7 @@ dd span.mmmm { border-left: 2px solid #5792fc; display: inline-block; padding-le
 .newbox{ width:100%; margin:10px 0;  overflow:hidden; clear:both; background-color:#FFFFFF;padding: 10px 2.5%;}
 .newbox1 { width:100%;margin-bottom:10px;}
 .newbox11 { width:100%;  float:left; clear: both; position: relative; overflow: hidden;}
+.newbox11 a{display: inline-block;}
 .newbox11 p { padding: 2%; position: absolute; left: 0; bottom: 0; filter:alpha(opacity=70);/*IE*/opacity:0.7; background:#000000; width:100%;}
 .newbox11 p a { font-size: 1.6em; color: #fff; line-height: 1.25em; font-weight: bold;}
 #videoarea {width: 100%;}
@@ -222,8 +223,8 @@ dd span.mmmm { border-left: 2px solid #5792fc; display: inline-block; padding-le
 <div class="newbox">
 <h1><span class="fl"><FOUNDER-XY type="columnlist" data="{'columnid':[7247535],'columntype':'self'}"><#list columns as column><a href="${column.urlPad!}" class=""  target="_self" style="color: #0d3175;font-weight: bold;">PRESS ROOM</a></#list></FOUNDER-XY></span><span class="fr"><FOUNDER-XY type="columnlist" data="{'columnid':[7247535],'columntype':'self'}"><#list columns as column><a href="${column.urlPad!}" class=""  target="_self"><img src="http://images.china.cn/images1/en/sciophone/more.png" /></a></#list></FOUNDER-XY></span></h1>
 <div class="newbox1" >
-<div class="newbox11" id="videoimg"><FOUNDER-XY type="articlelist" data="{'columnid':[7247651], 'articletype': 'all', 'article_attr': 'HEADLINE', 'columntype':'self', 'showall':'true', 'start': 0, 'count': 1}"><#list articles as article><img src="${article.picBig}"   border=0 onclick="playvideo()"><img src="http://images.china.cn/images1/en/sciophone/video.png" style="position: absolute;width: 20%;top: 30%;left: 40%;" onclick="playvideo()"/></#list></FOUNDER-XY><FOUNDER-XY type="articlelist" data="{'columnid':[7247535], 'articletype': 'all', 'article_attr': 'HEADLINE', 'columntype':'self', 'showall':'true', 'start': 0, 'count': 1}"><#list articles as article><p><a   href="${article.urlPad}"  target="_top">${article.title}</a></p></#list></FOUNDER-XY></div>
-<div id="vf" style="display:none;"><div id="videoarea" style="width:100%; " align="center"></div></div><FOUNDER-XY type="articlelist" data="{'columnid':[7247651], 'articletype': 'all', 'article_attr': 'HEADLINE', 'columntype':'self', 'showall':'true', 'start': 0, 'count': 1}"><#list articles as article>${article.introTitle}</#list></FOUNDER-XY></div>
+<div class="newbox11" id="videoimg"><FOUNDER-XY type="articlelist" data="{'columnid':[7247651], 'articletype': 'all', 'article_attr': 'HEADLINE', 'columntype':'self', 'showall':'true', 'start': 0, 'count': 1}"><#list articles as article><a   href="${article.urlPad}" ><img src="${article.picBig}"   border=0></a></#list></FOUNDER-XY><FOUNDER-XY type="articlelist" data="{'columnid':[7247535], 'articletype': 'all', 'article_attr': 'HEADLINE', 'columntype':'self', 'showall':'true', 'start': 0, 'count': 1}"><#list articles as article><p><a   href="${article.urlPad}"  target="_top">${article.title}</a></p></#list></FOUNDER-XY></div>
+</div>
 <div class="newbox2">
 <FOUNDER-XY type="articlelist" data="{'columnid':[7247651], 'articletype': 'all', 'article_attr': 'COMMON', 'columntype':'self', 'showall':'true', 'start': 0, 'count': 1}"><#list articles as article><dl><dt><a   href="${article.urlPad}" ><img src="${article.picBig}"   border=0> </a></dt><dd><a   href="${article.urlPad}" >${article.title}</a><br><span class="mmmm">${article.subTitle}</span></dd></dl></#list></FOUNDER-XY>
 <FOUNDER-XY type="articlelist" data="{'columnid':[7247651], 'articletype': 'all', 'article_attr': 'COMMON', 'columntype':'self', 'showall':'true', 'start': 1, 'count': 1}"><#list articles as article><dl><dt><a   href="${article.urlPad}" ><img src="${article.picBig}"   border=0> </a></dt><dd><a   href="${article.urlPad}" >${article.title}</a><br><span class="mmmm">${article.subTitle}</span></dd></dl></#list></FOUNDER-XY>
@@ -370,13 +371,8 @@ window.onload=function (){
                         }
                 }
         });
-    document.getElementById('video-player-html5').pause(); 
 }
-function playvideo(){
-    document.getElementById('videoimg').style.display='none';
-    document.getElementById('vf').style.display='block';
-    document.getElementById('video-player-html5').play();
-}
+
 
 var BTop = ($('.topbtn').offset().top)+78;
 $(window).scroll(function () {
