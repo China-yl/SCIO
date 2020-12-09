@@ -140,15 +140,14 @@
             .more p{font-family:  "Source Han Sans"; font-size:18px;color:#fff;display: inline-block;margin-right: 8px;cursor:pointer;}
             .more span{font-family: Arial, Helvetica, sans-serif; font-size:16px;color: #fff;cursor:pointer;}
             /* box4 */  
-            .show1,.show2,.show3{width: 100%;}
-            .show2,.show3{display: none;}
-            .btn1,.btn2,.btn3{width: 15px;height: 15px;border-radius: 8px;background-color: #fff;position: absolute;bottom: 20px;cursor: pointer;}
-            .btn1{left: 557.5px;}
-            .btn2{left: 592.5px;}
-            .btn3{left: 627.5px;}
+            .show1,.show2,.show3,.show4{width: 100%;position: relative;}
+            .show2,.show3,.show4{display: none;}
             .divtop{width: 1200px;height: 200px;display: table-cell;vertical-align: middle;text-align: center;background: url('http://images.china.cn/images1/en/gxb/platform2/box.png') no-repeat;background-size: 100% 100%;margin-bottom: 56px;position: relative;}
             .divtop p a{font-family:  "Source Han Sans"; font-size:28px;line-height: 35px;margin-bottom: 10px;color: #fff;}
             .divtop span{font-family: Arial, Helvetica, sans-serif; font-size:20px;line-height: 25px;color: #fff;}
+            .divtop ul{width: 100%;display: inline-block;position: absolute;bottom: 20px;left: 0;text-align: center;}
+            .divtop ul li{width: 15px;height: 15px;border-radius: 8px;background-color: #fff;cursor: pointer;display: inline-block;margin-right: 20px;}
+            .divtop ul li:last-child{margin-right: 0;}
             .divbottom{margin-top: 56px;}
             .table{width: 350px;float: left;padding-right: 50px;}
             .table p a{font-family:  "Source Han Sans"; font-size:18px;line-height: 22.5px; color:rgba(255,255,255,0.7);}
@@ -448,12 +447,37 @@
             <div class="content">
                 <div class="show1">
                     <div class="divtop">
+                        <FOUNDER-XY type="columnlist" data="{'columnid':[8020990],'columntype':'self'}"><#list columns as column>
+                        <p><a href="${column.url!}">${column.name}</a></p>
+                        </#list></FOUNDER-XY>
+                        <ul>
+                            <li class="btn1" style="background-color:#ff0b0b"></li>
+                            <li class="btn2"></li>
+                            <li class="btn3"></li>
+                            <li class="btn4"></li>
+                        </ul>
+                    </div>
+                    <div class="divbottom">
+                        <FOUNDER-XY type="articlelist" data="{'columnid':[8020990],'articletype':'all','article_attr':'all','start':'0','count':'3'}"><#list articles as article>
+                        <div class="table">
+                            <p><a href="${article.url}">${article.title}</a></p>
+                            <div class="line"></div>
+                            <span>${article.subTitle}</span>
+                        </div>
+                        </#list></FOUNDER-XY>  
+                    </div>
+                </div>
+                <div class="show2">
+                    <div class="divtop">
                         <FOUNDER-XY type="columnlist" data="{'columnid':[8020030],'columntype':'self'}"><#list columns as column>
                         <p><a href="${column.url!}">${column.name}</a></p>
                         </#list></FOUNDER-XY>
-                        <div class="btn1" style="background-color:#ff0b0b"></div>
-                        <div class="btn2"></div>
-                        <div class="btn3"></div>
+                        <ul>
+                            <li class="btn1"></li>
+                            <li class="btn2" style="background-color:#ff0b0b"></li>
+                            <li class="btn3"></li>
+                            <li class="btn4"></li>
+                        </ul>
                     </div>
                     <div class="divbottom">
                         <FOUNDER-XY type="articlelist" data="{'columnid':[8020030],'articletype':'all','article_attr':'all','start':'0','count':'3'}"><#list articles as article>
@@ -465,14 +489,17 @@
                         </#list></FOUNDER-XY>  
                     </div>
                 </div>
-                <div class="show2">
+                <div class="show3">
                     <div class="divtop">
                         <FOUNDER-XY type="columnlist" data="{'columnid':[8020032],'columntype':'self'}"><#list columns as column>
                         <p><a href="${column.url!}">${column.name}</a></p>
                         </#list></FOUNDER-XY>
-                        <div class="btn1"></div>
-                        <div class="btn2" style="background-color:#ff0b0b"></div>
-                        <div class="btn3"></div>
+                        <ul>
+                            <li class="btn1"></li>
+                            <li class="btn2"></li>
+                            <li class="btn3" style="background-color:#ff0b0b"></li>
+                            <li class="btn4"></li>
+                        </ul>
                     </div>
                     <div class="divbottom">
                         <FOUNDER-XY type="articlelist" data="{'columnid':[8020032],'articletype':'all','article_attr':'all','start':'0','count':'3'}"><#list articles as article>
@@ -484,14 +511,17 @@
                         </#list></FOUNDER-XY>  
                     </div>
                 </div>  
-                <div class="show3">
+                <div class="show4">
                     <div class="divtop">
                         <FOUNDER-XY type="columnlist" data="{'columnid':[8020053],'columntype':'self'}"><#list columns as column>
                         <p><a href="${column.url!}">${column.name}</a></p>
                         </#list></FOUNDER-XY>
-                        <div class="btn1"></div>
-                        <div class="btn2"></div>
-                        <div class="btn3" style="background-color:#ff0b0b"></div>
+                        <ul>
+                            <li class="btn1"></li>
+                            <li class="btn2"></li>
+                            <li class="btn3"></li>
+                            <li class="btn4" style="background-color:#ff0b0b"></li>
+                        </ul>
                     </div>
                     <div class="divbottom">
                         <FOUNDER-XY type="articlelist" data="{'columnid':[8020053],'articletype':'all','article_attr':'all','start':'0','count':'3'}"><#list articles as article>
@@ -562,21 +592,40 @@
                     $(".en p").eq(3).css("opacity","0");
                 });
                
-               $(".btn1").click(function(){
-                   $(".show1").css("display","block");
-                   $(".show2").css("display","none");
-                   $(".show3").css("display","none");
-               });
-               $(".btn2").click(function(){
-                   $(".show1").css("display","none");
-                   $(".show2").css("display","block");
-                   $(".show3").css("display","none");
-               });
-               $(".btn3").click(function(){
-                   $(".show1").css("display","none");
-                   $(".show2").css("display","none");
-                   $(".show3").css("display","block");
-               });
+                $('.divtop').each(function() {
+                    $(this).find(".btn1").each(function(){
+                        $(this).click(function(){
+                            $(".show1").css("display","block");
+                            $(".show2").css("display","none");
+                            $(".show3").css("display","none");
+                            $(".show4").css("display","none");
+                        });
+                    });
+                    $(this).find(".btn2").each(function(){
+                        $(this).click(function(){
+                            $(".show1").css("display","none");
+                            $(".show2").css("display","block");
+                            $(".show3").css("display","none");
+                            $(".show4").css("display","none");
+                        });
+                    });
+                    $(this).find(".btn3").each(function(){
+                        $(this).click(function(){
+                            $(".show1").css("display","none");
+                            $(".show2").css("display","none");
+                            $(".show3").css("display","block");
+                            $(".show4").css("display","none");
+                        });
+                    });
+                    $(this).find(".btn4").each(function(){
+                        $(this).click(function(){
+                            $(".show1").css("display","none");
+                            $(".show2").css("display","none");
+                            $(".show3").css("display","none");
+                            $(".show4").css("display","block");
+                        });
+                    });
+                });
             });
             function checkUser(){
                 document.getElementById("formid").submit();
