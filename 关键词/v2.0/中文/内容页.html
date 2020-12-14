@@ -1,0 +1,140 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title><FOUNDER-XY type="article" data="{}">${article.title}</FOUNDER-XY></title>
+        <FOUNDER-XY type="article" data="{}"><meta name="keywords" content="${article.keyword}"></FOUNDER-XY>
+        <FOUNDER-XY type="article" data="{}"><META name="filetype" content="0"></META>
+        <META name="publishedtype" content="1"></META>
+        <META name="pagetype" content="1"></META>
+        <META name="catalogs" content=""></META>
+        <META name="contentid" content="${article.id?c}"></META>
+        <META name="publishdate" content="${article.pubTime?string("yyyy-MM-dd")}"></META>
+        <META name="author" content="${article.liability}"></META></FOUNDER-XY>
+        <style type="text/css">
+            * { margin: 0px; padding: 0px;box-sizing: border-box;}
+            body {font-family: 'Arial','微软雅黑'; font-size:16px; color:#000; line-height:20px; width: 100%;min-width: 1200px;position: relative;}
+            a { text-decoration: none; font-size:16px; color:#000; line-height:20px; }
+            a:hover { text-decoration: none; }
+            ul, li { list-style-type: none; }
+            img{border: none;}
+
+            .top { height: 34px; text-align: center; line-height: 17px;border-bottom: 1px solid #c8c8c8; width: 100%;}
+            .top a { line-height: 34px; margin: 0 5px; }
+
+            .nav{width: 100%;height: 56px;box-shadow: 0px 6px 5px rgba(0,0,0,0.1);position: absolute;top: 34px; left: 0;}
+            .nav ul{width: 1200px;height: 56px;display: block;margin: 0 auto;clear: both;}
+            .nav ul li{width: 240px;height: 56px;float: left;text-align: center;}
+            .nav ul li a{font-size: 18px;line-height: 56px;color: #000;}
+            .nav ul .select,.nav ul li:hover {background-color: #dd2626;}
+            .nav ul .select a,.nav ul li:hover a{color: #fff;}
+
+            .banner{width: 100%;height: 184px;background: url('http://images.china.cn/images1/en/keywords2020/banner_2.jpg') no-repeat top center;margin-top: 56px;}
+            .org{width: 1200px;margin: 0 auto;padding: 97px 0 0 278px;}
+            .org p{width: 210px;height: 40px; display: inline-grid;text-align: center;margin-right: 2px;}
+            .org p a{font-size: 20px;line-height: 40px;color: #fff;}
+            .address{width: 1200px;margin: 0 auto;padding: 25px 0 20px;}
+            .address a{font-family:  "MicrosoftYaHei"; font-size:16px;line-height: 20px; color: #666; }
+            .wrap{width: 1200px;height: 1%;overflow: hidden;zoom: 1;margin: 0 auto;padding: 0 0 40px;}
+            .wrapl{width: 800px;display: inline-block;}
+            .tit {width: 800px;font-family:  "MicrosoftYaHei";  font-size: 24px;line-height: 30px;  font-weight: bold;color: #fff; padding: 25px;background-color: #dd2626;display: inline-block; }
+            .sjlyzz {width: 800px; height: 30px;font-family:  "MicrosoftYaHei";  font-size: 16px; line-height: 30px; color: #fff;background-color: #ad2020;padding-left: 25px; }
+            .content {width: 800px; padding: 30px 25px; font-family:  "MicrosoftYaHei"; font-size:16px;line-height: 20px; color: #666;}
+            .content table { margin:0 auto;}
+            .wrapr{width: 370px;float: right;}
+            .latest{width: 370px;height: 54px;background: -webkit-linear-gradient(left,#a40b0b, #c52323);background: -o-linear-gradient(right,#a40b0b, #c52323);background: -moz-linear-gradient(right,#a40b0b, #c52323);background: linear-gradient(to right,#a40b0b, #c52323);padding-left: 20px;font-family:  "MicrosoftYaHei"; font-size:24px;line-height: 54px;color: #fff;font-weight: bold;}
+            .wrapr ul{width: 370px;display: block;padding: 10px 0 10px 20px;border: 1px solid #d3d3d3;}
+            .wrapr ul li{padding: 10px 0;}
+            .wrapr ul li p a{font-family:  "MicrosoftYaHei"; font-size:16px;line-height: 20px;color: #666;}
+            .search{clear:both;height: 48px;overflow:hidden;border-radius: 8px;background-color: #fff;box-sizing:border-box;-moz-box-sizing:border-box; /* Firefox */-webkit-box-sizing:border-box; /* Safari */margin: 30px 0;border: 1px solid #666;}
+            .inputText { line-height: 48px; border: none; width: 320px; height: 48px;padding: 0 12px;font-size: 16px; cursor:pointer;}
+            #autopage { font-size:  14px; color: #000;clear: both;text-align: center;}
+            #autopage a{ color: #000;padding: 11px;font-size: 26px;line-height: 35px;}
+            #autopage span { color: #F00;padding: 11px;font-size: 26px;line-height: 35px; } 
+            .contact{width: 100%;height: 56px;background-color: #dd2626;text-align: center;padding-top: 19px;}
+            .contact a{display: inline-block;}
+            .contact img{width: 90px;height: 18px;}
+            .footer {width: 100%;height: 90px;font-size: 15px;line-height: 22px;color: #fff;background: url('http://images.china.cn/images1/en/keywords2020/ft_bg.png') no-repeat; text-align: center; padding: 23px 0px;}
+        </style>
+<script type="text/javascript">
+
+    function browserRedirect() {
+        var sUserAgent= navigator.userAgent.toLowerCase();
+        var bIsIpad= sUserAgent.match(/ipad/i) == "ipad";
+        var bIsIphoneOs= sUserAgent.match(/iphone os/i) == "iphone os";
+        var bIsMidp= sUserAgent.match(/midp/i) == "midp";
+        var bIsUc7= sUserAgent.match(/rv:1.2.3.4/i) == "rv:1.2.3.4";
+        var bIsUc= sUserAgent.match(/ucweb/i) == "ucweb";
+        var bIsAndroid= sUserAgent.match(/android/i) == "android";
+        var bIsCE= sUserAgent.match(/windows ce/i) == "windows ce";
+        var bIsWM= sUserAgent.match(/windows mobile/i) == "windows mobile";
+        var str=window.location.href;//取地址参数部分
+        var strurl=[];
+        strArr = str.split("/");
+        for(var i=3;i<strArr.length;i++){
+          strurl.push(strArr[i]);
+        }
+        var lasturl="http://keywords.china.org.cn/m/"+strurl.join("/");
+        if (bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM) {
+          if(strArr[3]!="m"){
+            window.location.href= lasturl;
+          }          
+        } else {
+           
+        }
+    }
+    browserRedirect();//调用自身，页面一打开就开始跳转
+  </script>
+        <script type="text/javascript" src="http://images.china.cn/images1/resource/scripts/jquery/jquery-1.9.1.min.js"></script>
+    </head>
+    <body>
+        <div class="top"><a href="http://keywords.china.org.cn/index.htm">中文</a>|<a href="http://www.china.org.cn/english/china_key_words/index.htm">English</a>|<a href="http://french.china.org.cn/china/archives/china_key_words/index.htm">Français</a>|<a href="http://russian.china.org.cn/china/China_Key_Words/index.htm">Русский язык</a>|<a href="http://japanese.china.org.cn/jp/china_key_words/index.htm">日本語</a>|<a href="http://spanish.china.org.cn/specials/china_key_words/index.htm">Español</a>|<a href="http://arabic.china.org.cn/china/China_Key_Words/index.htm">عربي</a>|<a href="http://german.china.org.cn/china/china_stichwoerter/index.htm">Deutsch</a>|<a href="http://korean.china.org.cn/china_keyword/index.htm">한국어</a>|<a href="http://portuguese.china.org.cn/china_key_words/index.htm">Português</a>|<a href="http://turkish.china.org.cn/china_key_words/index.htm">Türkçe</a>|<a href="http://indonesian.china.org.cn/china_key_words/index.htm">Bahasa Indonesia</a>|<a href="http://kazakh.china.org.cn/china_key_words/index.htm" target="_blank">Қазақ тілі</a>|<a href="http://vietnamese.china.org.cn/china_key_words/index.htm">Tiếng Việt</a>|<a href="http://italian.china.org.cn/china_key_words/index.htm">lingua italiana</a></div>
+        <div class="nav">
+            <ul>
+                <li><FOUNDER-XY type="columnlist" data="{'columnid':[7215027],'columntype':'self'}"><#list columns as column><a href="${column.url!}">首页</a></#list></FOUNDER-XY></li>
+                <li><a href="http://keywords.china.org.cn/2014-11/13/content_34036371.htm">项目介绍</a></li>
+                <li><FOUNDER-XY type="columnlist" data="{'columnid':[7229988],'columntype':'self'}"><#list columns as column><a href="${column.url!}">专题分类</a></#list></FOUNDER-XY></li>
+                <li><FOUNDER-XY type="columnlist" data="{'columnid':[7215031],'columntype':'self'}"><#list columns as column><a href="${column.url!}">业界资讯</a></#list></FOUNDER-XY></li>
+                <li><FOUNDER-XY type="columnlist" data="{'columnid':[7215033],'columntype':'self'}"><#list columns as column><a href="${column.url!}">延伸阅读</a></#list></FOUNDER-XY></li>
+            </ul>
+        </div>
+        <div class="banner">
+            <div class="org"><p style="background-color: #c9182a;"><a href="http://www.cipg.org.cn">中国外文局</a></p><p style="background-color: #25439b;"><a href="http://www.catl.org.cn">中国翻译研究院</a></p><p style="background-color: #a2794b;"><a href="http://www.tac-online.org.cn">中国翻译协会</a></p></div>
+        </div>
+        <div class="address"><FOUNDER-XY type="columnlist" data="{'columnid':[7215027],'columntype':'self'}"><#list columns as column><a href="${column.url!}" class="" >首页</a></#list></FOUNDER-XY> &gt; <FOUNDER-XY type="columnlist" data="{'columnid':[],'columntype':'self'}"><#list columns as column><a href="${column.url!}" class="" >${column.name}</a></#list></FOUNDER-XY></div>
+        <div class="wrap">
+            <div class="wrapl">
+                <FOUNDER-XY type="article" data="{}"><h1 class="tit">${article.title}</h1>
+                <div class="sjlyzz">发布时间：${article.pubTime?string("yyyy-MM-dd")} | 来源：${article.source}</div>
+                <div class="content">${article.content}</div></FOUNDER-XY>
+            </div>
+            
+            <div class="wrapr">
+                <div class="latest">热词热译</div>
+                <ul>
+                    <FOUNDER-XY type="articlelist" data="{'columnid':[7215034],'articletype':'all','article_attr':'all','start':'0','count':'7'}"><#list articles as article>
+                    <li>
+                        <p><a href="${article.url}">${article.title}</a></p>
+                    </li>
+                    </#list></FOUNDER-XY>
+                </ul>
+                <div class="search">
+                    <form id="formid" action="http://keywords.china.org.cn/search.htm" method="get" target="_top" class="militaryForm">
+                        <input type="text" name="searchText" class="inputText" placeholder="请输入您要搜索的关键词..."/>
+                        <div onclick="checkUser();" style="cursor:pointer;width: 48px;height: 48px;float: right;">
+                            <img src="http://images.china.cn/images1/en/keywords2020/minsearch.png"/>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="contact"><a href="http://keywords.china.org.cn/2014-12/08/content_34257028.htm"><img src="http://images.china.cn/images1/en/keywords2020/contact.png"></a></div>
+        <div class="footer">Copyright © China.org.cn. All Rights Reserved 京ICP证 040089号 京公网安备110108006329号<br /> 网络传播视听节目许可证号:0105123 京公网安备110108006329号 京网文[2011]0252-085号</div>
+
+        <script type="text/javascript">
+            function checkUser(){
+                document.getElementById("formid").submit();
+            }
+        </script>
+    </body>
+</html>
