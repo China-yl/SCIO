@@ -167,11 +167,11 @@
             <div class="list" onclick="showlist()">首页<img src="http://images.china.cn/images1/en/keywords2020/m/sanjiao.png" /></div>
             <div class="listshow" id="listshow">
                 <ul>
-                    <li><FOUNDER-XY type="columnlist" data="{'columnid':[7215027],'columntype':'self'}"><#list columns as column><a href="${column.urlPad!}" target="_self">首页</a></#list></FOUNDER-XY></li>
-                    <li><a href="http://keywords.china.org.cn/2014-11/13/content_34036371.htm" target="_self">项目介绍</a></li>
-                    <li><FOUNDER-XY type="columnlist" data="{'columnid':[7229988],'columntype':'self'}"><#list columns as column><a href="${column.urlPad!}" target="_self">专题分类</a></#list></FOUNDER-XY></li>
-                    <li><FOUNDER-XY type="columnlist" data="{'columnid':[7215031],'columntype':'self'}"><#list columns as column><a href="${column.urlPad!}" target="_self">业界资讯</a></#list></FOUNDER-XY></li>
-                    <li><FOUNDER-XY type="columnlist" data="{'columnid':[7215033],'columntype':'self'}"><#list columns as column><a href="${column.urlPad!}" target="_self">延伸阅读</a></#list></FOUNDER-XY></li>
+                    <li><FOUNDER-XY type="columnlist" data="{'columnid':[7215027],'columntype':'self'}"><#list columns as column><a href="${column.urlPad!}">首页</a></#list></FOUNDER-XY></li>
+                    <li><a href="http://keywords.china.org.cn/2014-11/13/content_34036371.htm">项目介绍</a></li>
+                    <li><FOUNDER-XY type="columnlist" data="{'columnid':[7229988],'columntype':'self'}"><#list columns as column><a href="${column.urlPad!}">专题分类</a></#list></FOUNDER-XY></li>
+                    <li><FOUNDER-XY type="columnlist" data="{'columnid':[7215031],'columntype':'self'}"><#list columns as column><a href="${column.urlPad!}">业界资讯</a></#list></FOUNDER-XY></li>
+                    <li><FOUNDER-XY type="columnlist" data="{'columnid':[7215033],'columntype':'self'}"><#list columns as column><a href="${column.urlPad!}">延伸阅读</a></#list></FOUNDER-XY></li>
                 </ul>    
                 <div class="listtop"><div onclick="closelist()" style="display:inline-block;width:100%;text-align: center;"><img src="http://images.china.cn/images1/en/keywords2020/m/close.png"></div></div>
             </div>
@@ -199,7 +199,7 @@
         </div>
         <div class="banner"><img src="http://images.china.cn/images1/en/keywords2020/m/banner_sp.jpg"></div>
         <div class="search">
-            <form id="formid" action="http://keywords.china.org.cn/search.htm" method="get" target="_top">
+            <form id="formid" action="http://keywords.china.org.cn/m/search.htm" method="get" target="_top">
                 <input type="text" name="searchText" class="inputText" placeholder="请输入您要搜索的关键词..."/>
                 <div onclick="checkUser();" style="cursor:pointer;width: 30%;float: right;">
                     <img src="http://images.china.cn/images1/en/keywords2020/search.png" style="width: 100%;" />
@@ -228,7 +228,7 @@
         <div class="sort">
             <div class="title">
                 <p>专题分类</p>
-                <div class="more"><FOUNDER-XY type="columnlist" data="{'columnid':[7229988],'columntype':'self'}"><#list columns as column><a href="${column.urlPad!}" target="_self">更多+</a></#list></FOUNDER-XY></div>
+                <div class="more"><FOUNDER-XY type="columnlist" data="{'columnid':[7229988],'columntype':'self'}"><#list columns as column><a href="${column.urlPad!}">更多+</a></#list></FOUNDER-XY></div>
             </div>
             <div class="sortlist">
                 <div class="list1 btn">
@@ -279,7 +279,7 @@
         <div class="div3">
             <div class="title">
                 <p>业界资讯</p>
-                <div class="more"><FOUNDER-XY type="columnlist" data="{'columnid':[7215031],'columntype':'self'}"><#list columns as column><a href="${column.urlPad!}" target="_self">更多+</a></#list></FOUNDER-XY></div>
+                <div class="more"><FOUNDER-XY type="columnlist" data="{'columnid':[7215031],'columntype':'self'}"><#list columns as column><a href="${column.urlPad!}">更多+</a></#list></FOUNDER-XY></div>
             </div>
             <div class="informatio">
                 <FOUNDER-XY type="articlelist" data="{'columnid':[7215031],'articletype':'all','article_attr':'HEADLINE','start':'0','count':'1'}"><#list articles as article>
@@ -297,7 +297,7 @@
             <div class="div4">
                 <div class="title">
                     <p>延伸阅读</p>
-                    <div class="more"><FOUNDER-XY type="columnlist" data="{'columnid':[7215033],'columntype':'self'}"><#list columns as column><a href="${column.urlPad!}" target="_self">更多+</a></#list></FOUNDER-XY></div>
+                    <div class="more"><FOUNDER-XY type="columnlist" data="{'columnid':[7215033],'columntype':'self'}"><#list columns as column><a href="${column.urlPad!}">更多+</a></#list></FOUNDER-XY></div>
                 </div>
                 <div class="reading">
                     <FOUNDER-XY type="articlelist" data="{'columnid':[7215033],'articletype':'all','article_attr':'all','start':'0','count':'1'}"><#list articles as article>
@@ -311,7 +311,7 @@
                 <div class="div5">
                     <div class="title">
                         <p>系列视频</p>
-                        <div class="more"><FOUNDER-XY type="columnlist" data="{'columnid':[8020623],'columntype':'self'}"><#list columns as column><a href="${column.urlPad!}" target="_self">更多+</a></#list></FOUNDER-XY></div>
+                        <div class="more"><FOUNDER-XY type="columnlist" data="{'columnid':[8020623],'columntype':'self'}"><#list columns as column><a href="${column.urlPad!}">更多+</a></#list></FOUNDER-XY></div>
                     </div>
                     <div class="video">
                         <FOUNDER-XY type="articlelist" data="{'columnid':[8020623],'articletype':'all','article_attr':'all','start':'0','count':'1'}"><#list articles as article>
@@ -325,7 +325,7 @@
                 <div class="div6">
                     <div class="title">
                         <p>双语文件</p>
-                        <div class="more"><FOUNDER-XY type="columnlist" data="{'columnid':[7215175],'columntype':'self'}"><#list columns as column><a href="${column.urlPad!}" target="_self">更多+</a></#list></FOUNDER-XY></div>
+                        <div class="more"><FOUNDER-XY type="columnlist" data="{'columnid':[7215175],'columntype':'self'}"><#list columns as column><a href="${column.urlPad!}">更多+</a></#list></FOUNDER-XY></div>
                     </div>
                     <div class="bilingual">
                         <FOUNDER-XY type="articlelist" data="{'columnid':[7215175],'articletype':'all','article_attr':'all','start':'0','count':'1'}"><#list articles as article>
@@ -341,7 +341,7 @@
         <div class="friendly">
             <div class="tt">友情链接</div>
             <ul><FOUNDER-XY type="articlelist" data="{'columnid':[7215028], 'articletype': 'all', 'article_attr': 'all', 'columntype':'self', 'showall':'true', 'start': 0, 'count': 28}"><#list articles as article>
-                <li><a   href="${article.urlPad}"  target="_self">${article.title}</a></li>
+                <li><a   href="${article.urlPad}" >${article.title}</a></li>
             </#list></FOUNDER-XY></ul>
         </div>
         <div class="contact"><a href="http://keywords.china.org.cn/2014-12/08/content_34257028.htm"><img src="http://images.china.cn/images1/en/keywords2020/contact.png"></a></div>
