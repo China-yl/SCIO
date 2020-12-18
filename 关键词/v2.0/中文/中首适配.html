@@ -3,7 +3,7 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <title>中国关键词 _ China.org.cn</title>
-        <base target="_blank" />
+        <base target="_self" />
         <meta name="filetype" content="1" />
         <meta name="publishedtype" content="1" />
         <meta name="pagetype" content="2" /><FOUNDER-XY type="columnlist" data="{'columnid':[],'columntype':'self'}"><#list columns as column><meta name="catalogs" content="${column.id}"></meta></#list></FOUNDER-XY>
@@ -168,7 +168,7 @@
             <div class="listshow" id="listshow">
                 <ul>
                     <li><FOUNDER-XY type="columnlist" data="{'columnid':[7215027],'columntype':'self'}"><#list columns as column><a href="${column.urlPad!}">首页</a></#list></FOUNDER-XY></li>
-                    <li><a href="http://keywords.china.org.cn/2014-11/13/content_34036371.htm">项目介绍</a></li>
+                    <li><a href="http://keywords.china.org.cn/m/2014-11/13/content_34036371.html">项目介绍</a></li>
                     <li><FOUNDER-XY type="columnlist" data="{'columnid':[7229988],'columntype':'self'}"><#list columns as column><a href="${column.urlPad!}">专题分类</a></#list></FOUNDER-XY></li>
                     <li><FOUNDER-XY type="columnlist" data="{'columnid':[7215031],'columntype':'self'}"><#list columns as column><a href="${column.urlPad!}">业界资讯</a></#list></FOUNDER-XY></li>
                     <li><FOUNDER-XY type="columnlist" data="{'columnid':[7215033],'columntype':'self'}"><#list columns as column><a href="${column.urlPad!}">延伸阅读</a></#list></FOUNDER-XY></li>
@@ -218,7 +218,7 @@
                         <div><span>${article.summary}</span>个词条</div>
                     </#list></FOUNDER-XY></div>
                     <FOUNDER-XY type="articlelist" data="{'columnid':[8020622],'articletype':'all','article_attr':'COMMON','start':'0','count':'2'}"><#list articles as article><dl>
-                        <dt><a href="${article.urlPad}"><img src="http://images.china.cn/site1007/2020-11/12/t2_(0X61X450X361)298d2433-f72c-42f0-8ef1-00b1037a590b.jpg"></a></dt>
+                        <dt><a href="${article.urlPad}"><img src="${article.picBig}"></a></dt>
                         <dd><a href="${article.urlPad}">${article.title}</a></dd>
                     </dl></#list></FOUNDER-XY>
                 </div>
@@ -284,7 +284,7 @@
             <div class="informatio">
                 <FOUNDER-XY type="articlelist" data="{'columnid':[7215031],'articletype':'all','article_attr':'HEADLINE','start':'0','count':'1'}"><#list articles as article>
                     <dl>
-                        <dt><a href="${article.urlPad}"><img src="http://images.china.cn/site1007/2020-06/16/t2_(20X0X581X375)41563881-50ed-4154-9c63-f56ffad8be45.jpg"></a></dt>
+                        <dt><a href="${article.urlPad}"><img src="${article.picBig}"></a></dt>
                         <dd><p><a href="${article.urlPad}">${article.title}</a></p></dd>
                     </dl>
                 </#list></FOUNDER-XY>
@@ -301,7 +301,7 @@
                 </div>
                 <div class="reading">
                     <FOUNDER-XY type="articlelist" data="{'columnid':[7215033],'articletype':'all','article_attr':'all','start':'0','count':'1'}"><#list articles as article>
-                        <a href="${article.urlPad}"><img src="http://images.china.cn/site1007/2018-04/10/17aeedb9-4ac5-4122-9ff0-d5cb52512ae8.jpg"></a>
+                        <a href="${article.urlPad}"><img src="${article.picBig}"></a>
                     </#list></FOUNDER-XY>
                 </div>
             </div> 
@@ -315,7 +315,7 @@
                     </div>
                     <div class="video">
                         <FOUNDER-XY type="articlelist" data="{'columnid':[8020623],'articletype':'all','article_attr':'all','start':'0','count':'1'}"><#list articles as article>
-                            <a href="${article.urlPad}"><img src="http://images.china.cn/site1007/2020-11/12/t2_(0X0X509X339)ab352747-6e8f-4afb-bbd4-1b9853fdf79d.jpg"><img src="http://images.china.cn/images1/en/keywords2020/video.png" style="width: 40px;height: 40px;position: absolute;top: 40%;left: 44%;z-index: 10000;"><img src="http://images.china.cn/images1/en/keywords2020/video_zz.png" style="width: 100%;position: absolute;top: 0;left: 0;"></a>
+                            <a href="${article.urlPad}"><img src="${article.picBig}"><img src="http://images.china.cn/images1/en/keywords2020/video.png" style="width: 40px;height: 40px;position: absolute;top: 40%;left: 44%;z-index: 10000;"><img src="http://images.china.cn/images1/en/keywords2020/video_zz.png" style="width: 100%;position: absolute;top: 0;left: 0;"></a>
                             <p><a href="${article.urlPad}">${article.title}</a></p>
                             </dl>
                         </#list></FOUNDER-XY>
@@ -341,10 +341,10 @@
         <div class="friendly">
             <div class="tt">友情链接</div>
             <ul><FOUNDER-XY type="articlelist" data="{'columnid':[7215028], 'articletype': 'all', 'article_attr': 'all', 'columntype':'self', 'showall':'true', 'start': 0, 'count': 28}"><#list articles as article>
-                <li><a   href="${article.urlPad}" >${article.title}</a></li>
+                <li><a   href="${article.urlPad}"  target="_blank" >${article.title}</a></li>
             </#list></FOUNDER-XY></ul>
         </div>
-        <div class="contact"><a href="http://keywords.china.org.cn/2014-12/08/content_34257028.htm"><img src="http://images.china.cn/images1/en/keywords2020/contact.png"></a></div>
+        <div class="contact"><a href="http://keywords.china.org.cn/m/2014-12/08/content_34257028.html"><img src="http://images.china.cn/images1/en/keywords2020/contact.png"></a></div>
         <div class="footer">Copyright © China.org.cn. All Rights Reserved <br/>京ICP证 040089号 京公网安备110108006329号<br/> 网络传播视听节目许可证号:0105123 <br/>京公网安备110108006329号 <br/>京网文[2011]0252-085号</div>
 
         <script  type="text/javascript">

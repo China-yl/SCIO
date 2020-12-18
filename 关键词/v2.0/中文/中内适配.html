@@ -3,7 +3,7 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <title><FOUNDER-XY type="article" data="{}">${article.title}</FOUNDER-XY></title>
-        <base target="_blank" />
+        <base target="_self" />
         <meta name="filetype" content="1" />
         <meta name="publishedtype" content="1" />
         <meta name="pagetype" content="2" /><FOUNDER-XY type="columnlist" data="{'columnid':[],'columntype':'self'}"><#list columns as column><meta name="catalogs" content="${column.id}"></meta></#list></FOUNDER-XY>
@@ -52,10 +52,10 @@
             .address{width: 100%;padding: 10px 5%;}
             .address a{font-family:  "MicrosoftYaHei"; font-size:1.4em;line-height: 1.25em; color: #666; }
 
-            .wrap{width: 100%;height: 1%;overflow: hidden;zoom: 1;padding: 10px 0;}
-            .tit {width:100%;font-family:  "MicrosoftYaHei";  font-size: 1.8em;line-height: 1.25em;  font-weight: bold;color: #fff; padding: 10px 5%;background-color: #dd2626;display: inline-block; }
-            .sjlyzz {width: 100%; font-family:  "MicrosoftYaHei";  font-size: 1.4em;line-height: 1.25em;  color: #fff;background-color: #ad2020;padding: 5px 5%; }
-            .content {width: 100%; padding: 15px 5%; font-family:  "MicrosoftYaHei"; font-size:1.6em;line-height: 1.25em; color: #666;}
+            .wrap{width: 98%;height: 1%;overflow: hidden;zoom: 1;padding: 10px 0;border: 1px solid #d3d3d3;margin: 0 auto 10px;}
+            .tit {width:100%;font-family:  "MicrosoftYaHei";  font-size: 1.8em;line-height: 1.25em;  font-weight: bold;color: #333; padding: 10px 4%;display: inline-block; }
+            .sjlyzz {width: 100%; font-family:  "MicrosoftYaHei";  font-size: 1.4em;line-height: 1.25em;  color: #333;padding: 5px 4%;margin-bottom: 5px;}
+            .content {width: 100%; padding: 15px 4%; font-family:  "MicrosoftYaHei"; font-size:1.6em;line-height: 1.25em; color: #333;border-top: 1px solid #d3d3d3;}
             .content table { margin:0 auto;}
 
             #autopage { color: #000;clear: both;text-align: center;}
@@ -79,7 +79,7 @@
             <div class="listshow" id="listshow">
                 <ul>
                     <li><FOUNDER-XY type="columnlist" data="{'columnid':[7215027],'columntype':'self'}"><#list columns as column><a href="${column.urlPad!}">首页</a></#list></FOUNDER-XY></li>
-                    <li><a href="http://keywords.china.org.cn/2014-11/13/content_34036371.htm">项目介绍</a></li>
+                    <li><a href="http://keywords.china.org.cn/m/2014-11/13/content_34036371.html">项目介绍</a></li>
                     <li><FOUNDER-XY type="columnlist" data="{'columnid':[7229988],'columntype':'self'}"><#list columns as column><a href="${column.urlPad!}">专题分类</a></#list></FOUNDER-XY></li>
                     <li><FOUNDER-XY type="columnlist" data="{'columnid':[7215031],'columntype':'self'}"><#list columns as column><a href="${column.urlPad!}">业界资讯</a></#list></FOUNDER-XY></li>
                     <li><FOUNDER-XY type="columnlist" data="{'columnid':[7215033],'columntype':'self'}"><#list columns as column><a href="${column.urlPad!}">延伸阅读</a></#list></FOUNDER-XY></li>
@@ -123,7 +123,7 @@
             <div class="sjlyzz">发布时间：${article.pubTime?string("yyyy-MM-dd")} | 来源：${article.source}</div>
             <div class="content">${article.content}</div></FOUNDER-XY>
         </div>
-        <div class="contact"><a href="http://keywords.china.org.cn/m/2014-12/08/content_34257028.htm"><img src="http://images.china.cn/images1/en/keywords2020/contact.png"></a></div>
+        <div class="contact"><a href="http://keywords.china.org.cn/m/2014-12/08/content_34257028.html"><img src="http://images.china.cn/images1/en/keywords2020/contact.png"></a></div>
         <div class="footer">Copyright © China.org.cn. All Rights Reserved <br/>京ICP证 040089号 京公网安备110108006329号<br/> 网络传播视听节目许可证号:0105123 <br/>京公网安备110108006329号 <br/>京网文[2011]0252-085号</div>
 
         <script  type="text/javascript">

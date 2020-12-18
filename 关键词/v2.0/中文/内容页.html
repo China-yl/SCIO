@@ -3,6 +3,7 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <title><FOUNDER-XY type="article" data="{}">${article.title}</FOUNDER-XY></title>
+        <base target="_self" />
         <FOUNDER-XY type="article" data="{}"><meta name="keywords" content="${article.keyword}"></FOUNDER-XY>
         <FOUNDER-XY type="article" data="{}"><META name="filetype" content="0"></META>
         <META name="publishedtype" content="1"></META>
@@ -36,10 +37,10 @@
             .address{width: 1200px;margin: 0 auto;padding: 25px 0 20px;}
             .address a{font-family:  "MicrosoftYaHei"; font-size:16px;line-height: 20px; color: #666; }
             .wrap{width: 1200px;height: 1%;overflow: hidden;zoom: 1;margin: 0 auto;padding: 0 0 40px;}
-            .wrapl{width: 800px;display: inline-block;}
-            .tit {width: 800px;font-family:  "MicrosoftYaHei";  font-size: 24px;line-height: 30px;  font-weight: bold;color: #fff; padding: 25px;background-color: #dd2626;display: inline-block; }
-            .sjlyzz {width: 800px; height: 30px;font-family:  "MicrosoftYaHei";  font-size: 16px; line-height: 30px; color: #fff;background-color: #ad2020;padding-left: 25px; }
-            .content {width: 800px; padding: 30px 25px; font-family:  "MicrosoftYaHei"; font-size:16px;line-height: 20px; color: #666;}
+            .wrapl{width: 800px;display: inline-block;border: 1px solid #d3d3d3;}
+            .tit {width: 800px;font-family:  "MicrosoftYaHei";  font-size: 24px;line-height: 30px;  font-weight: bold;color: #333; padding: 25px;display: inline-block; }
+            .sjlyzz {width: 800px; height: 30px;font-family:  "MicrosoftYaHei";  font-size: 16px; line-height: 30px; color: #333;padding-left: 25px;margin-bottom: 15px;}
+            .content {width: 800px; padding: 20px 25px; font-family:  "MicrosoftYaHei"; font-size:16px;line-height: 28px; color: #333;border-top: 1px solid #d3d3d3;}
             .content table { margin:0 auto;}
             .wrapr{width: 370px;float: right;}
             .latest{width: 370px;height: 54px;background: -webkit-linear-gradient(left,#a40b0b, #c52323);background: -o-linear-gradient(right,#a40b0b, #c52323);background: -moz-linear-gradient(right,#a40b0b, #c52323);background: linear-gradient(to right,#a40b0b, #c52323);padding-left: 20px;font-family:  "MicrosoftYaHei"; font-size:24px;line-height: 54px;color: #fff;font-weight: bold;}
@@ -92,7 +93,7 @@
         <div class="nav">
             <ul>
                 <li><FOUNDER-XY type="columnlist" data="{'columnid':[7215027],'columntype':'self'}"><#list columns as column><a href="${column.url!}">首页</a></#list></FOUNDER-XY></li>
-                <li><a href="http://keywords.china.org.cn/2014-11/13/content_34036371.htm">项目介绍</a></li>
+                <li><a href="http://keywords.china.org.cn/2014-11/13/content_34036371.html">项目介绍</a></li>
                 <li><FOUNDER-XY type="columnlist" data="{'columnid':[7229988],'columntype':'self'}"><#list columns as column><a href="${column.url!}">专题分类</a></#list></FOUNDER-XY></li>
                 <li><FOUNDER-XY type="columnlist" data="{'columnid':[7215031],'columntype':'self'}"><#list columns as column><a href="${column.url!}">业界资讯</a></#list></FOUNDER-XY></li>
                 <li><FOUNDER-XY type="columnlist" data="{'columnid':[7215033],'columntype':'self'}"><#list columns as column><a href="${column.url!}">延伸阅读</a></#list></FOUNDER-XY></li>
@@ -128,10 +129,17 @@
                 </div>
             </div>
         </div>
-        <div class="contact"><a href="http://keywords.china.org.cn/2014-12/08/content_34257028.htm"><img src="http://images.china.cn/images1/en/keywords2020/contact.png"></a></div>
+        <div class="contact"><a href="http://keywords.china.org.cn/2014-12/08/content_34257028.html"><img src="http://images.china.cn/images1/en/keywords2020/contact.png"></a></div>
         <div class="footer">Copyright © China.org.cn. All Rights Reserved 京ICP证 040089号 京公网安备110108006329号<br /> 网络传播视听节目许可证号:0105123 京公网安备110108006329号 京网文[2011]0252-085号</div>
 
         <script type="text/javascript">
+            $('.nav li').each(function() {
+                if($(this).find('a').text() == $(document).attr("title")){
+                    $(this).addClass("select");
+                }else{
+                    $(this).removeClass("select");
+                }
+            });
             function checkUser(){
                 document.getElementById("formid").submit();
             }
