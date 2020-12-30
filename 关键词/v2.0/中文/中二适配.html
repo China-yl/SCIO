@@ -133,7 +133,9 @@
 
         <script  type="text/javascript">
             function checkUser(){
-                document.getElementById("formid").submit();
+                if($(".inputText").val().replace(/(^\s*)|(\s*$)/g, "") != ""){
+                    document.getElementById("formid").submit();
+                }
             }
             function closelist(){
                 document.getElementById('listshow').style.display='none';

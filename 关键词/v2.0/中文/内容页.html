@@ -141,7 +141,9 @@
                 }
             });
             function checkUser(){
-                document.getElementById("formid").submit();
+                if($(".inputText").val().replace(/(^\s*)|(\s*$)/g, "") != ""){
+                    document.getElementById("formid").submit();
+                }
             }
         </script>
     </body>

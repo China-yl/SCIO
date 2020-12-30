@@ -4,7 +4,7 @@
     var pageSize = 40;
     var totalPage = 0;
     exec = function () {
-        $.getScript('http://query.china.com.cn/news/queryFn?index=en&fields=channel,path,subtitle&kws=1,english/china_key_words,%E8%8B%B1%E6%96%87,' + searchText + '&pageSize=' + pageSize + '&startPage=' + startpage);
+        $.getScript('http://query.china.com.cn/news/queryFn?index=en&fields=channel,path,subtitle,title&kws=1,english/china_key_words,%E8%8B%B1%E6%96%87,' + searchText + '&pageSize=' + pageSize + '&startPage=' + startpage);
     };
     exec();
     window.queryRes = function (data) {
@@ -14,11 +14,13 @@
     $('#yText').html(searchText)
     $('#yInfo').html('Results ' + (startpage * pageSize - pageSize + 1) + ' - ' + startpage * pageSize + ' of ' + len);
     $.each(data.recordList, function (i, v) {
-        temp.push('<li><p>' + v.title.replace(/<span style="color:red" >/g,'').replace(/<\/span>/g,'') + '</p></li>');
-        })
-        $('#yList').html(temp.join(''));
-        pageObj();
-    };
+        if(v.url.slice(-4) == "html"){
+            temp.push('<li><p><span></span><a href="' + v.url + '">'+ v.title.replace(/<span style='color:red'>/g,'').replace(/<\/span>/g,'') + '</a></p></li>');  
+        }
+    })
+    $('#yList').html(temp.join(''));
+    pageObj();
+};
 
     function pageObj() {
         var i = 0; 

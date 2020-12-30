@@ -26,7 +26,7 @@
 
             .top{width: 100%;}
             .top p{width: 33.3%;display: inline-grid;text-align: center;}
-            .top p a{font-size: 1.2em;line-height: 4em;color: #fff;}
+            .top p a{font-size: 1.2em;line-height: 1.25em;color: #fff;padding: 10px 0;}
 
             .nav{width: 100%;position: relative;}
             .nav .list{width: 66.6%;font-size: 1.6em;line-height: 2.5em;color: #fff;background-color: #363d4c;padding-left: 5%;display: inline-block;}
@@ -64,8 +64,8 @@
             #autopage span { color: #F00;padding: 5px;font-size: 1.6em;line-height: 2em; } 
 
             .contact{width: 100%;height: 56px;background-color: #dd2626;text-align: center;padding-top: 19px;}
-            .contact a{display: inline-block;}
-            .contact img{width: 90px;height: 18px;}
+            .contact a{display: inline-block;font-size: 1.4em;line-height: 1.25em;color: #fff;}
+            .contact img{width: 20px;height: 18px;margin-right: 5px;vertical-align: bottom;}
 
 
             .footer {width: 100%;font-size: 1.2em;line-height: 1.25em;color: #fff;background: url('http://images.china.cn/images1/en/keywords2020/m/ft.jpg') no-repeat;background-size: 100% 100%; text-align: center; padding: 10px 0px;}
@@ -74,20 +74,20 @@
         <script type="text/javascript" src="http://images.china.cn/images1/resource/scripts/jquery/jquery-1.9.1.min.js"></script>
     </head>
     <body>
-        <div class="top"><p style="background-color: #c9182a;"><a href="http://www.cipg.org.cn">中国外文局</a></p><p style="background-color: #25439b;"><a href="http://www.catl.org.cn">中国翻译研究院</a></p><p style="background-color: #a2794b;"><a href="http://www.tac-online.org.cn">中国翻译协会</a></p></div>
+        <div class="top"><p style="background-color: #c9182a;"><a href="http://www.cipg.org.cn">China International Publishing Group</a></p><p style="background-color: #25439b;"><a href="http://www.catl.org.cn">China Academy of Translation</a></p><p style="background-color: #a2794b;"><a href="http://www.tac-online.org.cn">Translators Association of China</a></p></div>
         <div class="nav">
-            <div class="list" onclick="showlist()">首页<img src="http://images.china.cn/images1/en/keywords2020/m/sanjiao.png" /></div>
+            <div class="list" onclick="showlist()">Home<img src="http://images.china.cn/images1/en/keywords2020/m/sanjiao.png" /></div>
             <div class="listshow" id="listshow">
                 <ul>
-                    <li><FOUNDER-XY type="columnlist" data="{'columnid':[7215027],'columntype':'self'}"><#list columns as column><a href="${column.urlPad!}">首页</a></#list></FOUNDER-XY></li>
-                    <li><a href="http://keywords.china.org.cn/m/2014-11/13/content_34036371.html">项目介绍</a></li>
-                    <li><FOUNDER-XY type="columnlist" data="{'columnid':[7229988],'columntype':'self'}"><#list columns as column><a href="${column.urlPad!}">专题分类</a></#list></FOUNDER-XY></li>
-                    <li><FOUNDER-XY type="columnlist" data="{'columnid':[7215031],'columntype':'self'}"><#list columns as column><a href="${column.urlPad!}">业界资讯</a></#list></FOUNDER-XY></li>
-                    <li><FOUNDER-XY type="columnlist" data="{'columnid':[7215033],'columntype':'self'}"><#list columns as column><a href="${column.urlPad!}">延伸阅读</a></#list></FOUNDER-XY></li>
+                    <li><FOUNDER-XY type="columnlist" data="{'columnid':[7216067],'columntype':'self'}"><#list columns as column><a href="${column.urlPad!}">Home</a></#list></FOUNDER-XY></li>
+                    <li><a href="http://www.china.org.cn/m/english/china_key_words/2014-11/28/content_34175301.html">About China Keywords</a></li>
+                    <li><FOUNDER-XY type="columnlist" data="{'columnid':[7229922],'columntype':'self'}"><#list columns as column><a href="${column.urlPad!}">Categories</a></#list></FOUNDER-XY></li>
+                    <li><FOUNDER-XY type="columnlist" data="{'columnid':[7216080],'columntype':'self'}"><#list columns as column><a href="${column.urlPad!}">News</a></#list></FOUNDER-XY></li>
+                    <li><FOUNDER-XY type="columnlist" data="{'columnid':[7216071],'columntype':'self'}"><#list columns as column><a href="${column.urlPad!}">Recommended Books</a></#list></FOUNDER-XY></li>
                 </ul>    
                 <div class="listtop"><div onclick="closelist()" style="display:inline-block;width:100%;text-align: center;"><img src="http://images.china.cn/images1/en/keywords2020/m/close.png"></div></div>
             </div>
-            <div class="languages" onclick="showlanguages()">中文<img src="http://images.china.cn/images1/en/keywords2020/m/sanjiao.png" /></div>
+            <div class="languages" onclick="showlanguages()">English<img src="http://images.china.cn/images1/en/keywords2020/m/sanjiao.png" /></div>
             <div class="languagesshow" id="languagesshow">
                 <ul>
                     <li><a href="http://keywords.china.org.cn/index.htm">中文</a></li>
@@ -109,22 +109,22 @@
                 <div class="languagestop"><div onclick="closelanguages()" style="display:inline-block;width:100%;text-align: center;"><img src="http://images.china.cn/images1/en/keywords2020/m/close.png"></div></div>
             </div>
         </div>
-        <div class="banner"><img src="http://images.china.cn/images1/en/keywords2020/m/banner2.jpg"></div>
+        <div class="banner"><img src="http://images.china.cn/images1/en/keywords2020/m/banner_sp_erji_en.jpg"></div>
         <div class="search">
-            <form id="formid" action="http://keywords.china.org.cn/m/search.htm" method="get" target="_top">
-                <input type="text" name="searchText" class="inputText" placeholder="请输入您要搜索的关键词..."/>
+            <form id="formid" action="http://www.china.org.cn/m/english/china_key_words/search.htm" method="get" target="_top">
+                <input type="text" name="searchText" class="inputText" placeholder="Search here..."/>
                 <div onclick="checkUser();" style="cursor:pointer;width: 30%;float: right;">
                     <img src="http://images.china.cn/images1/en/keywords2020/search.png" style="width: 100%;" />
                 </div>
             </form>
         </div>
-        <div class="address"><FOUNDER-XY type="columnlist" data="{'columnid':[7215027],'columntype':'self'}"><#list columns as column><a href="${column.urlPad!}" class="" >首页</a></#list></FOUNDER-XY> &gt; <FOUNDER-XY type="columnlist" data="{'columnid':[],'columntype':'self'}"><#list columns as column><a href="${column.urlPad!}" class="" >${column.name}</a></#list></FOUNDER-XY></div> 
+        <div class="address"><FOUNDER-XY type="columnlist" data="{'columnid':[7216067],'columntype':'self'}"><#list columns as column><a href="${column.urlPad!}" class="" >Home</a></#list></FOUNDER-XY> &gt; <FOUNDER-XY type="columnlist" data="{'columnid':[],'columntype':'self'}"><#list columns as column><a href="${column.urlPad!}" class="" >${column.name}</a></#list></FOUNDER-XY></div> 
         <div class="wrap">  
             <FOUNDER-XY type="article" data="{}"><h1 class="tit">${article.title}</h1>
-            <div class="sjlyzz">发布时间：${article.pubTime?string("yyyy-MM-dd")} | 来源：${article.source}</div>
+            <div class="sjlyzz">Updated：${article.pubTime?string("yyyy-MM-dd")} <br> By：${article.source}</div>
             <div class="content">${article.content}</div></FOUNDER-XY>
         </div>
-        <div class="contact"><a href="http://keywords.china.org.cn/m/2014-12/08/content_34257028.html"><img src="http://images.china.cn/images1/en/keywords2020/contact.png"></a></div>
+        <div class="contact"><a href="http://www.china.org.cn/m/english/china_key_words/2014-12/09/content_34267958.html"><img src="http://images.china.cn/images1/en/keywords2020/contact1.png"><span>Contact Us</span></a></div>
         <div class="footer">Copyright © China.org.cn. All Rights Reserved <br/>京ICP证 040089号 京公网安备110108006329号<br/> 网络传播视听节目许可证号:0105123 <br/>京公网安备110108006329号 <br/>京网文[2011]0252-085号</div>
 
         <script  type="text/javascript">
