@@ -26,8 +26,8 @@
             .nav ul .select a,.nav ul li:hover a{color: #fff;}
 
             .banner{width: 100%;height: 700px;background: url('http://images.china.cn/images1/en/keywords2020/banner1.jpg') no-repeat top center;}
-            .org{width: 1280px;margin: 0 auto;padding: 425px 0 0 402px;}
-            .org p{width: 290px;height: 40px; display: inline-block;text-align: center;margin-right: 2px;}
+            .org{width: 1200px;margin: 0 auto;padding: 425px 0 0 402px;}
+            .org p{width: 260px;height: 40px; display: inline-block;text-align: center;margin-right: 2px;}
             .org p a{font-size: 14px;line-height: 40px;color: #fff;}
 
             .search{clear:both;width: 900px;height: 48px;overflow:hidden;background-color: #fff;margin: 40px auto 30px;}
@@ -176,7 +176,7 @@
             </ul>
         </div>
         <div class="banner">
-            <div class="org"><p style="background-color: #c9182a;"><a href="http://www.cipg.org.cn">China International Publishing Group</a></p><p style="background-color: #25439b;"><a href="http://www.catl.org.cn">China Academy of Translation</a></p><p style="background-color: #a2794b;"><a href="http://www.tac-online.org.cn">Translators Association of China</a></p></div>
+            <div class="org"><p style="background-color: #c9182a;"><a href="http://www.cipg.org.cn">CIPG</a></p><p style="background-color: #25439b;"><a href="http://www.accws.cn/">ACCWS</a></p><p style="background-color: #a2794b;"><a href="http://www.catl.org.cn/en/">CATL</a></p></div>
         </div>
         <div class="search">
             <form id="formid" action="http://www.china.org.cn/english/china_key_words/search.htm" method="get" target="_top">
@@ -244,6 +244,13 @@
                 </div>
                 <div class="sortcontent">
                     <div class="show">
+                        <div class="sorttitle"><FOUNDER-XY type="columnlist" data="{'columnid':[8021424],'columntype':'self'}"><#list columns as column>${column.name}</#list></FOUNDER-XY></div>
+                        <FOUNDER-XY type="articlelist" data="{'columnid':[8021424],'articletype':'all','article_attr':'all','start':'0','count':'3'}"><#list articles as article>
+                        <p><a href="${article.url}">${article.title}</a></p>
+                        </#list></FOUNDER-XY>
+                        <div class="sortmore"><FOUNDER-XY type="columnlist" data="{'columnid':[8021424],'columntype':'self'}"><#list columns as column><a href="${column.url!}"><img src="http://images.china.cn/images1/en/keywords2020/more.png"></a></#list></FOUNDER-XY></div>
+                    </div>
+                    <div class="show">
                         <div class="sorttitle"><FOUNDER-XY type="columnlist" data="{'columnid':[8020115],'columntype':'self'}"><#list columns as column>${column.name}</#list></FOUNDER-XY></div>
                         <FOUNDER-XY type="articlelist" data="{'columnid':[8020115],'articletype':'all','article_attr':'all','start':'0','count':'3'}"><#list articles as article>
                         <p><a href="${article.url}">${article.title}</a></p>
@@ -270,13 +277,6 @@
                         <p><a href="${article.url}">${article.title}</a></p>
                         </#list></FOUNDER-XY>
                         <div class="sortmore"><FOUNDER-XY type="columnlist" data="{'columnid':[8011326],'columntype':'self'}"><#list columns as column><a href="${column.url!}"><img src="http://images.china.cn/images1/en/keywords2020/more.png"></a></#list></FOUNDER-XY></div>
-                    </div>
-                    <div class="show">
-                        <div class="sorttitle"><FOUNDER-XY type="columnlist" data="{'columnid':[8011327],'columntype':'self'}"><#list columns as column>${column.name}</#list></FOUNDER-XY></div>
-                        <FOUNDER-XY type="articlelist" data="{'columnid':[8011327],'articletype':'all','article_attr':'all','start':'0','count':'3'}"><#list articles as article>
-                        <p><a href="${article.url}">${article.title}</a></p>
-                        </#list></FOUNDER-XY>
-                        <div class="sortmore"><FOUNDER-XY type="columnlist" data="{'columnid':[8011327],'columntype':'self'}"><#list columns as column><a href="${column.url!}"><img src="http://images.china.cn/images1/en/keywords2020/more.png"></a></#list></FOUNDER-XY></div>
                     </div>
                 </div>
             </div>

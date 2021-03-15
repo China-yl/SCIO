@@ -35,7 +35,9 @@
             "Two Sessions 2018",
             "Press Minutes",
             "2019 NPC & CPPCC",
-            "2020 NPC & CPPCC"
+            "2020 NPC & CPPCC",
+            "2021 NPC & CPPCC"
+            
   ];
     exec = function () {
         var index = $.inArray(searchText, arr);
@@ -69,7 +71,9 @@
             }else{
                 newsub=v.subtitle;
             }
-            temp.push('<li><h3><span class="mmmm">' + newsub + '</span>' + v.date.substr(0, 10) + '</h3><h1><a href="' + v.url.replace(/http:\/\/www.china.org.cn\/englishscio\//, "http://english.scio.gov.cn/") + '">' + v.title.replace(/<span style='color:red' >/g,'').replace(/<\/span>/g,'') + '</a></h1><p>' + newstr + '</p></li>');
+            if(v.url.split("_").length-1 < 2){
+                temp.push('<li><h3><span class="mmmm">' + newsub + '</span>' + v.date.substr(0, 10) + '</h3><h1><a href="' + v.url.replace(/http:\/\/www.china.org.cn\/englishscio\//, "http://english.scio.gov.cn/") + '">' + v.title.replace(/<span style='color:red' >/g,'').replace(/<\/span>/g,'') + '</a></h1><p>' + newstr + '</p></li>');
+            }
         })
         $('#yList').html(temp.join(''));
         pageObj();
@@ -184,7 +188,8 @@
             "Two Sessions 2018": 'w28',
             "Press Minutes": 'w29',
             "2019 NPC & CPPCC": 'w30',
-            "2020 NPC & CPPCC": 'w31'
+            "2020 NPC & CPPCC": 'w31',
+            "2021 NPC & CPPCC": 'w32'
         };
         $('.mmmm').each(function () {
             var curTitle = $.trim($(this).text());

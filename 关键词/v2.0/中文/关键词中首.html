@@ -47,7 +47,7 @@
             .news{width: 1200px;margin: 0 auto;clear: both;}
             .newtitle{width: 275px;padding-top: 16px;float: left;margin-right: 70px;}
             .newtitle p{margin-bottom: 20px;}
-            .newtitle p a{font-size: 30px;line-height: 40px;font-weight: bold;}
+            .newtitle p a{font-size: 30px;line-height: 40px;}
             .newtitle p a:hover{text-decoration: underline;}
             .newtitle div{height: 40px;font-size: 18px;line-height: 40px;font-weight: bold;color: #fff;padding: 0 20px;background-color: #02448e;display: inline-block;}
             .newtitle span{font-size: 24px;vertical-align: bottom;}
@@ -176,7 +176,7 @@
             </ul>
         </div>
         <div class="banner">
-            <div class="org"><p style="background-color: #c9182a;"><a href="http://www.cipg.org.cn">中国外文局</a></p><p style="background-color: #25439b;"><a href="http://www.catl.org.cn">中国翻译研究院</a></p><p style="background-color: #a2794b;"><a href="http://www.tac-online.org.cn">中国翻译协会</a></p></div>
+            <div class="org"><p style="background-color: #c9182a;"><a href="http://www.cipg.org.cn">中国外文局</a></p><p style="background-color: #25439b;"><a href="http://www.accws.org.cn">当代中国与世界研究院</a></p><p style="background-color: #a2794b;"><a href="http://www.catl.org.cn">中国翻译研究院</a></p></div>
         </div>
         <div class="search">
             <form id="formid" action="http://keywords.china.org.cn/search.htm" method="get" target="_top">
@@ -220,29 +220,36 @@
                     <div class="list list2">
                         <div class="dot">
                             <img src="http://images.china.cn/images1/en/keywords2020/yuan1.png">
-                            <span style="margin-top: 15px;position: relative;left: -34px;"><FOUNDER-XY type="articlelist" data="{'columnid':[7229988],'articletype':'all','article_attr':'all','start':'1','count':'1'}"><#list articles as article>${article.title}</#list></FOUNDER-XY></span>
-                        </div>                        
+                            <span style="margin-left: 70px;position: relative;top: -35px;"><FOUNDER-XY type="articlelist" data="{'columnid':[7229988],'articletype':'all','article_attr':'all','start':'1','count':'1'}"><#list articles as article>${article.title}</#list></FOUNDER-XY></span>
+                        </div>
                     </div>
                     <div class="list list3">
                         <div class="dot">
                             <img src="http://images.china.cn/images1/en/keywords2020/yuan1.png">
-                            <span style="margin-top: 15px;position: relative;left: -12px;"><FOUNDER-XY type="articlelist" data="{'columnid':[7229988],'articletype':'all','article_attr':'all','start':'2','count':'1'}"><#list articles as article>${article.title}</#list></FOUNDER-XY></span>
+                            <span style="margin-top: 15px;position: relative;left: -34px;"><FOUNDER-XY type="articlelist" data="{'columnid':[7229988],'articletype':'all','article_attr':'all','start':'2','count':'1'}"><#list articles as article>${article.title}</#list></FOUNDER-XY></span>
                         </div>                        
                     </div>
                     <div class="list list4">
                         <div class="dot">
                             <img src="http://images.china.cn/images1/en/keywords2020/yuan1.png">
-                            <span style="margin-top: 15px;position: relative;left: -25px;"><FOUNDER-XY type="articlelist" data="{'columnid':[7229988],'articletype':'all','article_attr':'all','start':'3','count':'1'}"><#list articles as article>${article.title}</#list></FOUNDER-XY></span>
-                        </div>
+                            <span style="margin-top: 15px;position: relative;left: -12px;"><FOUNDER-XY type="articlelist" data="{'columnid':[7229988],'articletype':'all','article_attr':'all','start':'3','count':'1'}"><#list articles as article>${article.title}</#list></FOUNDER-XY></span>
+                        </div>                        
                     </div>
                     <div class="list list5">
                         <div class="dot">
                             <img src="http://images.china.cn/images1/en/keywords2020/yuan1.png">
-                            <span style="position: relative;top: -35px;right: 116px;"><FOUNDER-XY type="articlelist" data="{'columnid':[7229988],'articletype':'all','article_attr':'all','start':'4','count':'1'}"><#list articles as article>${article.title}</#list></FOUNDER-XY></span>
+                            <span style="margin-top: 15px;position: relative;left: -25px;"><FOUNDER-XY type="articlelist" data="{'columnid':[7229988],'articletype':'all','article_attr':'all','start':'4','count':'1'}"><#list articles as article>${article.title}</#list></FOUNDER-XY></span>
                         </div>
                     </div>
                 </div>
                 <div class="sortcontent">
+                    <div class="show">
+                        <div class="sorttitle"><FOUNDER-XY type="columnlist" data="{'columnid':[8021419],'columntype':'self'}"><#list columns as column>${column.name}</#list></FOUNDER-XY></div>
+                        <FOUNDER-XY type="articlelist" data="{'columnid':[8021419],'articletype':'all','article_attr':'all','start':'0','count':'3'}"><#list articles as article>
+                        <p><a href="${article.url}">${article.title}</a></p>
+                        </#list></FOUNDER-XY>
+                        <div class="sortmore"><FOUNDER-XY type="columnlist" data="{'columnid':[8021419],'columntype':'self'}"><#list columns as column><a href="${column.url!}"><img src="http://images.china.cn/images1/en/keywords2020/more.png"></a></#list></FOUNDER-XY></div>
+                    </div>
                     <div class="show">
                         <div class="sorttitle"><FOUNDER-XY type="columnlist" data="{'columnid':[8020117],'columntype':'self'}"><#list columns as column>${column.name}</#list></FOUNDER-XY></div>
                         <FOUNDER-XY type="articlelist" data="{'columnid':[8020117],'articletype':'all','article_attr':'all','start':'0','count':'3'}"><#list articles as article>
@@ -270,13 +277,6 @@
                         <p><a href="${article.url}">${article.title}</a></p>
                         </#list></FOUNDER-XY>
                         <div class="sortmore"><FOUNDER-XY type="columnlist" data="{'columnid':[8011331],'columntype':'self'}"><#list columns as column><a href="${column.url!}"><img src="http://images.china.cn/images1/en/keywords2020/more.png"></a></#list></FOUNDER-XY></div>
-                    </div>
-                    <div class="show">
-                        <div class="sorttitle"><FOUNDER-XY type="columnlist" data="{'columnid':[8011330],'columntype':'self'}"><#list columns as column>${column.name}</#list></FOUNDER-XY></div>
-                        <FOUNDER-XY type="articlelist" data="{'columnid':[8011330],'articletype':'all','article_attr':'all','start':'0','count':'3'}"><#list articles as article>
-                        <p><a href="${article.url}">${article.title}</a></p>
-                        </#list></FOUNDER-XY>
-                        <div class="sortmore"><FOUNDER-XY type="columnlist" data="{'columnid':[8011330],'columntype':'self'}"><#list columns as column><a href="${column.url!}"><img src="http://images.china.cn/images1/en/keywords2020/more.png"></a></#list></FOUNDER-XY></div>
                     </div>
                 </div>
             </div>

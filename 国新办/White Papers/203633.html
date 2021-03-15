@@ -26,22 +26,22 @@ a{cursor:pointer;}
 .box1 ul li p{width: 310px;height:100px;display: table-cell;vertical-align: middle;}
 .box1 ul li p a{font-size: 16px;line-height: 20px;color: #fff;}
 .box2{width: 900px;}
-.list{width: 900px;height: 60px; clear: both;}
-.list li{width: 210px;height: 60px;background: url('http://images.china.cn/images1/en/gxb/whitepapers/box.png') no-repeat;float: left;cursor:pointer;}
+.list,.list1{width: 900px;height: 60px; clear: both;}
+.list li,.list1 li{width: 210px;height: 60px;background: url('http://images.china.cn/images1/en/gxb/whitepapers/box.png') no-repeat;float: left;cursor:pointer;}
 .tt{width: 210px;height: 60px;background: url('http://images.china.cn/images1/en/gxb/whitepapers/box.png') no-repeat;}
-.change .tt,.list li:hover .tt{background: url('http://images.china.cn/images1/en/gxb/whitepapers/box_hover.png') no-repeat;}
-.list span{width: 8px;border-top: 1px solid #999;margin: 23.5px 6px 0;float: left;}
+.change .tt,.list li:hover .tt,.list1 li:hover .tt{background: url('http://images.china.cn/images1/en/gxb/whitepapers/box_hover.png') no-repeat;}
+.list span,.list1 span{width: 8px;border-top: 1px solid #999;margin: 23.5px 6px 0;float: left;}
 .tt p{font-size: 20px;line-height: 48px;text-align: center;font-weight: bold;color: #1b1b1b;}
-.change  .tt p,.list li:hover .tt p{color: #fff;}
+.change  .tt p,.list li:hover .tt p,.list1 li:hover .tt p{color: #fff;}
 .line{width: 900px;height: 7px;margin-top: 10px;}
-.l1{width: 900px;opacity: 0;display: none;transition:opacity 1s ease-out;-moz-transition:opacity 1s ease-out;-webkit-transition:opacity 1s ease-out;-o-transition:opacity 1s ease-out;clear: both;}
+.l1,.l2{width: 900px;opacity: 0;display: none;transition:opacity 1s ease-out;-moz-transition:opacity 1s ease-out;-webkit-transition:opacity 1s ease-out;-o-transition:opacity 1s ease-out;clear: both;}
 .show{opacity: 1;display: block;}
-.l1 ul li{width: 900px; height: 85px;border-bottom: 1px dotted #999;}
-.l1 ul li:last-child{border: none;}
-.l1 ul li div{width: 900px;height:85px;display: table-cell;vertical-align: middle;position: relative;}
-.l1 ul li div p a{font-size: 16px;line-height: 20px;font-weight: bold;color: #000;display: inline-block;width: 800px;cursor:pointer;}
-.l1 ul li div p:hover a,.l1 ul li p:active a{color: #105bd2;}
-.l1 ul li div span{font-size: 12px;color: #999;position: absolute;top: 35.5px;right: 0;}
+.l1 ul li,.l2 ul li{width: 900px; height: 85px;border-bottom: 1px dotted #999;}
+.l1 ul li:last-child,.l2 ul li:last-child{border: none;}
+.l1 ul li div,.l2 ul li div{width: 900px;height:85px;display: table-cell;vertical-align: middle;position: relative;}
+.l1 ul li div p a,.l2 ul li div p a{font-size: 16px;line-height: 20px;font-weight: bold;color: #000;display: inline-block;width: 800px;cursor:pointer;}
+.l1 ul li div p:hover a,.l1 ul li p:active a,.l2 ul li div p:hover a,.l2 ul li p:active a{color: #105bd2;}
+.l1 ul li div span,.l2 ul li div span{font-size: 12px;color: #999;position: absolute;top: 35.5px;right: 0;}
 
 .wrapr{width: 250px;float: right;}
 .title_1{font-size: 22px;line-height: 23px;background: url(http://images.china.cn/images1/ch/2017gxb/images/title_1.png) left 11px repeat-x;padding-bottom: 15px;}
@@ -145,16 +145,27 @@ a{cursor:pointer;}
         <div class="box2">
             <h6><span>WHITE PAPERS BY YEAR >></span></h6>
             <ul class="list">
-                <li class="change"><div class="tt"><p>2020</p></div></li>
+                <li class="change"><div class="tt"><p>2021</p></div></li>
+                <span></span>
+                <li><div class="tt"><p>2020</p></div></li>
                 <span></span>
                 <li><div class="tt"><p>2019</p></div></li>
                 <span></span>
                 <li><div class="tt"><p>2018</p></div></li>
-                <span></span>
-                <li><div class="tt"><p>2017</p></div></li>
             </ul>
             <div class="line"><img src="http://images.china.cn/images1/en/gxb/whitepapers/line.png" alt=""></div>
+            <ul class="list1" style="margin-top: 25px;">
+                <li><div class="tt"><p>2017</p></div></li>
+            </ul>
+            <div class="line" style="width: 210px;overflow: hidden;"><img src="http://images.china.cn/images1/en/gxb/whitepapers/line2.png" alt=""></div>
             <div class="l1 show">
+                <ul>
+                    <FOUNDER-XY type="articlelist" data="{'columnid':[8021425],'articletype':'all','article_attr':'all','start':'0','count':'30'}"><#list articles as article>
+                    <li><div><p><a   href="${article.url}"  target="_self">${article.title}</a></p> <span>${article.introTitle}</span></div></li>
+                    </#list></FOUNDER-XY>
+                </ul>
+            </div>
+            <div class="l1">
                 <ul>
                     <FOUNDER-XY type="articlelist" data="{'columnid':[8019230],'articletype':'all','article_attr':'all','start':'0','count':'30'}"><#list articles as article>
                     <li><div><p><a   href="${article.url}"  target="_self">${article.title}</a></p> <span>${article.introTitle}</span></div></li>
@@ -175,7 +186,7 @@ a{cursor:pointer;}
                     </#list></FOUNDER-XY>
                 </ul>
             </div>
-            <div class="l1">
+            <div class="l2">
                 <ul>
                     <FOUNDER-XY type="articlelist" data="{'columnid':[8019227],'articletype':'all','article_attr':'all','start':'0','count':'30'}"><#list articles as article>
                     <li><div><p><a   href="${article.url}"  target="_self">${article.title}</a></p> <span>${article.introTitle}</span></div></li>
@@ -272,10 +283,23 @@ a{cursor:pointer;}
     $('.list li').each(function() {
         $(this).click(function() {
             $(".list li").removeClass("change");
+            $(".list1 li").removeClass("change");
             $(this).addClass("change");
             $(".l1").removeClass("show");
+            $(".l2").removeClass("show");
             n=$(this).index();
             $(".l1").eq(n/2).addClass("show");
+        })
+    });
+    $('.list1 li').each(function() {
+        $(this).click(function() {
+            $(".list li").removeClass("change");
+            $(".list1 li").removeClass("change");
+            $(this).addClass("change");
+            $(".l1").removeClass("show");
+            $(".l2").removeClass("show");
+            n=$(this).index();
+            $(".l2").eq(n/2).addClass("show");
         })
     });
 

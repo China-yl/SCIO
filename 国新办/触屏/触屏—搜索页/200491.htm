@@ -165,13 +165,13 @@ dd span.mmmm { border-left: 2px solid #5792fc; display: inline-block; padding-le
         </ul>
 </div>
 <div class="boxb4">
-<span>Government Websites</span><div class="fr" id="btn1" onclick="show1()">+</div>
+<span>Links</span><div class="fr" id="btn1" onclick="show1()">+</div>
 </div>
 <div class="boxb41" id="box41">
 <FOUNDER-XY type="articlelist" data="{'columnid':[7247900], 'articletype': 'all', 'article_attr': 'all', 'columntype':'self', 'showall':'true', 'start': 0, 'count': 30}"><#list articles as article><#if article_index == 0><ul></#if><li><a   href="${article.url}" >${article.title}</a></li><#if article_has_next=false></ul></#if></#list></FOUNDER-XY>    
 </div>
 <div class="boxb5">
-<span>Media Links</span><div class="fr" id="btn2" onclick="show2()">+</div>
+<span>Media</span><div class="fr" id="btn2" onclick="show2()">+</div>
 </div>
 <div class="boxb51" id="box51">
 <FOUNDER-XY type="articlelist" data="{'columnid':[7247763], 'articletype': 'all', 'article_attr': 'all', 'columntype':'self', 'showall':'true', 'start': 0, 'count': 30}"><#list articles as article><#if article_index == 0><ul></#if><li><a   href="${article.url}" >${article.title}</a></li><#if article_has_next=false></ul></#if></#list></FOUNDER-XY>    
@@ -271,7 +271,8 @@ $(".pcbtn").click(function(){
             "Two Sessions 2018",
             "Press Minutes",
             "2019 NPC & CPPCC",
-            "2020 NPC & CPPCC"
+            "2020 NPC & CPPCC",
+    "2021 NPC & CPPCC"
   ];
     exec = function () {
         var index = $.inArray(searchText, arr);
@@ -420,7 +421,8 @@ $(".pcbtn").click(function(){
             "Two Sessions 2018": 'w28',
             "Press Minutes": 'w29',
             "2019 NPC & CPPCC": 'w30',
-            "2020 NPC & CPPCC": 'w31'
+            "2020 NPC & CPPCC": 'w31',
+    "2021 NPC & CPPCC":'w32'
         };
         $('.mmmm').each(function () {
             var curTitle = $.trim($(this).text());

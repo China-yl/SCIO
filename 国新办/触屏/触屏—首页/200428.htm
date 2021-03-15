@@ -133,8 +133,8 @@ dd span.mmmm { border-left: 2px solid #5792fc; display: inline-block; padding-le
 .boxb41 li,.boxb51 li{display: block; padding: 10px 0;}
 .boxb8{line-height: 20px;text-align: center;width: 100%;    padding-bottom: 0;}
 
-.new2020{width: 100%;height: 100vh;display: none;}
-.new2020 img{width: 100%;}
+.new2021{width: 100%;height: 100vh;position: fixed;top: -100vh;left: 0;opacity: 0;z-index: 9999999;}
+.new2021 img{width: 100%;height: 100vh;}
 </style>
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -158,11 +158,10 @@ dd span.mmmm { border-left: 2px solid #5792fc; display: inline-block; padding-le
         })();
     </script>
 
-<script type="text/javascript" src="http://www.china.com.cn/player/video.js"></script>
 </head>
 <body>
 <div style="width:0px;height:0px;overflow:hidden;"><img src="http://images.china.cn/images1/en/gxb/LOGO高清.png"></div>
-<div class="new2020"><img src="http://images.china.cn/images1/en/gxb/newshappy2020_m.jpg"></div>
+<div class="new2021"><img src="http://images.china.cn/images1/en/gxb/2021banner3_shipei.jpg"></div>
 <div class="ban2">
 <div class="ban21"><img src="http://images.china.cn/images1/en/sciophone/logo.png"/></div>
 <div class="list fr" onclick="showlist()"><img src="http://images.china.cn/images1/en/sciophone/list.png" /></div>
@@ -234,7 +233,7 @@ dd span.mmmm { border-left: 2px solid #5792fc; display: inline-block; padding-le
 <div class="newbox3">
 <ul>
 <li style="width:60%;border-right:1px solid #fff;" class="fl"><FOUNDER-XY type="articlelist" data="{'columnid':[7248352], 'articletype': 'all', 'article_attr': 'COMMON', 'columntype':'self', 'showall':'true', 'start': 0, 'count': 1}"><#list articles as article><a href="${article.url}" >Spokesperson Directory</a></#list></FOUNDER-XY></li>
-<li style="width:40%;" class="fr"><FOUNDER-XY type="columnlist" data="{'columnid':[7248351],'columntype':'self'}"><#list columns as column><a href="${column.urlPad!}" class="" target="_self">Notice</a></#list></FOUNDER-XY></li>
+<li style="width:40%;" class="fr"><FOUNDER-XY type="columnlist" data="{'columnid':[7248351],'columntype':'self'}"><#list columns as column><a href="${column.urlPad!}" class="" target="_self">Notices</a></#list></FOUNDER-XY></li>
 </ul>       
 </div>
 
@@ -316,13 +315,13 @@ dd span.mmmm { border-left: 2px solid #5792fc; display: inline-block; padding-le
         </ul>
 </div>
 <div class="boxb4">
-<span>Government Websites</span><div class="fr" id="btn1" onclick="show1()">+</div>
+<span>Links</span><div class="fr" id="btn1" onclick="show1()">+</div>
 </div>
 <div class="boxb41" id="box41">
 <FOUNDER-XY type="articlelist" data="{'columnid':[7247900], 'articletype': 'all', 'article_attr': 'all', 'columntype':'self', 'showall':'true', 'start': 0, 'count': 30}"><#list articles as article><#if article_index == 0><ul></#if><li><a   href="${article.url}" >${article.title}</a></li><#if article_has_next=false></ul></#if></#list></FOUNDER-XY>    
 </div>
 <div class="boxb5">
-<span>Media Links</span><div class="fr" id="btn2" onclick="show2()">+</div>
+<span>Media</span><div class="fr" id="btn2" onclick="show2()">+</div>
 </div>
 <div class="boxb51" id="box51">
 <FOUNDER-XY type="articlelist" data="{'columnid':[7247763], 'articletype': 'all', 'article_attr': 'all', 'columntype':'self', 'showall':'true', 'start': 0, 'count': 30}"><#list articles as article><#if article_index == 0><ul></#if><li><a   href="${article.url}" >${article.title}</a></li><#if article_has_next=false></ul></#if></#list></FOUNDER-XY>    
@@ -390,40 +389,39 @@ $(".pcbtn").click(function(){
     window.location.href="http://english.scio.gov.cn/index.htm?word=pc";  
 });
 
-document.onreadystatechange = completeLoading;
-
-function completeLoading() {
-    if (document.readyState == "complete") {
-        checkEndTime();
-    }
-}
-
-function checkEndTime(){
-    var nowDate=new Date();
-    var  assign = "2020-04-04 00:00:00";
-    var  assign1 = "2020-04-05 00:00:00";
-    var assignTime=new Date(assign.replace("-", "/").replace("-", "/"));
-    var assignTime1=new Date(assign1.replace("-", "/").replace("-", "/"));
-
-    if(assignTime<nowDate && nowDate<assignTime1){
-        newsben();
-        return true;
-    }else{
-        return false;
-    }
-}
-// function newsben(){
-//     $(".new2020").slideDown(1500);
-//     function hidenews(){
-//         $(".new2020").slideUp(1500);
-//     }
-//     setTimeout(hidenews,5000);
-// }
-function newsben(){
-    $("#ht").addClass("html");
-    $(".top_img").hide()
-}
 </script>
+<script type="text/javascript">
+    document.onreadystatechange = completeLoading;
+    
+    function completeLoading() {
+        if (document.readyState == "complete") {
+            checkEndTime();
+        }
+    }
+    
+    function checkEndTime(){
+        var nowDate=new Date();
+        var  assign = "2021-02-10 09:00:00";
+        var  assign1 = "2021-02-14 00:00:00";
+        var assignTime=new Date(assign.replace("-", "/").replace("-", "/"));
+        var assignTime1=new Date(assign1.replace("-", "/").replace("-", "/"));
+    
+        if(assignTime<nowDate && nowDate<assignTime1){
+            newsben();
+            return true;
+        }else{
+            return false;
+        }
+    }
+    function newsben(){
+        $(".new2021").animate({top:"0",opacity: 1},1000);
+        function hidenews(){
+            $(".new2021").animate({top:"-100vh",opacity: 0},1000);
+        }
+        setTimeout(hidenews,5000);
+    }
+    
+    </script>
 <!-- <script src="https://www.scio.gov.cn/PageShare/Scripts/sciowxshareplugin.js" type="text/javascript"></script>
 <script type="text/javascript">
     $(function() {

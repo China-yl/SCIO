@@ -72,22 +72,22 @@ dd span.mmmm { border-left: 2px solid #5792fc; display: inline-block; padding-le
 .box1 ul li p{width: 100%;padding: 4% 0;}
 .box1 ul li p a{font-size: 1.6em;line-height: 1.25em;color: #fff;}
 .box2{width: 100%;padding: 10px 2.5%;background-color: #fff;}
-.list{width: 100%; clear: both;}
-.list li{width: 24%;float: left;margin-left: 1%;}
+.list,.list1{width: 100%; clear: both;}
+.list li,.list1 li{width: 24%;float: left;margin-left: 1%;}
 .tt{width: 100%;background: url('http://images.china.cn/images1/en/gxb/whitepapers/m/y.png') no-repeat;background-size: 100% 100%;}
-.change .tt,.list li:active .tt{background: url('http://images.china.cn/images1/en/gxb/whitepapers/m/y_active.png') no-repeat;background-size: 100% 100%;}
+.change .tt,.list li:active .tt,.list1 li:active .tt{background: url('http://images.china.cn/images1/en/gxb/whitepapers/m/y_active.png') no-repeat;background-size: 100% 100%;}
 .tt p{font-size: 2em;line-height: 2em;text-align: center;font-weight: bold;color: #1b1b1b;}
-.change  .tt p,.list li:active .tt p{color: #fff;}
+.change  .tt p,.list li:active .tt p,.list1 li:active .tt p{color: #fff;}
 .line{width: 100%;height: 2px;margin:3% 0;background-color: #105bd2;border-radius: 2px;}
-.l1{width: 100%;opacity: 0;display: none;transition:opacity 1s ease-out;-moz-transition:opacity 1s ease-out;-webkit-transition:opacity 1s ease-out;-o-transition:opacity 1s ease-out;clear: both;}
+.l1,.l2{width: 100%;opacity: 0;display: none;transition:opacity 1s ease-out;-moz-transition:opacity 1s ease-out;-webkit-transition:opacity 1s ease-out;-o-transition:opacity 1s ease-out;clear: both;}
 .show{opacity: 1;display: block;}
-.l1 ul li{width: 100%; border-bottom: 1px dotted #999;padding: 5% 0;}
-.l1 ul li:last-child{border: none;}
-.l1 ul li div{width: 100%;}
-.l1 ul li div p{margin-bottom: 3%;}
-.l1 ul li div p a{font-size: 1.6em;line-height: 1.25em;font-weight: bold;color: #000;}
-.l1 ul li p:active a{color: #105bd2;}
-.l1 ul li div span{font-size: 1.6em;line-height: 1.25em; color: rgba(0,0,0,0.5);}
+.l1 ul li,.l2 ul li{width: 100%; border-bottom: 1px dotted #999;padding: 5% 0;}
+.l1 ul li:last-child,.l2 ul li:last-child{border: none;}
+.l1 ul li div,.l2 ul li div{width: 100%;}
+.l1 ul li div p,.l2 ul li div p{margin-bottom: 3%;}
+.l1 ul li div p a,.l2 ul li div p a{font-size: 1.6em;line-height: 1.25em;font-weight: bold;color: #000;}
+.l1 ul li p:active a,.l2 ul li p:active a{color: #105bd2;}
+.l1 ul li div span,.l2 ul li div span{font-size: 1.6em;line-height: 1.25em; color: rgba(0,0,0,0.5);}
 
 .footer{width: 100%;}
 .footer a {color: #fff;} 
@@ -170,13 +170,24 @@ dd span.mmmm { border-left: 2px solid #5792fc; display: inline-block; padding-le
             <div class="box2">
                 <h6>WHITE PAPERS BY YEAR</h6>
                 <ul class="list">
-                    <li class="change"><div class="tt"><p>2020</p></div></li>
+                    <li class="change"><div class="tt"><p>2021</p></div></li>
+                    <li><div class="tt"><p>2020</p></div></li>
                     <li><div class="tt"><p>2019</p></div></li>
                     <li><div class="tt"><p>2018</p></div></li>
+                </ul>
+                <div class="line"></div>
+                <ul class="list1" style="margin-top: 10px;">
                     <li><div class="tt"><p>2017</p></div></li>
                 </ul>
                 <div class="line"></div>
                 <div class="l1 show">
+                    <ul>
+                        <FOUNDER-XY type="articlelist" data="{'columnid':[8021425],'articletype':'all','article_attr':'all','start':'0','count':'30'}"><#list articles as article>
+                        <li><div><p><a   href="${article.urlPad}"  target="_self">${article.title}</a></p> <span>${article.introTitle}</span></div></li>
+                        </#list></FOUNDER-XY>
+                    </ul>
+                </div>
+                <div class="l1">
                     <ul>
                         <FOUNDER-XY type="articlelist" data="{'columnid':[8019230],'articletype':'all','article_attr':'all','start':'0','count':'30'}"><#list articles as article>
                         <li><div><p><a   href="${article.urlPad}"  target="_self">${article.title}</a></p> <span>${article.introTitle}</span></div></li>
@@ -197,7 +208,7 @@ dd span.mmmm { border-left: 2px solid #5792fc; display: inline-block; padding-le
                         </#list></FOUNDER-XY>
                     </ul>
                 </div>
-                <div class="l1">
+                <div class="l2">
                     <ul>
                         <FOUNDER-XY type="articlelist" data="{'columnid':[8019227],'articletype':'all','article_attr':'all','start':'0','count':'30'}"><#list articles as article>
                         <li><div><p><a   href="${article.urlPad}"  target="_self">${article.title}</a></p> <span>${article.introTitle}</span></div></li>
@@ -219,13 +230,13 @@ dd span.mmmm { border-left: 2px solid #5792fc; display: inline-block; padding-le
         </ul>
 </div>
 <div class="boxb4">
-<span>Government Websites</span><div class="fr" id="btn1" onclick="show1()">+</div>
+<span>Links</span><div class="fr" id="btn1" onclick="show1()">+</div>
 </div>
 <div class="boxb41" id="box41">
 <FOUNDER-XY type="articlelist" data="{'columnid':[7247900], 'articletype': 'all', 'article_attr': 'all', 'columntype':'self', 'showall':'true', 'start': 0, 'count': 30}"><#list articles as article><#if article_index == 0><ul></#if><li><a   href="${article.urlPad}" >${article.title}</a></li><#if article_has_next=false></ul></#if></#list></FOUNDER-XY>    
 </div>
 <div class="boxb5">
-<span>Media Links</span><div class="fr" id="btn2" onclick="show2()">+</div>
+<span>Media</span><div class="fr" id="btn2" onclick="show2()">+</div>
 </div>
 <div class="boxb51" id="box51">
 <FOUNDER-XY type="articlelist" data="{'columnid':[7247763], 'articletype': 'all', 'article_attr': 'all', 'columntype':'self', 'showall':'true', 'start': 0, 'count': 30}"><#list articles as article><#if article_index == 0><ul></#if><li><a   href="${article.urlPad}" >${article.title}</a></li><#if article_has_next=false></ul></#if></#list></FOUNDER-XY>    
@@ -281,13 +292,26 @@ $(".pcbtn").click(function(){
 });
 
 $('.list li').each(function() {
-        $(this).click(function() {
-                $(".list li").removeClass("change");
-                $(this).addClass("change");
-                $(".l1").removeClass("show");
-                n=$(this).index();
-                $(".l1").eq(n).addClass("show");
-        })
+    $(this).click(function() {
+        $(".list li").removeClass("change");
+        $(".list1 li").removeClass("change");
+        $(this).addClass("change");
+        $(".l1").removeClass("show");
+        $(".l2").removeClass("show");
+        n=$(this).index();
+        $(".l1").eq(n).addClass("show");
+    })
+});
+$('.list1 li').each(function() {
+    $(this).click(function() {
+        $(".list li").removeClass("change");
+        $(".list1 li").removeClass("change");
+        $(this).addClass("change");
+        $(".l1").removeClass("show");
+        $(".l2").removeClass("show");
+        n=$(this).index();
+        $(".l2").eq(n).addClass("show");
+    })
 });
 </script>
 

@@ -4,35 +4,45 @@
 <title>无标题文档</title>
 <base target="_blank" />
 <style type="text/css">
+    * { margin: 0px; padding: 0px; border:0;box-sizing: border-box;}
+    body {font-family:"Arial";font-size:16px; line-height:20px; width:100%; min-width: 1200px;background-color: #ffffff !important;}
+    ul, li { list-style-type: none; }
+    a{color: #000;}
+    a,a:hover{  text-decoration: none;}
+    .wdiv{width: 1200px;margin: 0 auto;padding: 0 12px;clear: both;position: relative;}
 
-.boxb { width:100%; background-color:#333333; border-top: solid 5px #1348a4; clear:both; height:1%; overflow:hidden; margin: 0 auto; padding-bottom:10px;}
-.boxb1 { width:1200px; height:100px; margin:auto; border-bottom: solid 1px #5c5c5c; overflow:hidden;}
-.boxb1l { width:630px; margin-left:50px;}
-.boxb1l h1 { line-height:100px; font-size:55px; font-weight:bold; font-family:Arial; color:#858585;}
-.boxb2 { width:1100px; height:1%; margin:auto; overflow:hidden;} 
-.boxb2l { width:460px; float:left;}
-.boxb2l li { width:185px; margin-right:40px; font-size:16px; line-height:32px; color:#d6d6d6; font-family:Arial;}
-.boxb2l li a { font-size:16px; line-height:32px; color:#d6d6d6; font-family:Arial;}
-.boxb2l h3 { font-size:15px; line-height:40px; color:#d6d6d6; font-family:Arial; font-weight:normal; padding-right:52px; float:left; }
-.boxb2l h3 a { font-size:15px; line-height:40px; color:#d6d6d6; font-family:Arial; font-weight:normal;}
-.boxb2r { width:460px; float:right; overflow:hidden;} 
-.boxb2r h1 { font-size:35px; line-height:40px; color:#d6d6d6; font-family:Arial; font-weight:normal; margin-bottom:15px;}
-.boxb2r li { width:185px; margin-right:40px; font-size:16px; line-height:32px; color:#d6d6d6; font-family:Arial; float:left;}
-.boxb2r li a { font-size:16px; line-height:32px; color:#d6d6d6; font-family:Arial;}
-.boxb2r h2 { font-size:25px; line-height:40px; color:#d6d6d6; font-family:Arial; font-weight:normal;}
-.boxb2r h2 a { font-size:25px; line-height:40px; color:#d6d6d6; font-family:Arial; font-weight:normal;}
-.box3 { width:1200px; margin:10px auto 0 auto; border-top: solid 1px #5c5c5c; text-align:center; font-size:12px; line-height:20px; clear:both; color:#f3f3f3; padding:20px 0;}
-* { margin: 0px; padding: 0px; }
-body {font-family: Arial; font-size:18px; color:#000; line-height:22px;}
-a { text-decoration: none; font-size:18px; color:#000; line-height:22px; color:#000000;}
-a:hover { color: #333; text-decoration: underline; }
-ul, li { list-style-type: none; }
-img {border:0;}
-
-.box4 { font-size:25px; line-height:80px; border-bottom: solid 1px #5c5c5c; color:#a4a4a4; clear:both;}
-
+    .fline{width: 100%;height: 2px;background: url('http://images.china.cn/images1/en/scio2021/footer/line.jpg') repeat-y; background-position-x: center;background-size: 100%;}
+    .ftop{width: 100%;height: 120px;border-bottom: 1px solid #c4c4c4;}
+    .ftop span{font-size: 47px;line-height: 120px;font-weight: bold;color: #000;}
+    .fshare{float: right;margin-top: 35px;}
+    .fshare a{display: inline-block;width: 50px;height: 50px;}
+    .fb{background: url('http://images.china.cn/images1/en/scio2021/footer/facebook.jpg') no-repeat;margin-right: 20px;}
+    .fb:hover{background: url('http://images.china.cn/images1/en/scio2021/footer/facebook_hover.jpg') no-repeat;}
+    .tt{background: url('http://images.china.cn/images1/en/scio2021/footer/twitter.jpg') no-repeat;margin-right: 20px;}
+    .tt:hover{background: url('http://images.china.cn/images1/en/scio2021/footer/twitter_hover.jpg') no-repeat;}
+    .yt{background: url('http://images.china.cn/images1/en/scio2021/footer/youtube.jpg') no-repeat;margin-right: 20px;}
+    .yt:hover{background: url('http://images.china.cn/images1/en/scio2021/footer/youtube_hover.jpg') no-repeat;}
+    .ins{background: url('http://images.china.cn/images1/en/scio2021/footer/ins.jpg') no-repeat;}
+    .ins:hover{background: url('http://images.china.cn/images1/en/scio2021/footer/ins_hover.jpg') no-repeat;}
+    .fmiddle{width: 100%;border-bottom: 1px solid #c4c4c4;padding: 35px 0;}
+    .link{display: inline-block;}
+    .GM{width: 792px;border-bottom: 1px solid #c4c4c4;clear: both;}
+    .fmiddle span{font-size: 20px;line-height: 20px;font-weight: bold;color: #000;margin-bottom: 20px;display: block;}
+    .box{width: 354px;height: 60px;padding: 0 15px;border: 1px solid #c4c4c4;cursor: pointer;position: relative;}
+    .box p{font-size: 20px;line-height: 60px;color: #666;}
+    .box span{width: 11px;height: 9px;position: absolute;right: 15px;top: 25px;}
+    .box ul{height: 189px;overflow-y: scroll; display: none;background-color: #fff;position: absolute;left: 0;bottom: 60px;border: 1px solid #666;}
+    .box ul li:hover{background-color: #1e90ff;}
+    .box ul li a{font-size: 18px;line-height: 27px;color: #666;padding: 0 15px;}
+    .box ul li:hover a{color: #fff;}
+    .box:hover ul{display: block;}
+    .GW{width: 354px;display: inline-block;margin-bottom: 15px;}
+    .ML{width: 354px;float: right;}
+    .CU{margin-top: 15px;}
+    .CU:hover{opacity: 0.75;}
+    .down{float: right;}
+    .fbottom{height: 50px;font-size: 15px;line-height: 50px;text-align: center;color: #000;}
 </style>
-
 <script type="text/javascript">
 
 function changeIframeHeight() {
@@ -52,47 +62,49 @@ function changeIframeHeight() {
 </script>
 </head>
 <body onload="changeIframeHeight()">
-<div class="boxb">
-<div class="boxb1">
-<div class="boxb1l">
-<h1>CHINA SCIO</h1>
-</div>
-</div>
+    <div class="footer">
+        <div class="fline"></div>
+        <div class="ftop">
+            <div class="wdiv">
+                <span>CHINA SCIO</span>
+                <div class="fshare"><a href="https://www.facebook.com/chinascio" class="fb"></a><a href="https://twitter.com/chinascio" class="tt"></a><a href="https://www.youtube.com/chinascio" class="yt"></a><a href="https://www.instagram.com/china_scio" class="ins"></a></div>
+            </div>
+        </div>
+        <div class="fmiddle">
+            <div class="wdiv">
+                <div class="link">
+                    <div class="GM">
+                        <div class="GW">
+                            <span>LINKS</span>
+                            <div class="box">
+                                <FOUNDER-XY type="articlelist" data="{'columnid':[7247900], 'articletype': 'all', 'article_attr': 'all', 'columntype':'self', 'showall':'true', 'start': 0, 'count': 1}"><#list articles as article><p>${article.title}<span><img src="http://images.china.cn/images1/en/scio2021/footer/triangle_down.png"></span></p></#list></FOUNDER-XY>
+                                <ul style="width: 729px;">
+                                    <FOUNDER-XY type="articlelist" data="{'columnid':[7247900], 'articletype': 'all', 'article_attr': 'all', 'columntype':'self', 'showall':'true', 'start': 0, 'count': 30}"><#list articles as article><li><a href="${article.url}" target="_blank">${article.title}</a></li></#list></FOUNDER-XY>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="ML">
+                            <span>MEDIA</span>
+                            <div class="box">
+                                <FOUNDER-XY type="articlelist" data="{'columnid':[7247763], 'articletype': 'all', 'article_attr': 'all', 'columntype':'self', 'showall':'true', 'start': 0, 'count': 1}"><#list articles as article><p>${article.title}<span><img src="http://images.china.cn/images1/en/scio2021/footer/triangle_down.png"></span></p></#list></FOUNDER-XY>
+                                <ul style="width: 354px;">
+                                    <FOUNDER-XY type="articlelist" data="{'columnid':[7247763], 'articletype': 'all', 'article_attr': 'all', 'columntype':'self', 'showall':'true', 'start': 0, 'count': 30}"><#list articles as article><li><a href="${article.url}" target="_blank">${article.title}</a></li></#list></FOUNDER-XY>
+                                </ul>
+                            </div>
 
-<div class="boxb2">
-<div class="boxb2l">
-<div class="box4">Government Websites</div>
-
-<div style="border-bottom: solid 1px #5c5c5c; height:1%; overflow:hidden; padding-bottom:15px; margin-bottom:15px;"><FOUNDER-XY type="articlelist" data="{'columnid':[7247900], 'articletype': 'all', 'article_attr': 'all', 'columntype':'self', 'showall':'true', 'start': 0, 'count': 30}"><#list articles as article><#if article_index == 0><ul>
-</#if><li><a   href="${article.url}" >${article.title}</a></li><#if article_has_next=false>
-</ul></#if></#list></FOUNDER-XY></div>
-
-<h3><a href="https://www.facebook.com/chinascio"><img src="http://images.china.cn/images1/en/gxb/facebook.png" width="39" height="37" border="0" align="left" /></a> &#160;<a href="https://www.facebook.com/chinascio">Facebook</a></h3>
-
-<h3><a href="https://twitter.com/chinascio"><img src="http://images.china.cn/images1/en/gxb/twitter.png" width="39" height="37" border="0" align="left" /></a> &#160;<a href="https://twitter.com/chinascio">Twitter</a></h3>
-
-<h3><a href="https://www.youtube.com/chinascio"><img src="http://images.china.cn/images1/en/gxb/youtube.png" width="39" height="37" border="0" align="left" /></a> &#160;<a href="https://www.youtube.com/chinascio">YouTube</a></h3>
-</div>
-
-<div class="boxb2r">
-
-<div class="box4" style="line-height:60px; padding-top:7px; height:67px;">Media Links</div>
-
-<div style="border-bottom: solid 1px #5c5c5c; height:1%; overflow:hidden; padding-bottom:15px; margin-bottom:15px;"><FOUNDER-XY type="articlelist" data="{'columnid':[7247763], 'articletype': 'all', 'article_attr': 'all', 'columntype':'self', 'showall':'true', 'start': 0, 'count': 30}"><#list articles as article><#if article_index == 0><ul>
-</#if><li><a   href="${article.url}" >${article.title}</a></li><#if article_has_next=false>
-</ul></#if></#list></FOUNDER-XY></div>
-
-
-
-<h2 style="float:left;"><a href="http://english.scio.gov.cn/2017-05/31/content_40931065.htm" target="_top">About Us</a> <img src="http://images.china.cn/images1/en/gxb/10.jpg" width="9" height="12" /></h2>
-
-<h2 style="float:left; margin-left:30px;"><a href="http://english.scio.gov.cn/2017-05/31/content_40931182.htm" target="_top">Contact Us</a> <img src="http://images.china.cn/images1/en/gxb/10.jpg" width="9" height="12" /></h2>
-</div>
-</div>
-
-<div class="box3">Copyright © english.scio.gov.cn&nbsp;&nbsp;All rights reserved. <br />
- Registration Number: 19010669-8</div>
-</div>
+                        </div>
+                    </div>
+                    <div class="CU"><a href="http://english.scio.gov.cn/2017-05/31/content_40931182.htm" target="_top"><img src="http://images.china.cn/images1/en/scio2021/footer/contactus.png"></a> </div>
+                </div>
+                <div class="down">
+                    <span>DOWNLOAD OUR APPS</span>
+                    <img src="http://images.china.cn/images1/en/scio2021/footer/2code_guoxin.jpg" style="margin-right: 20px;">
+                    <img src="http://images.china.cn/images1/en/scio2021/footer/2code_fabu.jpg">
+                </div>
+            </div>
+        </div>
+        <div class="fbottom">Copyright © english.scio.gov.cn&nbsp;&nbsp;All rights reserved.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Registration Number: 19010669-8</div>
+    </div>
 </body>
 </html>
 
