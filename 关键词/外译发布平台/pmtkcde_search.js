@@ -1,72 +1,20 @@
 (function($) {
     var startpage = getQueryString('page') ? parseInt(getQueryString('page')) : 1;
     var searchText = getQueryString('searchText') ? getQueryString('searchText') : '';
-    var pageSize = 60;
+    var pageSize = 40;
     var totalPage = 0;
-    var arr = {
-        "White Paper": 'w1',
-        "Leaders": 'w2',
-        "SCIO News": 'w3',
-        "Public Diplomacy": 'w4',
-        "Int'l Cooperation": 'w5',
-        "Economy": 'w6',
-        "Sci-Tech": 'w7',
-        "Press Conference": 'w8',
-        "Policy Briefing": 'w9',
-        "Culture": 'w10',
-        "Policy": 'w11',
-        "CPC": 'w12',
-        "National Defense": 'w13',
-        "Society": 'w14',
-        "Around China": 'w15',
-        "Belt & Road": 'w16',
-        "Education": 'w17',
-        "Think Tank": 'w18',
-        "Politics": 'w19',
-        "Int'l Exchange": 'w20',
-        "Diplomacy": 'w21',
-        "Human Rights": 'w22',
-        "Environment": 'w23',
-        "Media Cooperation": 'w24',
-        "International Cooperation": 'w25',
-        "International Exchanges": 'w26',
-        "Aid": 'w27',
-        "Two Sessions 2018": 'w28',
-        "Press Minutes": 'w29',
-        "2019 NPC & CPPCC": 'w30',
-        "2020 NPC & CPPCC": 'w31',
-        "2021 NPC & CPPCC": 'w32',
-        "People's Livelihood": 'w33',
-        "Agriculture": 'w34'
-    };
     exec = function() {
-        var index = $.inArray(searchText, Object.keys(arr));
-        if (index >= 0) {
-            $.getScript('http://query.china.com.cn/news/queryFn?index=ciic_en_scio&h=1&noFields=channel&nokws=2&startPage=' + startpage + '&pageSize=' + pageSize + '&field=subtitle&kw=' + searchText);
-        } else {
-            $.getScript('http://query.china.com.cn/news/queryFn?index=ciic_en_scio&h=1&noFields=channel&nokws=2&startPage=' + startpage + '&pageSize=' + pageSize + '&kw=' + searchText);
-        }
-
+        $.getScript('http://query.china.com.cn/news/queryFn?index=ciic_en_pmtkcde&noFields=channel&nokws=2&h=1&startPage=' + startpage + '&pageSize=' + pageSize + '&kw=' + searchText);
     };
     exec();
     window.queryRes = function(data) {
         var len = data.recordCount;
         var temp = [];
-        var url = ["topnews", "pressroom", "scionews", "chinavoices", "beltandroad", "in-depth", "aboutscio", "internationalexchanges", "infographics", "videos", "whitepapers", "featured", "chinafacts"];
         totalPage = Math.ceil(len / pageSize);
+        $('#yText').html(searchText)
         $('#yInfo').html('Results ' + (startpage * pageSize - pageSize + 1) + ' - ' + startpage * pageSize + ' of ' + len);
         $.each(data.recordList, function(i, v) {
-            $.each(url, function() {
-                if (v.url.indexOf(this) != -1) {
-                    if (v.url.split("_").length - 1 < 2) {
-                        if (v.title.indexOf("Notice") != -1) {
-                            temp.push('<li><h3>' + v.date.substr(0, 10) + '</h3><h1><a href="' + v.url.replace(/http:\/\/www.china.org.cn\/englishscio\//, "http://english.scio.gov.cn/") + '">' + v.title.split(" ").slice(0, -2).join(" ") + " (" + v.title.split(" ").slice(-2).join(" ") + ")" + '</a></h1></li>');
-                        } else {
-                            temp.push('<li><h3>' + v.date.substr(0, 10) + '</h3><h1><a href="' + v.url.replace(/http:\/\/www.china.org.cn\/englishscio\//, "http://english.scio.gov.cn/") + '">' + v.title + '</a></h1></li>');
-                        }
-                    }
-                }
-            })
+            temp.push('<li><p>' + v.title.replace(/<span style='color:red' >/g, '').replace(/<\/span>/g, '') + '</p><span>' + v.subtitle + '</span></li>');
         })
         $('#yList').html(temp.join(''));
         pageObj();
@@ -74,6 +22,8 @@
 
     function pageObj() {
         var i = 0;
+
+
         var pagination_buf = [];
         // prev
         pagination_buf.push(startpage > 1 ? '<a href="#"  data-page="' + (startpage - 1) + '" >Prev</a>' : '<span>Prev</span>');
@@ -137,23 +87,4 @@
         if (r != null) return window.decodeURIComponent(r[2]);
         return false;
     }
-
-})(jQuery);
-(function($) {
-    var wTop = $('.ban2').offset().top;
-    $(window).scroll(function() {
-        var t = $(document).scrollTop();
-        if (t >= wTop) {
-            $('.ban2').css({
-                'position': 'fixed',
-                'z-index': '99999',
-                'top': '0'
-            });
-        } else {
-            $('.ban2').css({
-                'position': 'static',
-                'margin': '0 auto 30px auto'
-            });
-        }
-    });
 })(jQuery);

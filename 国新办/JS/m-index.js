@@ -1,6 +1,5 @@
-
-(function ($) {
-        var arr = {
+(function($) {
+    var arr = {
         "White Paper": 'w1',
         "Leaders": 'w2',
         "SCIO News": 'w3',
@@ -32,41 +31,46 @@
         "Press Minutes": 'w29',
         "2019 NPC & CPPCC": 'w30',
         "2020 NPC & CPPCC": 'w31',
-        "2021 NPC & CPPCC":'w32'
-        };
-        $('.mmmm').each(function () {
-                var curTitle = $.trim($(this).text());
-                $(this).addClass(arr[curTitle]).html('<a href="http://english.scio.gov.cn/search.htm?searchText='+ curTitle +'&strUrl=englishscio" target="_top">'+ curTitle +'</a>');
-        });
+        "2021 NPC & CPPCC": 'w32',
+        "People's Livelihood": 'w33',
+        "Agriculture": 'w34'
+    };
+    $('.mmmm').each(function() {
+        var curTitle = $.trim($(this).text());
+        $(this).addClass(arr[curTitle]).html('<a href="http://english.scio.gov.cn/search.htm?searchText=' + curTitle + '&strUrl=englishscio" target="_top">' + curTitle + '</a>');
+    });
 })(jQuery);
 
-function checkUser(){
-        document.getElementById("formid").submit();
+function checkUser() {
+    document.getElementById("formid").submit();
 }
 
-function closelist(){
-        document.getElementById('listshow').style.display='none';
+function closelist() {
+    document.getElementById('listshow').style.display = 'none';
 }
-function showlist(){
-        document.getElementById('listshow').style.display='block';
+
+function showlist() {
+    document.getElementById('listshow').style.display = 'block';
 }
-function show1(){
-        if(showdiv_display = document.getElementById('box41').style.display=='none'){
-        document.getElementById('box41').style.display='block';
-        document.getElementById('btn1').innerHTML="x";
-        }else{
-        document.getElementById('box41').style.display='none';
-        document.getElementById('btn1').innerHTML="+";
-        }
-        
+
+function show1() {
+    if (showdiv_display = document.getElementById('box41').style.display == 'none') {
+        document.getElementById('box41').style.display = 'block';
+        document.getElementById('btn1').innerHTML = "x";
+    } else {
+        document.getElementById('box41').style.display = 'none';
+        document.getElementById('btn1').innerHTML = "+";
+    }
+
 }
-function show2(){
-        if(showdiv_display = document.getElementById('box51').style.display=='none'){
-        document.getElementById('box51').style.display='block';
-        document.getElementById('btn2').innerHTML="x";
-        }else{
-        document.getElementById('box51').style.display='none';
-        document.getElementById('btn2').innerHTML="+";
-        }
-        
+
+function show2() {
+    if (showdiv_display = document.getElementById('box51').style.display == 'none') {
+        document.getElementById('box51').style.display = 'block';
+        document.getElementById('btn2').innerHTML = "x";
+    } else {
+        document.getElementById('box51').style.display = 'none';
+        document.getElementById('btn2').innerHTML = "+";
+    }
+
 }

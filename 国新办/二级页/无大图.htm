@@ -2,8 +2,11 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 
 <head>
-    <meta http-equiv="Content-Type" content="text/plain; charset=UTF-8" />
-    <title>The State Council Information Office of the People&#39;s Republic of China | english.scio.gov.cn</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>
+        <FOUNDER-XY type="columnlist" data="{'columnid':[],'columntype':'self'}">
+            <#list columns as column>${column.name}</#list>
+        </FOUNDER-XY> | english.scio.gov.cn</title>
     <base target="_self" />
     <meta name="filetype" content="1" />
     <meta name="publishedtype" content="1" />
@@ -13,12 +16,10 @@
             <meta name="catalogs" content="${column.id}"></meta>
         </#list>
     </FOUNDER-XY>
-
     <link type="text/css" rel="stylesheet" href="http://images.china.cn/images1/resource/styles/reset-1.0.css" />
-    <link type="text/css" rel="stylesheet" href="http://images.china.cn/images1/en/gxb/ctjs.css" />
     <style type="text/css">
         body {
-            font-family: Arial;
+            font-family: Arial, Helvetica, sans-serif;
         }
         
         a {
@@ -39,13 +40,42 @@
             font-size: 40px;
             line-height: 48px;
             font-weight: bold;
-            clear: both;
         }
         
         .wrapl {
             width: 900px;
             float: left;
             padding: 0;
+        }
+        
+        .main {
+            width: 900px;
+            height: 450px;
+            position: relative;
+            margin-bottom: 30px;
+            overflow: hidden;
+        }
+        
+        .main img {
+            width: 900px;
+            height: 450px;
+        }
+        
+        .main p {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 880px;
+            height: 80px;
+            font-size: 36px;
+            line-height: 40px;
+            padding: 13px 20px;
+            background: url(http://images.china.cn/images1/ch/2017gxb/images/filter_1.png) left top no-repeat;
+            font-weight: normal;
+        }
+        
+        .main a {
+            color: #fff;
         }
         
         .usual {
@@ -60,19 +90,34 @@
             border-bottom: 1px dotted #666;
         }
         
+        .usual img {
+            float: left;
+            width: 210px;
+            height: 140px;
+            margin-right: 20px;
+        }
+        
         .usual h1 {
-            font-size: 16px;
+            font-size: 26px;
             line-height: 26px;
-            width: 800px;
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+        
+        .usual p {
+            font-size: 18px;
+            line-height: 22px;
+            margin-bottom: 15px;
             font-weight: normal;
+            padding-left: 230px;
         }
         
         .usual h3 {
             font-size: 12px;
-            line-height: 26px;
+            line-height: 20px;
             color: #999;
             font-weight: normal;
-            float: right;
+            margin-bottom: 10px;
         }
         
         .wrapr {
@@ -82,19 +127,20 @@
         
         #autopage {
             clear: both;
-            text-align: center;
         }
         
         #autopage a {
             color: #fff;
-            padding: 11px;
+            background: url(http://images.china.cn/images1/ch/2017gxb/images/autopage_2.png) left top repeat-x;
+            padding: 0 11px 11px 11px;
             font-size: 26px;
             line-height: 35px;
         }
         
         #autopage span {
             color: #FFF;
-            padding: 11px;
+            background: url(http://images.china.cn/images1/ch/2017gxb/images/autopage_1.png) left top repeat-x;
+            padding: 0 11px 11px 11px;
             font-size: 26px;
             line-height: 35px;
         }
@@ -163,19 +209,6 @@
             font-size: 12px;
             font-weight: normal;
         }
-        
-        #autopage {
-            font-size: 14px;
-            color: #000;
-        }
-        
-        #autopage a {
-            color: #000;
-        }
-        
-        #autopage span {
-            color: #F00;
-        }
     </style>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -201,10 +234,16 @@
             s.parentNode.insertBefore(hm, s);
         })();
     </script>
+
+    <link type="text/css" rel="stylesheet" href="http://images.china.cn/images1/en/gxb/ctjs.css" />
 </head>
 
 <body>
-    <div class='top'><iframe id="Top" src="http://english.scio.gov.cn/node_7247655.htm" width="100%" height="130" scrolling="no" marginheight="0" frameborder="0"></iframe></div>
+    <div class='top'>
+        <FOUNDER-XY type="columnlist" data="{'columnid':[7247655],'columntype':'self'}">
+            <#list columns as column><iframe id="Top" src="${column.url!}" width="100%" height="130" scrolling="no" marginheight="0" frameborder="0"></iframe></#list>
+        </FOUNDER-XY>
+    </div>
 
     <div class="ban2">
         <div style="width:1200px; margin:auto;">
@@ -289,34 +328,82 @@
 
     <div class="wrap">
         <div class="wrapl">
-            <div class="title2">
-                <ul>
-                    <li style="font-size:14px;float:left;font-weight: normal;" id="yInfo"></li>
-
-                    <li style="font-size:14px;float:right;display:none;">Sort by: <a href="javascript:sortby(1);">Relevance</a> | <a href="javascript:sortby(2);"><strong>Date</strong></a></li>
-                </ul>
-            </div>
-            <br>
-            <div style="    font-size: 18px;line-height: 0px;padding-bottom: 35px;">News &amp; Articles</div>
 
             <div class="usual">
-                <ul id="yList">
-                    <li>&#160;</li>
-                </ul>
+                <FOUNDER-XY type="articlelistpage" data="{'columnid':[], 'articletype': 'all', 'article_attr': 'all', 'columntype':'self', 'showall':'true', 'start': 0, 'count': 30}">
+                    <#list articles as article>
+                        <#if article_index==0>
+                            <ul>
+                        </#if>
+                        <li>
+                            <a href="${article.url}" target="_self"><img src="${article.picBig}" border="0"> </a>
+                            <h3><span class="mmmm">${article.subTitle}</span>
+                                <#setting locale="en_US">${article.pubTime?string("MMMM d, yyyy")}</h3>
+                            <h1><a href="${article.url}" target="_self">${article.title}</a></h1>
+                            <p>${article.summary}</p>
+                        </li>
+                        <#if article_has_next=false>
+                            </ul>
+                        </#if>
+                    </#list>
+                </FOUNDER-XY>
             </div>
-
-            <div width="100%" id="autopage">&#160;</div>
         </div>
 
-        <div class="wrapr"><iframe id="con_rightifr" src="http://english.scio.gov.cn/node_7247694.htm" width="250" height="1200" scrolling="no" marginheight="0" frameborder="0"></iframe></div>
+        <div class="wrapr">
+            <FOUNDER-XY type="columnlist" data="{'columnid':[7247694],'columntype':'self'}">
+                <#list columns as column><iframe id="con_rightifr" src="${column.url!}" width="250" height="600" scrolling="no" marginheight="0" frameborder="0"></iframe></#list>
+            </FOUNDER-XY>
+        </div>
     </div>
 
-    <div class='footer'><iframe id="bottomifr" src="http://english.scio.gov.cn/node_7248726.htm" width="100%" height="650" scrolling="no" marginheight="0" frameborder="0"></iframe></div>
+    <div class='footer'>
+        <FOUNDER-XY type="columnlist" data="{'columnid':[7248726],'columntype':'self'}">
+            <#list columns as column><iframe id="bottomifr" src="${column.url!}" width="100%" height="610" scrolling="no" marginheight="0" frameborder="0"></iframe></#list>
+        </FOUNDER-XY>
+    </div>
 
-    <script type="text/javascript" src="http://images.china.cn/images1/resource/scripts/jquery/jquery-1.12.4.min.js"></script>
+    <div style="display:none;">
+        <script type="text/javascript">
+            <!--
+            document.write(unescape("%3Cscript src='http://cl2.webterren.com/webdig.js?z=12' type='text/javascript'%3E%3C/script%3E"));
+            -->
+        </script>
 
-    <script type="text/javascript" src="http://images.china.cn/images1/en/gxb/search.js"></script>
 
+
+        <script type="text/javascript">
+            <!--
+            wd_paramtracker("_wdxid=000000000000000000000000000000000000000000")
+                -->
+        </script>
+    </div>
+
+    <script type="text/javascript" src="http://images.china.cn/images1/resource/scripts/jquery/jquery-1.9.1.min.js">
+    </script>
+
+    <script type="text/javascript">
+        <!--
+        $(function() {
+                var q = window.location.href;
+                var s = q.split("_").length;
+                if (s > 2) {
+                    $('.main').hide();
+                };
+            })
+            -->
+    </script>
+
+    <script type="text/javascript">
+        <!--
+        (function($) {
+            $('.usual li:last()').css('border-bottom', '0');
+        })(jQuery);
+        -->
+    </script>
+
+    <script type="text/javascript" src="http://images.china.cn/images1/en/gxb/index.js">
+    </script>
     <script type="text/javascript">
         function menu() {
             $('.more').hover(function() {

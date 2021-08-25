@@ -1,5 +1,5 @@
-(function ($) {
-        var arr = {
+(function($) {
+    var arr = {
         "White Paper": 'w1',
         "Leaders": 'w2',
         "SCIO News": 'w3',
@@ -31,10 +31,12 @@
         "Press Minutes": 'w29',
         "2019 NPC & CPPCC": 'w30',
         "2020 NPC & CPPCC": 'w31',
-        "2021 NPC & CPPCC":'w32'
-        };
-        $('.mmmm').each(function () {
-                var curTitle = $.trim($(this).text());
-                $(this).addClass(arr[curTitle]).html('<a href="http://english.scio.gov.cn/search.htm?searchText='+ curTitle +'&strUrl=englishscio" target="_top">'+ curTitle +'</a>');
-        });
+        "2021 NPC & CPPCC": 'w32',
+        "People's Livelihood": 'w33',
+        "Agriculture": 'w34'
+    };
+    $('.mmmm').each(function() {
+        var curTitle = $.trim($(this).text());
+        $(this).addClass(arr[curTitle]).html('<a href="http://english.scio.gov.cn/search.htm?searchText=' + curTitle + '&strUrl=englishscio" target="_top">' + curTitle + '</a>');
+    });
 })(jQuery);
