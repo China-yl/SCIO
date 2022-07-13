@@ -1,0 +1,878 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>
+        <FOUNDER-XY type="columnlist" data="{'columnid':[],'columntype':'self'}">
+            <#list columns as column>${column.name}</#list>
+        </FOUNDER-XY> | english.scio.gov.cn</title>
+    <base target="_self" />
+    <meta name="filetype" content="1" />
+    <meta name="publishedtype" content="1" />
+    <meta name="pagetype" content="2" />
+    <FOUNDER-XY type="columnlist" data="{'columnid':[],'columntype':'self'}">
+        <#list columns as column>
+            <meta name="catalogs" content="${column.id}"></meta>
+        </#list>
+    </FOUNDER-XY>
+    <meta itemprop="name" content="Conference on Dialogue of Civilizations " />
+
+    <style type="text/css">
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        
+        body {
+            font-family: Arial;
+            font-size: 16px;
+            color: #000;
+            line-height: 20px;
+            width: 100%;
+            min-width: 1200px;
+            background: url("//english.scio.gov.cn/images1/en/CDAC2019/bg_main.jpg") repeat;
+            background-size: 100% 100%;
+        }
+        
+        ul,
+        li {
+            list-style-type: none;
+        }
+        
+        a {
+            text-decoration: none;
+            font-size: 16px;
+            color: #000;
+            line-height: 20px;
+            color: #000000;
+        }
+        
+        img {
+            border: 0;
+            transition: all 0.6s;
+        }
+        
+        .fl {
+            float: left;
+        }
+        
+        .fr {
+            float: right;
+        }
+        
+        .top {
+            width: 100%;
+            height: 407px;
+            background: url("//english.scio.gov.cn/images1/en/CDAC2019/banner_bg.jpg") no-repeat;
+            padding: 130px 0 0 0;
+            background-size: 100% 100%;
+        }
+        
+        .top img {
+            display: block;
+            width: 100%;
+            height: 0;
+            opacity: 0;
+        }
+        
+        .ban2 {
+            width: 100%;
+            height: 54px;
+            background-color: #323b60;
+            clear: both;
+        }
+        
+        @media screen and (max-width: 1199px) {
+            body {
+                width: 1200px;
+            }
+            .ban2 {
+                min-width: 1200px;
+            }
+        }
+        
+        .ban2 li {
+            text-align: center;
+            height: 36px;
+            float: left;
+            padding: 9px 0;
+        }
+        
+        .ban2 li a {
+            color: #FFFFFF;
+            font-size: 20px;
+            line-height: 36px;
+            width: 199px;
+            display: inline-block;
+            border-left: 1px solid #fff;
+        }
+        
+        .ban2 li:last-child a {
+            border-right: 1px solid #fff;
+            width: 198px;
+        }
+        
+        .ban2 li:hover a {
+            font-weight: bold;
+        }
+        
+        .div1 {
+            width: 100%;
+            background: url("//english.scio.gov.cn/images1/en/CDAC2019/bg1.png") no-repeat;
+            background-size: 100% 100%;
+        }
+        
+        .d {
+            width: 1150px;
+            margin: 55px auto;
+            padding: 40px 60px;
+            background: url("//english.scio.gov.cn/images1/en/CDAC2019/moji_bg.png") no-repeat;
+            background-size: 100% 100%;
+        }
+        
+        .dl {
+            width: 1135px;
+            height: 513px;
+            display: inline-block;
+        }
+        
+        .dl .carousel {
+            width: 1135px;
+            height: 513px;
+            display: inline-block;
+            margin-bottom: 10px;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .dl .carousel .img {
+            width: 100000px;
+            position: absolute;
+            left: 0px;
+            top: 0px;
+        }
+        
+        .dl .carousel .img img {
+            width: 770px;
+            height: 513px;
+        }
+        
+        .dl .carousel .img li {
+            float: left;
+            padding: 0;
+            margin-right: 365px;
+            border: 0;
+            position: relative;
+            display: block;
+        }
+        
+        .dl .carousel .img li div {
+            width: 335px;
+            padding: 15px;
+            position: absolute;
+            top: 0;
+            right: -365px;
+        }
+        
+        .dl .carousel .img li p {
+            width: 320px;
+            padding-left: 30px;
+        }
+        
+        .dl .carousel .img li p a {
+            color: #fff;
+            font-size: 36px;
+            line-height: 50px;
+            font-weight: bold;
+        }
+        
+        .dl .carousel .img li p a:hover {
+            text-decoration: underline;
+        }
+        
+        .dl .carousel .num {
+            width: 770px;
+            left: 35%;
+            bottom: 45px;
+            position: absolute;
+        }
+        
+        .dl .carousel .num li {
+            width: 8px;
+            height: 8px;
+            display: inline-block;
+            border-radius: 100%;
+            background: #fff;
+            opacity: 1;
+            -webkit-transition: all 0.3s ease-in-out;
+            -moz-transition: all 0.3s ease-in-out;
+            -ms-transition: all 0.3s ease-in-out;
+            -o-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
+            margin: 0 4px;
+        }
+        
+        .dl .carousel .num .on {
+            width: 22px;
+            border-radius: 5px;
+            opacity: 1;
+            background: #ecce72;
+        }
+        
+        .dl .carousel .btn {
+            position: absolute;
+            top: 50%;
+            width: 82px;
+            height: 65px;
+            margin-top: -22px;
+            z-index: 10;
+            cursor: pointer;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        
+        .dl .carousel .btn_l {
+            background-image: url("//english.scio.gov.cn/images1/en/CDAC2019/left.png");
+            background-size: 100% 100%;
+            left: 10px;
+            right: auto;
+        }
+        
+        .dl .carousel .btn_r {
+            background-image: url("//english.scio.gov.cn/images1/en/CDAC2019/right.png");
+            background-size: 100% 100%;
+            right: 375px;
+            left: auto;
+        }
+        
+        .dl .carousel .btn_r:hover {
+            background-image: url("//english.scio.gov.cn/images1/en/CDAC2019/right_hover.png");
+        }
+        
+        .dl .carousel .btn_l:hover {
+            background-image: url("//english.scio.gov.cn/images1/en/CDAC2019/left_hover.png");
+        }
+        
+        .div2 {
+            width: 100%;
+            margin: 50px 0;
+            background: url("//english.scio.gov.cn/images1/en/CDAC2019/bg2.png") no-repeat 0px 130px;
+            background-size: 100% 100%;
+        }
+        
+        .t1 {
+            width: 482px;
+            height: 76px;
+            margin: 0 auto;
+            padding-bottom: 40px;
+        }
+        
+        .t1 img:hover {
+            transform: scale(1.1);
+        }
+        
+        .d1 {
+            width: 1138px;
+            margin: 0 auto;
+            background: #FFFFFF;
+            border: 1px dashed #dedede;
+            padding: 10px 30px;
+        }
+        
+        .d1 dl {
+            width: 1142px;
+            border-bottom: 1px dashed #dedede;
+            overflow: hidden;
+            padding: 30px 28px;
+        }
+        
+        .d1 dl:last-child {
+            border-bottom: none;
+        }
+        
+        .d1 dt {
+            width: 1138px;
+            margin-bottom: 20px;
+            position: relative;
+        }
+        
+        .d1 dt img {
+            width: 18px;
+            height: 27px;
+            position: absolute;
+            left: -28px;
+            top: 4px;
+        }
+        
+        .d1 dt a {
+            font-size: 28px;
+            line-height: 35px;
+            color: #323b60;
+        }
+        
+        .d1 dt a:hover {
+            text-decoration: underline;
+        }
+        
+        .d1 dd {
+            font-size: 20px;
+            line-height: 25px;
+            color: #666666;
+        }
+        
+        .div3 {
+            width: 100%;
+            margin: 50px 0;
+        }
+        
+        .t2 {
+            width: 555px;
+            height: 76px;
+            margin: 0 auto;
+            padding-bottom: 40px;
+        }
+        
+        .t2 img:hover {
+            transform: scale(1.1);
+        }
+        
+        .d2 {
+            width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .d2 dl {
+            width: 360px;
+            height: 395px;
+            float: left;
+            overflow: hidden;
+            margin-right: 30px;
+            background: #fff;
+            padding: 10px;
+        }
+        
+        .d2 dl:last-child {
+            margin-right: 0;
+            float: none;
+            display: inline-block;
+        }
+        
+        .d2 dt {
+            width: 360px;
+            margin-bottom: 18px;
+        }
+        
+        .d2 dt img {
+            width: 360px;
+            height: 240px;
+        }
+        
+        .d2 dt img:hover {
+            transform: scale(1.1);
+        }
+        
+        .d2 dd {
+            height: 138px;
+        }
+        
+        .d2 dd a {
+            font-size: 24px;
+            line-height: 30px;
+            color: #323b60;
+        }
+        
+        .d2 dd:hover {
+            background: #e44b06;
+        }
+        
+        .d2 dd:hover a {
+            color: #fff;
+        }
+        
+        .div4 {
+            width: 100%;
+            margin: 50px 0;
+            background: url("//english.scio.gov.cn/images1/en/CDAC2019/bg3.png") no-repeat;
+            background-size: 100% 100%;
+            overflow: hidden;
+        }
+        
+        .t3 {
+            width: 515px;
+            height: 76px;
+            margin: 0 auto;
+            padding-bottom: 40px;
+        }
+        
+        .t3 img:hover {
+            transform: scale(1.1);
+        }
+        
+        .d3 {
+            width: 1200px;
+            margin: 0 auto 50px auto;
+        }
+        
+        .d3 dl {
+            width: 555px;
+            height: 170px;
+            padding: 15px;
+            float: left;
+            overflow: hidden;
+            margin-right: 30px;
+            background: #fff;
+        }
+        
+        .d3 dl:last-child {
+            margin-right: 0;
+            float: none;
+            display: inline-block;
+        }
+        
+        .d3 dt {
+            width: 255px;
+            height: 170px;
+            margin-right: 15px;
+            float: left;
+            position: relative;
+        }
+        
+        .d3 dt img {
+            width: 255px;
+            height: 170px;
+        }
+        
+        .d3 dt img:hover {
+            transform: scale(1.1);
+        }
+        
+        .d3 dd {
+            display: inline-block;
+            width: 280px;
+            height: 170px;
+        }
+        
+        .d3 dd a {
+            font-size: 24px;
+            line-height: 30px;
+            color: #323b60;
+        }
+        
+        .d3 dd:hover {
+            background: #e44b06;
+        }
+        
+        .d3 dd:hover a {
+            color: #fff;
+        }
+        
+        .play {
+            width: 70px !important;
+            height: 70px !important;
+            position: absolute;
+            top: 50px;
+            left: 92px;
+        }
+        
+        .t4 {
+            width: 515px;
+            height: 76px;
+            margin: 0 auto;
+            padding-bottom: 40px;
+        }
+        
+        .t4 img:hover {
+            transform: scale(1.1);
+        }
+        
+        .bg {
+            width: 100%;
+            height: 760px;
+        }
+        
+        .ph {
+            width: 1140px;
+            height: 760px;
+            margin: 0 auto;
+            position: relative;
+        }
+        
+        .ph .carousel1 {
+            width: 1140px;
+            height: 760px;
+            display: inline-block;
+            position: relative;
+        }
+        
+        .ph .carousel1 .img {
+            width: 100000px;
+            position: absolute;
+            left: 0px;
+            top: 0px;
+        }
+        
+        .ph .carousel1 .img img {
+            width: 1140px;
+            height: 760px;
+        }
+        
+        .ph .carousel1 .img li {
+            float: left;
+            padding: 0;
+            margin: 0;
+            border: 0;
+            position: relative;
+            display: block;
+        }
+        
+        .ph .carousel1 .img li p {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 1080px;
+            padding: 10px 30px;
+            background: rgba(0, 0, 0, 0.2);
+            display: none;
+        }
+        
+        .ph .carousel1 .img li.show p {
+            display: block;
+        }
+        
+        .ph .carousel1 .img li p a {
+            color: #fff;
+            font-size: 36px;
+            line-height: 50px;
+            font-weight: bold;
+        }
+        
+        .ph .carousel1 .img li p a:hover {
+            text-decoration: underline;
+        }
+        
+        .ph .carousel1 .num {
+            display: none;
+        }
+        
+        .ph .carousel1 .btn {
+            position: absolute;
+            top: 50%;
+            width: 82px;
+            height: 65px;
+            margin-top: -22px;
+            z-index: 10;
+            cursor: pointer;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        
+        .ph .carousel1 .btn_l {
+            background-image: url("//english.scio.gov.cn/images1/en/CDAC2019/left.png");
+            background-size: 100% 100%;
+            left: 10px;
+            right: auto;
+        }
+        
+        .ph .carousel1 .btn_r {
+            background-image: url("//english.scio.gov.cn/images1/en/CDAC2019/right.png");
+            background-size: 100% 100%;
+            right: 10px;
+            left: auto;
+        }
+        
+        .ph .carousel1 .btn_r:hover {
+            background-image: url("//english.scio.gov.cn/images1/en/CDAC2019/right_hover.png");
+        }
+        
+        .ph .carousel1 .btn_l:hover {
+            background-image: url("//english.scio.gov.cn/images1/en/CDAC2019/left_hover.png");
+        }
+        
+        .footer {
+            width: 100%;
+            font-size: 14px;
+            line-height: 32px;
+            color: #fff;
+            text-align: center;
+            background: url("//english.scio.gov.cn/images1/en/CDAC2019/footer.jpg") no-repeat;
+            background-size: 100% 100%;
+            padding: 11px 0;
+        }
+    </style>
+
+    <script type="text/javascript">
+        function setCookie(c_name, value, expiredays) {
+            var exdate = new Date()
+            exdate.setDate(exdate.getDate() + expiredays)
+            document.cookie = c_name + "=" + escape(value) +
+                ((expiredays == null) ? "" : ";expires=" + exdate.toGMTString())
+        }
+
+        function getCookie(c_name) {
+            if (document.cookie.length > 0) {
+                c_start = document.cookie.indexOf(c_name + "=")
+                if (c_start != -1) {
+                    c_start = c_start + c_name.length + 1
+                    c_end = document.cookie.indexOf(";", c_start)
+                    if (c_end == -1) c_end = document.cookie.length
+                    return unescape(document.cookie.substring(c_start, c_end))
+                }
+            }
+            return ""
+        }
+
+        function browserRedirect() {
+            var sUserAgent = navigator.userAgent.toLowerCase();
+            var bIsIpad = sUserAgent.match(/ipad/i) == "ipad";
+            var bIsIphoneOs = sUserAgent.match(/iphone os/i) == "iphone os";
+            var bIsMidp = sUserAgent.match(/midp/i) == "midp";
+            var bIsUc7 = sUserAgent.match(/rv:1.2.3.4/i) == "rv:1.2.3.4";
+            var bIsUc = sUserAgent.match(/ucweb/i) == "ucweb";
+            var bIsAndroid = sUserAgent.match(/android/i) == "android";
+            var bIsCE = sUserAgent.match(/windows ce/i) == "windows ce";
+            var bIsWM = sUserAgent.match(/windows mobile/i) == "windows mobile";
+            var str = window.location.href; //取地址参数部分
+
+            strArr = str.split("?");
+
+            if (strArr[1] === "word=pc") {
+                setCookie("word", "pc", null);
+            }
+
+            if (!getCookie("word") && (bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM)) {
+                window.location.href = 'http://english.scio.gov.cn/m/CDAC2019/node_8012072.html';
+            } else {
+                // window.location= 'http://english.scio.gov.cn/index.htm ';
+            }
+        }
+        browserRedirect(); //调用自身，页面一打开就开始跳转
+    </script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112741182-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-112741182-1');
+    </script>
+
+    <!-- 百度统计 -->
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?fd2d485bd31a1b437014f46624329f5b";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+
+</head>
+
+<body>
+    <div class='top'>
+        <img class="s1" src="//english.scio.gov.cn/images1/en/CDAC2019/title1.png" style="margin-bottom: 20px;">
+        <img class="s2" src="//english.scio.gov.cn/images1/en/CDAC2019/title2.png">
+    </div>
+    <div class="ban2">
+        <div style="width:1200px; margin:auto;">
+            <ul class="ul">
+                <li style="background-color: #e44b06;"><a style="font-weight:bold;border: none;">HOME</a></li>
+
+                <li>
+                    <FOUNDER-XY type="columnlist" data="{'columnid':[8012073],'columntype':'self'}">
+                        <#list columns as column><a href="${column.url!}" class="" target="_top">NEWS</a></#list>
+                    </FOUNDER-XY>
+                </li>
+
+                <li>
+                    <FOUNDER-XY type="columnlist" data="{'columnid':[8012074],'columntype':'self'}">
+                        <#list columns as column><a href="${column.url!}" class="" target="_top">OPINIONS</a></#list>
+                    </FOUNDER-XY>
+                </li>
+
+                <li>
+                    <FOUNDER-XY type="columnlist" data="{'columnid':[8012075],'columntype':'self'}">
+                        <#list columns as column><a href="${column.url!}" class="" target="_top">VIDEOS</a></#list>
+                    </FOUNDER-XY>
+                </li>
+
+                <li>
+                    <FOUNDER-XY type="columnlist" data="{'columnid':[8012085],'columntype':'self'}">
+                        <#list columns as column><a href="${column.url!}" class="" target="_top">PHOTOS</a></#list>
+                    </FOUNDER-XY>
+                </li>
+
+                <li><a href="http://english.2019cdac.com/" target="_blank">OFFICIAL WEBSITE</a></li>
+
+            </ul>
+        </div>
+    </div>
+
+    <div class="div1">
+        <div class="d">
+            <div class="dl">
+                <div class="carousel">
+                    <ul class="img">
+                        <FOUNDER-XY type="articlelist" data="{'columnid':[8012073],'articletype':'all','article_attr':'HEADLINE','start':0,'count':'3'}">
+                            <#list articles as article>
+                                <li>
+                                    <a href="${article.url}"><img src="${article.picBig}" border=0></a>
+                                    <div>
+                                        <p><a href="${article.url}">${article.title}</a></p>
+                                    </div>
+                                </li>
+                            </#list>
+                        </FOUNDER-XY>
+                    </ul>
+                    <ul class="num"></ul>
+                    <div class="btn btn_l"></div>
+                    <div class="btn btn_r"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="div2">
+        <div class="t1">
+            <FOUNDER-XY type="columnlist" data="{'columnid':[8012073],'columntype':'self'}">
+                <#list columns as column>
+                    <a href="${column.url!}" class="" target="_top"><img src="//english.scio.gov.cn/images1/en/CDAC2019/news.png"></a>
+                </#list>
+            </FOUNDER-XY>
+        </div>
+        <div class="d1">
+            <FOUNDER-XY type="articlelist" data="{'columnid':[8012073], 'articletype': 'all', 'article_attr': 'COMMON', 'columntype':'self', 'showall':'true', 'start': 0, 'count': 4}">
+                <#list articles as article>
+                    <dl>
+                        <dt><img src="//english.scio.gov.cn/images1/en/CDAC2019/sign.png"><a href="${article.url}" >${article.title}</a></dt>
+                        <dd>${article.summary}</dd>
+                    </dl>
+                </#list>
+            </FOUNDER-XY>
+        </div>
+    </div>
+
+    <div class="div3">
+        <div class="t2">
+            <FOUNDER-XY type="columnlist" data="{'columnid':[8012074],'columntype':'self'}">
+                <#list columns as column>
+                    <a href="${column.url!}" class="" target="_top"><img src="//english.scio.gov.cn/images1/en/CDAC2019/OPINIONS.png"></a>
+                </#list>
+            </FOUNDER-XY>
+        </div>
+        <div class="d2">
+            <FOUNDER-XY type="articlelist" data="{'columnid':[8012074], 'articletype': 'all', 'article_attr': 'COMMON', 'columntype':'self', 'showall':'true', 'start': 0, 'count': 3}">
+                <#list articles as article>
+                    <dl>
+                        <dt><a   href="${article.url}" ><img src="${article.picBig}"   border=0></a></dt>
+                        <dd><a href="${article.url}">${article.title}</a></dd>
+                    </dl>
+                </#list>
+            </FOUNDER-XY>
+        </div>
+    </div>
+
+    <div class="div4">
+        <div class="t3">
+            <FOUNDER-XY type="columnlist" data="{'columnid':[8012075],'columntype':'self'}">
+                <#list columns as column>
+                    <a href="${column.url!}" class="" target="_top"><img src="//english.scio.gov.cn/images1/en/CDAC2019/VIDEOS.png"></a>
+                </#list>
+            </FOUNDER-XY>
+        </div>
+        <div class="d3">
+            <FOUNDER-XY type="articlelist" data="{'columnid':[8012075], 'articletype': 'all', 'article_attr': 'COMMON', 'columntype':'self', 'showall':'true', 'start': 0, 'count': 2}">
+                <#list articles as article>
+                    <dl>
+                        <dt><a   href="${article.url}" ><img src="${article.picBig}"   border=0><img src="//english.scio.gov.cn/images1/en/gxb/24.png" class="play"></a></dt>
+                        <dd><a href="${article.url}">${article.title}</a></dd>
+                    </dl>
+                </#list>
+            </FOUNDER-XY>
+        </div>
+        <div class="t4">
+            <FOUNDER-XY type="columnlist" data="{'columnid':[8012085],'columntype':'self'}">
+                <#list columns as column>
+                    <a href="${column.url!}" class="" target="_top"><img src="//english.scio.gov.cn/images1/en/CDAC2019/photos.png"></a>
+                </#list>
+            </FOUNDER-XY>
+        </div>
+        <div class="bg">
+            <div class="ph">
+                <div class="carousel1">
+                    <ul class="img">
+                        <FOUNDER-XY type="articlelist" data="{'columnid':[8012085],'articletype':'all','article_attr':'COMMON','start':0,'count':'3'}">
+                            <#list articles as article>
+                                <li>
+                                    <a href="${article.url}"><img src="${article.picBig}" border=0></a>
+                                    <p><a href="${article.url}">${article.title}</a></p>
+                                </li>
+                            </#list>
+                        </FOUNDER-XY>
+                    </ul>
+                    <ul class="num"></ul>
+                    <div class="btn btn_l"></div>
+                    <div class="btn btn_r"></div>
+                </div>
+                <div style="background: #fff;opacity: 0.4;width: 33%;height: 760px;position: absolute;top: 0;left: -33%;z-index: 100;"></div>
+                <div style="background: #fff;opacity: 0.4;width: 33%;height: 760px;position: absolute;top: 0;right: -33%;z-index: 100;"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class='footer'>
+        Copyright © english.scio.gov.cn All rights reserved. </br>
+        Registration Number: 19010669-8
+    </div>
+    <div class="homebtn" style="position: fixed;width: 50px;height: 50px;top:518px;right: 0;cursor: pointer;z-index: 100000;" onclick="window.open(&#39;http://english.scio.gov.cn/&#39;,&#39;_self&#39;)"><img style="width: 50px;height:50px;" src="//english.scio.gov.cn/images1/en/gxb/20171211/home.png" /></div>
+
+    <div class="topbtn" style="position: fixed;width: 50px;height: 50px;top:572px;right: 0;cursor: pointer;z-index: 100000;"><img style="width: 50px;height:50px;" src="//english.scio.gov.cn/images1/en/brics2018/totop.png" /></div>
+
+    <div style="display:none;">
+        <script type="text/javascript">
+            document.write(unescape("%3Cscript src='http://cl2.webterren.com/webdig.js?z=12' type='text/javascript'%3E%3C/script%3E"));
+        </script>
+        <script type="text/javascript">
+            wd_paramtracker("_wdxid=000000000000000000000000000000000000000000")
+        </script>
+    </div>
+
+    <script type="text/javascript" src="//english.scio.gov.cn/images1/resource/scripts/jquery/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="//english.scio.gov.cn/images1/en/gxb/Carousel.js"></script>
+    <script type="text/javascript">
+        lun(".carousel", ".carousel .img", ".carousel .img li", ".carousel .num", ".carousel .num li", ".carousel .btn_r", ".carousel .btn_l", 1135, "true")
+        lun(".carousel1", ".carousel1 .img", ".carousel1 .img li", ".carousel1 .num", ".carousel1 .num li", ".carousel1 .btn_r", ".carousel1 .btn_l", 1140, "true")
+    </script>
+    <script type="text/javascript">
+        $(function() {　　
+            $(".s1").animate({
+                height: '118px',
+                opacity: '1'
+            }, 1000);
+            $(".s2").animate({
+                height: '118px',
+                opacity: '1'
+            }, 1000);
+        });
+        if (navigator.appName == "Microsoft Internet Explorer" && navigator.appVersion.split(";")[1].replace(/[ ]/g, "") == "MSIE7.0") {
+            $(".num li").css("float", "left");
+            $(".d2 dl").css("margin-right", "20px");
+            $(".d3 dl").css("margin-right", "15px");
+        }
+
+        $(".topbtn").click(function() {
+            $("html,body").animate({
+                scrollTop: 0
+            }, 500);
+        });
+    </script>
+</body>
+
+</html>

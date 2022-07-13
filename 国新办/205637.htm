@@ -1,0 +1,476 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>
+        <FOUNDER-XY type="article" data="{}">${article.title}</FOUNDER-XY> | english.scio.gov.cn</title>
+    <FOUNDER-XY type="article" data="{}">
+        <meta name="keywords" content="${article.keyword}">
+    </FOUNDER-XY>
+    <FOUNDER-XY type="article" data="{}">
+        <META name="filetype" content="0"></META>
+        <META name="publishedtype" content="1"></META>
+        <META name="pagetype" content="1"></META>
+        <META name="catalogs" content=""></META>
+        <META name="contentid" content="${article.id?c}"></META>
+        <META name="publishdate" content="${article.pubTime?string(" yyyy-MM-dd ")}"></META>
+        <META name="author" content="${article.liability}"></META>
+    </FOUNDER-XY>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no,target-densitydpi=360">
+    <meta name="format-detection" content="telephone=no" />
+    <meta http-equiv="Cache-Control" content="no-cache, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta itemprop="image" content="//english.scio.gov.cn/images1/en/gxb/LOGO高清.png" />
+    <link rel="stylesheet" href="//english.scio.gov.cn/images1/en/scio2021/css/header-m.css">
+    <style type="text/css">
+        img {
+            border: 0;
+            width: 100%;
+            height: auto;
+        }
+        
+        h1 {
+            width: 100%;
+            display: inline-block;
+            font-size: 1.2857rem;
+            line-height: 1.25em;
+            font-family: Arial;
+            font-weight: bold;
+            color: #0d3175;
+            clear: both;
+        }
+        
+        h1 span a {
+            font-family: Arial;
+            font-weight: normal;
+            color: #000;
+            font-size: 1.2857rem;
+        }
+        
+        .wrap {
+            width: 100%;
+            height: 1%;
+            overflow: hidden;
+            zoom: 1;
+            padding: 0.9375rem;
+        }
+        
+        .wrap h1 {
+            margin-top: 0.3125rem;
+            width: 100%;
+            display: inline-block;
+            font-size: 1.25rem;
+            line-height: 1.4em;
+            font-weight: bold;
+            clear: both;
+            color: #000;
+        }
+        
+        .author p {
+            font-size: 0.875rem;
+            line-height: 1.25em;
+            color: #999999;
+            margin-top: 1.015625rem;
+        }
+        
+        .mincontent {
+            color: #666;
+            clear: both;
+        }
+        
+        .mincontent p {
+            font-size: 0.875rem;
+            line-height: 3.28125rem;
+            color: #999999;
+            display: inline-block;
+        }
+        
+        .sharebar {
+            float: right;
+            margin-top: 1.015625rem;
+        }
+        
+        .sharebar a {
+            padding-left: 0.9375rem;
+            padding: 0 !important;
+            width: 1.25rem !important;
+            height: 1.25rem !important;
+            margin-right: 0.3125rem !important;
+        }
+        
+        .bshare-custom .bshare-facebook {
+            background: url('//english.scio.gov.cn/images1/en/scio2021/content/m/内容页_03.png') no-repeat !important;
+            background-size: cover !important;
+        }
+        
+        .bshare-custom .bshare-twitter {
+            background: url('//english.scio.gov.cn/images1/en/scio2021/content/m/内容页_05.png') no-repeat !important;
+            background-size: cover !important;
+        }
+        
+        .cp {
+            clear: both;
+            border-top: 1px solid #c4c4c4;
+            font-size: 1.1rem;
+            line-height: 1.4em;
+            padding: 0.9375rem 0 2.25rem;
+        }
+        
+        .cp video {
+            width: 100%;
+        }
+        
+        .cp p {
+            color: #000;
+            margin-bottom: 10px;
+        }
+        
+        .cp table {
+            margin: 0 auto;
+        }
+        
+        .cp figure img {
+            width: 100% !important;
+            height: auto !important;
+        }
+        
+        .cp figcaption {
+            font-size: 1.0714rem !important;
+            line-height: 1.25em !important;
+            width: 100% !important;
+        }
+        
+        .cp figcaption span {
+            font-size: 1.0714rem !important;
+            line-height: 1.25em !important;
+        }
+        
+        .more {
+            width: 100%;
+            margin-bottom: 2.1428rem;
+        }
+        
+        .more h2 {
+            color: #000;
+            border-bottom: 1px solid #c4c4c4;
+            font-size: 1.25rem;
+            padding-bottom: 0.625rem;
+            font-weight: bold;
+        }
+        
+        .more span {
+            color: #265eb9;
+        }
+        
+        .more li {
+            width: 100%;
+            overflow: hidden;
+            zoom: 1;
+            border-bottom: 1px dotted #c4c4c4;
+            padding: 0.9375rem 0;
+        }
+        
+        .column {
+            width: 100%;
+            background-color: #0d3175;
+            padding: 0.9375rem;
+        }
+        
+        .column h1 span a {
+            color: #fff;
+        }
+        
+        #autopage {
+            clear: both;
+            display: none;
+        }
+        
+        .page {
+            width: 100%;
+            margin: 1.875rem 0 0;
+            text-align: center;
+        }
+        
+        .page a {
+            color: #fff;
+            font-size: 1rem;
+            line-height: 1.875rem;
+            text-align: center;
+            display: inline-block;
+        }
+        
+        .pagebtn {
+            display: inline-block;
+            width: 5.5rem;
+            height: 1.875rem;
+            border: 1px solid #666;
+            position: relative;
+        }
+        
+        .pageul {
+            width: 5.5rem;
+            height: 5rem;
+            position: absolute;
+            left: -1px;
+            bottom: 1.8rem;
+            overflow-x: auto;
+            background-color: #fff;
+            overflow-y: scroll;
+            border: 1px solid #ccc;
+            display: none;
+        }
+        
+        .page span,
+        .pageul a {
+            color: #666;
+            font-size: 1rem;
+            line-height: 1.875rem;
+            display: inline-block;
+        }
+        
+        .page center {
+            color: #fff;
+            width: 5.5rem;
+            display: inline-block;
+            height: 1.875rem;
+            font-size: 1rem;
+            line-height: 1.875rem;
+            text-align: center;
+            background-color: #3a53b9;
+            margin: 0 1.25rem;
+        }
+        
+        .ad {
+            width: 100%;
+        }
+    </style>
+
+    <link rel="stylesheet" href="//english.scio.gov.cn/images1/en/scio2021/css/footer-m.css">
+    <script type="text/javascript" src="//english.scio.gov.cn/images1/resource/scripts/jquery/jquery-3.6.0.min.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112741182-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-112741182-1');
+    </script>
+
+    <!-- 百度统计 -->
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?fd2d485bd31a1b437014f46624329f5b";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+
+    <script type="text/javascript" src="http://www.china.com.cn/player/video.js">
+    </script>
+</head>
+
+<body>
+    <div class="header"></div>
+    <div class="content">
+
+        <div class="column">
+            <h1>
+                <FOUNDER-XY type="position" data="{}">
+                    <#list columns as column><span><a href="${column.urlPad!}" target="_self" class="" >&nbsp;ㄑ&nbsp;${column.name}</a></span></#list>
+                </FOUNDER-XY>
+            </h1>
+        </div>
+
+        <div class="wrap">
+            <FOUNDER-XY type="article" data="{}">
+                <h1>${article.title}</h1>
+            </FOUNDER-XY>
+            <div class="author">
+                <FOUNDER-XY type="article" data="{}">
+                    <p>${article.author}</p>
+                </FOUNDER-XY>
+            </div>
+            <div class='mincontent'>
+                <p>
+                    <FOUNDER-XY type="article" data="{}">${article.source} |
+                        <#setting locale="en_US">${article.pubTime?string("MMMM d, yyyy")}</FOUNDER-XY>
+                </p>
+                <div class="sharebar">
+                    <div class="bshare-custom">
+                        <a title="分享到Facebook" class="bshare-facebook" href="javascript:void(0);"></a>
+                        <a title="分享到Twitter" class="bshare-twitter" href="javascript:void(0);"></a>
+                    </div>
+                    <script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/buttonLite.js#style=-1&amp;uuid=72352d86-8c1b-4361-8d6b-12862c1a6656&amp;pophcol=2&amp;lang=zh"></script>
+                    <script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/bshareC0.js"></script>
+                </div>
+            </div>
+
+            <div class="cp">
+                <FOUNDER-XY type="article" data="{}">
+                    <div id="vf">
+                        <div id="videoarea" style="width: 100%;" align="center"></div>
+                    </div>
+                    ${article.content}</FOUNDER-XY>
+                <div class="page"></div>
+            </div>
+
+            <div class="more">
+                <FOUNDER-XY type="article" data="{}">
+                    <h2>MORE FROM <span>China SCIO</span></h2>
+                    <ul>
+                        <#list article.rels as rel>
+                            <li><a href="${rel.url}" target="_self">${rel.title}</a></li>
+                        </#list>
+                    </ul>
+                </FOUNDER-XY>
+            </div>
+        </div>
+        <div class="footer"></div>
+    </div>
+    <div class="topbtn" style=" display: none;position: fixed;width: 32px;bottom: 46px;right: 10px;cursor: pointer;z-index: 100000;"><img style="width: 100%;" src="//english.scio.gov.cn/images1/en/sciophone/totop.png" /></div>
+    <div class="pcbtn" style="   position: fixed; width: 32px; bottom: 10px; right: 10px; cursor: pointer; z-index: 100000; "><img style="width: 100%;" src="//english.scio.gov.cn/images1/en/sciophone/pcchange.png" /></div>
+
+    <script type="text/javascript" src="//english.scio.gov.cn/images1/en/scio2021/js/base-m.js"></script>
+    <script type="text/javascript" src="//english.scio.gov.cn/images1/en/scio2021/js/header-m.js"></script>
+    <script type="text/javascript" src="//english.scio.gov.cn/images1/en/scio2021/js/footer-m.js"></script>
+    <!-- <script type="text/javascript" src="//english.scio.gov.cn/images1/en/scio2021/js/page-m.js"></script> -->
+
+    <script type="text/javascript">
+        (function(window, $) {
+            window.onload = function() {
+                if ($("#autopage").length > 0) {
+                    $('.page').show();
+                } else {
+                    $('.page').hide();
+                }
+
+                var q = window.location.href;
+                var s = q.split("_").length;
+                var url = "";
+                var startpage = "";
+                var totalPage = 1;
+                var htm = "";
+                if (q.split(".htm")[1] == "") {
+                    if (s == 3) {
+                        url = window.location.href.replace(/_[0-9]{1,3}.htm/g, '');
+                        startpage = parseInt(q.split("_")[2].replace(/.htm/g, ''));
+                    } else if (s == 2) {
+                        url = window.location.href.replace(/_[0-9]{1,3}.htm/g, '');
+                        if (url.indexOf('.htm') == -1) {
+                            startpage = parseInt(q.split("_")[1].replace(/.htm/g, ''));
+                        } else {
+                            url = window.location.href.replace(/.htm/g, '');
+                            startpage = 1;
+                        }
+
+                    } else {
+                        url = window.location.href.replace(/.htm/g, '');
+                        startpage = 1;
+                    };
+                    htm = ".htm";
+                } else {
+                    if (s == 3) {
+                        url = window.location.href.replace(/_[0-9]{1,3}.html/g, '');
+                        startpage = parseInt(q.split("_")[2].replace(/.html/g, ''));
+                    } else if (s == 2) {
+                        url = window.location.href.replace(/_[0-9]{1,3}.html/g, '');
+                        if (url.indexOf('.html') == -1) {
+                            startpage = parseInt(q.split("_")[1].replace(/.html/g, ''));
+                        } else {
+                            url = window.location.href.replace(/.html/g, '');
+                            startpage = 1;
+                        }
+                    } else {
+                        url = window.location.href.replace(/.html/g, '');
+                        startpage = 1;
+                    };
+                    htm = ".html";
+                }
+                if ($("#autopage").find("a:last-child").html() == "&gt;") {
+                    totalPage = parseInt($("#autopage").find("a").eq(-2).html());
+                } else {
+                    if (parseInt($("#autopage").find("a:last-child").html()) > parseInt($("#autopage").find("span").html())) {
+                        totalPage = parseInt($("#autopage").find("a:last-child").html());
+                    } else {
+                        totalPage = parseInt($("#autopage").find("span").html());
+                    }
+                }
+
+                pageObj();
+
+                function pageObj() {
+                    var pagination_buf = [];
+                    var ul_buf = [];
+
+                    // prev
+                    pagination_buf.push(startpage > 1 ? '<center><a href="' + url + '_' + (startpage - 1) + htm + '"  data-page="' + (startpage - 1) + '" >Previous</a></center>' : '<center>Previous</center>');
+                    // pagination
+
+                    for (i = 1; i <= totalPage; i++) {
+                        ul_buf.push('<li><a href="' + url + '_' + i + htm + '"  data-page="' + i + '">' + i + '</a></li>');
+                    }
+                    pagination_buf.push('<div class="pagebtn"><span style="color:#3a53b9;">' + startpage + '</span> / <span>' + totalPage + '</span><ul class="pageul">' + ul_buf.join('') + '</ul></div>');
+
+                    // next
+                    pagination_buf.push(startpage < totalPage ? '<center><a href="' + url + '_' + (startpage + 1) + htm + '"  data-page="' + (startpage + 1) + '">Next</a></center>' : '<center>Next</center>');
+                    $('.page').html(pagination_buf.join(''));
+
+                }
+                $('.pagebtn').on('click', function() {
+                    $('.pageul').show();
+                });
+                $('.page a').each(function() {
+                    var href = $(this).attr('href');
+                    var url1 = url + "_1" + htm;
+                    if (href == url1) {
+                        $(this).attr('href', url + htm);
+                    }
+                });
+                $('.page').on('click', 'a', function() {
+                    var page = window.parseInt($(this).attr('data-page'));
+                    pageturn(page);
+                });
+                window.pageturn = function(n) {
+                    startpage = n;
+                    pageObj();
+                }
+            }
+
+        })(window, jQuery);
+        var BTop = ($('.topbtn').offset().top) + 78;
+        $(window).scroll(function() {
+            var t = $(document).scrollTop();
+            if (t > BTop) {
+                $('.topbtn').css({
+                    'display': 'block'
+                });
+            } else {
+                $('.topbtn').css({
+                    'display': 'none'
+                });
+            }
+        });
+
+        $(".topbtn").click(function() {
+            $("html,body").animate({
+                scrollTop: 0
+            }, 500);
+        });
+        $(".pcbtn").click(function() {
+            window.location.href = "http://english.scio.gov.cn/index.htm?word=pc";
+        });
+
+        if (!!window.ActiveXObject || "ActiveXObject" in window) {} else {
+            $("audio").addClass("ad");
+        }
+    </script>
+</body>
+
+</html>

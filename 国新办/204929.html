@@ -1,0 +1,721 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>
+        <FOUNDER-XY type="columnlist" data="{'columnid':[],'columntype':'self'}">
+            <#list columns as column>${column.name}</#list>
+        </FOUNDER-XY> | english.scio.gov.cn</title>
+    <base target="_self" />
+    <meta name="filetype" content="1" />
+    <meta name="publishedtype" content="1" />
+    <meta name="pagetype" content="2" />
+    <FOUNDER-XY type="columnlist" data="{'columnid':[],'columntype':'self'}">
+        <#list columns as column>
+            <meta name="catalogs" content="${column.id}" />
+            <meta name="description" content="${column.name}" />
+            <meta name="keywords" content="${column.keyword}" />
+            <meta itemprop="name" content="${column.name}" />
+        </#list>
+    </FOUNDER-XY>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial;
+            font-size: 10px;
+            color: #000;
+            line-height: 10px;
+            width: 100%;
+            min-width: 1200px;
+            overflow: hidden;
+            background: #333;
+            position: relative;
+            margin: 0;
+        }
+        
+        ul,
+        li {
+            list-style-type: none;
+        }
+        
+        a {
+            text-decoration: none;
+            color: #000;
+            display: block;
+        }
+        
+        a:hover {
+            text-decoration: none;
+        }
+        
+        img {
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+        
+        .toplist {
+            width: 100%;
+            height: 54px;
+            background-color: #191e3f;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 99999;
+        }
+        
+        .toplist a {
+            display: inline-block;
+            margin-right: 6px;
+        }
+        
+        .flipbook {
+            display: block;
+            position: relative;
+        }
+        
+        #flipbook .page {
+            background-color: white;
+        }
+        
+        #flipbook .page-wrapper {
+            -webkit-perspective: 2000px;
+            -moz-perspective: 2000px;
+            -ms-perspective: 2000px;
+            -o-perspective: 2000px;
+            perspective: 2000px;
+        }
+        
+        #flipbook .hard {
+            background: #ccc !important;
+            color: #333;
+            -webkit-box-shadow: inset 0 0 5px #666;
+            -moz-box-shadow: inset 0 0 5px #666;
+            -o-box-shadow: inset 0 0 5px #666;
+            -ms-box-shadow: inset 0 0 5px #666;
+            box-shadow: inset 0 0 5px #666;
+            font-weight: bold;
+        }
+        
+        #flipbook .odd {
+            background: -webkit-gradient(linear, right top, left top, color-stop(0.95, #FFF), color-stop(1, #DADADA));
+            background-image: -webkit-linear-gradient(right, #FFF 95%, #C4C4C4 100%);
+            background-image: -moz-linear-gradient(right, #FFF 95%, #C4C4C4 100%);
+            background-image: -ms-linear-gradient(right, #FFF 95%, #C4C4C4 100%);
+            background-image: -o-linear-gradient(right, #FFF 95%, #C4C4C4 100%);
+            background-image: linear-gradient(right, #FFF 95%, #C4C4C4 100%);
+            -webkit-box-shadow: inset 0 0 5px #666;
+            -moz-box-shadow: inset 0 0 5px #666;
+            -o-box-shadow: inset 0 0 5px #666;
+            -ms-box-shadow: inset 0 0 5px #666;
+            box-shadow: inset 0 0 5px #666;
+        }
+        
+        #flipbook .even {
+            background: -webkit-gradient(linear, left top, right top, color-stop(0.95, #fff), color-stop(1, #dadada));
+            background-image: -webkit-linear-gradient(left, #fff 95%, #dadada 100%);
+            background-image: -moz-linear-gradient(left, #fff 95%, #dadada 100%);
+            background-image: -ms-linear-gradient(left, #fff 95%, #dadada 100%);
+            background-image: -o-linear-gradient(left, #fff 95%, #dadada 100%);
+            background-image: linear-gradient(left, #fff 95%, #dadada 100%);
+            -webkit-box-shadow: inset 0 0 5px #666;
+            -moz-box-shadow: inset 0 0 5px #666;
+            -o-box-shadow: inset 0 0 5px #666;
+            -ms-box-shadow: inset 0 0 5px #666;
+            box-shadow: inset 0 0 5px #666;
+        }
+        
+        .gif {
+            width: 69%;
+            margin: 1% auto 0;
+        }
+        
+        .people {
+            width: 50.26%;
+            position: absolute;
+            left: 23.75%;
+            bottom: 1%;
+            z-index: 1;
+        }
+        
+        .earth {
+            width: 77.5%;
+            position: absolute;
+            left: 8.25%;
+            bottom: 0;
+            z-index: 2;
+        }
+        
+        .river {
+            width: 77.5%;
+            position: absolute;
+            left: 8.25%;
+            bottom: -1%;
+            z-index: 3;
+        }
+        
+        .hillleft {
+            width: 19.3%;
+            position: absolute;
+            left: -2%;
+            bottom: -1%;
+            z-index: 4;
+        }
+        
+        .hillright {
+            width: 22.9%;
+            position: absolute;
+            right: -2%;
+            bottom: -1%;
+            z-index: 4;
+        }
+        
+        .close {
+            width: 92px;
+            height: 57px;
+            cursor: pointer;
+            position: absolute;
+            top: 35%;
+            right: 20%;
+        }
+        
+        .next-button,
+        .previous-button {
+            width: 50px;
+            height: 32px;
+            position: absolute;
+            top: 45%;
+            cursor: pointer;
+            z-index: 100;
+        }
+        
+        .previous-button {
+            left: 30px;
+            background: url("//english.scio.gov.cn/images1/en/nujiang2021/left.png") no-repeat;
+        }
+        
+        .previous-button:hover {
+            background: url("//english.scio.gov.cn/images1/en/nujiang2021/left_h.png") no-repeat;
+        }
+        
+        .next-button {
+            right: 30px;
+            background: url("//english.scio.gov.cn/images1/en/nujiang2021/right.png") no-repeat;
+        }
+        
+        .next-button:hover {
+            background: url("//english.scio.gov.cn/images1/en/nujiang2021/right_h.png") no-repeat;
+        }
+        
+        .animate__animated {
+            -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+            -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+        }
+        
+        .animate__infinite {
+            animation-iteration-count: infinite;
+        }
+        
+        .animate__delay-1 {
+            -webkit-animation-delay: 1s;
+            animation-delay: 1s;
+        }
+        
+        @-webkit-keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        
+        .animate__fadeIn {
+            -webkit-animation-name: fadeIn;
+            animation-name: fadeIn;
+        }
+        
+        @-webkit-keyframes fadeInLeft {
+            0% {
+                opacity: 0;
+                -webkit-transform: translate3d(-50%, 0, 0);
+                transform: translate3d(-50%, 0, 0);
+            }
+            to {
+                opacity: 1;
+                -webkit-transform: translateZ(0);
+                transform: translateZ(0);
+            }
+        }
+        
+        @keyframes fadeInLeft {
+            0% {
+                opacity: 0;
+                -webkit-transform: translate3d(-50%, 0, 0);
+                transform: translate3d(-50%, 0, 0);
+            }
+            to {
+                opacity: 1;
+                -webkit-transform: translateZ(0);
+                transform: translateZ(0);
+            }
+        }
+        
+        .animate__fadeInLeft {
+            -webkit-animation-name: fadeInLeft;
+            animation-name: fadeInLeft;
+        }
+        
+        @-webkit-keyframes fadeInRight {
+            0% {
+                opacity: 0;
+                -webkit-transform: translate3d(50%, 0, 0);
+                transform: translate3d(50%, 0, 0);
+            }
+            to {
+                opacity: 1;
+                -webkit-transform: translateZ(0);
+                transform: translateZ(0);
+            }
+        }
+        
+        @keyframes fadeInRight {
+            0% {
+                opacity: 0;
+                -webkit-transform: translate3d(50%, 0, 0);
+                transform: translate3d(50%, 0, 0);
+            }
+            to {
+                opacity: 1;
+                -webkit-transform: translateZ(0);
+                transform: translateZ(0);
+            }
+        }
+        
+        .animate__fadeInRight {
+            -webkit-animation-name: fadeInRight;
+            animation-name: fadeInRight;
+        }
+        
+        @-webkit-keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                -webkit-transform: translate3d(0, 100%, 0);
+                transform: translate3d(0, 100%, 0)
+            }
+            to {
+                opacity: 1;
+                -webkit-transform: translateZ(0);
+                transform: translateZ(0)
+            }
+        }
+        
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                -webkit-transform: translate3d(0, 100%, 0);
+                transform: translate3d(0, 100%, 0)
+            }
+            to {
+                opacity: 1;
+                -webkit-transform: translateZ(0);
+                transform: translateZ(0)
+            }
+        }
+        
+        .animate__fadeInUp {
+            -webkit-animation-name: fadeInUp;
+            animation-name: fadeInUp
+        }
+        
+        .content1,
+        .content2 {
+            width: 70%;
+            position: absolute;
+            top: 23%;
+            left: 15%;
+            opacity: 0;
+        }
+        
+        .img1,
+        .img2 {
+            width: 55%;
+            display: inline-block;
+        }
+        
+        .title1 {
+            width: 43%;
+            float: right;
+            background: url("//english.scio.gov.cn/images1/en/nujiang2021/title_1.png") no-repeat;
+            background-size: 100% 100%;
+            margin-top: 8%;
+        }
+        
+        .title1:hover {
+            background: url("//english.scio.gov.cn/images1/en/nujiang2021/title_1_h.png") no-repeat;
+            background-size: 100% 100%;
+        }
+        
+        .rb1 {
+            width: 31.7%;
+        }
+        
+        .title2 {
+            width: 40%;
+            float: right;
+            background: url("//english.scio.gov.cn/images1/en/nujiang2021/title_2.png") no-repeat;
+            background-size: 100% 100%;
+            margin-top: 8%;
+        }
+        
+        .title2:hover {
+            background: url("//english.scio.gov.cn/images1/en/nujiang2021/title_2_h.png") no-repeat;
+            background-size: 100% 100%;
+        }
+        
+        .rb2 {
+            width: 44.7%;
+        }
+        
+        .content3 {
+            width: 36%;
+            position: absolute;
+            top: 23.5%;
+            left: 15.7%;
+            opacity: 0;
+        }
+        
+        .img3 {
+            width: 100%;
+        }
+        
+        .title3 {
+            width: 100%;
+            background: url("//english.scio.gov.cn/images1/en/nujiang2021/title_3.png") no-repeat;
+            background-position: center;
+        }
+        
+        .title3:hover {
+            background: url("//english.scio.gov.cn/images1/en/nujiang2021/title_3_h.png") no-repeat;
+            background-position: center;
+        }
+        
+        .content4 {
+            width: 56%;
+            position: absolute;
+            top: 24%;
+            left: 20%;
+            opacity: 0;
+        }
+        
+        .img4 {
+            width: 50%;
+            display: inline-block;
+        }
+        
+        .title4 {
+            width: 47%;
+            float: right;
+            background: url("//english.scio.gov.cn/images1/en/nujiang2021/title_4.png") no-repeat;
+            background-size: 100% 100%;
+            margin-top: 11%;
+        }
+        
+        .title4:hover {
+            background: url("//english.scio.gov.cn/images1/en/nujiang2021/title_4_h.png") no-repeat;
+            background-size: 100% 100%;
+        }
+        
+        .rb4 {
+            width: 29.875%;
+        }
+        
+        .rb1,
+        .rb2,
+        .rb4 {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            opacity: 0;
+        }
+        
+        .title1 img,
+        .title2 img,
+        .title3 img,
+        .title4 img {
+            opacity: 0;
+        }
+    </style>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112741182-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-112741182-1');
+    </script>
+
+    <!-- 百度统计 -->
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?fd2d485bd31a1b437014f46624329f5b";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+    <script type="text/javascript" src="//english.scio.gov.cn/images1/resource/scripts/jquery/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="//english.scio.gov.cn/images1/resource/scripts/jquery/turn.js"></script>
+</head>
+
+<body>
+    <div class="toplist" id="toplist">
+        <a href="http://english.scio.gov.cn/" style="margin-top: 0.7%;margin-left: 1%;width: 194px;height: 25px;"><img src="//english.scio.gov.cn/images1/en/2019cc/logo.png" width="194" height="25" border="0" /></a>
+        <div class="bshare-custom icon-medium-plus" style="float: right; margin-top: 0.3%;margin-right: 1%;">
+            <a title="分享到Facebook" class="bshare-facebook" href="javascript:void(0);" style="width: 44px;height: 44px;background:url(//english.scio.gov.cn/images1/en/2019cc/facebook1.png) no-repeat;padding: 0px;"></a>
+            <a title="分享到Twitter" class="bshare-twitter" href="javascript:void(0);" style="width: 44px;height: 44px;background:url(//english.scio.gov.cn/images1/en/2019cc/twitter1.png) no-repeat;padding: 0px;"></a>
+            <a title="分享到微信" class="bshare-weixin" href="javascript:void(0);" style="width: 44px;height: 44px;background:url(//english.scio.gov.cn/images1/en/2019cc/微信1.png) no-repeat;padding: 0px;;"></a>
+            <a title="分享到微博" class="bshare-sinaminiblog" href="javascript:void(0);" style="width: 44px;height: 44px;background:url(//english.scio.gov.cn/images1/en/2019cc/微博1.png) no-repeat;padding: 0px;"></a>
+        </div>
+        <script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/buttonLite.js#style=-1&amp;uuid=72352d86-8c1b-4361-8d6b-12862c1a6656&amp;pophcol=2&amp;lang=zh"></script>
+        <script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/bshareC0.js"></script>
+    </div>
+    <div class="flipbook">
+        <div id="flipbook">
+            <div style="background: url('//english.scio.gov.cn/images1/en/nujiang2021/bg.jpg') no-repeat;background-size: 100% 100%;">
+                <div class="gif"><img src="//english.scio.gov.cn/images1/en/nujiang2021/T2.gif"></div>
+                <div class="people"><img src="//english.scio.gov.cn/images1/en/nujiang2021/people.png"></div>
+                <div class="earth"><img src="//english.scio.gov.cn/images1/en/nujiang2021/earth.png"></div>
+                <div class="river"><img src="//english.scio.gov.cn/images1/en/nujiang2021/river.png"></div>
+                <div class="hill hillleft">
+                    <img src="//english.scio.gov.cn/images1/en/nujiang2021/hill_left.png">
+                </div>
+                <div class="hill hillright">
+                    <img src="//english.scio.gov.cn/images1/en/nujiang2021/hill_right.png">
+                </div>
+                <div class="close animate__animated animate__fadeInLeft animate__infinite"><img src="//english.scio.gov.cn/images1/en/nujiang2021/start_1.png"></div>
+            </div>
+
+            <div style="background: url('//english.scio.gov.cn/images1/en/nujiang2021/bg_12.jpg') no-repeat;background-size: 100% 100%;">
+                <div class="content1">
+                    <div class="img1">
+                        <a href="http://www.china.org.cn/china/2021-05/25/content_77524135.htm"><img src="//english.scio.gov.cn/images1/en/nujiang2021/img_1.png"></a>
+                    </div>
+                    <div class="title1">
+                        <a href="http://www.china.org.cn/china/2021-05/25/content_77524135.htm"><img src="//english.scio.gov.cn/images1/en/nujiang2021/title_1.png"></a>
+                    </div>
+                </div>
+
+                <div class="rb1"><img src="//english.scio.gov.cn/images1/en/nujiang2021/1_twop.png"></div>
+            </div>
+
+            <div style="background: url('//english.scio.gov.cn/images1/en/nujiang2021/bg_12.jpg') no-repeat;background-size: 100% 100%;">
+                <div class="content2">
+                    <div class="img2">
+                        <a href="http://www.china.org.cn/china/2021-06/01/content_77541126.htm"><img src="//english.scio.gov.cn/images1/en/nujiang2021/img_2.png"></a>
+                    </div>
+                    <div class="title2">
+                        <a href="http://www.china.org.cn/china/2021-06/01/content_77541126.htm"><img src="//english.scio.gov.cn/images1/en/nujiang2021/title_2.png"></a>
+                    </div>
+                </div>
+
+                <div class="rb2"><img src="//english.scio.gov.cn/images1/en/nujiang2021/2_twop.png"></div>
+            </div>
+
+            <div style="background: url('//english.scio.gov.cn/images1/en/nujiang2021/bg_3.jpg') no-repeat;background-size: 100% 100%;">
+                <div class="content3">
+                    <div class="img3">
+                        <a href="http://www.china.org.cn/china/2021-05/23/content_77520441.htm"><img src="//english.scio.gov.cn/images1/en/nujiang2021/img_3.png"></a>
+                    </div>
+                    <div class="title3">
+                        <a href="http://www.china.org.cn/china/2021-05/23/content_77520441.htm"><img src="//english.scio.gov.cn/images1/en/nujiang2021/title_3.png"></a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div style="background: url('//english.scio.gov.cn/images1/en/nujiang2021/bg_4.jpg') no-repeat;background-size: 100% 100%;">
+                <div class="content4">
+                    <div class="img4">
+                        <a href="http://www.china.org.cn/china/2021-06/09/content_77556582_2.htm"><img src="//english.scio.gov.cn/images1/en/nujiang2021/img_4.png"></a>
+                    </div>
+                    <div class="title4">
+                        <a href="http://www.china.org.cn/china/2021-06/09/content_77556582_2.htm"><img src="//english.scio.gov.cn/images1/en/nujiang2021/title_4.png"></a>
+                    </div>
+                </div>
+
+                <div class="rb4"><img src="//english.scio.gov.cn/images1/en/nujiang2021/3_p.png"></div>
+            </div>
+        </div>
+        <!-- Next button -->
+        <div ignore="1" class="next-button"></div>
+        <!-- Previous button -->
+        <div ignore="1" class="previous-button"></div>
+    </div>
+    <!-- <audio src="http://mp42.china.com.cn/video_tide/video/2020/1/3/2020131578029223274_369.mp3" id="audio" loop="true"></audio>
+    <img src="//english.scio.gov.cn/images1/en/nujiang2021/voice.png" onClick="play()" id="musicImg" style="width: 48px;height: 48px;position: absolute;top: 80px;right: 50px;z-index: 2000;cursor: pointer;"> -->
+</body>
+<script type="text/javascript">
+    (function(window, $) {
+        $(function() {
+            if (/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
+                window.location.href = 'http://english.scio.gov.cn/m/Nujiangpovertyalleviation/node_8024679.html';
+            }
+            var middlePointX = 0;
+            var middlePointY = 0;
+
+            function getMiddleStyle() {
+                middlePointX = document.documentElement.clientWidth / 2;
+                middlePointY = document.documentElement.clientHeight / 2;
+            }
+            getMiddleStyle();
+            window.onresize = getMiddleStyle;
+
+            document.onmousemove = function(ev) {
+                var ev = ev || event;
+                var disX = ev.clientX;
+                MoveS = 160;
+                var leftX = (disX - middlePointX) / MoveS + 'px';
+                var rightX = (middlePointX - disX) / MoveS + 'px';
+                $('.hill').css({
+                    "webkitTransform": 'translate3d(' + leftX + ',0,0)',
+                    "transform": 'translate3d(' + leftX + ',0,0)'
+                });
+                $('.river').css({
+                    "webkitTransform": 'translate3d(' + rightX + ',0,0)',
+                    "transform": 'translate3d(' + rightX + ',0,0)'
+                });
+            }
+        })
+
+        // var audio = document.getElementById('audio');
+
+
+        var w = $(window).width();
+        var h = $(window).height();
+        $("#flipbook").turn({
+            width: w,
+            height: h,
+            elevation: 10,
+            duration: 600,
+            display: 'single',
+            gradients: true,
+            autoCenter: true,
+            when: {　　　　　　
+                turned: function(e, page) {
+                    if (page == 1) {　
+                        $('.next-button').hide();
+                        $('.previous-button').hide();
+                    } else {
+                        $('.next-button').show();　
+                        $('.previous-button').show();
+                    }
+                    if (page == 2) {
+                        $('.content1').addClass('animate__animated animate__fadeInRight');
+                        $('.rb1').addClass('animate__animated animate__fadeIn animate__delay-1');
+                        $('.content2').removeClass('animate__animated animate__fadeInRight');
+                        $('.rb2').removeClass('animate__animated animate__fadeIn animate__delay-1');
+                        $('.content3').removeClass('animate__animated animate__fadeInUp');
+                        $('.content4').removeClass('animate__animated animate__fadeInRight');
+                        $('.rb4').removeClass('animate__animated animate__fadeIn animate__delay-1');
+                    }
+                    if (page == 3) {
+                        $('.content2').addClass('animate__animated animate__fadeInRight');
+                        $('.rb2').addClass('animate__animated animate__fadeIn animate__delay-1');
+                        $('.content1').removeClass('animate__animated animate__fadeInRight');
+                        $('.rb1').removeClass('animate__animated animate__fadeIn animate__delay-1');
+                        $('.content3').removeClass('animate__animated animate__fadeInUp');
+                        $('.content4').removeClass('animate__animated animate__fadeInRight');
+                        $('.rb4').removeClass('animate__animated animate__fadeIn animate__delay-1');
+                    }
+                    if (page == 4) {
+                        $('.content3').addClass('animate__animated animate__fadeInUp');
+                        $('.content1').removeClass('animate__animated animate__fadeInRight');
+                        $('.rb1').removeClass('animate__animated animate__fadeIn animate__delay-1');
+                        $('.content2').removeClass('animate__animated animate__fadeInRight');
+                        $('.rb2').removeClass('animate__animated animate__fadeIn animate__delay-1');
+                        $('.content4').removeClass('animate__animated animate__fadeInRight');
+                        $('.rb4').removeClass('animate__animated animate__fadeIn animate__delay-1');
+                    }
+                    if (page == 5) {
+                        $('.next-button').hide();
+                        $('.content4').addClass('animate__animated animate__fadeInRight');
+                        $('.rb4').addClass('animate__animated animate__fadeIn animate__delay-1');
+                        $('.content1').removeClass('animate__animated animate__fadeInRight');
+                        $('.rb1').removeClass('animate__animated animate__fadeIn animate__delay-1');
+                        $('.content2').removeClass('animate__animated animate__fadeInRight');
+                        $('.rb2').removeClass('animate__animated animate__fadeIn animate__delay-1');
+                        $('.content3').removeClass('animate__animated animate__fadeInUp');
+                    }
+                }　　　　
+            }
+        });
+        $("#flipbook").bind("start", function(event, pageobject, corner) {
+            if (corner == "tl" || corner == "tr") {
+                event.preventDefault();　　　
+            }
+        });
+
+        $(".close").click(function() {
+            $('#flipbook').turn('next');
+        });
+
+        $('.next-button').bind($.mouseEvents.over, function() {
+            $(this).addClass('next-button-hover');
+        }).bind($.mouseEvents.out, function() {
+            $(this).removeClass('next-button-hover');
+        }).bind($.mouseEvents.down, function() {
+            $(this).addClass('next-button-down');
+        }).bind($.mouseEvents.up, function() {
+            $(this).removeClass('next-button-down');
+        }).click(function() {
+            $('#flipbook').turn('next');
+        });
+
+        $('.previous-button').bind($.mouseEvents.over, function() {
+            $(this).addClass('previous-button-hover');
+        }).bind($.mouseEvents.out, function() {
+            $(this).removeClass('previous-button-hover');
+        }).bind($.mouseEvents.down, function() {
+            $(this).addClass('previous-button-down');
+        }).bind($.mouseEvents.up, function() {
+            $(this).removeClass('previous-button-down');
+        }).click(function() {
+            $('#flipbook').turn('previous');
+        });
+
+        // function play() {
+        //     if (audio.paused) {
+        //         audio.play();
+        //         document.getElementById('musicImg').src = "//english.scio.gov.cn/images1/en/nujiang2021/voice.png";
+        //     } else {
+        //         audio.pause();
+        //         document.getElementById('musicImg').src = "//english.scio.gov.cn/images1/en/nujiang2021/Novoice.png";
+        //     }
+        // }
+    })(window, jQuery);
+</script>
+
+</html>

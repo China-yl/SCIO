@@ -1,0 +1,509 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>
+        <FOUNDER-XY type="columnlist" data="{'columnid':[],'columntype':'self'}">
+            <#list columns as column>${column.name}</#list>
+        </FOUNDER-XY> | english.scio.gov.cn</title>
+    <meta name="filetype" content="1" />
+    <meta name="publishedtype" content="1" />
+    <meta name="pagetype" content="2" />
+    <FOUNDER-XY type="columnlist" data="{'columnid':[],'columntype':'self'}">
+        <#list columns as column>
+            <meta name="catalogs" content="${column.id}"></meta>
+        </#list>
+    </FOUNDER-XY>
+    <style type="text/css">
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial;
+            font-size: 28px;
+            color: #fff;
+            line-height: 35px;
+            ;
+            width: 100%;
+        }
+        
+        ul,
+        li {
+            list-style-type: none;
+        }
+        
+        a:hover {
+            text-decoration: none;
+        }
+        
+        .fl {
+            float: left;
+        }
+        
+        .fr {
+            float: right;
+        }
+        
+        .bottom {
+            bottom: 10%;
+        }
+        
+        .right {
+            right: 0;
+        }
+        
+        .top {
+            top: 35%;
+        }
+        
+        .toplist {
+            width: 100%;
+            height: 54px;
+            border-bottom: 2px solid #104498;
+            background-color: #fff;
+        }
+        
+        .toplist a {
+            display: inline-block;
+            margin-right: 6px;
+        }
+        
+        .backgroundIMG {
+            background-attachment: fixed;
+        }
+        
+        .navigation {
+            width: 100%;
+            height: 35px !important;
+            z-index: 99999;
+            background-color: #000;
+            opacity: .8;
+            filter: alpha(opacity=80);
+        }
+        
+        .navigation ul {
+            float: right;
+            margin-right: 1%;
+        }
+        
+        .navigation li {
+            width: 120px;
+            height: 33px;
+            float: left;
+            text-align: center;
+            border-left: 2px solid #104498;
+            font-size: 18px;
+            line-height: 33px;
+        }
+        
+        .navigation li:last-child {
+            margin-right: 2px solid #104498;
+        }
+        
+        .navigation li.active {
+            background-color: #104498;
+        }
+        
+        .navigation li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        
+        .section {
+            width: 100%;
+            height: 100vh;
+            position: relative;
+            overflow: hidden;
+            background-size: cover;
+        }
+        
+        .section img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .text {
+            position: absolute;
+            z-index: 10;
+            width: 100%;
+            margin: 0 auto;
+            padding: 0 4%;
+        }
+        
+        .text p {
+            background-color: rgba(0, 0, 0, .4);
+            width: 100%;
+            padding: 10px 20px;
+            font-size: 60px;
+            line-height: 66px;
+        }
+        
+        .text1 {
+            position: absolute;
+            z-index: 10;
+            width: 90%;
+            margin: 0 auto;
+            padding: 0 4%;
+        }
+        
+        .text1 p {
+            background-color: rgba(0, 0, 0, .4);
+            width: 50%;
+            padding: 10px 20px;
+        }
+        
+        .synopsis {
+            position: absolute;
+            top: 24%;
+            left: 0;
+            width: 100%;
+            z-index: 10;
+            background-color: rgba(0, 0, 0, .7);
+        }
+        
+        .synopsis p {
+            padding: 10px 20px;
+            width: 50%;
+            float: left;
+            margin: 50px 0;
+        }
+        
+        .section-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            z-index: auto;
+            clip: rect(0, auto, auto, 0);
+        }
+        
+        .section-background-image {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            z-index: 3;
+            display: block;
+        }
+    </style>
+
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112741182-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-112741182-1');
+    </script>
+
+    <!-- 百度统计 -->
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?fd2d485bd31a1b437014f46624329f5b";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+
+</head>
+
+<body>
+    <div class="toplist" id="toplist">
+        <a href="http://english.scio.gov.cn/" style="margin-top: 0.7%;margin-left: 1%;"><img src="//english.scio.gov.cn/images1/en/2018fpzt/logo.png" width="194" height="25" border="0" /></a>
+        <div class="bshare-custom icon-medium-plus" style="float: right; margin-top: 0.3%;margin-right: 1%;">
+            <a title="分享到Facebook" class="bshare-facebook" href="javascript:void(0);" style="width: 44px;height: 44px;background:url(//english.scio.gov.cn/images1/en/2018fpzt/fb.png) no-repeat;padding: 0px;"></a>
+            <a title="分享到Twitter" class="bshare-twitter" href="javascript:void(0);" style="width: 44px;height: 44px;background:url(//english.scio.gov.cn/images1/en/2018fpzt/tw.png) no-repeat;padding: 0px;"></a>
+            <a title="分享到微信" class="bshare-weixin" href="javascript:void(0);" style="width: 44px;height: 44px;background:url(//english.scio.gov.cn/images1/en/2018fpzt/wechat.png) no-repeat;padding: 0px;;"></a>
+            <a title="分享到微博" class="bshare-sinaminiblog" href="javascript:void(0);" style="width: 44px;height: 44px;background:url(//english.scio.gov.cn/images1/en/2018fpzt/weibo.png) no-repeat;padding: 0px;"></a>
+        </div>
+
+        <script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/buttonLite.js#style=-1&amp;uuid=72352d86-8c1b-4361-8d6b-12862c1a6656&amp;pophcol=2&amp;lang=zh">
+        </script>
+
+        <script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/bshareC0.js">
+        </script>
+    </div>
+    <div class="navigation">
+        <ul>
+            <li class="li1 active"><a href="#div1">Top</a></li>
+            <li class="li2 "><a href="#div2">Belgium</a></li>
+            <li class="li3 "><a href="#div3">Russia</a></li>
+            <li class="li4 "><a href="#div4">Croatia</a></li>
+            <li class="li5 "><a href="#div5">U.S.A</a></li>
+            <li class="li6 "><a href="#div6">Thailand</a></li>
+        </ul>
+    </div>
+    <div class="section" id="div1"><img src="//english.scio.gov.cn/images1/en/HebeiSpringFestival/TOP/Cover.jpg"></div>
+    <div class="section backgroundIMG">
+        <div class="synopsis">
+            <p>During the past winter, Hebei held a series of “Happy Chinese New Year 2018” celebrations as a way to present the northern Chinese province to the world. From February to March, artists from Hebei brought a wide variety of shows to countries
+                such as Belgium, Croatia, Russia, Thailand, and the U.S. Famous for its Yanzhao culture, Hebei showcased its unique regional features through folk music, dancing, acrobatics, the Hebei Clapper Opera, the ancient color tricks, and other
+                performances.
+            </p>
+            <p style="border-left: 2px solid #fff;">Li Li, director general of the publicity bureau of the CPC Hebei Provincial Committee, said that Hebei will actively carry out cultural exchange activities worldwide. She stressed the importance of seizing opportunities, such as the Beijing-Tianjin-Hebei
+                coordinated development strategy, the planning and construction of the Xiongan New Area, and the co-hosting of the 2022 Winter Olympics. “We should utilize those opportunities to better publicize Hebei province,” Li said. “By presenting
+                the ‘Happy Chinese New Year’ celebration in those countries, we seek to further promote Hebei’s culture and continuously strengthen international cultural cooperation.”</p>
+        </div>
+        <div class="section-background">
+            <picture class="section-background-image"><img src="//english.scio.gov.cn/images1/en/HebeiSpringFestival/TOP/Intro fix.jpg"></picture>
+        </div>
+    </div>
+
+    <div class="section backgroundIMG" id="div2">
+        <div class="section-background">
+            <picture class="section-background-image"><img src="//english.scio.gov.cn/images1/en/HebeiSpringFestival/A1/Belgium fix.jpg"></picture>
+        </div>
+    </div>
+    <div class="section backgroundIMG">
+        <div class="text top">
+            <p>Artists perform the song “Kite Flying” at the Confucius Institute of Brussel in Belgium on Feb. 3, 2018.</p>
+        </div>
+        <div class="section-background">
+            <picture class="section-background-image"><img src="//english.scio.gov.cn/images1/en/HebeiSpringFestival/A1/Belgium1 fix.jpg"></picture>
+        </div>
+    </div>
+    <div class="section">
+        <div class="text bottom">
+            <p class="fr">A student (R) from the Confucius Institute of Brussel practices Taichi to Guzheng music on Feb. 3, 2018.</p>
+        </div>
+        <img src="//english.scio.gov.cn/images1/en/HebeiSpringFestival/A1/Belgium2.jpg">
+    </div>
+
+    <div class="section backgroundIMG" id="div3">
+        <div class="section-background">
+            <picture class="section-background-image"><img src="//english.scio.gov.cn/images1/en/HebeiSpringFestival/A2/Russia-fix.jpg"></picture>
+        </div>
+    </div>
+    <div class="section backgroundIMG">
+        <div class="text1 top">
+            <p>Li Hui (C), Chinese ambassador to Russia, and Li Li (R), director general of the publicity bureau of the CPC Hebei Provincial Committee, attend the Chinese New Year Paintings Gallery held at the China Cultural Center in Moscow on Feb. 6, 2018.</p>
+        </div>
+        <div class="section-background">
+            <picture class="section-background-image"><img src="//english.scio.gov.cn/images1/en/HebeiSpringFestival/A2/Russia6 fix.jpg"></picture>
+        </div>
+    </div>
+    <div class="section">
+        <div class="text top">
+            <p class="fr">A visitor to the Chinese New Year Paintings Gallery takes a closer look at a Spring Festival painting on Feb. 6, 2018.</p>
+        </div>
+        <img src="//english.scio.gov.cn/images1/en/HebeiSpringFestival/A2/Russia7.jpg">
+    </div>
+    <div class="section backgroundIMG">
+        <div class="text top">
+            <p>The “Happy Chinese New Year” concert is held at the Moscow International Concert Hall in Russia on Feb. 7, 2018.</p>
+        </div>
+        <div class="section-background">
+            <picture class="section-background-image"><img src="//english.scio.gov.cn/images1/en/HebeiSpringFestival/A2/Russia1 fix.jpg"></picture>
+        </div>
+    </div>
+    <div class="section">
+        <div class="text top">
+            <p class="fr">Artists from Hebei province perform along with Russian artists at the Moscow International Concert Hall in Russia on Feb. 7, 2018.</p>
+        </div>
+        <img src="//english.scio.gov.cn/images1/en/HebeiSpringFestival/A2/Russia2.jpg">
+    </div>
+    <div class="section backgroundIMG">
+        <div class="text top">
+            <p>The “Happy Spring Festival” New Year Concert is held at the Moscow International Concert Hall in Russia on Feb. 7, 2018.</p>
+        </div>
+        <div class="section-background">
+            <picture class="section-background-image"><img src="//english.scio.gov.cn/images1/en/HebeiSpringFestival/A2/Russia3 fix.jpg"></picture>
+        </div>
+    </div>
+    <div class="section">
+        <div class="text top">
+            <p class="fr">Audiences gather for autographs after the concert held at the Moscow International Concert Hall in Russia on Feb. 7, 2018.</p>
+        </div>
+        <img src="//english.scio.gov.cn/images1/en/HebeiSpringFestival/A2/Russia4.jpg">
+    </div>
+    <div class="section backgroundIMG">
+        <div class="text top">
+            <p>Fan Xianrong (4th L), minister counselor of the Embassy of the People's Republic of China, and Li Li (2nd R), director general of the publicity bureau of the CPC Hebei Provincial Committee, join the artists from Hebei province for a photo
+                after the concert held at the Moscow International Concert Hall in Russia on Feb. 7, 2018.</p>
+        </div>
+        <div class="section-background">
+            <picture class="section-background-image"><img src="//english.scio.gov.cn/images1/en/HebeiSpringFestival/A2/Russia5 fix.jpg"></picture>
+        </div>
+    </div>
+
+    <div class="section backgroundIMG" id="div4">
+        <div class="section-background">
+            <picture class="section-background-image"><img src="//english.scio.gov.cn/images1/en/HebeiSpringFestival/A3/Croatia fix.jpg"></picture>
+        </div>
+    </div>
+    <div class="section backgroundIMG">
+        <div class="text top">
+            <p>The artists from Hebei province lead a concert performance with the Zagreb Philharmonic at the Vatroslav Lisinski Concert Hall in Zagreb in Croatia on Feb. 9, 2018.</p>
+        </div>
+        <div class="section-background">
+            <picture class="section-background-image"><img src="//english.scio.gov.cn/images1/en/HebeiSpringFestival/A3/Croatia1 fix.jpg"></picture>
+        </div>
+    </div>
+    <div class="section">
+        <div class="text top">
+            <p class="fr">Hebei and Croatian artists take a selfie after the concert at the Vatroslav Lisinski Concert Hall in Zagreb in Croatia on Feb. 9, 2018.</p>
+        </div>
+        <img src="//english.scio.gov.cn/images1/en/HebeiSpringFestival/A3/Croatia2.jpg">
+    </div>
+    <div class="section backgroundIMG">
+        <div class="text top">
+            <p>Hebei artists introduce their instruments before presenting their concert performance at the Vatroslav Lisinski Concert Hall in Zagreb in Croatia on Feb. 9, 2018.</p>
+        </div>
+        <div class="section-background">
+            <picture class="section-background-image"><img src="//english.scio.gov.cn/images1/en/HebeiSpringFestival/A3/Croatia3 fix.jpg"></picture>
+        </div>
+    </div>
+    <div class="section">
+        <div class="text bottom">
+            <p class="fr">Croatian audiences show off gifts they receive at the concert -- traditional Spring Festival paintings, at the Vatroslav Lisinski Concert Hall in Zagreb in Croatia on Feb. 9, 2018.</p>
+        </div>
+        <img src="//english.scio.gov.cn/images1/en/HebeiSpringFestival/A3/Croatia4.jpg">
+    </div>
+    <div class="section backgroundIMG">
+        <div class="text1 top">
+            <p>A poster for the concert introduces Hebei and Croatian artists.</p>
+        </div>
+        <div class="section-background">
+            <picture class="section-background-image"><img src="//english.scio.gov.cn/images1/en/HebeiSpringFestival/A3/Croatia5 fix.jpg"></picture>
+        </div>
+    </div>
+    <div class="section">
+        <div class="text1 top right">
+            <p class="fr">An advertisement introducing the concert on the streets of Zagreb in Croatia on Feb. 9, 2018.</p>
+        </div>
+        <img src="//english.scio.gov.cn/images1/en/HebeiSpringFestival/A3/Croatia6.jpg">
+    </div>
+
+    <div class="section backgroundIMG" id="div5">
+        <div class="section-background">
+            <picture class="section-background-image"><img src="//english.scio.gov.cn/images1/en/HebeiSpringFestival/A4/USA fix.jpg"></picture>
+        </div>
+    </div>
+    <div class="section backgroundIMG">
+        <div class="text top">
+            <p>The gallery, “Charming Beijing, Tianjin and Hebei,” held in Los Angeles on Feb. 10, 2018, shows off the development of Hebei province and the upcoming Winter Olympics.</p>
+        </div>
+        <div class="section-background">
+            <picture class="section-background-image"><img src="//english.scio.gov.cn/images1/en/HebeiSpringFestival/A4/USA1 fix.jpg"></picture>
+        </div>
+    </div>
+    <div class="section">
+        <div class="text top">
+            <p class="fr">Visitors receive Spring Festival paintings as gifts at the gallery in Los Angeles.</p>
+        </div>
+        <img src="//english.scio.gov.cn/images1/en/HebeiSpringFestival/A4/USA2.jpg">
+    </div>
+    <div class="section backgroundIMG">
+        <div class="text top">
+            <p>American visitors take a closer look at the making of the Spring Festival paintings.</p>
+        </div>
+        <div class="section-background">
+            <picture class="section-background-image"><img src="//english.scio.gov.cn/images1/en/HebeiSpringFestival/A4/USA3 fix.jpg"></picture>
+        </div>
+    </div>
+
+    <div class="section backgroundIMG" id="div6">
+        <div class="section-background">
+            <picture class="section-background-image"><img src="//english.scio.gov.cn/images1/en/HebeiSpringFestival/A5/Thailand fix.jpg"></picture>
+        </div>
+    </div>
+    <div class="section backgroundIMG">
+        <div class="text top">
+            <p>A temple fair featuring traditional performances from Hebei province is held in Bangkok, Thailand, on Feb. 13, 2018.</p>
+        </div>
+        <div class="section-background">
+            <picture class="section-background-image"><img src="//english.scio.gov.cn/images1/en/HebeiSpringFestival/A5/Thailand1 fix.jpg"></picture>
+        </div>
+    </div>
+    <div class="section">
+        <img src="//english.scio.gov.cn/images1/en/HebeiSpringFestival/footer/footer.jpg">
+    </div>
+
+</body>
+<script type="text/javascript" src="//english.scio.gov.cn/images1/resource/scripts/jquery/jquery-3.6.0.min.js"></script>
+
+
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        if (/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
+            window.location.href = 'http://english.scio.gov.cn/m/HebeiSpringFestival/node_8004206.htm';
+        }
+    })
+    $(function() {
+        $(window).scroll(function() {
+            if ($(window).scrollTop() > 0) {
+                $('.navigation').css({
+                    'position': 'fixed',
+                    'top': 0
+                })
+            } else {
+                $('.navigation').css({
+                    'position': '',
+                    'top': ''
+                })
+            };
+            if ($('#div1').offset().top - $(document).scrollTop() >= 0 || $('#div2').offset().top - $(document).scrollTop() > parseInt($(window).height() / 3 * 2) && $('#div2').offset().top - $(document).scrollTop() < parseInt($(window).height())) {
+                $('.li1').addClass("active");
+                $('.li2').removeClass("active");
+                $('.li3').removeClass("active");
+                $('.li4').removeClass("active");
+                $('.li5').removeClass("active");
+                $('.li6').removeClass("active");
+            } else if ($('#div2').offset().top - $(document).scrollTop() >= 0 && $('#div2').offset().top - $(document).scrollTop() < parseInt($(window).height() / 3 * 2) || $('#div3').offset().top - $(document).scrollTop() > parseInt($(window).height() / 3 * 2) && $('#div3').offset().top - $(document).scrollTop() < parseInt($(window).height())) {
+                $('.li1').removeClass("active");
+                $('.li2').addClass("active");
+                $('.li3').removeClass("active");
+                $('.li4').removeClass("active");
+                $('.li5').removeClass("active");
+                $('.li6').removeClass("active");
+            } else if ($('#div3').offset().top - $(document).scrollTop() >= 0 && $('#div3').offset().top - $(document).scrollTop() < parseInt($(window).height() / 3 * 2) || $('#div4').offset().top - $(document).scrollTop() > parseInt($(window).height() / 3 * 2) && $('#div4').offset().top - $(document).scrollTop() < parseInt($(window).height())) {
+                $('.li1').removeClass("active");
+                $('.li2').removeClass("active");
+                $('.li3').addClass("active");
+                $('.li4').removeClass("active");
+                $('.li5').removeClass("active");
+                $('.li6').removeClass("active");
+            } else if ($('#div4').offset().top - $(document).scrollTop() >= 0 && $('#div4').offset().top - $(document).scrollTop() < parseInt($(window).height() / 3 * 2) || $('#div5').offset().top - $(document).scrollTop() > parseInt($(window).height() / 3 * 2) && $('#div5').offset().top - $(document).scrollTop() < parseInt($(window).height())) {
+                $('.li1').removeClass("active");
+                $('.li2').removeClass("active");
+                $('.li3').removeClass("active");
+                $('.li4').addClass("active");
+                $('.li5').removeClass("active");
+                $('.li6').removeClass("active");
+            } else if ($('#div5').offset().top - $(document).scrollTop() >= 0 && $('#div5').offset().top - $(document).scrollTop() < parseInt($(window).height() / 3 * 2) || $('#div6').offset().top - $(document).scrollTop() > parseInt($(window).height() / 3 * 2) && $('#div6').offset().top - $(document).scrollTop() < parseInt($(window).height())) {
+                $('.li1').removeClass("active");
+                $('.li2').removeClass("active");
+                $('.li3').removeClass("active");
+                $('.li4').removeClass("active");
+                $('.li5').addClass("active");
+                $('.li6').removeClass("active");
+            } else if ($('#div6').offset().top - $(document).scrollTop() >= 0 && $('#div6').offset().top - $(document).scrollTop() < parseInt($(window).height() / 3 * 2)) {
+                $('.li1').removeClass("active");
+                $('.li2').removeClass("active");
+                $('.li3').removeClass("active");
+                $('.li4').removeClass("active");
+                $('.li5').removeClass("active");
+                $('.li6').addClass("active");
+            }
+        });
+    });
+</script>
+
+
+
+</html>

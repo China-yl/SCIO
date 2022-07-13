@@ -1,0 +1,6 @@
+http://images.china.cn/images1/en/gxb/ctjs.css
+http://images.china.cn/images1/en/gxb/index.js
+http://images.china.cn/images1/en/gxb/m-index.js
+http://images.china.cn/images1/en/gxb/search.js
+http://images.china.cn/images1/en/gxb/biaoqian.js
+http://images.china.cn/images1/en/xigovernance/xigovernance-m.js

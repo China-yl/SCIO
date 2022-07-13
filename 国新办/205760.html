@@ -1,0 +1,1286 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>
+        <FOUNDER-XY type="columnlist" data="{'columnid':[],'columntype':'self'}">
+            <#list columns as column>${column.name}</#list>
+        </FOUNDER-XY> | english.scio.gov.cn</title>
+    <base target="_self" />
+    <meta name="filetype" content="1" />
+    <meta name="publishedtype" content="1" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no,target-densitydpi=360">
+    <meta name="format-detection" content="telephone=no" />
+    <meta http-equiv="Cache-Control" content="no-cache, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <FOUNDER-XY type="columnlist" data="{'columnid':[],'columntype':'self'}">
+        <#list columns as column>
+            <meta name="catalogs" content="${column.id}"></meta>
+            <meta itemprop="name" content="${column.name}" />
+        </#list>
+    </FOUNDER-XY>
+    <style type="text/css">
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            border: 0;
+        }
+        
+        body {
+            width: 100%;
+            min-height: 550px;
+            background-color: #fff;
+            font-family: Arial;
+            -webkit-touch-callout: none;
+            -webkit-text-size-adjust: none;
+        }
+        
+        a,
+        body {
+            color: #000;
+        }
+        
+        a,
+        a:hover {
+            text-decoration: none;
+        }
+        
+        a:hover {
+            color: #333;
+        }
+        
+        li,
+        ul {
+            display: inline-block;
+            width: 100%;
+            list-style-type: none;
+        }
+        
+        img {
+            width: 100%;
+        }
+        
+        .toplist {
+            width: 100%;
+            height: 47px;
+            background-color: #191e3f;
+        }
+        
+        .toplist a {
+            display: inline-block;
+            margin-right: 6px;
+        }
+        
+        .box1 {
+            width: 100%;
+            height: 100vh;
+            position: fixed;
+            top: 47px;
+            left: 0;
+            z-index: 100;
+            background: url('//english.scio.gov.cn/images1/en/fabujihe2021/banner.jpg') no-repeat;
+            background-size: 100% 100%;
+            padding: 10% 8% 0;
+        }
+        
+        .scio {
+            width: 100%;
+            margin-bottom: 8%;
+        }
+        
+        .click {
+            width: 44%;
+        }
+        
+        .box2 {
+            width: 100%;
+            padding-bottom: 1rem;
+            display: none;
+        }
+        
+        .nav {
+            width: 100%;
+            height: 47px;
+            background: rgb(142, 68, 173);
+            background-image: -webkit-gradient(linear, left, right, from(rgb(21, 36, 226)), color-stop(43%, rgb(142, 68, 173)), to(rgb(217, 96, 54)));
+            background-image: -webkit-linear-gradient(left, rgb(21, 36, 226) 0%, rgb(142, 68, 173) 43%, rgb(217, 96, 54) 100%);
+            background-image: -moz- oldlinear-gradient(left, rgb(21, 36, 226) 0%, rgb(142, 68, 173) 43%, rgb(217, 96, 54) 100%);
+            background-image: linear-gradient(left, rgb(21, 36, 226), rgb(142, 68, 173) 50%, rgb(217, 96, 54));
+        }
+        
+        .nav ul {
+            width: 100%;
+            display: flex;
+        }
+        
+        .nav ul li {
+            line-height: 47px;
+            text-align: center;
+        }
+        
+        .nav ul li:nth-child(odd) {
+            background-color: rgba(22, 36, 226, .2);
+        }
+        
+        .nav ul li:nth-child(even) {
+            background-color: rgba(184, 89, 119, .2);
+        }
+        
+        .nav ul li.active {
+            background-color: #0d1364;
+        }
+        
+        .nav ul li a {
+            font-size: 0.8125rem;
+            color: #fff;
+        }
+        
+        .banner {
+            width: 100%;
+        }
+        
+        .content {
+            width: 100%;
+            padding: 47px 1rem 0.75rem;
+        }
+        
+        .yue,
+        .pick,
+        .high,
+        .all,
+        .list1,
+        .list2 {
+            width: 100%;
+            position: relative;
+        }
+        
+        .pick p {
+            text-align: left;
+            width: 100%;
+            background-color: #0d34df;
+            padding: 0.625rem;
+            border-bottom-right-radius: 2rem;
+        }
+        
+        .pick p a {
+            font-size: 1rem;
+            line-height: 1.4em;
+            font-weight: bold;
+            color: #ffffff;
+        }
+        
+        .title {
+            margin: 0.9375rem 0;
+            font-size: 1.3rem;
+            line-height: 1.4rem;
+            font-weight: bold;
+            color: #000;
+        }
+        
+        .title span {
+            width: 0.5625rem;
+            height: 0.5625rem;
+            border-radius: 50%;
+            background-color: #0d34df;
+            margin: 0.168rem 0.2625rem 0.168rem 0;
+            display: inline-block;
+        }
+        
+        .high ul li {
+            width: 100%;
+            background-color: #e9f2f3;
+            margin-bottom: 0.75rem;
+        }
+        
+        .high ul li a {
+            display: flex;
+        }
+        
+        .high ul li a img {
+            width: 33%;
+            height: 100%;
+        }
+        
+        .high ul li a p {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-left: 0.5rem;
+        }
+        
+        .high ul li a p span {
+            font-size: 1rem;
+            line-height: 1.4em;
+            color: #000;
+        }
+        
+        .list1,
+        .list2 {
+            height: 35vh;
+            overflow: hidden;
+            -webkit-box-shadow: 0px 0px 10px rgba(51, 130, 251, 0.3);
+            -moz-box-shadow: 0px 0px 10px rgba(51, 130, 251, 0.3);
+            box-shadow: 0px 0px 10px rgba(51, 130, 251, 0.3);
+        }
+        
+        .list1 {
+            margin-bottom: 0.75rem;
+        }
+        
+        .title1 {
+            padding-left: 0.625rem;
+            background: rgb(30, 57, 222);
+            background-image: -webkit-gradient(linear, left, right, from(rgb(30, 57, 222)), color-stop(30%), to(rgb(174, 60, 221)));
+            background-image: -webkit-linear-gradient(left, rgb(30, 57, 222) 30%, rgb(174, 60, 221));
+            background-image: -moz- oldlinear-gradient(left, rgb(30, 57, 222) 30%, rgb(174, 60, 221));
+            background-image: linear-gradient(left, rgb(30, 57, 222) 30%, rgb(174, 60, 221));
+        }
+        
+        .title2 {
+            padding-left: 0.625rem;
+            background: rgb(19, 121, 225);
+            background-image: -webkit-gradient(linear, left, right, from(rgb(19, 121, 225)), color-stop(30%), to(rgb(59, 228, 170)));
+            background-image: -webkit-linear-gradient(left, rgb(19, 121, 225) 30%, rgb(59, 228, 170));
+            background-image: -moz- oldlinear-gradient(left, rgb(19, 121, 225) 30%, rgb(59, 228, 170));
+            background-image: linear-gradient(left, rgb(19, 121, 225) 30%, rgb(59, 228, 170));
+        }
+        
+        .title1 a,
+        .title2 a {
+            font-size: 0.8125rem;
+            line-height: 2rem;
+            font-weight: bold;
+            color: #ffffff;
+        }
+        
+        .list1 ul,
+        .list2 ul {
+            display: block;
+            width: 95%;
+            height: 80%;
+            margin: 4% auto;
+            overflow-y: scroll;
+        }
+        
+        .list1 ul li,
+        .list2 ul li {
+            padding: 0.46875rem;
+            border-bottom: 1px dashed #9caab1;
+            position: relative;
+        }
+        
+        .list1 ul li span,
+        .list2 ul li span {
+            width: 0.125rem;
+            height: 0.125rem;
+            border-radius: 50%;
+            background-color: #0d34df;
+            display: inline-block;
+            position: absolute;
+            top: 1rem;
+            left: 0;
+        }
+        
+        .list1 ul li a,
+        .list2 ul li a {
+            font-size: 1rem;
+            line-height: 1.4em;
+            color: #000;
+        }
+        
+        .list1 ul::-webkit-scrollbar,
+        .list2 ul::-webkit-scrollbar {
+            width: 0.8125rem;
+            height: 1px;
+        }
+        
+        .list1 ul::-webkit-scrollbar-thumb,
+        .list2 ul::-webkit-scrollbar-thumb {
+            border-radius: 0.8125rem;
+            background-color: #105df8;
+            background-image: -webkit-linear-gradient( 45deg, #407df9 25%, transparent 25%, transparent 50%, #407df9 50%, #407df9 75%, transparent 75%, transparent);
+        }
+        
+        .list1 ul::-webkit-scrollbar-track,
+        .list2 ul::-webkit-scrollbar-track {
+            box-shadow: inset 0 0 0.40625rem rgba(0, 0, 0, 0.2);
+            border-radius: 0.8125rem;
+            background: #f2f7f8;
+        }
+    </style>
+
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112741182-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-112741182-1');
+    </script>
+
+    <!-- 百度统计 -->
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?fd2d485bd31a1b437014f46624329f5b";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+
+</head>
+
+<body>
+    <div class="toplist" id="toplist">
+        <a href="http://english.scio.gov.cn/" style="margin-top: 3%;margin-left: 1%;width: 160px;"><img src="//english.scio.gov.cn/images1/en/2019cc/logo.png" width="160" border="0" /></a>
+        <div class="bshare-custom icon-medium-plus" style="float: right; margin-top: 1%;margin-right: 1%;">
+            <a title="分享到Facebook" class="bshare-facebook" href="javascript:void(0);" style="width: 35px;height: 35px;background:url(//english.scio.gov.cn/images1/en/2019cc/facebook1.png) no-repeat;padding: 0px;background-size: 100%;"></a>
+            <a title="分享到Twitter" class="bshare-twitter" href="javascript:void(0);" style="width: 35px;height: 35px;background:url(//english.scio.gov.cn/images1/en/2019cc/twitter1.png) no-repeat;padding: 0px;background-size: 100%;"></a>
+            <a title="分享到微博" class="bshare-sinaminiblog" href="javascript:void(0);" style="width: 35px;height: 35px;background:url(//english.scio.gov.cn/images1/en/2019cc/微博1.png) no-repeat;padding: 0px;background-size: 100%;"></a>
+            <a title="分享到微信" class="bshare-weixin" href="javascript:void(0);" style="width: 35px;height: 35px;background:url(//english.scio.gov.cn/images1/en/2019cc/微信1.png) no-repeat;padding: 0px;background-size: 100%;"></a>
+        </div>
+        <script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/buttonLite.js#style=-1&amp;uuid=72352d86-8c1b-4361-8d6b-12862c1a6656&amp;pophcol=2&amp;lang=zh"></script>
+        <script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/bshareC0.js"></script>
+    </div>
+    <div class="box1">
+        <div class="scio"><img src="//english.scio.gov.cn/images1/en/fabujihe2021/m/title.png"></div>
+        <div class="click"><img src="//english.scio.gov.cn/images1/en/fabujihe2021/m/click.png"></div>
+    </div>
+    <div class="box2">
+        <div class="nav">
+            <ul>
+                <li class="li1 active"><a href="#div1">JAN</a></li>
+                <li class="li2 "><a href="#div2">FEB</a></li>
+                <li class="li3 "><a href="#div3">MAR</a></li>
+                <li class="li4 "><a href="#div4">APR</a></li>
+                <li class="li5 "><a href="#div5">MAY</a></li>
+                <li class="li6 "><a href="#div6">JUN</a></li>
+                <li class="li7 "><a href="#div7">JUL</a></li>
+                <li class="li8 "><a href="#div8">AUG</a></li>
+                <li class="li9 "><a href="#div9">SEP</a></li>
+                <li class="li10 "><a href="#div10">OCT</a></li>
+                <li class="li11 "><a href="#div11">NOV</a></li>
+                <li class="li12 "><a href="#div12">DEC</a></li>
+            </ul>
+        </div>
+        <div class="banner">
+            <img src="//english.scio.gov.cn/images1/en/fabujihe2021/m/banner.jpg">
+        </div>
+        <div id="div1">
+            <div class="content">
+                <div class="yue"><img src="//english.scio.gov.cn/images1/en/fabujihe2021/m/Jan-t.png"></div>
+                <div class="pick">
+                    <img src="//english.scio.gov.cn/images1/en/fabujihe2021/m/Jan.png">
+                    <p>
+                        <FOUNDER-XY type="articlelist" data="{'columnid':[8027581],'articletype':'all','article_attr':'all','start':'0','count':'1'}">
+                            <#list articles as article><a href="${article.urlPad}">${article.title}</a></#list>
+                        </FOUNDER-XY>
+                    </p>
+                </div>
+                <div class="high">
+                    <div class="title"><span></span>HIGHLIGHTS</div>
+                    <ul>
+                        <FOUNDER-XY type="articlelist" data="{'columnid':[8027582],'articletype':'all','article_attr':'all','start':'0','count':'2'}">
+                            <#list articles as article>
+                                <li>
+                                    <a href="${article.urlPad}"><img src="${article.picBig}">
+                                        <p><span>${article.title}</span></p>
+                                    </a>
+                                </li>
+                            </#list>
+                        </FOUNDER-XY>
+                    </ul>
+                </div>
+                <div class="all"><img src="//english.scio.gov.cn/images1/en/fabujihe2021/m/t2.png"></div>
+                <div class="list1">
+                    <div class="title1">
+                        <FOUNDER-XY type="columnlist" data="{'columnid':[8027583],'columntype':'self'}">
+                            <#list columns as column>
+                                <a href="${column.urlPad!}">SCIO PRESS CONFERENCES</a>
+                            </#list>
+                        </FOUNDER-XY>
+                    </div>
+                    <ul>
+                        <FOUNDER-XY type="articlelist" data="{'columnid':[8027583],'articletype':'all','article_attr':'all','start':'0','count':'100'}">
+                            <#list articles as article>
+                                <li><span></span><a href="${article.urlPad}">${article.title}</a></li>
+                            </#list>
+                        </FOUNDER-XY>
+                    </ul>
+                </div>
+                <div class="list2">
+                    <div class="title1">
+                        <FOUNDER-XY type="columnlist" data="{'columnid':[8027584],'columntype':'self'}">
+                            <#list columns as column>
+                                <a href="${column.urlPad!}">SCIO BRIEFNGS ON STATE COUNCIL POLICIES</a>
+                            </#list>
+                        </FOUNDER-XY>
+                    </div>
+                    <ul>
+                        <FOUNDER-XY type="articlelist" data="{'columnid':[8027584],'articletype':'all','article_attr':'all','start':'0','count':'100'}">
+                            <#list articles as article>
+                                <li><span></span><a href="${article.urlPad}">${article.title}</a></li>
+                            </#list>
+                        </FOUNDER-XY>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="div2">
+            <div class="content">
+                <div class="yue"><img src="//english.scio.gov.cn/images1/en/fabujihe2021/m/Feb-t.png"></div>
+                <div class="pick">
+                    <img src="//english.scio.gov.cn/images1/en/fabujihe2021/m/Feb.png">
+                    <p>
+                        <FOUNDER-XY type="articlelist" data="{'columnid':[8027586],'articletype':'all','article_attr':'all','start':'0','count':'1'}">
+                            <#list articles as article><a href="${article.urlPad}">${article.title}</a></#list>
+                        </FOUNDER-XY>
+                    </p>
+                </div>
+                <div class="high">
+                    <div class="title"><span></span>HIGHLIGHTS</div>
+                    <ul>
+                        <FOUNDER-XY type="articlelist" data="{'columnid':[8027587],'articletype':'all','article_attr':'all','start':'0','count':'2'}">
+                            <#list articles as article>
+                                <li>
+                                    <a href="${article.urlPad}"><img src="${article.picBig}">
+                                        <p><span>${article.title}</span></p>
+                                    </a>
+                                </li>
+                            </#list>
+                        </FOUNDER-XY>
+                    </ul>
+                </div>
+                <div class="all"><img src="//english.scio.gov.cn/images1/en/fabujihe2021/m/t2.png"></div>
+                <div class="list1">
+                    <div class="title1">
+                        <FOUNDER-XY type="columnlist" data="{'columnid':[8027588],'columntype':'self'}">
+                            <#list columns as column>
+                                <a href="${column.urlPad!}">SCIO PRESS CONFERENCES</a>
+                            </#list>
+                        </FOUNDER-XY>
+                    </div>
+                    <ul>
+                        <FOUNDER-XY type="articlelist" data="{'columnid':[8027588],'articletype':'all','article_attr':'all','start':'0','count':'100'}">
+                            <#list articles as article>
+                                <li><span></span><a href="${article.urlPad}">${article.title}</a></li>
+                            </#list>
+                        </FOUNDER-XY>
+                    </ul>
+                </div>
+                <div class="list2" style="height: auto;">
+                    <div class="title1">
+                        <FOUNDER-XY type="columnlist" data="{'columnid':[8027589],'columntype':'self'}">
+                            <#list columns as column>
+                                <a href="${column.urlPad!}">SCIO BRIEFNGS ON STATE COUNCIL POLICIES</a>
+                            </#list>
+                        </FOUNDER-XY>
+                    </div>
+                    <ul style="overflow: unset;">
+                        <FOUNDER-XY type="articlelist" data="{'columnid':[8027589],'articletype':'all','article_attr':'all','start':'0','count':'100'}">
+                            <#list articles as article>
+                                <li><span></span><a href="${article.urlPad}">${article.title}</a></li>
+                            </#list>
+                        </FOUNDER-XY>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="div3">
+            <div class="content">
+                <div class="yue"><img src="//english.scio.gov.cn/images1/en/fabujihe2021/m/Mar-t.png"></div>
+                <div class="pick">
+                    <img src="//english.scio.gov.cn/images1/en/fabujihe2021/m/Mar.png">
+                    <p>
+                        <FOUNDER-XY type="articlelist" data="{'columnid':[8027591],'articletype':'all','article_attr':'all','start':'0','count':'1'}">
+                            <#list articles as article><a href="${article.urlPad}">${article.title}</a></#list>
+                        </FOUNDER-XY>
+                    </p>
+                </div>
+                <div class="high">
+                    <div class="title"><span></span>HIGHLIGHTS</div>
+                    <ul>
+                        <FOUNDER-XY type="articlelist" data="{'columnid':[8027592],'articletype':'all','article_attr':'all','start':'0','count':'2'}">
+                            <#list articles as article>
+                                <li>
+                                    <a href="${article.urlPad}"><img src="${article.picBig}">
+                                        <p><span>${article.title}</span></p>
+                                    </a>
+                                </li>
+                            </#list>
+                        </FOUNDER-XY>
+                    </ul>
+                </div>
+                <div class="all"><img src="//english.scio.gov.cn/images1/en/fabujihe2021/m/t2.png"></div>
+                <div class="list1">
+                    <div class="title1">
+                        <FOUNDER-XY type="columnlist" data="{'columnid':[8027593],'columntype':'self'}">
+                            <#list columns as column>
+                                <a href="${column.urlPad!}">SCIO PRESS CONFERENCES</a>
+                            </#list>
+                        </FOUNDER-XY>
+                    </div>
+                    <ul>
+                        <FOUNDER-XY type="articlelist" data="{'columnid':[8027593],'articletype':'all','article_attr':'all','start':'0','count':'100'}">
+                            <#list articles as article>
+                                <li><span></span><a href="${article.urlPad}">${article.title}</a></li>
+                            </#list>
+                        </FOUNDER-XY>
+                    </ul>
+                </div>
+                <div class="list2" style="height: auto;">
+                    <div class="title1">
+                        <FOUNDER-XY type="columnlist" data="{'columnid':[8027594],'columntype':'self'}">
+                            <#list columns as column>
+                                <a href="${column.urlPad!}">SCIO BRIEFNGS ON STATE COUNCIL POLICIES</a>
+                            </#list>
+                        </FOUNDER-XY>
+                    </div>
+                    <ul style="overflow: unset;">
+                        <FOUNDER-XY type="articlelist" data="{'columnid':[8027594],'articletype':'all','article_attr':'all','start':'0','count':'100'}">
+                            <#list articles as article>
+                                <li><span></span><a href="${article.urlPad}">${article.title}</a></li>
+                            </#list>
+                        </FOUNDER-XY>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="div4">
+            <div class="content">
+                <div class="yue"><img src="//english.scio.gov.cn/images1/en/fabujihe2021/m/Apr-t.png"></div>
+                <div class="pick">
+                    <img src="//english.scio.gov.cn/images1/en/fabujihe2021/m/Apr.png">
+                    <p>
+                        <FOUNDER-XY type="articlelist" data="{'columnid':[8027596],'articletype':'all','article_attr':'all','start':'0','count':'1'}">
+                            <#list articles as article><a href="${article.urlPad}">${article.title}</a></#list>
+                        </FOUNDER-XY>
+                    </p>
+                </div>
+                <div class="high">
+                    <div class="title"><span></span>HIGHLIGHTS</div>
+                    <ul>
+                        <FOUNDER-XY type="articlelist" data="{'columnid':[8027597],'articletype':'all','article_attr':'all','start':'0','count':'2'}">
+                            <#list articles as article>
+                                <li>
+                                    <a href="${article.urlPad}"><img src="${article.picBig}">
+                                        <p><span>${article.title}</span></p>
+                                    </a>
+                                </li>
+                            </#list>
+                        </FOUNDER-XY>
+                    </ul>
+                </div>
+                <div class="all"><img src="//english.scio.gov.cn/images1/en/fabujihe2021/m/t2.png"></div>
+                <div class="list1">
+                    <div class="title1">
+                        <FOUNDER-XY type="columnlist" data="{'columnid':[8027598],'columntype':'self'}">
+                            <#list columns as column>
+                                <a href="${column.urlPad!}">SCIO PRESS CONFERENCES</a>
+                            </#list>
+                        </FOUNDER-XY>
+                    </div>
+                    <ul>
+                        <FOUNDER-XY type="articlelist" data="{'columnid':[8027598],'articletype':'all','article_attr':'all','start':'0','count':'100'}">
+                            <#list articles as article>
+                                <li><span></span><a href="${article.urlPad}">${article.title}</a></li>
+                            </#list>
+                        </FOUNDER-XY>
+                    </ul>
+                </div>
+                <div class="list2">
+                    <div class="title1">
+                        <FOUNDER-XY type="columnlist" data="{'columnid':[8027599],'columntype':'self'}">
+                            <#list columns as column>
+                                <a href="${column.urlPad!}">SCIO BRIEFNGS ON STATE COUNCIL POLICIES</a>
+                            </#list>
+                        </FOUNDER-XY>
+                    </div>
+                    <ul>
+                        <FOUNDER-XY type="articlelist" data="{'columnid':[8027599],'articletype':'all','article_attr':'all','start':'0','count':'100'}">
+                            <#list articles as article>
+                                <li><span></span><a href="${article.urlPad}">${article.title}</a></li>
+                            </#list>
+                        </FOUNDER-XY>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="div5">
+            <div class="content">
+                <div class="yue"><img src="//english.scio.gov.cn/images1/en/fabujihe2021/m/May-t.png"></div>
+                <div class="pick">
+                    <img src="//english.scio.gov.cn/images1/en/fabujihe2021/m/May.png">
+                    <p>
+                        <FOUNDER-XY type="articlelist" data="{'columnid':[8027601],'articletype':'all','article_attr':'all','start':'0','count':'1'}">
+                            <#list articles as article><a href="${article.urlPad}">${article.title}</a></#list>
+                        </FOUNDER-XY>
+                    </p>
+                </div>
+                <div class="high">
+                    <div class="title"><span></span>HIGHLIGHTS</div>
+                    <ul>
+                        <FOUNDER-XY type="articlelist" data="{'columnid':[8027602],'articletype':'all','article_attr':'all','start':'0','count':'2'}">
+                            <#list articles as article>
+                                <li>
+                                    <a href="${article.urlPad}"><img src="${article.picBig}">
+                                        <p><span>${article.title}</span></p>
+                                    </a>
+                                </li>
+                            </#list>
+                        </FOUNDER-XY>
+                    </ul>
+                </div>
+                <div class="all"><img src="//english.scio.gov.cn/images1/en/fabujihe2021/m/t2.png"></div>
+                <div class="list1">
+                    <div class="title1">
+                        <FOUNDER-XY type="columnlist" data="{'columnid':[8027603],'columntype':'self'}">
+                            <#list columns as column>
+                                <a href="${column.urlPad!}">SCIO PRESS CONFERENCES</a>
+                            </#list>
+                        </FOUNDER-XY>
+                    </div>
+                    <ul>
+                        <FOUNDER-XY type="articlelist" data="{'columnid':[8027603],'articletype':'all','article_attr':'all','start':'0','count':'100'}">
+                            <#list articles as article>
+                                <li><span></span><a href="${article.urlPad}">${article.title}</a></li>
+                            </#list>
+                        </FOUNDER-XY>
+                    </ul>
+                </div>
+                <div class="list2">
+                    <div class="title1">
+                        <FOUNDER-XY type="columnlist" data="{'columnid':[8027604],'columntype':'self'}">
+                            <#list columns as column>
+                                <a href="${column.urlPad!}">SCIO BRIEFNGS ON STATE COUNCIL POLICIES</a>
+                            </#list>
+                        </FOUNDER-XY>
+                    </div>
+                    <ul>
+                        <FOUNDER-XY type="articlelist" data="{'columnid':[8027604],'articletype':'all','article_attr':'all','start':'0','count':'100'}">
+                            <#list articles as article>
+                                <li><span></span><a href="${article.urlPad}">${article.title}</a></li>
+                            </#list>
+                        </FOUNDER-XY>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="div6">
+            <div class="content">
+                <div class="yue"><img src="//english.scio.gov.cn/images1/en/fabujihe2021/m/Jun-t.png"></div>
+                <div class="pick">
+                    <img src="//english.scio.gov.cn/images1/en/fabujihe2021/m/Jun.png">
+                    <p>
+                        <FOUNDER-XY type="articlelist" data="{'columnid':[8027606],'articletype':'all','article_attr':'all','start':'0','count':'1'}">
+                            <#list articles as article><a href="${article.urlPad}">${article.title}</a></#list>
+                        </FOUNDER-XY>
+                    </p>
+                </div>
+                <div class="high">
+                    <div class="title"><span></span>HIGHLIGHTS</div>
+                    <ul>
+                        <FOUNDER-XY type="articlelist" data="{'columnid':[8027607],'articletype':'all','article_attr':'all','start':'0','count':'2'}">
+                            <#list articles as article>
+                                <li>
+                                    <a href="${article.urlPad}"><img src="${article.picBig}">
+                                        <p><span>${article.title}</span></p>
+                                    </a>
+                                </li>
+                            </#list>
+                        </FOUNDER-XY>
+                    </ul>
+                </div>
+                <div class="all"><img src="//english.scio.gov.cn/images1/en/fabujihe2021/m/t2.png"></div>
+                <div class="list1">
+                    <div class="title1">
+                        <FOUNDER-XY type="columnlist" data="{'columnid':[8027608],'columntype':'self'}">
+                            <#list columns as column>
+                                <a href="${column.urlPad!}">SCIO PRESS CONFERENCES</a>
+                            </#list>
+                        </FOUNDER-XY>
+                    </div>
+                    <ul>
+                        <FOUNDER-XY type="articlelist" data="{'columnid':[8027608],'articletype':'all','article_attr':'all','start':'0','count':'100'}">
+                            <#list articles as article>
+                                <li><span></span><a href="${article.urlPad}">${article.title}</a></li>
+                            </#list>
+                        </FOUNDER-XY>
+                    </ul>
+                </div>
+                <div class="list2">
+                    <div class="title1">
+                        <FOUNDER-XY type="columnlist" data="{'columnid':[8027609],'columntype':'self'}">
+                            <#list columns as column>
+                                <a href="${column.urlPad!}">SCIO BRIEFNGS ON STATE COUNCIL POLICIES</a>
+                            </#list>
+                        </FOUNDER-XY>
+                    </div>
+                    <ul>
+                        <FOUNDER-XY type="articlelist" data="{'columnid':[8027609],'articletype':'all','article_attr':'all','start':'0','count':'100'}">
+                            <#list articles as article>
+                                <li><span></span><a href="${article.urlPad}">${article.title}</a></li>
+                            </#list>
+                        </FOUNDER-XY>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="div7">
+            <div class="content">
+                <div class="yue"><img src="//english.scio.gov.cn/images1/en/fabujihe2021/m/Jul-t.png"></div>
+                <div class="pick">
+                    <img src="//english.scio.gov.cn/images1/en/fabujihe2021/m/Jul.png">
+                    <p>
+                        <FOUNDER-XY type="articlelist" data="{'columnid':[8027611],'articletype':'all','article_attr':'all','start':'0','count':'1'}">
+                            <#list articles as article><a href="${article.urlPad}">${article.title}</a></#list>
+                        </FOUNDER-XY>
+                    </p>
+                </div>
+                <div class="high">
+                    <div class="title"><span></span>HIGHLIGHTS</div>
+                    <ul>
+                        <FOUNDER-XY type="articlelist" data="{'columnid':[8027612],'articletype':'all','article_attr':'all','start':'0','count':'2'}">
+                            <#list articles as article>
+                                <li>
+                                    <a href="${article.urlPad}"><img src="${article.picBig}">
+                                        <p><span>${article.title}</span></p>
+                                    </a>
+                                </li>
+                            </#list>
+                        </FOUNDER-XY>
+                    </ul>
+                </div>
+                <div class="all"><img src="//english.scio.gov.cn/images1/en/fabujihe2021/m/t2.png"></div>
+                <div class="list1">
+                    <div class="title1">
+                        <FOUNDER-XY type="columnlist" data="{'columnid':[8027613],'columntype':'self'}">
+                            <#list columns as column>
+                                <a href="${column.urlPad!}">SCIO PRESS CONFERENCES</a>
+                            </#list>
+                        </FOUNDER-XY>
+                    </div>
+                    <ul>
+                        <FOUNDER-XY type="articlelist" data="{'columnid':[8027613],'articletype':'all','article_attr':'all','start':'0','count':'100'}">
+                            <#list articles as article>
+                                <li><span></span><a href="${article.urlPad}">${article.title}</a></li>
+                            </#list>
+                        </FOUNDER-XY>
+                    </ul>
+                </div>
+                <div class="list2">
+                    <div class="title1">
+                        <FOUNDER-XY type="columnlist" data="{'columnid':[8027614],'columntype':'self'}">
+                            <#list columns as column>
+                                <a href="${column.urlPad!}">SCIO BRIEFNGS ON STATE COUNCIL POLICIES</a>
+                            </#list>
+                        </FOUNDER-XY>
+                    </div>
+                    <ul>
+                        <FOUNDER-XY type="articlelist" data="{'columnid':[8027614],'articletype':'all','article_attr':'all','start':'0','count':'100'}">
+                            <#list articles as article>
+                                <li><span></span><a href="${article.urlPad}">${article.title}</a></li>
+                            </#list>
+                        </FOUNDER-XY>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="div8">
+            <div class="content">
+                <div class="yue"><img src="//english.scio.gov.cn/images1/en/fabujihe2021/m/Aug-t.png"></div>
+                <div class="pick">
+                    <img src="//english.scio.gov.cn/images1/en/fabujihe2021/m/Aug.png">
+                    <p>
+                        <FOUNDER-XY type="articlelist" data="{'columnid':[8027616],'articletype':'all','article_attr':'all','start':'0','count':'1'}">
+                            <#list articles as article><a href="${article.urlPad}">${article.title}</a></#list>
+                        </FOUNDER-XY>
+                    </p>
+                </div>
+                <div class="high">
+                    <div class="title"><span></span>HIGHLIGHTS</div>
+                    <ul>
+                        <FOUNDER-XY type="articlelist" data="{'columnid':[8027617],'articletype':'all','article_attr':'all','start':'0','count':'2'}">
+                            <#list articles as article>
+                                <li>
+                                    <a href="${article.urlPad}"><img src="${article.picBig}">
+                                        <p><span>${article.title}</span></p>
+                                    </a>
+                                </li>
+                            </#list>
+                        </FOUNDER-XY>
+                    </ul>
+                </div>
+
+                <div class="all"><img src="//english.scio.gov.cn/images1/en/fabujihe2021/m/t2.png"></div>
+                <div class="list1">
+                    <div class="title1">
+                        <FOUNDER-XY type="columnlist" data="{'columnid':[8027618],'columntype':'self'}">
+                            <#list columns as column>
+                                <a href="${column.urlPad!}">SCIO PRESS CONFERENCES</a>
+                            </#list>
+                        </FOUNDER-XY>
+                    </div>
+                    <ul>
+                        <FOUNDER-XY type="articlelist" data="{'columnid':[8027618],'articletype':'all','article_attr':'all','start':'0','count':'100'}">
+                            <#list articles as article>
+                                <li><span></span><a href="${article.urlPad}">${article.title}</a></li>
+                            </#list>
+                        </FOUNDER-XY>
+                    </ul>
+                </div>
+                <div class="list2">
+                    <div class="title1">
+                        <FOUNDER-XY type="columnlist" data="{'columnid':[8027619],'columntype':'self'}">
+                            <#list columns as column>
+                                <a href="${column.urlPad!}">SCIO BRIEFNGS ON STATE COUNCIL POLICIES</a>
+                            </#list>
+                        </FOUNDER-XY>
+                    </div>
+                    <ul>
+                        <FOUNDER-XY type="articlelist" data="{'columnid':[8027619],'articletype':'all','article_attr':'all','start':'0','count':'100'}">
+                            <#list articles as article>
+                                <li><span></span><a href="${article.urlPad}">${article.title}</a></li>
+                            </#list>
+                        </FOUNDER-XY>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="div9">
+            <div class="content">
+                <div class="yue"><img src="//english.scio.gov.cn/images1/en/fabujihe2021/m/Sep-t.png"></div>
+                <div class="pick">
+                    <img src="//english.scio.gov.cn/images1/en/fabujihe2021/m/Sep.png">
+                    <p>
+                        <FOUNDER-XY type="articlelist" data="{'columnid':[8027621],'articletype':'all','article_attr':'all','start':'0','count':'1'}">
+                            <#list articles as article><a href="${article.urlPad}">${article.title}</a></#list>
+                        </FOUNDER-XY>
+                    </p>
+                </div>
+                <div class="high">
+                    <div class="title"><span></span>HIGHLIGHTS</div>
+                    <ul>
+                        <FOUNDER-XY type="articlelist" data="{'columnid':[8027622],'articletype':'all','article_attr':'all','start':'0','count':'2'}">
+                            <#list articles as article>
+                                <li>
+                                    <a href="${article.urlPad}"><img src="${article.picBig}">
+                                        <p><span>${article.title}</span></p>
+                                    </a>
+                                </li>
+                            </#list>
+                        </FOUNDER-XY>
+                    </ul>
+                </div>
+                <div class="all"><img src="//english.scio.gov.cn/images1/en/fabujihe2021/m/t2.png"></div>
+                <div class="list1">
+                    <div class="title1">
+                        <FOUNDER-XY type="columnlist" data="{'columnid':[8027623],'columntype':'self'}">
+                            <#list columns as column>
+                                <a href="${column.urlPad!}">SCIO PRESS CONFERENCES</a>
+                            </#list>
+                        </FOUNDER-XY>
+                    </div>
+                    <ul>
+                        <FOUNDER-XY type="articlelist" data="{'columnid':[8027623],'articletype':'all','article_attr':'all','start':'0','count':'100'}">
+                            <#list articles as article>
+                                <li><span></span><a href="${article.urlPad}">${article.title}</a></li>
+                            </#list>
+                        </FOUNDER-XY>
+                    </ul>
+                </div>
+                <div class="list2">
+                    <div class="title1">
+                        <FOUNDER-XY type="columnlist" data="{'columnid':[8027624],'columntype':'self'}">
+                            <#list columns as column>
+                                <a href="${column.urlPad!}">SCIO BRIEFNGS ON STATE COUNCIL POLICIES</a>
+                            </#list>
+                        </FOUNDER-XY>
+                    </div>
+                    <ul>
+                        <FOUNDER-XY type="articlelist" data="{'columnid':[8027624],'articletype':'all','article_attr':'all','start':'0','count':'100'}">
+                            <#list articles as article>
+                                <li><span></span><a href="${article.urlPad}">${article.title}</a></li>
+                            </#list>
+                        </FOUNDER-XY>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="div10">
+            <div class="content">
+                <div class="yue"><img src="//english.scio.gov.cn/images1/en/fabujihe2021/m/Oct-t.png"></div>
+                <div class="pick">
+                    <img src="//english.scio.gov.cn/images1/en/fabujihe2021/m/Oct.png">
+                    <p>
+                        <FOUNDER-XY type="articlelist" data="{'columnid':[8027626],'articletype':'all','article_attr':'all','start':'0','count':'1'}">
+                            <#list articles as article><a href="${article.urlPad}">${article.title}</a></#list>
+                        </FOUNDER-XY>
+                    </p>
+                </div>
+                <div class="high">
+                    <div class="title"><span></span>HIGHLIGHTS</div>
+                    <ul>
+                        <FOUNDER-XY type="articlelist" data="{'columnid':[8027627],'articletype':'all','article_attr':'all','start':'0','count':'2'}">
+                            <#list articles as article>
+                                <li>
+                                    <a href="${article.urlPad}"><img src="${article.picBig}">
+                                        <p><span>${article.title}</span></p>
+                                    </a>
+                                </li>
+                            </#list>
+                        </FOUNDER-XY>
+                    </ul>
+                </div>
+                <div class="all"><img src="//english.scio.gov.cn/images1/en/fabujihe2021/m/t2.png"></div>
+                <div class="list1">
+                    <div class="title1">
+                        <FOUNDER-XY type="columnlist" data="{'columnid':[8027628],'columntype':'self'}">
+                            <#list columns as column>
+                                <a href="${column.urlPad!}">SCIO PRESS CONFERENCES</a>
+                            </#list>
+                        </FOUNDER-XY>
+                    </div>
+                    <ul>
+                        <FOUNDER-XY type="articlelist" data="{'columnid':[8027628],'articletype':'all','article_attr':'all','start':'0','count':'100'}">
+                            <#list articles as article>
+                                <li><span></span><a href="${article.urlPad}">${article.title}</a></li>
+                            </#list>
+                        </FOUNDER-XY>
+                    </ul>
+                </div>
+                <div class="list2" style="height: auto;">
+                    <div class="title1">
+                        <FOUNDER-XY type="columnlist" data="{'columnid':[8027629],'columntype':'self'}">
+                            <#list columns as column>
+                                <a href="${column.urlPad!}">SCIO BRIEFNGS ON STATE COUNCIL POLICIES</a>
+                            </#list>
+                        </FOUNDER-XY>
+                    </div>
+                    <ul style="overflow: unset;">
+                        <FOUNDER-XY type="articlelist" data="{'columnid':[8027629],'articletype':'all','article_attr':'all','start':'0','count':'100'}">
+                            <#list articles as article>
+                                <li><span></span><a href="${article.urlPad}">${article.title}</a></li>
+                            </#list>
+                        </FOUNDER-XY>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="div11">
+            <div class="content">
+                <div class="yue"><img src="//english.scio.gov.cn/images1/en/fabujihe2021/m/Nov-t.png"></div>
+                <div class="pick">
+                    <img src="//english.scio.gov.cn/images1/en/fabujihe2021/m/Nov.png">
+                    <p>
+                        <FOUNDER-XY type="articlelist" data="{'columnid':[8027631],'articletype':'all','article_attr':'all','start':'0','count':'1'}">
+                            <#list articles as article><a href="${article.urlPad}">${article.title}</a></#list>
+                        </FOUNDER-XY>
+                    </p>
+                </div>
+                <div class="high">
+                    <div class="title"><span></span>HIGHLIGHTS</div>
+                    <ul>
+                        <FOUNDER-XY type="articlelist" data="{'columnid':[8027632],'articletype':'all','article_attr':'all','start':'0','count':'2'}">
+                            <#list articles as article>
+                                <li>
+                                    <a href="${article.urlPad}"><img src="${article.picBig}">
+                                        <p><span>${article.title}</span></p>
+                                    </a>
+                                </li>
+                            </#list>
+                        </FOUNDER-XY>
+                    </ul>
+                </div>
+                <div class="all"><img src="//english.scio.gov.cn/images1/en/fabujihe2021/m/t2.png"></div>
+                <div class="list1">
+                    <div class="title1">
+                        <FOUNDER-XY type="columnlist" data="{'columnid':[8027633],'columntype':'self'}">
+                            <#list columns as column>
+                                <a href="${column.urlPad!}">SCIO PRESS CONFERENCES</a>
+                            </#list>
+                        </FOUNDER-XY>
+                    </div>
+                    <ul>
+                        <FOUNDER-XY type="articlelist" data="{'columnid':[8027633],'articletype':'all','article_attr':'all','start':'0','count':'100'}">
+                            <#list articles as article>
+                                <li><span></span><a href="${article.urlPad}">${article.title}</a></li>
+                            </#list>
+                        </FOUNDER-XY>
+                    </ul>
+                </div>
+                <div class="list2">
+                    <div class="title1">
+                        <FOUNDER-XY type="columnlist" data="{'columnid':[8027634],'columntype':'self'}">
+                            <#list columns as column>
+                                <a href="${column.urlPad!}">SCIO BRIEFNGS ON STATE COUNCIL POLICIES</a>
+                            </#list>
+                        </FOUNDER-XY>
+                    </div>
+                    <ul>
+                        <FOUNDER-XY type="articlelist" data="{'columnid':[8027634],'articletype':'all','article_attr':'all','start':'0','count':'100'}">
+                            <#list articles as article>
+                                <li><span></span><a href="${article.urlPad}">${article.title}</a></li>
+                            </#list>
+                        </FOUNDER-XY>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="div12">
+            <div class="content">
+                <div class="yue"><img src="//english.scio.gov.cn/images1/en/fabujihe2021/m/Dec-t.png"></div>
+                <div class="pick">
+                    <img src="//english.scio.gov.cn/images1/en/fabujihe2021/m/Dec.png">
+                    <p>
+                        <FOUNDER-XY type="articlelist" data="{'columnid':[8027636],'articletype':'all','article_attr':'all','start':'0','count':'1'}">
+                            <#list articles as article><a href="${article.urlPad}">${article.title}</a></#list>
+                        </FOUNDER-XY>
+                    </p>
+                </div>
+                <div class="high">
+                    <div class="title"><span></span>HIGHLIGHTS</div>
+                    <ul>
+                        <FOUNDER-XY type="articlelist" data="{'columnid':[8027637],'articletype':'all','article_attr':'all','start':'0','count':'2'}">
+                            <#list articles as article>
+                                <li>
+                                    <a href="${article.urlPad}"><img src="${article.picBig}">
+                                        <p><span>${article.title}</span></p>
+                                    </a>
+                                </li>
+                            </#list>
+                        </FOUNDER-XY>
+                    </ul>
+                </div>
+                <div class="all"><img src="//english.scio.gov.cn/images1/en/fabujihe2021/m/t2.png"></div>
+                <div class="list1">
+                    <div class="title1">
+                        <FOUNDER-XY type="columnlist" data="{'columnid':[8027638],'columntype':'self'}">
+                            <#list columns as column>
+                                <a href="${column.urlPad!}">SCIO PRESS CONFERENCES</a>
+                            </#list>
+                        </FOUNDER-XY>
+                    </div>
+                    <ul>
+                        <FOUNDER-XY type="articlelist" data="{'columnid':[8027638],'articletype':'all','article_attr':'all','start':'0','count':'100'}">
+                            <#list articles as article>
+                                <li><span></span><a href="${article.urlPad}">${article.title}</a></li>
+                            </#list>
+                        </FOUNDER-XY>
+                    </ul>
+                </div>
+                <div class="list2">
+                    <div class="title1">
+                        <FOUNDER-XY type="columnlist" data="{'columnid':[8027639],'columntype':'self'}">
+                            <#list columns as column>
+                                <a href="${column.urlPad!}">SCIO BRIEFNGS ON STATE COUNCIL POLICIES</a>
+                            </#list>
+                        </FOUNDER-XY>
+                    </div>
+                    <ul>
+                        <FOUNDER-XY type="articlelist" data="{'columnid':[8027639],'articletype':'all','article_attr':'all','start':'0','count':'100'}">
+                            <#list articles as article>
+                                <li><span></span><a href="${article.urlPad}">${article.title}</a></li>
+                            </#list>
+                        </FOUNDER-XY>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="//english.scio.gov.cn/images1/resource/scripts/jquery/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="//english.scio.gov.cn/images1/en/scio2021/js/base-m.js"></script>
+    <script type="text/javascript">
+        (function(window, $) {
+            $(function() {
+                $('.click').on('click', function() {
+                    $('.box1').hide();
+                    $('.box2').show();
+                });
+                $(window).scroll(function() {
+                    if ($(window).scrollTop() >= 94) {
+                        $('.nav').css({
+                            'position': 'fixed',
+                            'top': 0,
+                            'z-index': 100
+                        })
+                    } else {
+                        $('.nav').css({
+                            'position': '',
+                            'top': ''
+                        })
+                    };
+                    if ($('#div1').offset().top - $(document).scrollTop() >= 0 || $('#div2').offset().top - $(document).scrollTop() > parseInt($(window).height() / 3 * 2) && $('#div2').offset().top - $(document).scrollTop() < parseInt($(window).height())) {
+                        $('.li1').addClass("active");
+                        $('.li2').removeClass("active");
+                        $('.li3').removeClass("active");
+                        $('.li4').removeClass("active");
+                        $('.li5').removeClass("active");
+                        $('.li6').removeClass("active");
+                        $('.li7').removeClass("active");
+                        $('.li8').removeClass("active");
+                        $('.li9').removeClass("active");
+                        $('.li10').removeClass("active");
+                        $('.li11').removeClass("active");
+                        $('.li12').removeClass("active");
+                    } else if ($('#div2').offset().top - $(document).scrollTop() >= 0 && $('#div2').offset().top - $(document).scrollTop() < parseInt($(window).height() / 3 * 2) || $('#div3').offset().top - $(document).scrollTop() > parseInt($(window).height() / 3 * 2) && $('#div3').offset().top - $(document).scrollTop() < parseInt($(window).height())) {
+                        $('.li1').removeClass("active");
+                        $('.li2').addClass("active");
+                        $('.li3').removeClass("active");
+                        $('.li4').removeClass("active");
+                        $('.li5').removeClass("active");
+                        $('.li6').removeClass("active");
+                        $('.li7').removeClass("active");
+                        $('.li8').removeClass("active");
+                        $('.li9').removeClass("active");
+                        $('.li10').removeClass("active");
+                        $('.li11').removeClass("active");
+                        $('.li12').removeClass("active");
+                    } else if ($('#div3').offset().top - $(document).scrollTop() >= 0 && $('#div3').offset().top - $(document).scrollTop() < parseInt($(window).height() / 3 * 2) || $('#div4').offset().top - $(document).scrollTop() > parseInt($(window).height() / 3 * 2) && $('#div4').offset().top - $(document).scrollTop() < parseInt($(window).height())) {
+                        $('.li1').removeClass("active");
+                        $('.li2').removeClass("active");
+                        $('.li3').addClass("active");
+                        $('.li4').removeClass("active");
+                        $('.li5').removeClass("active");
+                        $('.li6').removeClass("active");
+                        $('.li7').removeClass("active");
+                        $('.li8').removeClass("active");
+                        $('.li9').removeClass("active");
+                        $('.li10').removeClass("active");
+                        $('.li11').removeClass("active");
+                        $('.li12').removeClass("active");
+                    } else if ($('#div4').offset().top - $(document).scrollTop() >= 0 && $('#div4').offset().top - $(document).scrollTop() < parseInt($(window).height() / 3 * 2) || $('#div5').offset().top - $(document).scrollTop() > parseInt($(window).height() / 3 * 2) && $('#div5').offset().top - $(document).scrollTop() < parseInt($(window).height())) {
+                        $('.li1').removeClass("active");
+                        $('.li2').removeClass("active");
+                        $('.li3').removeClass("active");
+                        $('.li4').addClass("active");
+                        $('.li5').removeClass("active");
+                        $('.li6').removeClass("active");
+                        $('.li7').removeClass("active");
+                        $('.li8').removeClass("active");
+                        $('.li9').removeClass("active");
+                        $('.li10').removeClass("active");
+                        $('.li11').removeClass("active");
+                        $('.li12').removeClass("active");
+                    } else if ($('#div5').offset().top - $(document).scrollTop() >= 0 && $('#div5').offset().top - $(document).scrollTop() < parseInt($(window).height() / 3 * 2) || $('#div6').offset().top - $(document).scrollTop() > parseInt($(window).height() / 3 * 2) && $('#div6').offset().top - $(document).scrollTop() < parseInt($(window).height())) {
+                        $('.li1').removeClass("active");
+                        $('.li2').removeClass("active");
+                        $('.li3').removeClass("active");
+                        $('.li4').removeClass("active");
+                        $('.li5').addClass("active");
+                        $('.li6').removeClass("active");
+                        $('.li7').removeClass("active");
+                        $('.li8').removeClass("active");
+                        $('.li9').removeClass("active");
+                        $('.li10').removeClass("active");
+                        $('.li11').removeClass("active");
+                        $('.li12').removeClass("active");
+                    } else if ($('#div6').offset().top - $(document).scrollTop() >= 0 && $('#div6').offset().top - $(document).scrollTop() < parseInt($(window).height() / 3 * 2) || $('#div7').offset().top - $(document).scrollTop() > parseInt($(window).height() / 3 * 2) && $('#div7').offset().top - $(document).scrollTop() < parseInt($(window).height())) {
+                        $('.li1').removeClass("active");
+                        $('.li2').removeClass("active");
+                        $('.li3').removeClass("active");
+                        $('.li4').removeClass("active");
+                        $('.li5').removeClass("active");
+                        $('.li6').addClass("active");
+                        $('.li7').removeClass("active");
+                        $('.li8').removeClass("active");
+                        $('.li9').removeClass("active");
+                        $('.li10').removeClass("active");
+                        $('.li11').removeClass("active");
+                        $('.li12').removeClass("active");
+                    } else if ($('#div7').offset().top - $(document).scrollTop() >= 0 && $('#div7').offset().top - $(document).scrollTop() < parseInt($(window).height() / 3 * 2) || $('#div8').offset().top - $(document).scrollTop() > parseInt($(window).height() / 3 * 2) && $('#div8').offset().top - $(document).scrollTop() < parseInt($(window).height())) {
+                        $('.li1').removeClass("active");
+                        $('.li2').removeClass("active");
+                        $('.li3').removeClass("active");
+                        $('.li4').removeClass("active");
+                        $('.li5').removeClass("active");
+                        $('.li6').removeClass("active");
+                        $('.li7').addClass("active");
+                        $('.li8').removeClass("active");
+                        $('.li9').removeClass("active");
+                        $('.li10').removeClass("active");
+                        $('.li11').removeClass("active");
+                        $('.li12').removeClass("active");
+                    } else if ($('#div8').offset().top - $(document).scrollTop() >= 0 && $('#div8').offset().top - $(document).scrollTop() < parseInt($(window).height() / 3 * 2) || $('#div9').offset().top - $(document).scrollTop() > parseInt($(window).height() / 3 * 2) && $('#div9').offset().top - $(document).scrollTop() < parseInt($(window).height())) {
+                        $('.li1').removeClass("active");
+                        $('.li2').removeClass("active");
+                        $('.li3').removeClass("active");
+                        $('.li4').removeClass("active");
+                        $('.li5').removeClass("active");
+                        $('.li6').removeClass("active");
+                        $('.li7').removeClass("active");
+                        $('.li8').addClass("active");
+                        $('.li9').removeClass("active");
+                        $('.li10').removeClass("active");
+                        $('.li11').removeClass("active");
+                        $('.li12').removeClass("active");
+                    } else if ($('#div9').offset().top - $(document).scrollTop() >= 0 && $('#div9').offset().top - $(document).scrollTop() < parseInt($(window).height() / 3 * 2) || $('#div10').offset().top - $(document).scrollTop() > parseInt($(window).height() / 3 * 2) && $('#div10').offset().top - $(document).scrollTop() < parseInt($(window).height())) {
+                        $('.li1').removeClass("active");
+                        $('.li2').removeClass("active");
+                        $('.li3').removeClass("active");
+                        $('.li4').removeClass("active");
+                        $('.li5').removeClass("active");
+                        $('.li6').removeClass("active");
+                        $('.li7').removeClass("active");
+                        $('.li8').removeClass("active");
+                        $('.li9').addClass("active");
+                        $('.li10').removeClass("active");
+                        $('.li11').removeClass("active");
+                        $('.li12').removeClass("active");
+                    } else if ($('#div10').offset().top - $(document).scrollTop() >= 0 && $('#div10').offset().top - $(document).scrollTop() < parseInt($(window).height() / 3 * 2) || $('#div11').offset().top - $(document).scrollTop() > parseInt($(window).height() / 3 * 2) && $('#div11').offset().top - $(document).scrollTop() < parseInt($(window).height())) {
+                        $('.li1').removeClass("active");
+                        $('.li2').removeClass("active");
+                        $('.li3').removeClass("active");
+                        $('.li4').removeClass("active");
+                        $('.li5').removeClass("active");
+                        $('.li6').removeClass("active");
+                        $('.li7').removeClass("active");
+                        $('.li8').removeClass("active");
+                        $('.li9').removeClass("active");
+                        $('.li10').addClass("active");
+                        $('.li11').removeClass("active");
+                        $('.li12').removeClass("active");
+                    } else if ($('#div11').offset().top - $(document).scrollTop() >= 0 && $('#div11').offset().top - $(document).scrollTop() < parseInt($(window).height() / 3 * 2) || $('#div12').offset().top - $(document).scrollTop() > parseInt($(window).height() / 3 * 2) && $('#div12').offset().top - $(document).scrollTop() < parseInt($(window).height())) {
+                        $('.li1').removeClass("active");
+                        $('.li2').removeClass("active");
+                        $('.li3').removeClass("active");
+                        $('.li4').removeClass("active");
+                        $('.li5').removeClass("active");
+                        $('.li6').removeClass("active");
+                        $('.li7').removeClass("active");
+                        $('.li8').removeClass("active");
+                        $('.li9').removeClass("active");
+                        $('.li10').removeClass("active");
+                        $('.li11').addClass("active");
+                        $('.li12').removeClass("active");
+                    } else if ($('#div12').offset().top - $(document).scrollTop() >= 0 && $('#div12').offset().top - $(document).scrollTop() < parseInt($(window).height() / 3 * 2)) {
+                        $('.li1').removeClass("active");
+                        $('.li2').removeClass("active");
+                        $('.li3').removeClass("active");
+                        $('.li4').removeClass("active");
+                        $('.li5').removeClass("active");
+                        $('.li6').removeClass("active");
+                        $('.li7').removeClass("active");
+                        $('.li8').removeClass("active");
+                        $('.li9').removeClass("active");
+                        $('.li10').removeClass("active");
+                        $('.li11').removeClass("active");
+                        $('.li12').addClass("active");
+                    }
+                });
+            });
+
+        })(window, jQuery)
+    </script>
+</body>
+
+</html>

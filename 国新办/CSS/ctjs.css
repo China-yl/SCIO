@@ -1,839 +1,282 @@
 @charset "utf-8";
 .mmmm {
     display: inline-block;
-    font-size: 14px;
 }
 
 .mmmm a {
     font-size: 14px;
+    line-height: 18px;
+    font-family: Georgia;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.mmmm:hover {
+    padding: 0 3px;
 }
 
 .mmmm:hover a {
     color: #fff;
 }
 
-.w1 {
-    color: #666;
-    font-family: Georgia;
-    font-size: 14px;
-    font-style: italic;
-    font-weight: bold;
-}
-
 .w1 a {
     color: #666;
-    font-family: Georgia;
-    font-size: 14px;
-    font-style: italic;
-    font-weight: bold;
 }
 
 .w1:hover {
-    color: #fff;
     background: #666;
-    font-size: 14px;
-    padding: 0 3px;
-    line-height: 18px;
-    font-weight: bold;
-}
-
-.w2 {
-    color: #316FF4;
-    font-size: 14px;
-    line-height: 18px;
-    font-weight: bold;
-    font-family: Georgia;
-    font-style: italic;
 }
 
 .w2 a {
     color: #316FF4;
-    font-size: 14px;
-    line-height: 18px;
-    font-weight: bold;
-    font-family: Georgia;
-    font-style: italic;
 }
 
 .w2:hover {
-    color: #fff;
     background: #316FF4;
-    font-size: 14px;
-    padding: 0 3px;
-    line-height: 18px;
-    font-weight: bold;
-}
-
-.w3 {
-    color: #ff6000;
-    font-size: 14px;
-    line-height: 18px;
-    font-weight: bold;
-    font-family: Georgia;
-    font-style: italic;
 }
 
 .w3 a {
     color: #ff6000;
-    font-size: 14px;
-    line-height: 18px;
-    font-weight: bold;
-    font-family: Georgia;
-    font-style: italic;
 }
 
 .w3:hover {
-    color: #fff;
     background: #ff6000;
-    font-size: 14px;
-    padding: 0 3px;
-    line-height: 18px;
-    font-weight: bold;
-}
-
-.w4 {
-    color: #000067;
-    font-size: 14px;
-    line-height: 18px;
-    font-weight: bold;
-    font-family: Georgia;
-    font-style: italic;
 }
 
 .w4 a {
     color: #000067;
-    font-size: 14px;
-    line-height: 18px;
-    font-weight: bold;
-    font-family: Georgia;
-    font-style: italic;
 }
 
 .w4:hover {
-    color: #fff;
     background: #000067;
-    font-size: 14px;
-    padding: 0 3px;
-    line-height: 18px;
-    font-weight: bold;
 }
 
-.w5 {
+.w5 a,
+.w25 a {
     color: #E2339A;
-    font-size: 12px;
-    line-height: 18px;
-    font-weight: bold;
-    font-family: Georgia;
-    font-style: italic;
 }
 
-.w5 a {
-    color: #E2339A;
-    font-size: 12px;
-    line-height: 18px;
-    font-weight: bold;
-    font-family: Georgia;
-    font-style: italic;
-}
-
-.w5:hover {
-    color: #fff;
+.w5:hover,
+.w25:hover {
     background: #E2339A;
-    font-size: 12px;
-    padding: 0 3px;
-    line-height: 18px;
-    font-weight: bold;
-}
-
-.w6 {
-    color: #06B347;
-    font-size: 14px;
-    line-height: 18px;
-    font-weight: bold;
-    font-family: Georgia;
-    font-style: italic;
 }
 
 .w6 a {
     color: #06B347;
-    font-size: 14px;
-    line-height: 18px;
-    font-weight: bold;
-    font-family: Georgia;
-    font-style: italic;
 }
 
 .w6:hover {
-    color: #fff;
     background: #06B347;
-    font-size: 14px;
-    padding: 0 3px;
-    line-height: 18px;
-    font-weight: bold;
-}
-
-.w7 {
-    color: #8D60D5;
-    font-size: 14px;
-    line-height: 18px;
-    font-weight: bold;
-    font-family: Georgia;
-    font-style: italic;
 }
 
 .w7 a {
     color: #8D60D5;
-    font-size: 14px;
-    line-height: 18px;
-    font-weight: bold;
-    font-family: Georgia;
-    font-style: italic;
 }
 
 .w7:hover {
-    color: #fff;
     background: #8D60D5;
-    font-size: 14px;
-    padding: 0 3px;
-    line-height: 18px;
-    font-weight: bold;
-}
-
-.w8 {
-    color: #17BAD9;
-    font-size: 14px;
-    line-height: 18px;
-    font-weight: bold;
-    font-family: Georgia;
-    font-style: italic;
 }
 
 .w8 a {
     color: #17BAD9;
-    font-size: 14px;
-    line-height: 18px;
-    font-weight: bold;
-    font-family: Georgia;
-    font-style: italic;
 }
 
 .w8:hover {
-    color: #fff;
     background: #17BAD9;
-    font-size: 14px;
-    padding: 0 3px;
-    line-height: 18px;
-    font-weight: bold;
-}
-
-.w9 {
-    color: #AC2126;
-    font-size: 14px;
-    line-height: 18px;
-    font-weight: bold;
-    font-family: Georgia;
-    font-style: italic;
 }
 
 .w9 a {
     color: #AC2126;
-    font-size: 14px;
-    line-height: 18px;
-    font-weight: bold;
-    font-family: Georgia;
-    font-style: italic;
 }
 
 .w9:hover {
-    color: #fff;
     background: #AC2126;
-    font-size: 14px;
-    padding: 0 3px;
-    line-height: 18px;
-    font-weight: bold;
-}
-
-.w10 {
-    color: #009899;
-    font-size: 14px;
-    line-height: 18px;
-    font-weight: bold;
-    font-family: Georgia;
-    font-style: italic;
 }
 
 .w10 a {
     color: #009899;
-    font-size: 14px;
-    line-height: 18px;
-    font-weight: bold;
-    font-family: Georgia;
-    font-style: italic;
 }
 
 .w10:hover {
-    color: #fff;
     background: #009899;
-    font-size: 14px;
-    padding: 0 3px;
-    line-height: 18px;
-    font-weight: bold;
-}
-
-.w11 {
-    color: #AA2327;
-    font-size: 14px;
-    line-height: 18px;
-    font-weight: bold;
-    font-family: Georgia;
-    font-style: italic;
 }
 
 .w11 a {
     color: #AA2327;
-    font-size: 14px;
-    line-height: 18px;
-    font-weight: bold;
-    font-family: Georgia;
-    font-style: italic;
 }
 
 .w11:hover {
-    color: #fff;
     background: #AA2327;
-    font-size: 14px;
-    padding: 0 3px;
-    line-height: 18px;
-    font-weight: bold;
-}
-
-.w12 {
-    color: #ca2126;
-    font-size: 14px;
-    line-height: 18px;
-    font-weight: bold;
-    font-family: Georgia;
-    font-style: italic;
 }
 
 .w12 a {
     color: #ca2126;
-    font-size: 14px;
-    line-height: 18px;
-    font-weight: bold;
-    font-family: Georgia;
-    font-style: italic;
 }
 
 .w12:hover {
-    color: #fff;
-    background: #CB2124;
-    font-size: 14px;
-    padding: 0 3px;
-    line-height: 18px;
-    font-weight: bold;
-}
-
-.w13 {
-    color: #0C5B3C;
-    font-size: 14px;
-    line-height: 18px;
-    font-weight: bold;
-    font-family: Georgia;
-    font-style: italic;
+    background: #ca2126;
 }
 
 .w13 a {
     color: #0C5B3C;
-    font-size: 14px;
-    line-height: 18px;
-    font-weight: bold;
-    font-family: Georgia;
-    font-style: italic;
 }
 
 .w13:hover {
-    color: #fff;
     background: #0C5B3C;
-    font-size: 14px;
-    padding: 0 3px;
-    line-height: 18px;
-    font-weight: bold;
-}
-
-.w14 {
-    color: #8C3C19;
-    font-size: 14px;
-    line-height: 18px;
-    font-weight: bold;
-    font-family: Georgia;
-    font-style: italic;
 }
 
 .w14 a {
     color: #8C3C19;
-    font-size: 14px;
-    line-height: 18px;
-    font-weight: bold;
-    font-family: Georgia;
-    font-style: italic;
 }
 
 .w14:hover {
-    color: #fff;
     background: #8C3C19;
-    font-size: 14px;
-    padding: 0 3px;
-    line-height: 18px;
-    font-weight: bold;
-}
-
-.w15 {
-    color: #E72337;
-    font-size: 14px;
-    line-height: 18px;
-    font-weight: bold;
-    font-family: Georgia;
-    font-style: italic;
 }
 
 .w15 a {
     color: #E72337;
-    font-size: 14px;
-    line-height: 18px;
-    font-weight: bold;
-    font-family: Georgia;
-    font-style: italic;
 }
 
 .w15:hover {
-    color: #fff;
     background: #E72337;
-    font-size: 14px;
-    padding: 0 3px;
-    line-height: 18px;
-    font-weight: bold;
-}
-
-.w16 {
-    color: #d09100;
-    font-size: 14px;
-    line-height: 18px;
-    font-weight: bold;
-    font-family: Georgia;
-    font-style: italic;
 }
 
 .w16 a {
     color: #d09100;
-    font-size: 14px;
-    line-height: 18px;
-    font-weight: bold;
-    font-family: Georgia;
-    font-style: italic;
 }
 
 .w16:hover {
-    color: #fff;
     background: #d09100;
-    font-size: 14px;
-    padding: 0 3px;
-    line-height: 18px;
-    font-weight: bold;
 }
 
 .w17 a {
     color: #58add6;
-    font-size: 14px;
-    line-height: 18px;
-    font-weight: bold;
-    font-family: Georgia;
-    font-style: italic;
 }
 
 .w17:hover {
-    color: #fff;
     background: #58add6;
-    font-size: 14px;
-    padding: 0 3px;
-    line-height: 18px;
-    font-weight: bold;
 }
 
 .w18 a {
     color: #CC3366;
-    font-size: 14px;
-    line-height: 18px;
-    font-weight: bold;
-    font-family: Georgia;
-    font-style: italic;
 }
 
 .w18:hover {
-    color: #fff;
     background: #CC3366;
-    font-size: 14px;
-    padding: 0 3px;
-    line-height: 18px;
-    font-weight: bold;
 }
 
 .w19 a {
     color: #006699;
-    font-size: 14px;
-    line-height: 18px;
-    font-weight: bold;
-    font-family: Georgia;
-    font-style: italic;
 }
 
 .w19:hover {
-    color: #fff;
     background: #006699;
-    font-size: 14px;
-    padding: 0 3px;
-    line-height: 18px;
-    font-weight: bold;
 }
 
-.w20 a {
+.w20 a,
+.w26 a {
     color: #CC9966;
-    font-size: 14px;
-    line-height: 18px;
-    font-weight: bold;
-    font-family: Georgia;
-    font-style: italic;
 }
 
-.w20:hover {
-    color: #fff;
+.w20:hover,
+.w26:hover {
     background: #CC9966;
-    font-size: 14px;
-    padding: 0 3px;
-    line-height: 18px;
-    font-weight: bold;
 }
 
 .w21 a {
     color: #993333;
-    font-size: 14px;
-    line-height: 18px;
-    font-weight: bold;
-    font-family: Georgia;
-    font-style: italic;
 }
 
 .w21:hover {
-    color: #fff;
     background: #993333;
-    font-size: 14px;
-    padding: 0 3px;
-    line-height: 18px;
-    font-weight: bold;
 }
 
 .w22 a {
     color: #FF6666;
-    font-size: 14px;
-    line-height: 18px;
-    font-weight: bold;
-    font-family: Georgia;
-    font-style: italic;
 }
 
 .w22:hover {
-    color: #fff;
     background: #FF6666;
-    font-size: 14px;
-    padding: 0 3px;
-    line-height: 18px;
-    font-weight: bold;
 }
 
 .w23 a {
     color: #99cc00;
-    font-size: 14px;
-    line-height: 18px;
-    font-weight: bold;
-    font-family: Georgia;
-    font-style: italic;
 }
 
 .w23:hover {
-    color: #fff;
     background: #99cc00;
-    font-size: 14px;
-    padding: 0 3px;
-    line-height: 18px;
-    font-weight: bold;
 }
 
 .w24 a {
     color: #663366;
-    font-size: 14px;
-    line-height: 18px;
-    font-weight: bold;
-    font-family: Georgia;
-    font-style: italic;
 }
 
 .w24:hover {
-    color: #fff;
     background: #663366;
-    font-size: 14px;
-    padding: 0 3px;
-    line-height: 18px;
-    font-weight: bold;
 }
 
 .w25 a {
-    color: #E2339A;
     font-size: 12px;
-    line-height: 18px;
-    font-weight: bold;
-    font-family: Georgia;
-    font-style: italic;
-}
-
-.w25:hover {
-    color: #fff;
-    background: #E2339A;
-    font-size: 12px;
-    line-height: 18px;
-    font-weight: bold;
-    padding: 0 3px;
-}
-
-.w26 a {
-    color: #CC9966;
-    font-size: 12px;
-    line-height: 18px;
-    font-weight: bold;
-    font-family: Georgia;
-    font-style: italic;
-}
-
-.w26:hover {
-    color: #fff;
-    background: #CC9966;
-    font-size: 12px;
-    padding: 0 3px;
-    line-height: 18px;
-    font-weight: bold;
-}
-
-.w27 {
-    color: #956f2e;
-    font-size: 14px;
-    line-height: 18px;
-    font-weight: bold;
-    font-family: Georgia;
-    font-style: italic;
 }
 
 .w27 a {
     color: #956f2e;
-    font-size: 14px;
-    line-height: 18px;
-    font-weight: bold;
-    font-family: Georgia;
-    font-style: italic;
 }
 
 .w27:hover {
-    color: #fff;
     background: #956f2e;
-    font-size: 14px;
-    padding: 0 3px;
-    line-height: 18px;
-    font-weight: bold;
 }
 
-.w28 {
+.w28 a,
+.w30 a,
+.w31 a,
+.w32 a {
     color: red;
-    font-size: 12px;
-    line-height: 18px;
-    font-weight: bold;
-    font-family: Georgia;
-    font-style: italic;
 }
 
-.w28 a {
-    color: red;
-    font-size: 12px;
-    line-height: 18px;
-    font-weight: bold;
-    font-family: Georgia;
-    font-style: italic;
-}
-
-.w28:hover {
-    color: #fff;
+.w28:hover,
+.w30:hover,
+.w31:hover,
+.w32:hover {
     background: red;
-    font-size: 12px;
-    padding: 0 3px;
-    line-height: 18px;
-    font-weight: bold;
-}
-
-.w29 {
-    color: #6495ED;
-    font-size: 14px;
-    line-height: 18px;
-    font-weight: bold;
-    font-family: Georgia;
-    font-style: italic;
 }
 
 .w29 a {
     color: #6495ED;
-    font-size: 14px;
-    line-height: 18px;
-    font-weight: bold;
-    font-family: Georgia;
-    font-style: italic;
 }
 
 .w29:hover {
-    color: #fff;
     background: #6495ED;
-    font-size: 14px;
-    padding: 0 3px;
-    line-height: 18px;
-    font-weight: bold;
-}
-
-.w30 {
-    color: red;
-    font-size: 12px;
-    line-height: 18px;
-    font-weight: bold;
-    font-family: Georgia;
-    font-style: italic;
-}
-
-.w30 a {
-    color: red;
-    font-size: 12px;
-    line-height: 18px;
-    font-weight: bold;
-    font-family: Georgia;
-    font-style: italic;
-}
-
-.w30:hover {
-    color: #fff;
-    background: red;
-    font-size: 12px;
-    padding: 0 3px;
-    line-height: 18px;
-    font-weight: bold;
-}
-
-.w31 {
-    color: red;
-    font-size: 12px;
-    line-height: 18px;
-    font-weight: bold;
-    font-family: Georgia;
-    font-style: italic;
-}
-
-.w31 a {
-    color: red;
-    font-size: 12px;
-    line-height: 18px;
-    font-weight: bold;
-    font-family: Georgia;
-    font-style: italic;
-}
-
-.w31:hover {
-    color: #fff;
-    background: red;
-    font-size: 12px;
-    padding: 0 3px;
-    line-height: 18px;
-    font-weight: bold;
-}
-
-.w32 {
-    color: red;
-    font-size: 12px;
-    line-height: 18px;
-    font-weight: bold;
-    font-family: Georgia;
-    font-style: italic;
-}
-
-.w32 a {
-    color: red;
-    font-size: 12px;
-    line-height: 18px;
-    font-weight: bold;
-    font-family: Georgia;
-    font-style: italic;
-}
-
-.w32:hover {
-    color: #fff;
-    background: red;
-    font-size: 12px;
-    padding: 0 3px;
-    line-height: 18px;
-    font-weight: bold;
-}
-
-.w33 {
-    color: #afa46e;
-    font-size: 12px;
-    line-height: 18px;
-    font-weight: bold;
-    font-family: Georgia;
-    font-style: italic;
 }
 
 .w33 a {
     color: #afa46e;
-    font-size: 12px;
-    line-height: 18px;
-    font-weight: bold;
-    font-family: Georgia;
-    font-style: italic;
 }
 
 .w33:hover {
-    color: #fff;
     background: #afa46e;
-    font-size: 12px;
-    padding: 0 3px;
-    line-height: 18px;
-    font-weight: bold;
-}
-
-.w34 {
-    color: #629c78;
-    font-size: 12px;
-    line-height: 18px;
-    font-weight: bold;
-    font-family: Georgia;
-    font-style: italic;
 }
 
 .w34 a {
     color: #629c78;
-    font-size: 12px;
-    line-height: 18px;
-    font-weight: bold;
-    font-family: Georgia;
-    font-style: italic;
 }
 
 .w34:hover {
-    color: #fff;
     background: #629c78;
-    font-size: 12px;
-    padding: 0 3px;
-    line-height: 18px;
-    font-weight: bold;
+}
+
+.w35 a {
+    color: #00a9ec;
+}
+
+.w35:hover {
+    background: #00a9ec;
+}
+
+.w36 a {
+    color: #065ca5;
+}
+
+.w36:hover {
+    background: #065ca5;
 }

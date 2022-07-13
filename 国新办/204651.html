@@ -1,0 +1,715 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>
+        <FOUNDER-XY type="columnlist" data="{'columnid':[],'columntype':'self'}">
+            <#list columns as column>${column.name}</#list>
+        </FOUNDER-XY> | english.scio.gov.cn</title>
+    <base target="_self" />
+    <meta name="filetype" content="1" />
+    <meta name="publishedtype" content="1" />
+    <meta name="pagetype" content="2" />
+    <FOUNDER-XY type="columnlist" data="{'columnid':[],'columntype':'self'}">
+        <#list columns as column>
+            <meta name="catalogs" content="${column.id}"></meta>
+        </#list>
+    </FOUNDER-XY>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no,target-densitydpi=360">
+    <meta name="format-detection" content="telephone=no" />
+    <meta http-equiv="Cache-Control" content="no-cache, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <link rel="stylesheet" href="//english.scio.gov.cn/images1/en/gxb/css/swiper.min.css">
+    <style type="text/css">
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            border: 0px;
+        }
+        
+        body {
+            font-family: Arial;
+            color: #000;
+            background-color: #fef5e6;
+            -webkit-touch-callout: none;
+            -webkit-text-size-adjust: none;
+            min-height: 550px;
+            _height: 550px;
+            width: 100%;
+        }
+        
+        a {
+            text-decoration: none;
+            color: #000000;
+        }
+        
+        a:hover {
+            color: #333;
+            text-decoration: none;
+        }
+        
+        ul,
+        li {
+            list-style-type: none;
+            display: inline-block;
+            width: 100%;
+        }
+        
+        .padding {
+            width: 100%;
+            padding: 0 0.9375rem;
+        }
+        
+        .imgul ul {
+            width: 100%;
+            display: block;
+        }
+        
+        .imgul ul li {
+            width: 100%;
+            padding: 0.9375rem 0;
+            border-bottom: 1px dotted #c4c4c4;
+            overflow: hidden;
+        }
+        
+        .imgul ul li img {
+            width: 8.4375rem;
+            height: 5.625rem;
+        }
+        
+        .imgul ul li p {
+            width: 12.5rem;
+            height: 5.625rem;
+            float: right;
+        }
+        
+        .imgul ul li p a {
+            font-size: 1rem;
+            line-height: 1.4em;
+            color: #fff;
+        }
+        
+        .fontul ul {
+            width: 100%;
+            display: block;
+        }
+        
+        .fontul ul li {
+            width: 100%;
+            padding: 0.625rem 0;
+            border-bottom: 1px dotted #c4c4c4;
+        }
+        
+        .fontul ul li a {
+            font-size: 1rem;
+            line-height: 1.4em;
+            color: #000;
+        }
+        
+        .swiper-container {
+            width: 100%;
+        }
+        
+        .swiper-slide a {
+            display: block;
+        }
+        
+        .swiper-slide img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        .swiper-slide p {
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            background: url('//english.scio.gov.cn/images1/en/scio2021/xinjiang/m/textbox_bg2.png') no-repeat;
+            background-position: left bottom;
+            background-size: cover;
+        }
+        
+        .swiper-slide p a {
+            font-size: 1rem;
+            line-height: 1.4em;
+            color: #fff;
+            padding: 5rem 0.625rem 0.625rem;
+        }
+        
+        .swiper-pagination {
+            width: 100%;
+            text-align: center;
+            padding: 1.5rem 0;
+            position: unset;
+        }
+        
+        .swiper-pagination-bullet {
+            background: #d7c6c6;
+            margin-right: 0.3571rem;
+            width: 2.5rem;
+            height: 0.15rem;
+            opacity: 1;
+            box-sizing: unset;
+            border-radius: unset;
+        }
+        
+        .swiper-pagination-bullet-active {
+            margin-right: 0.3571rem;
+            width: 2.5rem;
+            height: 0.25rem;
+            background: #cf3e3e;
+        }
+        
+        .nav {
+            width: 100%;
+            height: 2.8rem;
+            clear: both;
+            position: relative;
+            background: url('//english.scio.gov.cn/images1/en/cpc100/m/nav.png') no-repeat;
+            background-size: 100% 100%;
+        }
+        
+        .nav .list,
+        .nav .list1 {
+            position: absolute;
+            right: 0.9375rem;
+            top: 0.8rem;
+        }
+        
+        .nav .list img,
+        .nav .list1 img {
+            width: 1.2714rem;
+            height: 1.2714rem;
+        }
+        
+        .nav .listshow {
+            width: 100%;
+            height: 100vh;
+            display: none;
+            background: url('//english.scio.gov.cn/images1/en/cpc100/m/nav.png') no-repeat;
+            background-size: 100% 100%;
+            padding-top: 2.8rem;
+            position: relative;
+        }
+        
+        .nav ul {
+            width: 100%;
+            height: 100%;
+            display: block;
+            border-top: 1px solid #c4c4c4;
+            background-color: #fff;
+        }
+        
+        .nav ul li {
+            width: 100%;
+            height: 2.5rem;
+            border-bottom: 1px solid #c4c4c4;
+            background-color: #fff;
+            padding-left: 0.9375rem;
+        }
+        
+        .nav ul li a {
+            font-size: 1rem;
+            line-height: 2.5rem;
+            color: #000;
+        }
+        
+        .banner {
+            width: 100%;
+        }
+        
+        .banner img {
+            width: 100%;
+        }
+        
+        .title {
+            width: 100%;
+            height: 2.34375rem;
+            background: url('//english.scio.gov.cn/images1/en/cpc100/m/title_bg.png') no-repeat;
+            background-size: 100% 100%;
+            padding: 0 0.9375rem;
+        }
+        
+        .title p a {
+            font-size: 1.3rem;
+            line-height: 2.34375rem;
+            color: #fff;
+            font-weight: bold;
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+        }
+        
+        .title p a span {
+            font-size: 1rem;
+            margin-left: 5px;
+        }
+        
+        .one {
+            width: 100%;
+            padding-bottom: 1.872rem;
+        }
+        
+        .one1,
+        .four1,
+        .five1 {
+            padding: 0.9375rem;
+            position: relative;
+        }
+        
+        .one1 .swiper-slide p {
+            width: 100%;
+            position: unset;
+            background: unset;
+        }
+        
+        .one1 .swiper-slide p a {
+            font-size: 1.25rem;
+            line-height: 1.4em;
+            color: #000;
+            font-weight: bold;
+            padding: 0.9375rem 0 0;
+        }
+        
+        .one2 {
+            background-color: #cf3e3e;
+        }
+        
+        .one2 ul li:last-child {
+            border-bottom: unset;
+        }
+        
+        .one4 {
+            padding: 0.9375rem 0.9375rem 0;
+            position: relative;
+        }
+        
+        .minswiper {
+            box-shadow: 5px 10px 30px rgba(207, 61, 62, 0.45);
+        }
+        
+        .minswiper-pagination {
+            padding: 0.625rem 0 0;
+        }
+        
+        .minswiper-pagination .swiper-pagination-bullet {
+            background: #d3d3d4;
+            margin-right: 0.3125rem;
+            width: 0.375rem;
+            height: 0.375rem;
+            opacity: 1;
+            box-sizing: unset;
+            border-radius: 0.1875rem;
+        }
+        
+        .minswiper-pagination .swiper-pagination-bullet-active {
+            margin-right: 0.3125rem;
+            width: 0.375rem;
+            height: 0.375rem;
+            background: #d22d15;
+        }
+        
+        .two {
+            background-color: #fff;
+            padding-bottom: 0.9375rem;
+            margin-bottom: 1.5625rem;
+            box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.3);
+        }
+        
+        .two1 {
+            width: 100%;
+            padding: 0.9375rem 0.9375rem 0;
+        }
+        
+        .two1 dl {
+            width: 100%;
+            border-bottom: 1px solid #c4c4c4;
+        }
+        
+        .two1 dl dt {
+            width: 100%;
+        }
+        
+        .two1 dl dt img {
+            width: 100%;
+            height: auto;
+        }
+        
+        .two1 dl dd p {
+            width: 100%;
+            padding: 0.9375rem 0;
+        }
+        
+        .two1 dl dd p a {
+            font-size: 1.25rem;
+            line-height: 1.4em;
+            color: #000;
+            font-weight: bold;
+        }
+        
+        .two2 ul li p a {
+            color: #000;
+        }
+        
+        .three,
+        .four {
+            margin-bottom: 1.5625rem;
+        }
+        
+        .three1 {
+            padding: 0.625rem 0;
+            background: url('//english.scio.gov.cn/images1/en/cpc100/m/story_bg.png') no-repeat;
+            background-size: 100% 100%;
+        }
+        
+        .three1 ul li {
+            padding: 0.9375rem;
+            border-bottom: unset;
+        }
+        
+        .three1 ul li:nth-child(odd) {
+            background: url('//english.scio.gov.cn/images1/en/cpc100/m/box_1.png') no-repeat;
+            background-size: 100% 100%;
+        }
+        
+        .three1 ul li:nth-child(even) {
+            background: url('//english.scio.gov.cn/images1/en/cpc100/m/box_2.png') no-repeat;
+            background-size: 100% 100%;
+        }
+        
+        .four1 {
+            background: url('//english.scio.gov.cn/images1/en/cpc100/m/photos_bg.png') no-repeat;
+            background-size: 100% 100%;
+        }
+        
+        .five {
+            background-color: #000;
+        }
+        
+        .footer {
+            padding: 1.5625rem 0 0.9375rem;
+            font-size: 0.6428rem;
+            line-height: 1.4em;
+            text-align: center;
+            color: #333;
+            background: url('//english.scio.gov.cn/images1/en/cpc100/m/footer_bg.jpg') no-repeat;
+            background-size: 100% 100%;
+        }
+    </style>
+    <script type="text/javascript" src="//english.scio.gov.cn/images1/resource/scripts/jquery/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+    <div class="nav">
+        <a href="http://english.scio.gov.cn/" style="position: absolute;top: 0.8rem;left: 0.9375rem;"><img src="//english.scio.gov.cn/images1/en/2019cc/logo.png" style="height: 1.2714rem;" border="0"></a>
+        <div class="list"><img src="//english.scio.gov.cn/images1/en/scio2021/xinjiang/m/ic_list.png" /></div>
+        <div class="listshow" id="listshow">
+            <a href="http://english.scio.gov.cn/" style="position: absolute;top: 0.8rem;left: 0.9375rem;"><img src="//english.scio.gov.cn/images1/en/2019cc/logo.png" style="height: 1.2714rem;" border="0"></a>
+            <div class="list1"><img src="//english.scio.gov.cn/images1/en/scio2021/xinjiang/m/ic_close_white.png" /></div>
+            <ul>
+                <li>
+                    <FOUNDER-XY type="columnlist" data="{'columnid':[8023085],'columntype':'self'}">
+                        <#list columns as column><a href="${column.urlPad!}" target="_top">Home</a></#list>
+                    </FOUNDER-XY>
+                </li>
+                <li>
+                    <FOUNDER-XY type="columnlist" data="{'columnid':[8023086],'columntype':'self'}">
+                        <#list columns as column><a href="${column.urlPad!}" target="_top">${column.name}</a></#list>
+                    </FOUNDER-XY>
+                </li>
+                <li>
+                    <FOUNDER-XY type="columnlist" data="{'columnid':[8023087],'columntype':'self'}">
+                        <#list columns as column><a href="${column.urlPad!}" target="_top">${column.name}</a></#list>
+                    </FOUNDER-XY>
+                </li>
+                <li>
+                    <FOUNDER-XY type="columnlist" data="{'columnid':[8023088],'columntype':'self'}">
+                        <#list columns as column><a href="${column.urlPad!}" target="_top">${column.name}</a></#list>
+                    </FOUNDER-XY>
+                </li>
+                <li>
+                    <FOUNDER-XY type="columnlist" data="{'columnid':[8023089],'columntype':'self'}">
+                        <#list columns as column><a href="${column.urlPad!}" target="_top">${column.name}</a></#list>
+                    </FOUNDER-XY>
+                </li>
+                <li>
+                    <FOUNDER-XY type="columnlist" data="{'columnid':[8023090],'columntype':'self'}">
+                        <#list columns as column><a href="${column.urlPad!}" target="_top">${column.name}</a></#list>
+                    </FOUNDER-XY>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="content">
+        <div class="banner"><img src="//english.scio.gov.cn/images1/en/cpc100/m/banner_sp.jpg"></div>
+        <div class="one">
+            <div class="title">
+                <FOUNDER-XY type="columnlist" data="{'columnid':[8023086],'columntype':'self'}">
+                    <#list columns as column>
+                        <p><a href="${column.urlPad!}">${column.name}<span>>></span></a></p>
+                    </#list>
+                </FOUNDER-XY>
+            </div>
+            <div class="one1">
+                <div class="swiper-container oneswiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide swiper-slide-center none-effect">
+                            <FOUNDER-XY type="articlelist" data="{'columnid':[8023707], 'articletype': 'all', 'article_attr': 'HEADLINE','start': 0, 'count': 1}">
+                                <#list articles as article>
+                                    <a href="${article.urlPad}"><img src="${article.picBig}" border=0> </a>
+                                    <p><a href="${article.urlPad}">${article.title}</a></p>
+                                </#list>
+                            </FOUNDER-XY>
+                        </div>
+                        <FOUNDER-XY type="articlelist" data="{'columnid':[8023708], 'articletype': 'all', 'article_attr': 'HEADLINE', 'start': 0, 'count': 2}">
+                            <#list articles as article>
+                                <div class="swiper-slide">
+                                    <a href="${article.urlPad}"><img src="${article.picBig}" border=0> </a>
+                                    <p><a href="${article.urlPad}">${article.title}</a></p>
+                                </div>
+                            </#list>
+                        </FOUNDER-XY>
+                    </div>
+                </div>
+                <div class="swiper-pagination swiper-pagination1"></div>
+            </div>
+            <div class="one2 imgul padding">
+                <ul>
+                    <FOUNDER-XY type="articlelist" data="{'columnid':[8023708],'articletype':'all','article_attr':'COMMON','start':'0','count':'2'}">
+                        <#list articles as article>
+                            <li>
+                                <a href="${article.urlPad}"><img src="${article.picBig}" alt="${article.title}"></a>
+                                <p><a href="${article.urlPad}">${article.title}</a></p>
+                            </li>
+                        </#list>
+                    </FOUNDER-XY>
+                </ul>
+            </div>
+            <div class="one3 fontul padding">
+                <ul>
+                    <FOUNDER-XY type="articlelist" data="{'columnid':[8023708],'articletype':'all','article_attr':'COMMON','start':'2','count':'3'}">
+                        <#list articles as article>
+                            <li><a href="${article.urlPad}">${article.title}</a></li>
+                        </#list>
+                    </FOUNDER-XY>
+                </ul>
+            </div>
+            <div class="one4">
+                <div class="swiper-container minswiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide swiper-slide-center none-effect">
+                            <a href="http://english.scio.gov.cn/m/CPCgroupinterviews/node_8024582.html"><img src="//english.scio.gov.cn/images1/en/cpc100/xiaozhuanti2.jpg"></a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="http://english.scio.gov.cn/m/CPC100/node_8024755.html"><img src="//english.scio.gov.cn/images1/en/cpc100/xiaozhuanti1.jpg"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination minswiper-pagination"></div>
+            </div>
+        </div>
+        <div class="two">
+            <div class="title">
+                <FOUNDER-XY type="columnlist" data="{'columnid':[8023087],'columntype':'self'}">
+                    <#list columns as column>
+                        <p><a href="${column.urlPad!}">${column.name}<span>>></span></a></p>
+                    </#list>
+                </FOUNDER-XY>
+            </div>
+            <div class="two1">
+                <FOUNDER-XY type="articlelist" data="{'columnid':[8023087],'articletype':'all','article_attr':'HEADLINE','start':'0','count':'1'}">
+                    <#list articles as article>
+                        <dl>
+                            <dt><a href="${article.urlPad}"><img src="${article.picBig}" alt="${article.title}"></a></dt>
+                            <dd>
+                                <p><a href="${article.urlPad}">${article.title}</a></p>
+                            </dd>
+                        </dl>
+                    </#list>
+                </FOUNDER-XY>
+            </div>
+            <div class="two2 imgul padding">
+                <ul>
+                    <FOUNDER-XY type="articlelist" data="{'columnid':[8023087],'articletype':'all','article_attr':'HEADLINE','start':'1','count':'2'}">
+                        <#list articles as article>
+                            <li>
+                                <a href="${article.urlPad}"><img src="${article.picBig}" alt="${article.title}"></a>
+                                <p><a href="${article.urlPad}">${article.title}</a></p>
+                            </li>
+                        </#list>
+                    </FOUNDER-XY>
+                </ul>
+            </div>
+            <div class=" fontul padding">
+                <ul>
+                    <FOUNDER-XY type="articlelist" data="{'columnid':[8023087],'articletype':'all','article_attr':'COMMON','start':'0','count':'3'}">
+                        <#list articles as article>
+                            <li><a href="${article.urlPad}">${article.title}</a></li>
+                        </#list>
+                    </FOUNDER-XY>
+                </ul>
+            </div>
+        </div>
+        <div class="three">
+            <div class="title">
+                <FOUNDER-XY type="columnlist" data="{'columnid':[8023088],'columntype':'self'}">
+                    <#list columns as column>
+                        <p><a href="${column.urlPad!}">${column.name}<span>>></span></a></p>
+                    </#list>
+                </FOUNDER-XY>
+            </div>
+            <div class="three1 imgul">
+                <ul>
+                    <FOUNDER-XY type="articlelist" data="{'columnid':[8023088],'articletype':'all','article_attr':'all','start':'0','count':'4'}">
+                        <#list articles as article>
+                            <li>
+                                <a href="${article.urlPad}"><img src="${article.picBig}" alt="${article.title}"></a>
+                                <p><a href="${article.urlPad}">${article.title}</a></p>
+                            </li>
+                        </#list>
+                    </FOUNDER-XY>
+                </ul>
+            </div>
+        </div>
+        <div class="four">
+            <div class="title">
+                <FOUNDER-XY type="columnlist" data="{'columnid':[8023089],'columntype':'self'}">
+                    <#list columns as column>
+                        <p><a href="${column.urlPad!}">${column.name}<span>>></span></a></p>
+                    </#list>
+                </FOUNDER-XY>
+            </div>
+            <div class="four1">
+                <div class="swiper-container fourswiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide swiper-slide-center none-effect">
+                            <FOUNDER-XY type="articlelist" data="{'columnid':[8023089], 'articletype': 'all', 'article_attr': 'all', 'columntype':'self', 'showall':'true', 'start': 0, 'count': 1}">
+                                <#list articles as article>
+                                    <a href="${article.urlPad}"><img src="${article.picBig}" border=0> </a>
+                                    <p><a href="${article.urlPad}">${article.title}</a></p>
+                                </#list>
+                            </FOUNDER-XY>
+                        </div>
+                        <FOUNDER-XY type="articlelist" data="{'columnid':[8023089], 'articletype': 'all', 'article_attr': 'all', 'columntype':'self', 'showall':'true', 'start': 1, 'count': 2}">
+                            <#list articles as article>
+                                <div class="swiper-slide">
+                                    <a href="${article.urlPad}"><img src="${article.picBig}" border=0> </a>
+                                    <p><a href="${article.urlPad}">${article.title}</a></p>
+                                </div>
+                            </#list>
+                        </FOUNDER-XY>
+                    </div>
+                </div>
+                <div class="swiper-pagination swiper-pagination2"></div>
+            </div>
+        </div>
+        <div class="five">
+            <div class="title">
+                <FOUNDER-XY type="columnlist" data="{'columnid':[8023090],'columntype':'self'}">
+                    <#list columns as column>
+                        <p><a href="${column.urlPad!}">${column.name}<span>>></span></a></p>
+                    </#list>
+                </FOUNDER-XY>
+            </div>
+            <div class="five1">
+                <div class="swiper-container fiveswiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide swiper-slide-center none-effect">
+                            <FOUNDER-XY type="articlelist" data="{'columnid':[8023090], 'articletype': 'all', 'article_attr': 'all', 'columntype':'self', 'showall':'true', 'start': 0, 'count': 1}">
+                                <#list articles as article>
+                                    <a href="${article.urlPad}"><img src="${article.picBig}" border=0> </a>
+                                    <p><a href="${article.urlPad}">${article.title}</a></p>
+                                </#list>
+                            </FOUNDER-XY>
+                        </div>
+                        <FOUNDER-XY type="articlelist" data="{'columnid':[8023090], 'articletype': 'all', 'article_attr': 'all', 'columntype':'self', 'showall':'true', 'start': 1, 'count': 2}">
+                            <#list articles as article>
+                                <div class="swiper-slide">
+                                    <a href="${article.urlPad}"><img src="${article.picBig}" border=0> </a>
+                                    <p><a href="${article.urlPad}">${article.title}</a></p>
+                                </div>
+                            </#list>
+                        </FOUNDER-XY>
+                    </div>
+                </div>
+                <div class="swiper-pagination swiper-pagination3"></div>
+            </div>
+        </div>
+        <div class="footer">
+            Copyright © english.scio.gov.cn All rights reserved. </br>
+            Registration Number: 19210669-8
+        </div>
+    </div>
+
+
+    <script type="text/javascript" src="//english.scio.gov.cn/images1/en/scio2021/js/base-m.js"></script>
+    <script type="text/javascript" src="//english.scio.gov.cn/images1/en/gxb/js/swiper.min.js"></script>
+    <script type="text/javascript">
+        (function(window, $) {
+            $('.list1').on('click', function() {
+                $('.listshow').fadeOut(500);
+                $('.content').fadeIn(500);
+            });
+            $('.list').on('click', function() {
+                $('.listshow').fadeIn(500);
+                $('.content').fadeOut(500);
+            });
+            var swiper = new Swiper('.oneswiper', {
+                spaceBetween: 10,
+                centeredSlides: true,
+                autoplay: {
+                    delay: 2500,
+                    disableOnInteraction: false,
+                },
+                pagination: {
+                    el: '.swiper-pagination1',
+                    clickable: true,
+                },
+                loop: true
+            });
+            var swiper = new Swiper('.minswiper', {
+                spaceBetween: 10,
+                centeredSlides: true,
+                autoplay: {
+                    delay: 2500,
+                    disableOnInteraction: false,
+                },
+                pagination: {
+                    el: '.minswiper-pagination',
+                    clickable: true,
+                },
+                loop: true
+            });
+            var swiper = new Swiper('.fourswiper', {
+                spaceBetween: 10,
+                centeredSlides: true,
+                autoplay: {
+                    delay: 2500,
+                    disableOnInteraction: false,
+                },
+                pagination: {
+                    el: '.swiper-pagination2',
+                    clickable: true,
+                },
+                loop: true
+            });
+            var swiper = new Swiper('.fiveswiper', {
+                spaceBetween: 10,
+                centeredSlides: true,
+                autoplay: {
+                    delay: 2500,
+                    disableOnInteraction: false,
+                },
+                pagination: {
+                    el: '.swiper-pagination3',
+                    clickable: true,
+                },
+                loop: true
+            });
+        })(window, jQuery);
+    </script>
+
+</body>
+
+</html>

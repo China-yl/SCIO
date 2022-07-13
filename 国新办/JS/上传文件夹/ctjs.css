@@ -1,0 +1,284 @@
+@charset "utf-8";
+.mmmm {
+    display: inline-block;
+}
+
+.mmmm a {
+    font-size: 14px;
+    line-height: 18px;
+    font-family: Georgia;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.mmmm:hover {
+    padding: 0 3px;
+}
+
+.mmmm:hover a {
+    color: #fff;
+}
+
+.w1 a {
+    color: #666;
+}
+
+.w1:hover {
+    background: #666;
+}
+
+.w2 a {
+    color: #316FF4;
+}
+
+.w2:hover {
+    background: #316FF4;
+}
+
+.w3 a {
+    color: #ff6000;
+}
+
+.w3:hover {
+    background: #ff6000;
+}
+
+.w4 a {
+    color: #000067;
+}
+
+.w4:hover {
+    background: #000067;
+}
+
+.w5 a,
+.w25 a {
+    color: #E2339A;
+}
+
+.w5:hover,
+.w25:hover {
+    background: #E2339A;
+}
+
+.w6 a {
+    color: #06B347;
+}
+
+.w6:hover {
+    background: #06B347;
+}
+
+.w7 a {
+    color: #8D60D5;
+}
+
+.w7:hover {
+    background: #8D60D5;
+}
+
+.w8 a {
+    color: #17BAD9;
+}
+
+.w8:hover {
+    background: #17BAD9;
+}
+
+.w9 a {
+    color: #AC2126;
+}
+
+.w9:hover {
+    background: #AC2126;
+}
+
+.w10 a {
+    color: #009899;
+}
+
+.w10:hover {
+    background: #009899;
+}
+
+.w11 a {
+    color: #AA2327;
+}
+
+.w11:hover {
+    background: #AA2327;
+}
+
+.w12 a {
+    color: #ca2126;
+}
+
+.w12:hover {
+    background: #ca2126;
+}
+
+.w13 a {
+    color: #0C5B3C;
+}
+
+.w13:hover {
+    background: #0C5B3C;
+}
+
+.w14 a {
+    color: #8C3C19;
+}
+
+.w14:hover {
+    background: #8C3C19;
+}
+
+.w15 a {
+    color: #E72337;
+}
+
+.w15:hover {
+    background: #E72337;
+}
+
+.w16 a {
+    color: #d09100;
+}
+
+.w16:hover {
+    background: #d09100;
+}
+
+.w17 a {
+    color: #58add6;
+}
+
+.w17:hover {
+    background: #58add6;
+}
+
+.w18 a {
+    color: #CC3366;
+}
+
+.w18:hover {
+    background: #CC3366;
+}
+
+.w19 a {
+    color: #006699;
+}
+
+.w19:hover {
+    background: #006699;
+}
+
+.w20 a,
+.w26 a {
+    color: #CC9966;
+}
+
+.w20:hover,
+.w26:hover {
+    background: #CC9966;
+}
+
+.w21 a {
+    color: #993333;
+}
+
+.w21:hover {
+    background: #993333;
+}
+
+.w22 a {
+    color: #FF6666;
+}
+
+.w22:hover {
+    background: #FF6666;
+}
+
+.w23 a {
+    color: #99cc00;
+}
+
+.w23:hover {
+    background: #99cc00;
+}
+
+.w24 a {
+    color: #663366;
+}
+
+.w24:hover {
+    background: #663366;
+}
+
+.w25 a {
+    font-size: 12px;
+}
+
+.w27 a {
+    color: #956f2e;
+}
+
+.w27:hover {
+    background: #956f2e;
+}
+
+.w28 a,
+.w30 a,
+.w31 a,
+.w32 a,
+.w36 a {
+    color: red;
+}
+
+.w28:hover,
+.w30:hover,
+.w31:hover,
+.w32:hover,
+.w36:hover {
+    background: red;
+}
+
+.w29 a {
+    color: #6495ED;
+}
+
+.w29:hover {
+    background: #6495ED;
+}
+
+.w33 a {
+    color: #afa46e;
+}
+
+.w33:hover {
+    background: #afa46e;
+}
+
+.w34 a {
+    color: #629c78;
+}
+
+.w34:hover {
+    background: #629c78;
+}
+
+.w35 a {
+    color: #00a9ec;
+}
+
+.w35:hover {
+    background: #00a9ec;
+}
+
+.w37 a {
+    color: #0ed5b7;
+}
+
+.w37:hover {
+    background: #0ed5b7;
+}

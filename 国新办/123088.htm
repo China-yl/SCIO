@@ -1,0 +1,100 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>无标题文档</title>
+    <base target="_blank" />
+    <link rel="stylesheet" href="//english.scio.gov.cn/images1/en/scio2021/css/base.css">
+
+    <script type="text/javascript">
+        function changeIframeHeight() {
+            if (top != self)
+                try {
+                    var h = document.body.scrollHeight;
+                    if (document.all) {
+                        h += 4;
+                    }
+                    if (window.opera) {
+                        h += 1;
+                    }
+                    var hpx = h + 'px';
+                    window.parent.document.getElementById("bottomifr").style.height = hpx;
+                }
+            catch (e) {
+                return false;
+            }
+        }
+    </script>
+</head>
+
+<body onload="changeIframeHeight()">
+    <div class="footer">
+        <div class="fline"></div>
+        <div class="ftop">
+            <div class="wdiv">
+                <span>CHINA SCIO</span>
+                <div class="fshare">
+                    <a href="https://www.facebook.com/chinascio" class="fb"></a>
+                    <a href="https://twitter.com/chinascio" class="tt"></a>
+                    <a href="https://www.youtube.com/chinascio" class="yt"></a>
+                    <a href="https://www.instagram.com/china_scio" class="ins"></a>
+                </div>
+            </div>
+        </div>
+        <div class="fmiddle">
+            <div class="wdiv">
+                <div class="link">
+                    <div class="GM">
+                        <div class="GW">
+                            <span>LINKS</span>
+                            <div class="box">
+                                <FOUNDER-XY type="articlelist" data="{'columnid':[7247900], 'articletype': 'all', 'article_attr': 'all', 'columntype':'self', 'showall':'true', 'start': 0, 'count': 1}">
+                                    <#list articles as article>
+                                        <p>${article.title}<span><img src="//english.scio.gov.cn/images1/en/scio2021/footer/triangle_down.png"></span></p>
+                                    </#list>
+                                </FOUNDER-XY>
+                                <ul style="width: 729px;">
+                                    <FOUNDER-XY type="articlelist" data="{'columnid':[7247900], 'articletype': 'all', 'article_attr': 'all', 'columntype':'self', 'showall':'true', 'start': 0, 'count': 30}">
+                                        <#list articles as article>
+                                            <li><a href="${article.url}" target="_blank">${article.title}</a></li>
+                                        </#list>
+                                    </FOUNDER-XY>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="ML">
+                            <span>MEDIA</span>
+                            <div class="box">
+                                <FOUNDER-XY type="articlelist" data="{'columnid':[7247763], 'articletype': 'all', 'article_attr': 'all', 'columntype':'self', 'showall':'true', 'start': 0, 'count': 1}">
+                                    <#list articles as article>
+                                        <p>${article.title}<span><img src="//english.scio.gov.cn/images1/en/scio2021/footer/triangle_down.png"></span></p>
+                                    </#list>
+                                </FOUNDER-XY>
+                                <ul style="width: 354px;">
+                                    <FOUNDER-XY type="articlelist" data="{'columnid':[7247763], 'articletype': 'all', 'article_attr': 'all', 'columntype':'self', 'showall':'true', 'start': 0, 'count': 30}">
+                                        <#list articles as article>
+                                            <li><a href="${article.url}" target="_blank">${article.title}</a></li>
+                                        </#list>
+                                    </FOUNDER-XY>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="CU">
+                        <a href="http://english.scio.gov.cn/2017-05/31/content_40931182.htm" target="_top"><img src="//english.scio.gov.cn/images1/en/scio2021/footer/contactus.png"></a>
+                    </div>
+                </div>
+                <div class="down">
+                    <span>DOWNLOAD OUR APPS</span>
+                    <img src="//english.scio.gov.cn/images1/en/scio2021/footer/2code_guoxin.jpg" style="margin-right: 20px;">
+                    <img src="//english.scio.gov.cn/images1/en/scio2021/footer/2code_fabu.jpg">
+                </div>
+            </div>
+        </div>
+        <div class="fbottom">Copyright © english.scio.gov.cn&nbsp;&nbsp;All rights reserved.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Registration Number: 19010669-8</div>
+    </div>
+</body>
+
+</html>

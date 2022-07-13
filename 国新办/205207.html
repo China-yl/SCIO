@@ -1,0 +1,642 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <title>
+        <FOUNDER-XY type="columnlist" data="{'columnid':[],'columntype':'self'}">
+            <#list columns as column>${column.name}</#list>
+        </FOUNDER-XY> | english.scio.gov.cn</title>
+    <base target="_self" />
+    <meta name="filetype" content="1" />
+    <meta name="publishedtype" content="1" />
+    <meta name="pagetype" content="2" />
+    <FOUNDER-XY type="columnlist" data="{'columnid':[],'columntype':'self'}">
+        <#list columns as column>
+            <meta name="catalogs" content="${column.id}" />
+            <meta name="description" content="${column.name}" />
+            <meta name="keywords" content="${column.keyword}" />
+            <meta itemprop="name" content="${column.name}" />
+        </#list>
+    </FOUNDER-XY>
+    <style type="text/css">
+        * {
+            margin: 0px;
+            padding: 0px;
+            border: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial;
+            font-size: 16px;
+            line-height: 20px;
+            width: 100%;
+            min-width: 1200px;
+            background-color: #fef5e6;
+        }
+        
+        ul,
+        li {
+            list-style-type: none;
+        }
+        
+        a {
+            text-decoration: none;
+            color: #000000;
+            display: inline-block;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        img {
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+        
+        .toplist {
+            width: 100%;
+            height: 54px;
+            background-color: #191e3f;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 99999;
+        }
+        
+        .toplist a {
+            display: inline-block;
+            margin-right: 6px;
+        }
+        
+        .animate__animated {
+            -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+            -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+        }
+        
+        .animate__delay-1 {
+            -webkit-animation-delay: 1s;
+            animation-delay: 1s;
+        }
+        
+        .animate__delay-2 {
+            -webkit-animation-delay: 2s;
+            animation-delay: 2s;
+        }
+        
+        @-webkit-keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                -webkit-transform: translate3d(0, 100%, 0);
+                transform: translate3d(0, 100%, 0)
+            }
+            to {
+                opacity: 1;
+                -webkit-transform: translateZ(0);
+                transform: translateZ(0)
+            }
+        }
+        
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                -webkit-transform: translate3d(0, 100%, 0);
+                transform: translate3d(0, 100%, 0)
+            }
+            to {
+                opacity: 1;
+                -webkit-transform: translateZ(0);
+                transform: translateZ(0)
+            }
+        }
+        
+        .animate__fadeInUp {
+            -webkit-animation-name: fadeInUp;
+            animation-name: fadeInUp
+        }
+        
+        .box {
+            width: 100%;
+            height: 100vh;
+            position: relative;
+            overflow: hidden;
+            background: url('//english.scio.gov.cn/images1/en/2021tibet/bg_0.jpg') no-repeat;
+            background-size: 100% 100%;
+        }
+        
+        .box1 {
+            width: 100%;
+            height: 100vh;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 10;
+            overflow: hidden;
+            display: none;
+            background-color: #000000;
+        }
+        
+        .box1 video {
+            width: 100%;
+        }
+        
+        .box2 {
+            width: 100%;
+            height: 100vh;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 100;
+            overflow: hidden;
+            background: url('//english.scio.gov.cn/images1/en/2021tibet/bg_black.png') no-repeat;
+            background-size: 100% 100%;
+            padding-top: 54px;
+        }
+        
+        .title {
+            width: 1280px;
+            height: 310px;
+            margin: 0 auto;
+            padding: 61.5px 0;
+        }
+        
+        .title img {
+            width: 1272px;
+            height: 187px;
+        }
+        
+        .articletitle,
+        .articletitle1 {
+            width: 960px;
+            height: 310px;
+            margin: 0 auto;
+            padding-top: 60px;
+            display: none;
+        }
+        
+        .articletitle ul li,
+        .articletitle1 ul li {
+            height: 190px;
+            position: relative;
+            padding-left: 90px;
+            border-bottom: 1px solid #ffffff;
+            display: none;
+        }
+        
+        .articletitle ul li img,
+        .articletitle1 ul li img {
+            width: 60px;
+            height: 60px;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        
+        .articletitle ul li p,
+        .articletitle1 ul li p {
+            font-size: 30px;
+            line-height: 37.5px;
+            font-weight: bold;
+            color: #ffffff;
+            margin-bottom: 20px;
+        }
+        
+        .articletitle ul li span,
+        .articletitle1 ul li span {
+            font-size: 20px;
+            line-height: 25px;
+            color: #ffffff;
+        }
+        
+        .articletitle ul .show,
+        .articletitle1 ul .show {
+            display: block;
+        }
+        
+        .list,
+        .list1 {
+            width: 1280px;
+            height: 240px;
+            display: block;
+            margin: 0 auto 40px;
+        }
+        
+        .list li,
+        .list1 li {
+            width: 400px;
+            height: 240px;
+            float: left;
+            margin-right: 40px;
+            position: relative;
+            transform: none;
+            box-shadow: none;
+            z-index: 0;
+            transition: 0.4s all;
+        }
+        
+        .list li:nth-child(3),
+        .list1 li:nth-child(3) {
+            margin-right: 0;
+        }
+        
+        .list li a,
+        .list1 li a {
+            display: block;
+        }
+        
+        .list li img,
+        .list1 li img {
+            width: 400px;
+            height: 240px;
+        }
+        
+        .list li p,
+        .list1 li p {
+            width: 400px;
+            height: 240px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding-top: 60px;
+        }
+        
+        .list li p img,
+        .list1 li p img {
+            width: 60px;
+            height: 60px;
+            display: block;
+            margin: 0 auto 22px;
+        }
+        
+        .list li p span,
+        .list1 li p span {
+            font-size: 16px;
+            line-height: 20px;
+            font-weight: bold;
+            color: #ffffff;
+            text-align: center;
+            padding: 0 20px;
+            display: block;
+        }
+    </style>
+
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112741182-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-112741182-1');
+    </script>
+
+    <!-- 百度统计 -->
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?fd2d485bd31a1b437014f46624329f5b";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+
+</head>
+
+<body>
+    <div class="toplist" id="toplist">
+        <a href="http://english.scio.gov.cn/" style="margin-top: 0.7%;margin-left: 1%;width: 194px;height: 25px;"><img src="//english.scio.gov.cn/images1/en/2019cc/logo.png" width="194" height="25" border="0"></a>
+        <div class="bshare-custom icon-medium-plus" style="float: right; margin-top: 0.3%;margin-right: 1%;">
+            <div class="bsPromo bsPromo2"></div>
+            <a title="分享到Facebook" class="bshare-facebook" href="javascript:void(0);" style="width: 44px;height: 44px;background:url(//english.scio.gov.cn/images1/en/2019cc/facebook1.png) no-repeat;padding: 0px;"></a>
+            <a title="分享到Twitter" class="bshare-twitter" href="javascript:void(0);" style="width: 44px;height: 44px;background:url(//english.scio.gov.cn/images1/en/2019cc/twitter1.png) no-repeat;padding: 0px;"></a>
+            <a title="分享到微信" class="bshare-weixin" href="javascript:void(0);" style="width: 44px;height: 44px;background:url(//english.scio.gov.cn/images1/en/2019cc/微信1.png) no-repeat;padding: 0px;;"></a>
+            <a title="分享到微博" class="bshare-sinaminiblog" href="javascript:void(0);" style="width: 44px;height: 44px;background:url(//english.scio.gov.cn/images1/en/2019cc/微博1.png) no-repeat;padding: 0px;"></a>
+        </div>
+        <script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/buttonLite.js#style=-1&amp;uuid=72352d86-8c1b-4361-8d6b-12862c1a6656&amp;pophcol=2&amp;lang=zh"></script>
+        <script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/bshareC0.js"></script>
+    </div>
+
+    <div class="box">
+        <div class="box1">
+            <video autoplay loop muted src=""></video>
+        </div>
+        <div class="box2">
+            <div class="title animate__animated animate__fadeInUp">
+                <img src="//english.scio.gov.cn/images1/en/2021tibet/title.png">
+            </div>
+            <div class="articletitle">
+                <ul>
+                    <FOUNDER-XY type="articlelist" data="{'columnid':[8025560],'articletype':'all','article_attr':'all','start':'0','count':'3'}">
+                        <#list articles as article>
+                            <li>
+                                <img src="">
+                                <p>${article.title}</p>
+                                <span>${article.summary}</span>
+                            </li>
+                        </#list>
+                    </FOUNDER-XY>
+                </ul>
+            </div>
+            <div class="articletitle1">
+                <ul>
+                    <FOUNDER-XY type="articlelist" data="{'columnid':[8025560],'articletype':'all','article_attr':'all','start':'3','count':'3'}">
+                        <#list articles as article>
+                            <li>
+                                <img src="">
+                                <p>${article.title}</p>
+                                <span>${article.summary}</span>
+                            </li>
+                        </#list>
+                    </FOUNDER-XY>
+                </ul>
+            </div>
+            <ul class="list animate__animated animate__delay-1 animate__fadeInUp">
+                <li>
+                    <FOUNDER-XY type="articlelist" data="{'columnid':[8025560],'articletype':'all','article_attr':'all','start':'0','count':'1'}">
+                        <#list articles as article>
+                            <a href="${article.url}">
+                                <img src="//english.scio.gov.cn/images1/en/2021tibet/bg_1.jpg">
+                                <p>
+                                    <img src="//english.scio.gov.cn/images1/en/2021tibet/article.png">
+                                    <span>${article.title}</span>
+                                </p>
+                            </a>
+                        </#list>
+                    </FOUNDER-XY>
+                </li>
+                <li>
+                    <FOUNDER-XY type="articlelist" data="{'columnid':[8025560],'articletype':'all','article_attr':'all','start':'1','count':'1'}">
+                        <#list articles as article>
+                            <a href="${article.url}">
+                                <img src="//english.scio.gov.cn/images1/en/2021tibet/bg_2.jpg">
+                                <p>
+                                    <img src="//english.scio.gov.cn/images1/en/2021tibet/video.png">
+                                    <span>${article.title}</span>
+                                </p>
+                            </a>
+                        </#list>
+                    </FOUNDER-XY>
+                </li>
+                <li>
+                    <FOUNDER-XY type="articlelist" data="{'columnid':[8025560],'articletype':'all','article_attr':'all','start':'2','count':'1'}">
+                        <#list articles as article>
+                            <a href="${article.url}">
+                                <img src="//english.scio.gov.cn/images1/en/2021tibet/bg_3.jpg">
+                                <p>
+                                    <img src="//english.scio.gov.cn/images1/en/2021tibet/video.png">
+                                    <span>${article.title}</span>
+                                </p>
+                            </a>
+                        </#list>
+                    </FOUNDER-XY>
+                </li>
+            </ul>
+            <ul class="list1 animate__animated animate__delay-2 animate__fadeInUp">
+                <li>
+                    <FOUNDER-XY type="articlelist" data="{'columnid':[8025560],'articletype':'all','article_attr':'all','start':'3','count':'1'}">
+                        <#list articles as article>
+                            <a href="${article.url}">
+                                <img src="//english.scio.gov.cn/images1/en/2021tibet/bg_4.jpg">
+                                <p>
+                                    <img src="//english.scio.gov.cn/images1/en/2021tibet/video.png">
+                                    <span>${article.title}</span>
+                                </p>
+                            </a>
+                        </#list>
+                    </FOUNDER-XY>
+                </li>
+                <li>
+                    <FOUNDER-XY type="articlelist" data="{'columnid':[8025560],'articletype':'all','article_attr':'all','start':'4','count':'1'}">
+                        <#list articles as article>
+                            <a href="${article.url}">
+                                <img src="//english.scio.gov.cn/images1/en/2021tibet/bg_5.jpg">
+                                <p>
+                                    <img src="//english.scio.gov.cn/images1/en/2021tibet/article.png">
+                                    <span>${article.title}</span>
+                                </p>
+                            </a>
+                        </#list>
+                    </FOUNDER-XY>
+                </li>
+                <li>
+                    <FOUNDER-XY type="articlelist" data="{'columnid':[8025560],'articletype':'all','article_attr':'all','start':'5','count':'1'}">
+                        <#list articles as article>
+                            <a href="${article.url}">
+                                <img src="//english.scio.gov.cn/images1/en/2021tibet/bg_06.jpg">
+                                <p>
+                                    <img src="//english.scio.gov.cn/images1/en/2021tibet/video.png">
+                                    <span>${article.title}</span>
+                                </p>
+                            </a>
+                        </#list>
+                    </FOUNDER-XY>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+
+
+
+</body>
+<script type="text/javascript" src="//english.scio.gov.cn/images1/resource/scripts/jquery/jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+    (function(window, $) {
+        $(function() {
+            if (/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
+                window.location.href = 'http://english.scio.gov.cn/m/Tibetinthenewera/node_8025560.html';
+            }
+            $('.list li').each(function() {
+                var url = $(this).find('p').find('img').attr('src');
+                var index = $(this).index();
+                $('.articletitle ul li').each(function() {
+                    if ($(this).index() == index) {
+                        $(this).find('img').attr("src", url);
+                    }
+                })
+            });
+            $('.list1 li').each(function() {
+                var url = $(this).find('p').find('img').attr('src');
+                var index = $(this).index();
+                $('.articletitle1 ul li').each(function() {
+                    if ($(this).index() == index) {
+                        $(this).find('img').attr("src", url);
+                    }
+                })
+            });
+        })
+        $('.list li').hover(function() {
+            var data = $(this).index();
+            $('.list li p').show();
+            $('.list1 li p').show();
+            $(this).find('p').hide();
+            $('.title').hide();
+            $('.articletitle').show();
+            $('.articletitle1').hide();
+            $('.articletitle1 ul li').removeClass();
+            if (data == 0) {
+                $('.box1').hide();
+                $('.box1 video').attr("src", "");
+                $('.box').css({
+                    "background-image": "url('//english.scio.gov.cn/images1/en/2021tibet/bg_1.jpg')",
+                    "background-repeat": "no-repeat",
+                    "background-size": "100% 100%",
+                    "transition": "all 1s",
+                    "-moz-transition": "all 1s",
+                    "-webkit-transitiontransition": "all 1s",
+                    "-o-transition": "all 1s"
+                });
+                $('.articletitle ul li').removeClass();
+                $('.articletitle ul li:eq(0)').addClass('show animate__animated animate__fadeInUp');
+            } else if (data == 1 && $(this).css('z-index') == 0) {
+                $('.box1').show();
+                $('.box1 video').attr("src", "");
+                $('.box1 video').attr("src", "http://mp42.china.com.cn/video_tide/video/2021/8/13/20218131628822612412_369.mp4");
+                $('.articletitle ul li').removeClass();
+                $('.articletitle ul li:eq(1)').addClass('show animate__animated animate__fadeInUp');
+            } else if (data == 2 && $(this).css('z-index') == 0) {
+                $('.box1').show();
+                $('.box1 video').attr("src", "");
+                $('.box1 video').attr("src", "http://mp42.china.com.cn/video_tide/video/2021/8/13/20218131628822757918_369.mp4");
+                $('.articletitle ul li').removeClass();
+                $('.articletitle ul li:eq(2)').addClass('show animate__animated animate__fadeInUp');
+            }
+            $('.list li').css({
+                "transform": "none",
+                "box-shadow": "none",
+                "z-index": "0"
+            });
+            $('.list1 li').css({
+                "transform": "none",
+                "box-shadow": "none",
+                "z-index": "0"
+            });
+            $(this).css({
+                "transform": "scale(1.1)",
+                "box-shadow": "#13dad8 -5px 5px 0px, #13dad8 5px 5px 0px, #13dad8 -5px -5px 0px, #13dad8 5px -5px 0px",
+                "z-index": "1"
+            });
+        }, function() {
+            $('.title').show();
+            $('.articletitle').hide();
+            $('.articletitle1').hide();
+            $('.list li').css({
+                "transform": "none",
+                "box-shadow": "none",
+                "z-index": "0"
+            });
+            $('.list1 li').css({
+                "transform": "none",
+                "box-shadow": "none",
+                "z-index": "0"
+            });
+            $('.list li p').show();
+            $('.list1 li p').show();
+            $('.box1').hide();
+            $('.box1 video').attr("src", "");
+            $('.box').css({
+                "background-image": "url('//english.scio.gov.cn/images1/en/2021tibet/bg_0.jpg')",
+                "background-repeat": "no-repeat",
+                "background-size": "100% 100%",
+                "transition": "all 1s",
+                "-moz-transition": "all 1s",
+                "-webkit-transitiontransition": "all 1s",
+                "-o-transition": "all 1s"
+            });
+        });
+        $('.list1 li').hover(function() {
+            var data = $(this).index();
+            $('.list li p').show();
+            $('.list1 li p').show();
+            $(this).find('p').hide();
+            $('.title').hide();
+            $('.articletitle').hide();
+            $('.articletitle1').show();
+            $('.articletitle ul li').removeClass();
+            if (data == 0 && $(this).css('z-index') == 0) {
+                $('.box1').show();
+                $('.box1 video').attr("src", "");
+                $('.box1 video').attr("src", "http://mp42.china.com.cn/video_tide/video/2021/8/13/20218131628822859790_369.mp4");
+                $('.articletitle1 ul li').removeClass();
+                $('.articletitle1 ul li:eq(0)').addClass('show animate__animated animate__fadeInUp');
+            } else if (data == 1) {
+                $('.box1').hide();
+                $('.box1 video').attr("src", "");
+                $('.box').css({
+                    "background-image": "url('//english.scio.gov.cn/images1/en/2021tibet/bg_5.jpg')",
+                    "background-repeat": "no-repeat",
+                    "background-size": "100% 100%",
+                    "transition": "all 1s",
+                    "-moz-transition": "all 1s",
+                    "-webkit-transitiontransition": "all 1s",
+                    "-o-transition": "all 1s"
+                });
+                $('.articletitle1 ul li').removeClass();
+                $('.articletitle1 ul li:eq(1)').addClass('show animate__animated animate__fadeInUp');
+            } else if (data == 2 && $(this).css('z-index') == 0) {
+                $('.box1').show();
+                $('.box1 video').attr("src", "");
+                $('.box1 video').attr("src", "http://mp42.china.com.cn/video_tide/video/2021/8/16/20218161629091758387_369.mp4");
+                $('.articletitle1 ul li').removeClass();
+                $('.articletitle1 ul li:eq(2)').addClass('show animate__animated animate__fadeInUp');
+            }
+            $('.list li').css({
+                "transform": "none",
+                "box-shadow": "none",
+                "z-index": "0"
+            });
+            $('.list1 li').css({
+                "transform": "none",
+                "box-shadow": "none",
+                "z-index": "0"
+            });
+            $(this).css({
+                "transform": "scale(1.1)",
+                "box-shadow": "#13dad8 -5px 5px 0px, #13dad8 5px 5px 0px, #13dad8 -5px -5px 0px, #13dad8 5px -5px 0px",
+                "z-index": "1"
+            });
+        }, function() {
+            $('.title').show();
+            $('.articletitle').hide();
+            $('.articletitle1').hide();
+            $('.list li').css({
+                "transform": "none",
+                "box-shadow": "none",
+                "z-index": "0"
+            });
+            $('.list1 li').css({
+                "transform": "none",
+                "box-shadow": "none",
+                "z-index": "0"
+            });
+            $('.list li p').show();
+            $('.list1 li p').show();
+            $('.box1').hide();
+            $('.box1 video').attr("src", "");
+            $('.box').css({
+                "background-image": "url('//english.scio.gov.cn/images1/en/2021tibet/bg_0.jpg')",
+                "background-repeat": "no-repeat",
+                "background-size": "100% 100%",
+                "transition": "all 1s",
+                "-moz-transition": "all 1s",
+                "-webkit-transitiontransition": "all 1s",
+                "-o-transition": "all 1s"
+            });
+        })
+    })(window, jQuery);
+</script>
+
+</html>

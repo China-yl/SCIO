@@ -1,22 +1,28 @@
-function lun(a,b,c,d,e,f,g,w,p){
+function lun(a, b, c, d, e, f, g, w, p) {
     var i = 0;
     var clone = $(c).first().clone();
     $(b).append(clone);
-    var size = $(c).size();
-    for (var j = 0; j < size-1; j++) {
+    var size = $(c).length;
+    for (var j = 0; j < size - 1; j++) {
         $(d).append("<li></li>");
     }
     $(c).first().addClass("show");
     $(e).first().addClass("on");
-    if(p=="true"){
-        var t = setInterval(function () { i++; move();},2000); 
-        $(a).hover(function () {
+    if (p == "true") {
+        var t = setInterval(function() {
+            i++;
+            move();
+        }, 2000);
+        $(a).hover(function() {
             clearInterval(t);
-        }, function () {
-            t = setInterval(function () { i++; move(); }, 2000);
+        }, function() {
+            t = setInterval(function() {
+                i++;
+                move();
+            }, 2000);
         });
     }
-    $(e).hover(function () {
+    $(e).hover(function() {
         var index = $(this).index();
         i = index;
         $(b).stop().animate({ left: -index * w }, 500);
@@ -25,13 +31,13 @@ function lun(a,b,c,d,e,f,g,w,p){
     });
 
     /*向右*/
-    $(f).click(function () {
+    $(f).click(function() {
         i++;
         move();
     })
 
     /*向左*/
-    $(g).click(function () {
+    $(g).click(function() {
         i--;
         move();
     })

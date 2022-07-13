@@ -1,0 +1,97 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>China.org.cn</title>
+    <style type="text/css">
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        
+        body {
+            font-family: Arial;
+            font-size: 18px;
+            color: #000;
+            line-height: 22px;
+        }
+        
+        a {
+            text-decoration: none;
+            font-size: 18px;
+            color: #000;
+            line-height: 22px;
+            color: #000000;
+        }
+        
+        a:hover {
+            color: #333;
+            text-decoration: underline;
+        }
+        
+        ul,
+        li {
+            list-style-type: none;
+        }
+        
+        img {
+            border: 0;
+            transition: all 0.6s;
+        }
+        
+        .box2l1 {
+            width: 880px;
+            height: 490px;
+            overflow: hidden;
+        }
+        
+        .boxp1 {
+            clear: both;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .boxp1 img:hover {
+            transform: scale(1);
+        }
+        
+        .boxp1 p {
+            padding: 10px;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            font-size: 28px;
+            color: #fff;
+            line-height: 36px;
+            filter: alpha(opacity=70);
+            /*IE*/
+            opacity: 0.7;
+            background: #000000;
+        }
+        
+        .boxp1 p a {
+            font-size: 28px;
+            color: #fff;
+            line-height: 36px;
+        }
+        
+        .box2l11 {
+            width: 880px;
+            height: 490px;
+            overflow: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box2l1">
+        <FOUNDER-XY type="articlelist" data="{'columnid':[7250958], 'articletype': 'all', 'article_attr': 'all', 'columntype':'self', 'showall':'true', 'start': 0, 'count': 1}">
+            <#list articles as article>
+                <a href="${article.url}" target="_self"><img src="${article.picBig}" border=0 width="880" height="490"><img src="//english.scio.gov.cn/images1/en/gxb/24.png" style="margin-top:-280px;padding-left:390px;margin-bottom:200px;" /> </a>
+            </#list>
+        </FOUNDER-XY>
+    </div>
+</body>
+
+</html>

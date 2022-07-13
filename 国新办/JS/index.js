@@ -33,7 +33,9 @@
         "2020 NPC & CPPCC": 'w31',
         "2021 NPC & CPPCC": 'w32',
         "People's Livelihood": 'w33',
-        "Agriculture": 'w34'
+        "Agriculture": 'w34',
+        "Beijing 2022": 'w35',
+        "2022 NPC & CPPCC": 'w36'
     };
     $('.mmmm').each(function() {
         var curTitle = $.trim($(this).text());

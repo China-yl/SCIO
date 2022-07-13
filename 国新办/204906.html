@@ -1,0 +1,802 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>
+        <FOUNDER-XY type="columnlist" data="{'columnid':[],'columntype':'self'}">
+            <#list columns as column>${column.name}</#list>
+        </FOUNDER-XY> | english.scio.gov.cn</title>
+    <base target="_self" />
+    <meta name="filetype" content="1" />
+    <meta name="publishedtype" content="1" />
+    <meta name="pagetype" content="2" />
+    <FOUNDER-XY type="columnlist" data="{'columnid':[],'columntype':'self'}">
+        <#list columns as column>
+            <meta name="catalogs" content="${column.id}" />
+            <meta name="description" content="${column.name}" />
+            <meta name="keywords" content="${column.keyword}" />
+            <meta itemprop="name" content="${column.name}" />
+        </#list>
+    </FOUNDER-XY>
+
+
+    <style type="text/css">
+        * {
+            margin: 0px;
+            padding: 0px;
+            border: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial;
+            font-size: 16px;
+            line-height: 20px;
+            width: 100%;
+            min-width: 1200px;
+            background-color: #fef5e6;
+        }
+        
+        ul,
+        li {
+            list-style-type: none;
+        }
+        
+        a {
+            text-decoration: none;
+            color: #000000;
+            display: inline-block;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        img {
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+        
+        .bodybackground {
+            width: 100%;
+            height: 100vh;
+            background: url('//english.scio.gov.cn/images1/en/CPCgroupinterviews/bg.jpg') no-repeat top center;
+            background-size: 100% 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+        }
+        
+        .box {
+            width: 100%;
+            position: relative;
+            z-index: 10;
+            background-color: transparent;
+        }
+        
+        .toplist {
+            width: 100%;
+            height: 58px;
+            background: url('//english.scio.gov.cn/images1/en/cpc100/nav_bg.png') no-repeat top center;
+            background-size: 100% 100%;
+            text-align: center;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 100;
+        }
+        
+        .toplist a {
+            display: inline-block;
+        }
+        
+        .banner {
+            width: 100%;
+            height: 100vh;
+            background: #a3111b;
+            position: relative;
+            padding-top: 144px;
+            overflow: hidden;
+            border-bottom: 5px solid #d91212;
+            margin-bottom: 60px;
+            box-shadow: 0px 0px 100px rgba(52, 7, 10);
+        }
+        
+        .bannerbg {
+            width: 100%;
+            height: 100vh;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        
+        .box1 {
+            width: 1640px;
+            margin: 0 auto 60px;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .titleimg1,
+        .titleimg2 {
+            width: 1559px;
+            height: 69px;
+            margin: 0 auto;
+        }
+        
+        .titleimg1 {
+            margin: 0 auto 16px;
+        }
+        
+        .lineimg1,
+        .lineimg2 {
+            width: 750px;
+            height: 2px;
+            position: absolute;
+            bottom: 24px;
+        }
+        
+        .lineimg1 {
+            left: 0;
+        }
+        
+        .lineimg2 {
+            right: 0;
+        }
+        
+        .cpcimg {
+            width: 60px;
+            height: 60px;
+            margin: 36px auto 0;
+        }
+        
+        .downimg {
+            width: 308px;
+            height: 85px;
+            margin: 60px auto 0;
+        }
+        
+        .birds {
+            width: 100%;
+            height: 100vh;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        
+        .birds img {
+            mix-blend-mode: screen;
+        }
+        
+        .cloud,
+        .build {
+            width: 110%;
+            position: absolute;
+            left: -5%;
+        }
+        
+        .cloud {
+            bottom: -18%;
+        }
+        
+        .build {
+            bottom: -2%;
+        }
+        
+        .animate__animated {
+            -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+            -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+        }
+        
+        .animate__delay-1 {
+            -webkit-animation-delay: 1s;
+            animation-delay: 1s;
+        }
+        
+        .animate__delay-2 {
+            -webkit-animation-delay: 2s;
+            animation-delay: 2s;
+        }
+        
+        .animate__delay-3 {
+            -webkit-animation-delay: 3s;
+            animation-delay: 3s;
+        }
+        
+        .animate__delay-4 {
+            -webkit-animation-delay: 0.5s;
+            animation-delay: 0.5s;
+        }
+        
+        @-webkit-keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        
+        .animate__fadeIn {
+            -webkit-animation-name: fadeIn;
+            animation-name: fadeIn;
+        }
+        
+        @-webkit-keyframes fadeInDown {
+            0% {
+                opacity: 0;
+                -webkit-transform: translate3d(0, -100%, 0);
+                transform: translate3d(0, -100%, 0);
+            }
+            to {
+                opacity: 1;
+                -webkit-transform: translateZ(0);
+                transform: translateZ(0);
+            }
+        }
+        
+        @keyframes fadeInDown {
+            0% {
+                opacity: 0;
+                -webkit-transform: translate3d(0, -100%, 0);
+                transform: translate3d(0, -100%, 0);
+            }
+            to {
+                opacity: 1;
+                -webkit-transform: translateZ(0);
+                transform: translateZ(0);
+            }
+        }
+        
+        .animate__fadeInDown {
+            -webkit-animation-name: fadeInDown;
+            animation-name: fadeInDown;
+        }
+        
+        @-webkit-keyframes fadeInLeft {
+            0% {
+                opacity: 0;
+                -webkit-transform: translate3d(-50%, 0, 0);
+                transform: translate3d(-50%, 0, 0);
+            }
+            to {
+                opacity: 1;
+                -webkit-transform: translateZ(0);
+                transform: translateZ(0);
+            }
+        }
+        
+        @keyframes fadeInLeft {
+            0% {
+                opacity: 0;
+                -webkit-transform: translate3d(-50%, 0, 0);
+                transform: translate3d(-50%, 0, 0);
+            }
+            to {
+                opacity: 1;
+                -webkit-transform: translateZ(0);
+                transform: translateZ(0);
+            }
+        }
+        
+        .animate__fadeInLeft {
+            -webkit-animation-name: fadeInLeft;
+            animation-name: fadeInLeft;
+        }
+        
+        @-webkit-keyframes fadeInRight {
+            0% {
+                opacity: 0;
+                -webkit-transform: translate3d(50%, 0, 0);
+                transform: translate3d(50%, 0, 0);
+            }
+            to {
+                opacity: 1;
+                -webkit-transform: translateZ(0);
+                transform: translateZ(0);
+            }
+        }
+        
+        @keyframes fadeInRight {
+            0% {
+                opacity: 0;
+                -webkit-transform: translate3d(50%, 0, 0);
+                transform: translate3d(50%, 0, 0);
+            }
+            to {
+                opacity: 1;
+                -webkit-transform: translateZ(0);
+                transform: translateZ(0);
+            }
+        }
+        
+        .animate__fadeInRight {
+            -webkit-animation-name: fadeInRight;
+            animation-name: fadeInRight;
+        }
+        
+        @-webkit-keyframes fadeInWhite {
+            0% {
+                width: 0;
+            }
+            to {
+                width: 750px;
+            }
+        }
+        
+        @keyframes fadeInWhite {
+            0% {
+                width: 0;
+            }
+            to {
+                width: 750px;
+            }
+        }
+        
+        .animate__fadeInWhite {
+            -webkit-animation-name: fadeInWhite;
+            animation-name: fadeInWhite;
+        }
+        
+        .intro {
+            width: 1176px;
+            height: 200px;
+            margin: 0 auto 40px;
+            background: url('//english.scio.gov.cn/images1/en/CPCgroupinterviews/intro_bg.png') no-repeat top center;
+            background-size: 100% 100%;
+        }
+        
+        .intro p {
+            width: 1176px;
+            height: 200px;
+            font-size: 26px;
+            line-height: 40px;
+            color: #ffffff;
+            font-weight: bold;
+            display: table-cell;
+            vertical-align: middle;
+        }
+        
+        .content {
+            width: 1176px;
+            margin: 0 auto;
+        }
+        
+        .topcontent {
+            width: 1228px;
+            height: 393px;
+            background: url('//english.scio.gov.cn/images1/en/CPCgroupinterviews/lastest.png') no-repeat top center;
+            background-size: 100% 100%;
+            margin-bottom: 30px;
+            position: relative;
+            padding: 90px 0 0 310px;
+            opacity: 0;
+            -webkit-transform: translate3d(0, 100%, 0);
+            transform: translate3d(0, 100%, 0);
+            transition: transform 1s, opacity 1s;
+        }
+        
+        .topcontent div {
+            width: 180px;
+            position: absolute;
+            top: 114px;
+            left: 95px;
+            font-size: 36px;
+            line-height: 48px;
+            font-weight: bold;
+            color: #dac5aa;
+        }
+        
+        .topcontent p {
+            width: 800px;
+            margin-bottom: 20px;
+        }
+        
+        .topcontent p a {
+            color: #ffffff;
+            font-size: 30px;
+            line-height: 36px;
+            font-weight: bold;
+        }
+        
+        .topcontent span {
+            width: 800px;
+            font-size: 18px;
+            line-height: 24px;
+            color: #dac5aa;
+            display: block;
+        }
+        
+        .listcontent {
+            width: 1176px;
+            height: 2357px;
+            background: url('//english.scio.gov.cn/images1/en/CPCgroupinterviews/timeline.png') no-repeat top center;
+            background-size: 100% 100%;
+            margin-bottom: 68px;
+        }
+        
+        .listcontent ul {
+            width: 100%;
+            height: 584px;
+            display: block;
+        }
+        
+        .listcontent ul li {
+            width: 320px;
+            margin: 0 36px;
+        }
+        
+        .listcontent ul:nth-child(odd) li {
+            opacity: 0;
+            -webkit-transform: translate3d(100%, 0, 0);
+            transform: translate3d(100%, 0, 0);
+            transition: transform 1s, opacity 1s;
+        }
+        
+        .listcontent ul:nth-child(even) li {
+            opacity: 0;
+            -webkit-transform: translate3d(-100%, 0, 0);
+            transform: translate3d(-100%, 0, 0);
+            transition: transform 1s, opacity 1s;
+        }
+        
+        .topup,
+        .listcontent ul li.liin {
+            opacity: 1;
+            -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+        }
+        
+        .listcontent ul li div {
+            width: 100%;
+            height: 30px;
+            border-radius: 5px;
+            font-size: 18px;
+            line-height: 30px;
+            color: #ffffff;
+            text-align: center;
+            background-color: #a2262d;
+            margin-bottom: 40px;
+        }
+        
+        .listcontent ul li img {
+            width: 320px;
+            height: 212px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            display: block;
+        }
+        
+        .listcontent ul li p {
+            width: 320px;
+        }
+        
+        .listcontent ul li p a {
+            font-size: 24px;
+            line-height: 36px;
+            color: #ffffff;
+        }
+        
+        .listcontent .ul1 li,
+        .listcontent .ul3 li {
+            float: left;
+        }
+        
+        .listcontent .ul2 li,
+        .listcontent .ul4 li {
+            float: right;
+        }
+        
+        .more {
+            width: 131px;
+            height: 40px;
+            background: url('//english.scio.gov.cn/images1/en/CPCgroupinterviews/more.png') no-repeat top center;
+            background-size: 100% 100%;
+            margin: 0 auto;
+        }
+        
+        .more:hover {
+            background: url('//english.scio.gov.cn/images1/en/CPCgroupinterviews/more_hover.png') no-repeat top center;
+            background-size: 100% 100%;
+        }
+        
+        .more a {
+            width: 131px;
+            height: 40px;
+            display: block;
+        }
+        
+        .footer {
+            font-size: 14px;
+            line-height: 20px;
+            color: #ffffff;
+            text-transform: uppercase;
+            text-align: center;
+            padding-bottom: 40px;
+        }
+    </style>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112741182-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-112741182-1');
+    </script>
+
+    <!-- 百度统计 -->
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?fd2d485bd31a1b437014f46624329f5b";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+
+</head>
+
+<body>
+    <div class="bodybackground"></div>
+    <div class="box">
+        <div class="toplist">
+            <a href="http://english.scio.gov.cn/" style="margin-top: 19px;margin-left: 1%;float: left;width: 157px;height: 20px;"><img src="//english.scio.gov.cn/images1/en/2019cc/logo.png" width="157" height="20" border="0" /></a>
+            <div class="bshare-custom icon-medium-plus" style="float: right; margin-top: 7px;margin-right: 1%;">
+                <a title="分享到Facebook" class="bshare-facebook" href="javascript:void(0);" style="width: 44px;height: 44px;background:url(//english.scio.gov.cn/images1/en/2019cc/facebook1.png) no-repeat;padding: 0px;"></a>
+                <a title="分享到Twitter" class="bshare-twitter" href="javascript:void(0);" style="width: 44px;height: 44px;background:url(//english.scio.gov.cn/images1/en/2019cc/twitter1.png) no-repeat;padding: 0px;"></a>
+                <a title="分享到微信" class="bshare-weixin" href="javascript:void(0);" style="width: 44px;height: 44px;background:url(//english.scio.gov.cn/images1/en/2019cc/微信1.png) no-repeat;padding: 0px;;"></a>
+                <a title="分享到微博" class="bshare-sinaminiblog" href="javascript:void(0);" style="width: 44px;height: 44px;background:url(//english.scio.gov.cn/images1/en/2019cc/微博1.png) no-repeat;padding: 0px;"></a>
+            </div>
+            <script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/buttonLite.js#style=-1&amp;uuid=72352d86-8c1b-4361-8d6b-12862c1a6656&amp;pophcol=2&amp;lang=zh"></script>
+            <script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/bshareC0.js"></script>
+        </div>
+        <div class="banner">
+            <div class="bannerbg"><img src="//english.scio.gov.cn/images1/en/CPCgroupinterviews/banner.jpg"></div>
+            <div class="box1">
+                <div class="titleimg1 animate__animated animate__fadeInLeft"><img src="//english.scio.gov.cn/images1/en/CPCgroupinterviews/title1.png"></div>
+                <div class="titleimg2 animate__animated animate__fadeInRight"><img src="//english.scio.gov.cn/images1/en/CPCgroupinterviews/title2.png"></div>
+                <div class="lineimg1 animate__animated animate__fadeInWhite animate__delay-1"><img src="//english.scio.gov.cn/images1/en/CPCgroupinterviews/line.png"></div>
+                <div class="lineimg2 animate__animated animate__fadeInWhite animate__delay-1"><img src="//english.scio.gov.cn/images1/en/CPCgroupinterviews/line.png"></div>
+                <div class="cpcimg animate__animated animate__fadeIn animate__delay-2"><img src="//english.scio.gov.cn/images1/en/CPCgroupinterviews/cpc.png"></div>
+            </div>
+            <div class="downimg animate__animated animate__fadeInDown animate__delay-3"><img src="//english.scio.gov.cn/images1/en/CPCgroupinterviews/scrolldown.png"></div>
+            <div class="birds"><img src="//english.scio.gov.cn/images1/en/CPCgroupinterviews/birds2.gif" style="mix-blend-mode: screen;"></div>
+            <div class="cloud"><img src="//english.scio.gov.cn/images1/en/CPCgroupinterviews/cloud.png"></div>
+            <div class="build"><img src="//english.scio.gov.cn/images1/en/CPCgroupinterviews/buildings.png"></div>
+        </div>
+        <div class="intro">
+            <p>This year marks the 100th anniversary of the founding of the Communist Party of China (CPC). The Publicity Department of the CPC Central Committee invited representatives of CPC members from all walks of life to meet journalists and share
+                their stories.</p>
+        </div>
+        <div class="content">
+            <div class="topcontent">
+                <FOUNDER-XY type="articlelist" data="{'columnid':[8024589],'articletype':'all','article_attr':'all','start':'0','count':'1'}">
+                    <#list articles as article>
+                        <div>${article.subTitle}</div>
+                        <p><a href="${article.url}">${article.title}</a></p>
+                        <span>${article.summary}</span>
+                    </#list>
+                </FOUNDER-XY>
+            </div>
+            <div class="listcontent">
+                <ul class="ul1">
+                    <FOUNDER-XY type="articlelist" data="{'columnid':[8024589],'articletype':'all','article_attr':'all','start':'1','count':'3'}">
+                        <#list articles as article>
+                            <li>
+                                <div>${article.subTitle}</div>
+                                <a href="${article.url}"><img src="${article.picBig}"></a>
+                                <p><a href="${article.url}">${article.title}</a></p>
+                            </li>
+                        </#list>
+                    </FOUNDER-XY>
+                </ul>
+                <ul class="ul2">
+                    <FOUNDER-XY type="articlelist" data="{'columnid':[8024589],'articletype':'all','article_attr':'all','start':'4','count':'3'}">
+                        <#list articles as article>
+                            <li>
+                                <div>${article.subTitle}</div>
+                                <a href="${article.url}"><img src="${article.picBig}"></a>
+                                <p><a href="${article.url}">${article.title}</a></p>
+                            </li>
+                        </#list>
+                    </FOUNDER-XY>
+                </ul>
+                <ul class="ul3">
+                    <FOUNDER-XY type="articlelist" data="{'columnid':[8024589],'articletype':'all','article_attr':'all','start':'7','count':'3'}">
+                        <#list articles as article>
+                            <li>
+                                <div>${article.subTitle}</div>
+                                <a href="${article.url}"><img src="${article.picBig}"></a>
+                                <p><a href="${article.url}">${article.title}</a></p>
+                            </li>
+                        </#list>
+                    </FOUNDER-XY>
+                </ul>
+                <ul class="ul4">
+                    <FOUNDER-XY type="articlelist" data="{'columnid':[8024589],'articletype':'all','article_attr':'all','start':'10','count':'3'}">
+                        <#list articles as article>
+                            <li>
+                                <div>${article.subTitle}</div>
+                                <a href="${article.url}"><img src="${article.picBig}"></a>
+                                <p><a href="${article.url}">${article.title}</a></p>
+                            </li>
+                        </#list>
+                    </FOUNDER-XY>
+                </ul>
+                <div class="more">
+                    <FOUNDER-XY type="columnlist" data="{'columnid':[8024589],'columntype':'self'}">
+                        <#list columns as column>
+                            <a href="${column.url!}"></a>
+                        </#list>
+                    </FOUNDER-XY>
+                </div>
+            </div>
+        </div>
+        <div class='footer'>
+            Copyright © english.scio.gov.cn All rights reserved. </br>
+            Registration Number: 19210669-8
+        </div>
+    </div>
+
+    <script type="text/javascript" src="//english.scio.gov.cn/images1/resource/scripts/jquery/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript">
+        (function(window, $) {
+            $(function() {
+                if (/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
+                    window.location.href = 'http://english.scio.gov.cn/m/CPCgroupinterviews/node_8024582.html';
+                }
+
+                if (window.navigator.userAgent.indexOf("MSIE") >= 1) {
+                    $('.birds').hide();
+                }
+
+                var middlePointX = 0;
+                var middlePointY = 0;
+
+                function getMiddleStyle() {
+                    middlePointX = document.documentElement.clientWidth / 2;
+                    middlePointY = document.documentElement.clientHeight / 2;
+                }
+                getMiddleStyle();
+                window.onresize = getMiddleStyle;
+
+                document.onmousemove = function(ev) {
+                    var ev = ev || event;
+                    var disX = ev.clientX;
+                    MoveS = 80;
+                    var leftX = (disX - middlePointX) / MoveS + 'px';
+                    var rightX = (middlePointX - disX) / MoveS + 'px';
+                    $('.build').css({
+                        "webkitTransform": 'translate3d(' + leftX + ',0,0)',
+                        "transform": 'translate3d(' + leftX + ',0,0)'
+                    });
+                    $('.cloud').css({
+                        "webkitTransform": 'translate3d(' + rightX + ',0,0)',
+                        "transform": 'translate3d(' + rightX + ',0,0)'
+                    });
+                }
+
+                var oldScroll = 0,
+                    bottom = $(window).height() - $(window).height() * 0.7;
+
+                $(window).on('scroll', function() {
+                    var scrolltop = $(window).scrollTop(),
+                        top = $(window).height() - ($('.content').offset().top - $(document).scrollTop()),
+                        ul1 = $(window).height() - ($('.ul1').offset().top - $(document).scrollTop()),
+                        ul2 = $(window).height() - ($('.ul2').offset().top - $(document).scrollTop()),
+                        ul3 = $(window).height() - ($('.ul3').offset().top - $(document).scrollTop()),
+                        ul4 = $(window).height() - ($('.ul4').offset().top - $(document).scrollTop()),
+                        direction = (scrolltop < oldScroll) ? direction = 'up' : 'down';
+                    oldScroll = scrolltop;;
+                    smove(direction, top, ul1, ul2, ul3, ul4)
+                });
+
+                function smove(direction, top, ul1, ul2, ul3, ul4) {
+                    if (direction == 'up') {
+                        if (top < bottom) {
+                            $('.topcontent').removeClass('topup');
+                        }
+                        if (ul1 < bottom) {
+                            $('.ul1 li:eq(2)').removeClass('liin');
+                            setTimeout(function() {
+                                $('.ul1 li:eq(1)').removeClass('liin');
+                            }, 500);
+                            setTimeout(function() {
+                                $('.ul1 li:eq(0)').removeClass('liin');
+                            }, 1000);
+                        }
+                        if (ul2 < bottom) {
+                            $('.ul2 li:eq(2)').removeClass('liin');
+                            setTimeout(function() {
+                                $('.ul2 li:eq(1)').removeClass('liin');
+                            }, 500);
+                            setTimeout(function() {
+                                $('.ul2 li:eq(0)').removeClass('liin');
+                            }, 1000);
+                        }
+                        if (ul3 < bottom) {
+                            $('.ul3 li:eq(2)').removeClass('liin');
+                            setTimeout(function() {
+                                $('.ul3 li:eq(1)').removeClass('liin');
+                            }, 500);
+                            setTimeout(function() {
+                                $('.ul3 li:eq(0)').removeClass('liin');
+                            }, 1000);
+                        }
+                        if (ul4 < bottom) {
+                            $('.ul4 li:eq(2)').removeClass('liin');
+                            setTimeout(function() {
+                                $('.ul4 li:eq(1)').removeClass('liin');
+                            }, 500);
+                            setTimeout(function() {
+                                $('.ul4 li:eq(0)').removeClass('liin');
+                            }, 1000);
+                        }
+                    } else if (direction == 'down') {
+                        if (top > bottom) {
+                            $('.topcontent').addClass('topup');
+                        }
+                        if (ul1 > bottom) {
+                            $('.ul1 li:eq(0)').addClass('liin');
+                            setTimeout(function() {
+                                $('.ul1 li:eq(1)').addClass('liin');
+                            }, 500);
+                            setTimeout(function() {
+                                $('.ul1 li:eq(2)').addClass('liin');
+                            }, 1000);
+                        }
+                        if (ul2 > bottom) {
+                            $('.ul2 li:eq(0)').addClass('liin');
+                            setTimeout(function() {
+                                $('.ul2 li:eq(1)').addClass('liin');
+                            }, 500);
+                            setTimeout(function() {
+                                $('.ul2 li:eq(2)').addClass('liin');
+                            }, 1000);
+                        }
+                        if (ul3 > bottom) {
+                            $('.ul3 li:eq(0)').addClass('liin');
+                            setTimeout(function() {
+                                $('.ul3 li:eq(1)').addClass('liin');
+                            }, 500);
+                            setTimeout(function() {
+                                $('.ul3 li:eq(2)').addClass('liin');
+                            }, 1000);
+                        }
+                        if (ul4 > bottom) {
+                            $('.ul4 li:eq(0)').addClass('liin');
+                            setTimeout(function() {
+                                $('.ul4 li:eq(1)').addClass('liin');
+                            }, 500);
+                            setTimeout(function() {
+                                $('.ul4 li:eq(2)').addClass('liin');
+                            }, 1000);
+                        }
+                    }
+
+                }
+            })
+        })(window, jQuery);
+    </script>
+</body>
+
+</html>

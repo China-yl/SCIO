@@ -1,0 +1,1115 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>
+        <FOUNDER-XY type="columnlist" data="{'columnid':[],'columntype':'self'}">
+            <#list columns as column>${column.name}</#list>
+        </FOUNDER-XY> | english.scio.gov.cn</title>
+    <base target="_self" />
+    <meta name="filetype" content="1" />
+    <meta name="publishedtype" content="1" />
+    <meta name="pagetype" content="2" />
+    <FOUNDER-XY type="columnlist" data="{'columnid':[],'columntype':'self'}">
+        <#list columns as column>
+            <meta name="catalogs" content="${column.id}" />
+            <meta name="description" content="${column.name}" />
+            <meta name="keywords" content="${column.keyword}" />
+            <meta itemprop="name" content="${column.name}" />
+        </#list>
+    </FOUNDER-XY>
+
+
+    <style type="text/css">
+        * {
+            margin: 0px;
+            padding: 0px;
+            border: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial;
+            font-size: 16px;
+            line-height: 20px;
+            width: 100%;
+            min-width: 1200px;
+            background-color: #fef5e6;
+        }
+        
+        ul,
+        li {
+            list-style-type: none;
+        }
+        
+        a {
+            text-decoration: none;
+            color: #000000;
+            display: inline-block;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        img {
+            border: 0;
+        }
+        
+        .banner {
+            width: 100%;
+            height: 100vh;
+            background: url('//english.scio.gov.cn/images1/en/cpc100/banner_big.jpg')top center no-repeat;
+            background-size: auto 100vh;
+            overflow: hidden;
+        }
+        
+        .bannert {
+            width: 57.4%;
+            height: auto;
+            margin-top: 13.35%;
+            margin-left: 0;
+            opacity: 0;
+        }
+        
+        .top {
+            width: 100%;
+        }
+        
+        .top img {
+            width: 100%;
+        }
+        
+        .toplist {
+            width: 100%;
+            height: 58px;
+            background: url('//english.scio.gov.cn/images1/en/cpc100/nav_bg.png') no-repeat top center;
+            background-size: 100% 100%;
+            text-align: center;
+        }
+        
+        .toplist a {
+            display: inline-block;
+        }
+        
+        .toplist ul {
+            margin: 0 auto;
+            clear: both;
+            display: inline-block
+        }
+        
+        .toplist ul li {
+            height: 58px;
+            float: left;
+            padding: 0 30px;
+        }
+        
+        .toplist ul li a {
+            display: inline-block;
+            font-size: 20px;
+            line-height: 58px;
+            font-weight: bold;
+            color: #fff;
+        }
+        
+        .toplist ul li:hover a,
+        .toplist ul .show a {
+            color: #fff885;
+            text-decoration: none;
+        }
+        
+        .box1 {
+            width: 100%;
+            background: url('//english.scio.gov.cn/images1/en/cpc100/bg1.jpg') no-repeat bottom center;
+            background-size: auto 100%;
+            padding-top: 30px;
+        }
+        
+        .box2 {
+            width: 100%;
+            background: url('//english.scio.gov.cn/images1/en/cpc100/bg2.jpg') no-repeat top center;
+            background-size: auto 100%;
+        }
+        
+        .wdiv {
+            width: 1176px;
+            margin: 0 auto;
+            clear: both;
+        }
+        
+        .title {
+            width: 100%;
+            height: 126px;
+            margin-bottom: 10px;
+        }
+        
+        .title img {
+            width: 1176px;
+            height: 126px;
+        }
+        
+        .one {
+            height: 1178px;
+        }
+        
+        .lunbo {
+            width: 1176px;
+            height: 376px;
+            overflow: hidden;
+            position: relative;
+            box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);
+            margin-bottom: 40px;
+        }
+        
+        .lunbo_img {
+            width: 1176px;
+            height: 376px;
+            position: absolute;
+            top: 0;
+            clear: right;
+        }
+        
+        .lunbo_img img {
+            width: 564px;
+            height: 376px;
+        }
+        
+        .lunbo_img p {
+            width: 612px;
+            height: 376px;
+            padding: 0 88px 0 36px;
+            background-color: #ffffff;
+            float: right;
+        }
+        
+        .lunbo_img p span {
+            height: 376px;
+            vertical-align: middle;
+            display: table-cell;
+        }
+        
+        .lunbo_img p span a {
+            font-size: 30px;
+            line-height: 45px;
+            font-weight: bold;
+        }
+        
+        .lunbo .img_index {
+            position: absolute;
+            bottom: 40px;
+            right: 24px;
+        }
+        
+        .lunbo .img_index ul {
+            height: auto;
+        }
+        
+        .lunbo .img_index li {
+            width: 8px;
+            height: 8px;
+            background-color: #dcdcdc;
+            border-radius: 4px;
+            margin-right: 5px;
+            float: left;
+            padding: 0;
+        }
+        
+        .lunbo .img_index li:last-child {
+            margin-right: 0;
+        }
+        
+        .lunbo .img_index li:hover,
+        .lunbo .img_index li.hover {
+            background-color: #dd2828;
+        }
+        
+        .lunbo .btn {
+            width: 52px;
+            height: 112px;
+            position: absolute;
+            top: 135px;
+            opacity: 0.5;
+        }
+        
+        .lunbo .btn:hover {
+            opacity: 1;
+        }
+        
+        .lunbo .left {
+            left: 0px;
+        }
+        
+        .lunbo .right {
+            right: 0px;
+        }
+        
+        .minlunbo {
+            width: 1176px;
+            height: 208px;
+            overflow: hidden;
+            position: relative;
+            margin-top: 40px;
+        }
+        
+        .minlunbo_img {
+            width: 1176px;
+            height: 184px;
+            position: absolute;
+            top: 0;
+            clear: right;
+        }
+        
+        .minlunbo_img img {
+            width: 1176px;
+            height: 184px;
+        }
+        
+        .minlunbo .minimg_index {
+            width: 100%;
+            position: absolute;
+            bottom: 2px;
+            left: 0;
+            text-align: center;
+            margin-top: 12px;
+        }
+        
+        .minlunbo .minimg_index ul {
+            height: auto;
+        }
+        
+        .minlunbo .minimg_index li {
+            width: 12px;
+            height: 12px;
+            background-color: #d3d3d4;
+            border-radius: 6px;
+            margin-right: 10px;
+            display: inline-block;
+            float: none;
+            padding: 0;
+        }
+        
+        .minlunbo .minimg_index li:last-child {
+            margin-right: 0;
+        }
+        
+        .minlunbo .minimg_index li:hover,
+        .minlunbo .minimg_index li.hover {
+            background-color: #d22d15;
+        }
+        
+        .minlunbo .minbtn {
+            width: 26px;
+            height: 56px;
+            position: absolute;
+            top: 64px;
+            opacity: 0;
+            cursor: pointer;
+        }
+        
+        .minlunbo .minbtn img {
+            width: 100%;
+        }
+        
+        .minlunbo:hover .minbtn {
+            opacity: 1;
+        }
+        
+        .minlunbo .minleft {
+            left: 0px;
+        }
+        
+        .minlunbo .minright {
+            right: 0px;
+        }
+        
+        .one dl {
+            width: 576px;
+            height: 176px;
+            margin-bottom: 40px;
+            display: inline-block;
+            clear: both;
+            background: url('//english.scio.gov.cn/images1/en/cpc100/text_box.png') no-repeat;
+            background-size: 100% 100%;
+        }
+        
+        .one dl:nth-of-type(2) {
+            float: right;
+        }
+        
+        .one dl dt {
+            width: 264px;
+            height: 176px;
+            display: inline-block;
+        }
+        
+        .one dl dt img {
+            width: 264px;
+            height: 176px;
+        }
+        
+        .one dl dd {
+            width: 312px;
+            height: 176px;
+            padding: 20px;
+            float: right;
+        }
+        
+        .one dl dd a {
+            font-size: 24px;
+            line-height: 30px;
+            color: #ffffff;
+        }
+        
+        .one ul,
+        .twobg ul {
+            width: 100%;
+            height: 120px;
+            display: inline-block;
+            clear: both;
+        }
+        
+        .one ul li,
+        .twobg ul li {
+            width: 392px;
+            height: 120px;
+            float: left;
+            padding: 0 15px;
+            position: relative;
+        }
+        
+        .one ul li span,
+        .twobg ul li span {
+            width: 4px;
+            height: 40px;
+            background-color: #dd2828;
+            position: absolute;
+            top: 5px;
+            left: 0;
+        }
+        
+        .one ul li a,
+        .twobg ul li a {
+            font-size: 24px;
+            line-height: 30px;
+        }
+        
+        .two {
+            height: 950px;
+        }
+        
+        .twobg {
+            width: 1269px;
+            height: 791px;
+            background: url('//english.scio.gov.cn/images1/en/cpc100/pagebox.png') no-repeat top center;
+            background-size: 100% 100%;
+            margin-left: -46.5px;
+            padding-top: 24px;
+        }
+        
+        .twoleft {
+            width: 564px;
+            display: inline-block;
+        }
+        
+        .twoleft img {
+            width: 564px;
+            height: 376px;
+        }
+        
+        .twoleft p {
+            width: 100%;
+            padding-top: 24px;
+        }
+        
+        .twoleft p a {
+            font-size: 30px;
+            line-height: 45px;
+            font-weight: bold;
+        }
+        
+        .tworight {
+            width: 588px;
+            float: right;
+        }
+        
+        .tworight dl {
+            width: 282px;
+            display: inline-block;
+        }
+        
+        .tworight dl:nth-of-type(2) {
+            float: right;
+        }
+        
+        .tworight dl dt {
+            width: 282px;
+            height: 188px;
+        }
+        
+        .tworight dl dt img {
+            width: 282px;
+            height: 188px;
+        }
+        
+        .tworight dl dd {
+            width: 100%;
+            padding-top: 10px;
+        }
+        
+        .tworight dl dd a {
+            font-size: 24px;
+            line-height: 30px;
+            font-weight: bold;
+        }
+        
+        .tworight dl dd p {
+            margin-top: 10px;
+            font-size: 16px;
+            line-height: 24px;
+            color: #666666;
+        }
+        
+        .twobg ul {
+            padding-top: 30px;
+            margin-top: 30px;
+            border-top: 1px dashed #c4c4c4;
+        }
+        
+        .three {
+            height: 712px;
+        }
+        
+        .three .title {
+            margin-bottom: 20px;
+        }
+        
+        .three ul {
+            width: 100%;
+            height: 484px;
+            display: inline-block;
+        }
+        
+        .three ul li {
+            width: 294px;
+            height: 484px;
+            float: left;
+            padding-top: 24px;
+            position: relative;
+        }
+        
+        .three ul li:nth-child(odd) {
+            background: url('//english.scio.gov.cn/images1/en/cpc100/red_box.png') no-repeat;
+            background-size: 100% 100%;
+        }
+        
+        .three ul li:nth-child(even) {
+            background: url('//english.scio.gov.cn/images1/en/cpc100/brown_box.png') no-repeat;
+            background-size: 100% 100%;
+        }
+        
+        .three ul li img {
+            width: 294px;
+            height: 196px;
+        }
+        
+        .three ul li p {
+            width: 100%;
+            padding: 28px 24px 0;
+        }
+        
+        .three ul li a {
+            font-size: 24px;
+            line-height: 30px;
+            color: #ffffff;
+        }
+        
+        .three ul li span {
+            position: absolute;
+            bottom: 44px;
+            left: 48px;
+        }
+        
+        .four {
+            height: 950px;
+        }
+        
+        .lunbo1 {
+            width: 1176px;
+            height: 645px;
+            position: relative;
+        }
+        
+        .lunbo1_img {
+            width: 628px;
+            height: 568px;
+            position: absolute;
+            top: 10px;
+            right: 0;
+            padding: 24px 20px 0;
+            background-color: #ffffff;
+        }
+        
+        .lunbo1_img img {
+            width: 588px;
+            height: 392px;
+        }
+        
+        .lunbo1_img p {
+            width: 100%;
+            height: 152px;
+            text-align: center;
+        }
+        
+        .lunbo1_img p span {
+            height: 152px;
+            vertical-align: middle;
+            display: table-cell;
+        }
+        
+        .lunbo1_img p span a {
+            font-size: 24px;
+            line-height: 30px;
+            font-weight: bold;
+            color: #917154;
+        }
+        
+        .lunbo1 .img1_index {
+            position: absolute;
+            top: 12px;
+            left: 16px;
+        }
+        
+        .lunbo1 .img1_index ul {
+            height: auto;
+        }
+        
+        .lunbo1 .img1_index li {
+            width: 270px;
+            height: 204px;
+            background-color: #ffffff;
+            padding: 6px 6px 0;
+            box-shadow: 0px 5px 20px rgba(126, 72, 2, 0.3);
+            transition: all 0.6s;
+        }
+        
+        .lunbo1 .img1_index li:nth-child(1) {
+            transform: rotate(-4deg) scale(1);
+            -ms-transform: rotate(-4deg) scale(1);
+            -moz-transform: rotate(-4deg) scale(1);
+            -webkit-transform: rotate(-4deg) scale(1);
+            -o-transform: rotate(-4deg) scale(1);
+        }
+        
+        .lunbo1 .img1_index li:nth-child(2) {
+            margin-left: 100px;
+            transform: rotate(3.2deg) scale(1);
+            -ms-transform: rotate(3.2deg) scale(1);
+            -moz-transform: rotate(3.2deg) scale(1);
+            -webkit-transform: rotate(3.2deg) scale(1);
+            -o-transform: rotate(3.2deg) scale(1);
+        }
+        
+        .lunbo1 .img1_index li:nth-child(3) {
+            transform: rotate(-6.8deg) scale(1);
+            -ms-transform: rotate(-6.8deg) scale(1);
+            -moz-transform: rotate(-6.8deg) scale(1);
+            -webkit-transform: rotate(-6.8deg) scale(1);
+            -o-transform: rotate(-6.8deg) scale(1);
+        }
+        
+        .lunbo1 .img1_index li:nth-child(1):hover,
+        .lunbo1 .img1_index li:nth-child(1).hover {
+            transform: rotate(-4deg) scale(1.1);
+            -ms-transform: rotate(-4deg) scale(1.1);
+            -moz-transform: rotate(-4deg) scale(1.1);
+            -webkit-transform: rotate(-4deg) scale(1.1);
+            -o-transform: rotate(-4deg) scale(1.1);
+        }
+        
+        .lunbo1 .img1_index li:nth-child(2):hover,
+        .lunbo1 .img1_index li:nth-child(2).hover {
+            margin-left: 100px;
+            transform: rotate(3.2deg) scale(1.1);
+            -ms-transform: rotate(3.2deg) scale(1.1);
+            -moz-transform: rotate(3.2deg) scale(1.1);
+            -webkit-transform: rotate(3.2deg) scale(1.1);
+            -o-transform: rotate(3.2deg) scale(1.1);
+        }
+        
+        .lunbo1 .img1_index li:nth-child(3):hover,
+        .lunbo1 .img1_index li:nth-child(3).hover {
+            transform: rotate(-6.8deg) scale(1.1);
+            -ms-transform: rotate(-6.8deg) scale(1.1);
+            -moz-transform: rotate(-6.8deg) scale(1.1);
+            -webkit-transform: rotate(-6.8deg) scale(1.1);
+            -o-transform: rotate(-6.8deg) scale(1.1);
+        }
+        
+        .lunbo1 .img1_index li img {
+            width: 258px;
+            height: 172px;
+        }
+        
+        .lunbo1 .btn1,
+        .lunbo2 .btn2 {
+            display: none;
+        }
+        
+        .five {
+            height: 702px;
+        }
+        
+        .five .title {
+            margin-bottom: 0;
+        }
+        
+        .fivebg {
+            width: 1267px;
+            height: 636px;
+            background: url('//english.scio.gov.cn/images1/en/cpc100/video_bg.png') no-repeat;
+            background-size: 100% 100%;
+            background-position-y: -79px;
+            padding: 36px 0 0 15px;
+        }
+        
+        .lunbo2 {
+            width: 1161px;
+            height: 468px;
+            overflow: hidden;
+            position: relative;
+            background-color: rgba(0, 0, 0, 0);
+        }
+        
+        .lunbo2_img {
+            width: 702px;
+            height: 468px;
+            position: absolute;
+            top: 0;
+            clear: right;
+        }
+        
+        .lunbo2_img img {
+            width: 702px;
+            height: 468px;
+        }
+        
+        .lunbo2_img img.play {
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            top: 184px;
+            left: 301px;
+        }
+        
+        .lunbo2 .img2_index {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+        
+        .lunbo2 .img2_index ul {
+            height: auto;
+        }
+        
+        .lunbo2 .img2_index li {
+            width: 459px;
+            height: 156px;
+            padding: 18px;
+        }
+        
+        .lunbo2 .img2_index li img {
+            width: 180px;
+            height: 120px;
+        }
+        
+        .lunbo2 .img2_index li p {
+            width: 243px;
+            height: 120px;
+            padding: 0 18px;
+            float: right;
+        }
+        
+        .lunbo2 .img2_index li p span {
+            height: 120px;
+            vertical-align: middle;
+            display: table-cell;
+        }
+        
+        .lunbo2 .img2_index li p span a {
+            font-size: 18px;
+            line-height: 24px;
+            color: #ffffff;
+        }
+        
+        .lunbo2 .img2_index li:hover,
+        .lunbo2 .img2_index li.hover {
+            background-color: #e8241f;
+        }
+        
+        .homebtn {
+            position: fixed;
+            width: 50px;
+            height: 50px;
+            top: 518px;
+            right: 0;
+            cursor: pointer;
+            z-index: 100000;
+            display: none;
+        }
+        
+        .topbtn {
+            position: fixed;
+            width: 50px;
+            height: 50px;
+            top: 572px;
+            right: 0;
+            cursor: pointer;
+            z-index: 100000;
+            display: none;
+        }
+        
+        .homebtn img,
+        .topbtn img {
+            width: 50px;
+            height: 50px;
+        }
+        
+        .footer {
+            font-size: 14px;
+            line-height: 20px;
+            color: #333;
+            text-transform: uppercase;
+            text-align: center;
+            padding-bottom: 32px;
+        }
+    </style>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112741182-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-112741182-1');
+    </script>
+
+    <!-- 百度统计 -->
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?fd2d485bd31a1b437014f46624329f5b";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+
+</head>
+
+<body>
+    <div class="banner">
+        <img src="//english.scio.gov.cn/images1/en/cpc100/title.png" class="bannert">
+    </div>
+
+    <div class='top'><img src="//english.scio.gov.cn/images1/en/cpc100/banner-300.jpg"></div>
+    <div class="toplist">
+        <a href="http://english.scio.gov.cn/" style="margin-top: 19px;margin-left: 1%;float: left;"><img src="//english.scio.gov.cn/images1/en/2019cc/logo.png" width="157" height="20" border="0" /></a>
+        <ul>
+            <li>
+                <FOUNDER-XY type="columnlist" data="{'columnid':[8023085],'columntype':'self'}">
+                    <#list columns as column><a href="${column.url!}">Home</a></#list>
+                </FOUNDER-XY>
+            </li>
+            <li>
+                <FOUNDER-XY type="columnlist" data="{'columnid':[8023086],'columntype':'self'}">
+                    <#list columns as column><a href="${column.url!}">${column.name}</a></#list>
+                </FOUNDER-XY>
+            </li>
+            <li>
+                <FOUNDER-XY type="columnlist" data="{'columnid':[8023087],'columntype':'self'}">
+                    <#list columns as column><a href="${column.url!}">${column.name}</a></#list>
+                </FOUNDER-XY>
+            </li>
+            <li>
+                <FOUNDER-XY type="columnlist" data="{'columnid':[8023088],'columntype':'self'}">
+                    <#list columns as column><a href="${column.url!}">${column.name}</a></#list>
+                </FOUNDER-XY>
+            </li>
+            <li>
+                <FOUNDER-XY type="columnlist" data="{'columnid':[8023089],'columntype':'self'}">
+                    <#list columns as column><a href="${column.url!}">${column.name}</a></#list>
+                </FOUNDER-XY>
+            </li>
+            <li>
+                <FOUNDER-XY type="columnlist" data="{'columnid':[8023090],'columntype':'self'}">
+                    <#list columns as column><a href="${column.url!}">${column.name}</a></#list>
+                </FOUNDER-XY>
+            </li>
+        </ul>
+        <div class="bshare-custom icon-medium-plus" style="float: right; margin-top: 7px;margin-right: 1%;">
+            <a title="分享到Facebook" class="bshare-facebook" href="javascript:void(0);" style="width: 44px;height: 44px;background:url(//english.scio.gov.cn/images1/en/2019cc/facebook1.png) no-repeat;padding: 0px;"></a>
+            <a title="分享到Twitter" class="bshare-twitter" href="javascript:void(0);" style="width: 44px;height: 44px;background:url(//english.scio.gov.cn/images1/en/2019cc/twitter1.png) no-repeat;padding: 0px;"></a>
+            <a title="分享到微信" class="bshare-weixin" href="javascript:void(0);" style="width: 44px;height: 44px;background:url(//english.scio.gov.cn/images1/en/2019cc/微信1.png) no-repeat;padding: 0px;;"></a>
+            <a title="分享到微博" class="bshare-sinaminiblog" href="javascript:void(0);" style="width: 44px;height: 44px;background:url(//english.scio.gov.cn/images1/en/2019cc/微博1.png) no-repeat;padding: 0px;"></a>
+        </div>
+        <script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/buttonLite.js#style=-1&amp;uuid=72352d86-8c1b-4361-8d6b-12862c1a6656&amp;pophcol=2&amp;lang=zh"></script>
+        <script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/bshareC0.js"></script>
+    </div>
+    <div class="box1">
+        <div class="one wdiv">
+            <div class="title">
+                <FOUNDER-XY type="columnlist" data="{'columnid':[8023086],'columntype':'self'}">
+                    <#list columns as column>
+                        <a href="${column.url!}"><img src="//english.scio.gov.cn/images1/en/cpc100/t1.png"></a>
+                    </#list>
+                </FOUNDER-XY>
+            </div>
+            <div class="lunbo">
+                <FOUNDER-XY type="articlelist" data="{'columnid':[8023707],'articletype':'all','article_attr':'HEADLINE','start':'0','count':'1'}">
+                    <#list articles as article>
+                        <div class="lunbo_img">
+                            <a href="${article.url}"><img src="${article.picBig}" border=0></a>
+                            <p><span><a href="${article.url}">${article.title}</a></span></p>
+                        </div>
+                    </#list>
+                </FOUNDER-XY>
+                <FOUNDER-XY type="articlelist" data="{'columnid':[8023708],'articletype':'all','article_attr':'HEADLINE','start':'0','count':'2'}">
+                    <#list articles as article>
+                        <div class="lunbo_img">
+                            <a href="${article.url}"><img src="${article.picBig}" border=0></a>
+                            <p><span><a href="${article.url}">${article.title}</a></span></p>
+                        </div>
+                    </#list>
+                </FOUNDER-XY>
+                <div class="img_index">
+                    <ul></ul>
+                </div>
+                <div class="btn left"><img src="//english.scio.gov.cn/images1/en/cpc100/left.png" alt="" /></div>
+                <div class="btn right"><img src="//english.scio.gov.cn/images1/en/cpc100/right.png" alt="" /></div>
+            </div>
+            <FOUNDER-XY type="articlelist" data="{'columnid':[8023708],'articletype':'all','article_attr':'COMMON','start':'0','count':'2'}">
+                <#list articles as article>
+                    <dl>
+                        <dt><a href="${article.url}"><img src="${article.picBig}" border=0></a></dt>
+                        <dd><a href="${article.url}">${article.title}</a></dd>
+                    </dl>
+                </#list>
+            </FOUNDER-XY>
+            <ul>
+                <FOUNDER-XY type="articlelist" data="{'columnid':[8023708],'articletype':'all','article_attr':'COMMON','start':'2','count':'3'}">
+                    <#list articles as article>
+                        <li><span></span><a href="${article.url}">${article.title}</a></li>
+                    </#list>
+                </FOUNDER-XY>
+            </ul>
+            <div class="minlunbo">
+                <div class="minlunbo_img">
+                    <a href="http://english.scio.gov.cn/CPCgroupinterviews/node_8024582.html"><img src="//english.scio.gov.cn/images1/en/cpc100/xiaozhuanti2.jpg"></a>
+                </div>
+                <div class="minlunbo_img">
+                    <a href="http://english.scio.gov.cn/CPC100/node_8024755.html"><img src="//english.scio.gov.cn/images1/en/cpc100/xiaozhuanti1.jpg"></a>
+                </div>
+                <div class="minimg_index">
+                    <ul></ul>
+                </div>
+                <div class="minbtn minleft"><img src="//english.scio.gov.cn/images1/en/cpc100/left.png" /></div>
+                <div class="minbtn minright"><img src="//english.scio.gov.cn/images1/en/cpc100/right.png" /></div>
+            </div>
+        </div>
+        <div class="two wdiv">
+            <div class="title">
+                <FOUNDER-XY type="columnlist" data="{'columnid':[8023087],'columntype':'self'}">
+                    <#list columns as column>
+                        <a href="${column.url!}"><img src="//english.scio.gov.cn/images1/en/cpc100/t2.png"></a>
+                    </#list>
+                </FOUNDER-XY>
+            </div>
+            <div class="twobg">
+                <div class="wdiv">
+                    <div class="twoleft">
+                        <FOUNDER-XY type="articlelist" data="{'columnid':[8023087],'articletype':'all','article_attr':'HEADLINE','start':'0','count':'1'}">
+                            <#list articles as article>
+                                <a href="${article.url}"><img src="${article.picBig}" border=0></a>
+                                <p><a href="${article.url}">${article.title}</a></p>
+                            </#list>
+                        </FOUNDER-XY>
+                    </div>
+                    <div class="tworight">
+                        <FOUNDER-XY type="articlelist" data="{'columnid':[8023087],'articletype':'all','article_attr':'HEADLINE','start':'1','count':'2'}">
+                            <#list articles as article>
+                                <dl>
+                                    <dt><a href="${article.url}"><img src="${article.picBig}" border=0></a></dt>
+                                    <dd><a href="${article.url}">${article.title}</a>
+                                        <p>${article.summary}</p>
+                                    </dd>
+                                </dl>
+                            </#list>
+                        </FOUNDER-XY>
+                    </div>
+                    <ul>
+                        <FOUNDER-XY type="articlelist" data="{'columnid':[8023087],'articletype':'all','article_attr':'COMMON','start':'0','count':'3'}">
+                            <#list articles as article>
+                                <li><span></span><a href="${article.url}">${article.title}</a></li>
+                            </#list>
+                        </FOUNDER-XY>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="three wdiv">
+            <div class="title">
+                <FOUNDER-XY type="columnlist" data="{'columnid':[8023088],'columntype':'self'}">
+                    <#list columns as column>
+                        <a href="${column.url!}"><img src="//english.scio.gov.cn/images1/en/cpc100/t3.png"></a>
+                    </#list>
+                </FOUNDER-XY>
+            </div>
+            <ul>
+                <FOUNDER-XY type="articlelist" data="{'columnid':[8023088],'articletype':'all','article_attr':'all','start':'0','count':'4'}">
+                    <#list articles as article>
+                        <li>
+                            <a href="${article.url}"><img src="${article.picBig}" border=0></a>
+                            <p><a href="${article.url}">${article.title}</a></p>
+                            <span><a href="${article.url}">>>></a></span>
+                        </li>
+                    </#list>
+                </FOUNDER-XY>
+            </ul>
+        </div>
+    </div>
+    <div class="box2">
+        <div class="four wdiv">
+            <div class="title">
+                <FOUNDER-XY type="columnlist" data="{'columnid':[8023089],'columntype':'self'}">
+                    <#list columns as column>
+                        <a href="${column.url!}"><img src="//english.scio.gov.cn/images1/en/cpc100/t4.png"></a>
+                    </#list>
+                </FOUNDER-XY>
+            </div>
+            <div class="lunbo1">
+                <FOUNDER-XY type="articlelist" data="{'columnid':[8023089],'articletype':'all','article_attr':'all','start':'0','count':'3'}">
+                    <#list articles as article>
+                        <div class="lunbo1_img">
+                            <a href="${article.url}"><img src="${article.picBig}" border=0></a>
+                            <p><span><a href="${article.url}">${article.title}</a></span></p>
+                        </div>
+                    </#list>
+                </FOUNDER-XY>
+                <div class="img1_index">
+                    <ul>
+                        <FOUNDER-XY type="articlelist" data="{'columnid':[8023089],'articletype':'all','article_attr':'all','start':'0','count':'3'}">
+                            <#list articles as article>
+                                <li>
+                                    <a href="${article.url}"><img src="${article.picBig}" border=0></a>
+                                </li>
+                            </#list>
+                        </FOUNDER-XY>
+                    </ul>
+                </div>
+                <div class="btn1 left1"></div>
+                <div class="btn1 right1"></div>
+            </div>
+        </div>
+        <div class="five wdiv">
+            <div class="title">
+                <FOUNDER-XY type="columnlist" data="{'columnid':[8023090],'columntype':'self'}">
+                    <#list columns as column>
+                        <a href="${column.url!}"><img src="//english.scio.gov.cn/images1/en/cpc100/t5.png"></a>
+                    </#list>
+                </FOUNDER-XY>
+            </div>
+            <div class="fivebg">
+                <div class="lunbo2">
+                    <FOUNDER-XY type="articlelist" data="{'columnid':[8023090],'articletype':'all','article_attr':'all','start':'0','count':'3'}">
+                        <#list articles as article>
+                            <div class="lunbo2_img">
+                                <a href="${article.url}"><img src="${article.picBig}" border=0><img src="//english.scio.gov.cn/images1/en/cpc100/play.png" class="play"></a>
+                            </div>
+                        </#list>
+                    </FOUNDER-XY>
+                    <div class="img2_index">
+                        <ul>
+                            <FOUNDER-XY type="articlelist" data="{'columnid':[8023090],'articletype':'all','article_attr':'all','start':'0','count':'3'}">
+                                <#list articles as article>
+                                    <li>
+                                        <a href="${article.url}"><img src="${article.picBig}" border=0></a>
+                                        <p><span><a href="${article.url}">${article.title}</a></span></p>
+                                    </li>
+                                </#list>
+                            </FOUNDER-XY>
+                        </ul>
+                    </div>
+                    <div class="btn2 left2"></div>
+                    <div class="btn2 right2"></div>
+                </div>
+            </div>
+        </div>
+        <div class='footer'>
+            Copyright © english.scio.gov.cn All rights reserved. </br>
+            Registration Number: 19210669-8
+        </div>
+    </div>
+
+    <div class="homebtn"><img src="//english.scio.gov.cn/images1/en/gxb/20171211/home.png" /></div>
+
+    <div class="topbtn"><img src="//english.scio.gov.cn/images1/en/brics2018/totop.png" /></div>
+
+    <script type="text/javascript" src="//english.scio.gov.cn/images1/resource/scripts/jquery/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="//english.scio.gov.cn/images1/en/scio2021/js/CarouselOne.js"></script>
+    <script type="text/javascript">
+        (function(window, $) {
+            $(function() {
+                if (/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
+                    window.location.href = 'http://english.scio.gov.cn/m/CPC100/node_8023085.html';
+                }
+                $(".bannert").animate({
+                    "margin-left": "16.92%",
+                    "opacity": "1"
+                }, 1000);
+                $(".lunbo_img").each(function() {
+                    $(".lunbo .img_index ul").append($("<li></li>"));
+                });
+                $('.lunbo_img').eq(0).fadeIn(300).siblings('.lunbo_img').fadeOut(300);
+                $('.lunbo .img_index ul li').eq(0).addClass("hover").siblings('li').removeClass("hover");
+                $(".minlunbo_img").each(function() {
+                    $(".minlunbo .minimg_index ul").append($("<li></li>"));
+                });
+                $('.minlunbo_img').eq(0).fadeIn(300).siblings('.lunbo_img').fadeOut(300);
+                $('.minlunbo .minimg_index ul li').eq(0).addClass("hover").siblings('li').removeClass("hover");
+                $('.lunbo1_img').eq(0).fadeIn(300).siblings('.lunbo1_img').fadeOut(300);
+                $('.lunbo1 .img1_index ul li').eq(0).addClass("hover").siblings('li').removeClass("hover");
+                $('.lunbo2_img').eq(0).fadeIn(300).siblings('.lunbo2_img').fadeOut(300);
+                $('.lunbo2 .img2_index ul li').eq(0).addClass("hover").siblings('li').removeClass("hover");
+            })
+        })(window, jQuery);
+        (function(window, $) {
+            window.setTimeout((function() {
+                $(".banner").animate({
+                    height: 0
+                }, 500, (function() {
+                    $(".homebtn").show(1000);
+                    $(".topbtn").show(1000);
+                }));
+            }), 2000);
+            $('.homebtn').on('click', function() {
+                $(window).attr('location', 'http://english.scio.gov.cn/index.htm');
+            })
+            window.CarouselOne(".lunbo", ".lunbo_img", ".lunbo .img_index ul li", ".lunbo .right", ".lunbo .left", true, 5000);
+            window.CarouselOne(".minlunbo", ".minlunbo_img", ".minlunbo .minimg_index ul li", ".minlunbo .minright", ".minlunbo .minleft", true, 2000);
+            window.CarouselOne(".lunbo1", ".lunbo1_img", ".lunbo1 .img1_index ul li", ".lunbo1 .right1", ".lunbo1 .left1", false, 0);
+            window.CarouselOne(".lunbo2", ".lunbo2_img", ".lunbo2 .img2_index ul li", ".lunbo2 .right2", ".lunbo2 .left2", false, 0);
+            $(".topbtn").click(function() {
+                $("html,body").animate({
+                    scrollTop: 0
+                }, 500);
+            });
+        })(window, jQuery);
+    </script>
+</body>
+
+</html>
