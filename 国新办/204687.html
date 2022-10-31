@@ -209,7 +209,7 @@
         </FOUNDER-XY>
     </div>
     <div class="toplist" id="toplist">
-        <a href="http://english.scio.gov.cn/" style="margin-top: 19px;margin-left: 1%;float: left;"><img src="//english.scio.gov.cn/images1/en/2019cc/logo.png" width="157" height="20" border="0" /></a>
+        <a href="//english.scio.gov.cn/" style="margin-top: 19px;margin-left: 1%;float: left;"><img src="//english.scio.gov.cn/images1/en/2019cc/logo.png" width="157" height="20" border="0" /></a>
         <ul>
             <li>
                 <FOUNDER-XY type="columnlist" data="{'columnid':[8023085],'columntype':'self'}">
@@ -291,7 +291,7 @@
     </div>
 
     <div class="footer">Copyright © english.scio.gov.cn All rights reserved.<br>Registration Number: 19210669-8</div>
-    <div class="homebtn" style="position: fixed;width: 50px;height: 50px;top:518px;right: 0;cursor: pointer;z-index: 100000;" onclick="window.open(&#39;http://english.scio.gov.cn/&#39;,&#39;_self&#39;)"><img style="width: 50px;height:50px;" src="//english.scio.gov.cn/images1/en/gxb/20171211/home.png" /></div>
+    <div class="homebtn" style="position: fixed;width: 50px;height: 50px;top:518px;right: 0;cursor: pointer;z-index: 100000;"><img style="width: 50px;height:50px;" src="//english.scio.gov.cn/images1/en/gxb/20171211/home.png" /></div>
 
     <div class="topbtn" style="position: fixed;width: 50px;height: 50px;top:572px;right: 0;cursor: pointer;z-index: 100000;"><img style="width: 50px;height:50px;" src="//english.scio.gov.cn/images1/en/brics2018/totop.png" /></div>
 
@@ -318,6 +318,9 @@
                 scrollTop: 0
             }, 500);
         });
+        $('.homebtn').on('click', function() {
+            window.location.href = "//english.scio.gov.cn";
+        })
     </script>
 
 </body>

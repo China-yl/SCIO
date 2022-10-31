@@ -550,7 +550,7 @@
         <div class="list fl" id="list" onclick="showlist()"><img src="//english.scio.gov.cn/images1/en/brics2018/list.jpg" /></div>
         <div class="list1 fl" id="list1" onclick="closelist()"><img src="//english.scio.gov.cn/images1/en/brics2018/closse.jpg"></div>
         <div class="ban21">
-            <a href="http://english.scio.gov.cn/m/index.htm"><img src="//english.scio.gov.cn/images1/en/xigovernance/chinascio.png" / style="width: 32%;margin: 10px 34%;"></a>
+            <a href="//english.scio.gov.cn/m/index.htm"><img src="//english.scio.gov.cn/images1/en/xigovernance/chinascio.png" / style="width: 32%;margin: 10px 34%;"></a>
         </div>
         <div class="listshow" id="listshow">
             <ul>
@@ -763,7 +763,7 @@
 
     <div class="footer">Copyright © english.scio.gov.cn All rights reserved.<br>Registration Number: 14055996</div>
 
-    <div class="homebtn" style="position: fixed;width: 50px;height: 50px;top:447px;right: 0;cursor: pointer;z-index: 100000;" onclick="window.open(&#39;http://english.scio.gov.cn/&#39;,&#39;_self&#39;)"><img style="width: 50px;height:50px;" src="//english.scio.gov.cn/images1/en/gxb/20171211/home.png" /></div>
+    <div class="homebtn" style="position: fixed;width: 50px;height: 50px;top:447px;right: 0;cursor: pointer;z-index: 100000;"><img style="width: 50px;height:50px;" src="//english.scio.gov.cn/images1/en/gxb/20171211/home.png" /></div>
 
     <div class="topbtn" style="position: fixed;width: 50px;height: 50px;top:500px;right: 0;cursor: pointer;z-index: 100000;"><img style="width: 50px;height:50px;" src="//english.scio.gov.cn/images1/en/brics2018/totop.png" /></div>
 </body>
@@ -834,6 +834,9 @@
             scrollTop: 0
         }, 500);
     });
+    $('.homebtn').on('click', function() {
+        window.location.href = "//english.scio.gov.cn";
+    })
 </script>
 <script type="text/javascript">
     var swiper = new Swiper('.swiper-container', {

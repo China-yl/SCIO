@@ -222,9 +222,7 @@
 
 <body>
     <div class="box1" style="padding-bottom:30px;">
-        <FOUNDER-XY type="columnlist" data="{'columnid':[7247655],'columntype':'self'}">
-            <#list columns as column><iframe id="Top" src="${column.url!}" width="100%" height="130" scrolling="no" marginheight="0" frameborder="0"></iframe></#list>
-        </FOUNDER-XY>
+        <iframe id="Top" src="//english.scio.gov.cn/node_7247655.htm" width="100%" height="130" scrolling="no" marginheight="0" frameborder="0"></iframe>
     </div>
 
     <div class="ban2">
@@ -316,7 +314,7 @@
         </FOUNDER-XY>
     </div>
 
-    <div class="box2">
+    <!-- <div class="box2">
         <p style="display: none;"><img src="//english.scio.gov.cn/images1/en/gxb/19.jpg" width="1200" height="28" /></p>
 
         <div>
@@ -345,26 +343,36 @@
             </ul>
         </div>
 
-        <!-- <div>
-<FOUNDER-XY type="articlelist" data="{'columnid':[7248018], 'articletype': 'all', 'article_attr': 'HEADLINE', 'columntype':'self', 'showall':'true', 'start': 0, 'count': 1}"><#list articles as article><dl>
-<dt><a   href="${article.url}" ><img src="${article.picBig}"   border=0> </a></dt>
-<dd>
-<h1><a   href="${article.url}" >${article.title}</a></h1>
-${article.summary}
-</dd>
-</dl></#list></FOUNDER-XY>
-<h2><FOUNDER-XY type="columnlist" data="{'columnid':[7248018],'columntype':'self'}"><#list columns as column><a href="${column.url!}" class=""  target="_self">News</a></#list></FOUNDER-XY>
-</h2>
-<ul><FOUNDER-XY type="articlelist" data="{'columnid':[7248018], 'articletype': 'all', 'article_attr': 'COMMON', 'columntype':'self', 'showall':'true', 'start': 0, 'count': 4}"><#list articles as article>
-<li><a   href="${article.url}" >${article.title}</a></li></#list></FOUNDER-XY></ul>
-</div> -->
+        <div>
+            <FOUNDER-XY type="articlelist" data="{'columnid':[7248018], 'articletype': 'all', 'article_attr': 'HEADLINE', 'columntype':'self', 'showall':'true', 'start': 0, 'count': 1}">
+                <#list articles as article>
+                    <dl>
+                        <dt><a   href="${article.url}" ><img src="${article.picBig}"   border=0> </a></dt>
+                        <dd>
+                            <h1><a href="${article.url}">${article.title}</a></h1>
+                            ${article.summary}
+                        </dd>
+                    </dl>
+                </#list>
+            </FOUNDER-XY>
+            <h2>
+                <FOUNDER-XY type="columnlist" data="{'columnid':[7248018],'columntype':'self'}">
+                    <#list columns as column><a href="${column.url!}" class="" target="_self">News</a></#list>
+                </FOUNDER-XY>
+            </h2>
+            <ul>
+                <FOUNDER-XY type="articlelist" data="{'columnid':[7248018], 'articletype': 'all', 'article_attr': 'COMMON', 'columntype':'self', 'showall':'true', 'start': 0, 'count': 4}">
+                    <#list articles as article>
+                        <li><a href="${article.url}">${article.title}</a></li>
+                    </#list>
+                </FOUNDER-XY>
+            </ul>
+        </div>
 
-    </div>
+    </div> -->
 
     <div class='footer'>
-        <FOUNDER-XY type="columnlist" data="{'columnid':[7248726],'columntype':'self'}">
-            <#list columns as column><iframe id="bottomifr" src="${column.url!}" width="100%" height="610" scrolling="no" marginheight="0" frameborder="0"></iframe></#list>
-        </FOUNDER-XY>
+        <iframe id="bottomifr" src="//english.scio.gov.cn/node_7248726.htm" width="100%" height="610" scrolling="no" marginheight="0" frameborder="0"></iframe>
     </div>
 
     <script type="text/javascript" src="//english.scio.gov.cn/images1/resource/scripts/jquery/jquery-3.6.0.min.js">

@@ -658,7 +658,7 @@
             }
 
             if (!getCookie("word") && (bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM)) {
-                window.location.href = 'http://english.scio.gov.cn/m/China_povertyalleviation/node_8019624.html';
+                window.location.href = '//english.scio.gov.cn/m/China_povertyalleviation/node_8019624.html';
             }
         }
         browserRedirect(); //调用自身，页面一打开就开始跳转
@@ -697,7 +697,7 @@
     </div>
     <div class="nav">
         <div class="logo">
-            <a href="http://english.scio.gov.cn/"><img src="//english.scio.gov.cn/images1/en/2019cc/logo.png"></a>
+            <a href="//english.scio.gov.cn/"><img src="//english.scio.gov.cn/images1/en/2019cc/logo.png"></a>
         </div>
         <ul>
             <li class="show">
@@ -925,12 +925,10 @@
     </div>
 
     <div class='footer'>
-        <FOUNDER-XY type="columnlist" data="{'columnid':[7248726],'columntype':'self'}">
-            <#list columns as column><iframe id="bottomifr" src="${column.url!}" width="100%" height="610" scrolling="no" marginheight="0" frameborder="0"></iframe></#list>
-        </FOUNDER-XY>
+        <iframe id="bottomifr" src="//english.scio.gov.cn/node_7248726.htm" width="100%" height="610" scrolling="no" marginheight="0" frameborder="0"></iframe>
     </div>
 
-    <div class="homebtn" style="position: fixed;width: 50px;height: 50px;top:518px;right: 0;cursor: pointer;z-index: 100000;" onclick="window.open(&#39;http://english.scio.gov.cn/&#39;,&#39;_self&#39;)"><img style="width: 50px;height:50px;" src="//english.scio.gov.cn/images1/en/gxb/20171211/home.png" /></div>
+    <div class="homebtn" style="position: fixed;width: 50px;height: 50px;top:518px;right: 0;cursor: pointer;z-index: 100000;"><img style="width: 50px;height:50px;" src="//english.scio.gov.cn/images1/en/gxb/20171211/home.png" /></div>
 
     <div class="topbtn" style="position: fixed;width: 50px;height: 50px;top:572px;right: 0;cursor: pointer;z-index: 100000;"><img style="width: 50px;height:50px;" src="//english.scio.gov.cn/images1/en/brics2018/totop.png" /></div>
 
@@ -941,6 +939,9 @@
                 scrollTop: 0
             }, 500);
         });
+        $('.homebtn').on('click', function() {
+            window.location.href = "//english.scio.gov.cn";
+        })
     </script>
 </body>
 

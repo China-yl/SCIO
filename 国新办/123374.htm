@@ -304,13 +304,13 @@
             for (var i = 3; i < strArr.length; i++) {
                 strurl.push(strArr[i]);
             }
-            var lasturl = "http://english.scio.gov.cn/m/" + strurl.join("/");
+            var lasturl = "//english.scio.gov.cn/m/" + strurl.join("/");
             if (bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM) {
                 if (strArr[3] != "m") {
                     window.location.href = lasturl;
                 }
             } else {
-                // window.location= 'http://english.scio.gov.cn/index.htm ';
+                // window.location= '//english.scio.gov.cn/index.htm ';
             }
         }
         browserRedirect(); //调用自身，页面一打开就开始跳转
@@ -348,9 +348,7 @@
 
 <body>
     <div class='top'>
-        <FOUNDER-XY type="columnlist" data="{'columnid':[7247655],'columntype':'self'}">
-            <#list columns as column><iframe id="Top" src="${column.url!}" width="100%" height="130" scrolling="no" marginheight="0" frameborder="0"></iframe></#list>
-        </FOUNDER-XY>
+        <iframe id="Top" src="//english.scio.gov.cn/node_7247655.htm" width="100%" height="130" scrolling="no" marginheight="0" frameborder="0"></iframe>
     </div>
 
     <div class="ban2">
@@ -436,7 +434,7 @@
 
     <div class="wrap">
         <div class="wrapl">
-            <div class="box5"><a href="http://english.scio.gov.cn/index.htm">Home</a>&nbsp;>&nbsp;
+            <div class="box5"><a href="//english.scio.gov.cn/index.htm">Home</a>&nbsp;>&nbsp;
                 <FOUNDER-XY type="position" data="{}">
                     <#list columns as column><a href="${column.url}" target="_self" class="">${column.name}</a>&nbsp;>&nbsp;</#list>
                 </FOUNDER-XY>
@@ -490,19 +488,15 @@
         </div>
 
         <div class="wrapr">
-            <FOUNDER-XY type="columnlist" data="{'columnid':[7247694],'columntype':'self'}">
-                <#list columns as column><iframe id="con_rightifr" src="${column.url!}" width="250" height="600" scrolling="no" marginheight="0" frameborder="0"></iframe></#list>
-            </FOUNDER-XY>
+            <iframe id="con_rightifr" src="//english.scio.gov.cn/node_7247694.htm" width="250" height="600" scrolling="no" marginheight="0" frameborder="0"></iframe>
         </div>
     </div>
 
     <div class='footer'>
-        <FOUNDER-XY type="columnlist" data="{'columnid':[7248726],'columntype':'self'}">
-            <#list columns as column><iframe id="bottomifr" src="${column.url!}" width="100%" height="610" scrolling="no" marginheight="0" frameborder="0"></iframe></#list>
-        </FOUNDER-XY>
+        <iframe id="bottomifr" src="//english.scio.gov.cn/node_7248726.htm" width="100%" height="610" scrolling="no" marginheight="0" frameborder="0"></iframe>
     </div>
 
-    <div class="homebtn" style="position: fixed;width: 50px;height: 50px;bottom:70px;right: 0;cursor: pointer;z-index: 100000;display:none;" onclick="window.open(&#39;http://english.scio.gov.cn/&#39;,&#39;_self&#39;)"><img style="width: 50px;height:50px;" src="//english.scio.gov.cn/images1/en/gxb/20171211/home.png" /></div>
+    <div class="homebtn" style="position: fixed;width: 50px;height: 50px;bottom:70px;right: 0;cursor: pointer;z-index: 100000;display:none;"><img style="width: 50px;height:50px;" src="//english.scio.gov.cn/images1/en/gxb/20171211/home.png" /></div>
 
     <div class="topbtn" style="position: fixed;width: 50px;height: 50px;bottom:15px;right: 0;cursor: pointer;z-index: 100000;display:none;"><img style="width: 50px;height:50px;" src="//english.scio.gov.cn/images1/en/brics2018/totop.png" /></div>
 
@@ -512,17 +506,13 @@
 
     <div style="display:none">
         <script type="text/javascript">
-            <!--
             document.write(unescape("%3Cscript src='http://cl2.webterren.com/webdig.js?z=12' type='text/javascript'%3E%3C/script%3E"));
-            -->
         </script>
 
 
 
         <script type="text/javascript">
-            <!--
             wd_paramtracker("_wdxid=000000000000000000000000000000000000000000")
-                -->
         </script>
     </div>
 
@@ -532,11 +522,9 @@
 
 
     <script type="text/javascript">
-        <!--
         (function($) {
             $('.cp p:first()').addClass('cp_f');
         })(jQuery);
-        -->
     </script>
 
     <script type="text/javascript" src="//english.scio.gov.cn/images1/en/gxb/index.js">
@@ -583,6 +571,9 @@
                 scrollTop: 0
             }, 500);
         });
+        $('.homebtn').on('click', function() {
+            window.location.href = "//english.scio.gov.cn";
+        })
     </script>
 
 </body>

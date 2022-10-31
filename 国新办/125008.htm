@@ -312,13 +312,13 @@
             for (var i = 3; i < strArr.length; i++) {
                 strurl.push(strArr[i]);
             }
-            var lasturl = "http://english.scio.gov.cn/m/" + strurl.join("/");
+            var lasturl = "//english.scio.gov.cn/m/" + strurl.join("/");
             if (bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM) {
                 if (strArr[3] != "m") {
                     window.location.href = lasturl;
                 }
             } else {
-                // window.location= 'http://english.scio.gov.cn/index.htm ';
+                // window.location= '//english.scio.gov.cn/index.htm ';
             }
         }
         browserRedirect(); //调用自身，页面一打开就开始跳转
@@ -465,9 +465,7 @@
         </div>
 
         <div class="wrapr">
-            <FOUNDER-XY type="columnlist" data="{'columnid':[7247694],'columntype':'self'}">
-                <#list columns as column><iframe id="con_rightifr" src="${column.url!}" width="250" height="600" scrolling="no" marginheight="0" frameborder="0"></iframe></#list>
-            </FOUNDER-XY>
+            <iframe id="con_rightifr" src="//english.scio.gov.cn/node_7247694.htm" width="250" height="600" scrolling="no" marginheight="0" frameborder="0"></iframe>
         </div>
     </div>
 
@@ -476,7 +474,7 @@
             written authorization from english.scio.gov.cn, such content shall not be republished or used in any form.</div>
     </div>
 
-    <div class="homebtn" style="position: fixed;width: 50px;height: 50px;top:518px;right: 0;cursor: pointer;z-index: 100000;" onclick="window.open(&#39;http://english.scio.gov.cn/&#39;,&#39;_self&#39;)"><img style="width: 50px;height:50px;" src="//english.scio.gov.cn/images1/en/gxb/20171116/home.jpg" /></div>
+    <div class="homebtn" style="position: fixed;width: 50px;height: 50px;top:518px;right: 0;cursor: pointer;z-index: 100000;"><img style="width: 50px;height:50px;" src="//english.scio.gov.cn/images1/en/gxb/20171116/home.jpg" /></div>
 
     <div class="topbtn" style="position: fixed;width: 50px;height: 50px;top:572px;right: 0;cursor: pointer;z-index: 100000;"><img style="width: 50px;height:50px;" src="//english.scio.gov.cn/images1/en/gxb/20171116/totop.jpg" /></div>
 
@@ -540,6 +538,9 @@
                 scrollTop: 0
             }, 500);
         });
+        $('.homebtn').on('click', function() {
+            window.location.href = "//english.scio.gov.cn";
+        })
     </script>
     <script type="text/javascript">
         if (!!window.ActiveXObject || "ActiveXObject" in window) {} else {

@@ -214,13 +214,13 @@
             for (var i = 3; i < strArr.length; i++) {
                 strurl.push(strArr[i]);
             }
-            var lasturl = "http://english.scio.gov.cn/m/" + strurl.join("/");
+            var lasturl = "//english.scio.gov.cn/m/" + strurl.join("/");
             if (bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM) {
                 if (strArr[3] != "m") {
                     window.location.href = lasturl;
                 }
             } else {
-                // window.location= 'http://english.scio.gov.cn/index.htm ';
+                // window.location= '//english.scio.gov.cn/index.htm ';
             }
         }
         browserRedirect(); //调用自身，页面一打开就开始跳转
@@ -258,7 +258,7 @@
 
 <body>
     <div class="toplist" id="toplist">
-        <a href="http://english.scio.gov.cn/" style="margin-top: 0.7%;margin-left: 1%;"><img src="//english.scio.gov.cn/images1/en/2018fpzt/logo.png" width="194" height="25" border="0" /></a>
+        <a href="//english.scio.gov.cn/" style="margin-top: 0.7%;margin-left: 1%;"><img src="//english.scio.gov.cn/images1/en/2018fpzt/logo.png" width="194" height="25" border="0" /></a>
         <div class="bshare-custom icon-medium-plus" style="float: right; margin-top: 0.3%;margin-right: 1%;">
             <a title="分享到Facebook" class="bshare-facebook" href="javascript:void(0);" style="width: 44px;height: 44px;background:url(//english.scio.gov.cn/images1/en/2018fpzt/fb.png) no-repeat;padding: 0px;"></a>
             <a title="分享到Twitter" class="bshare-twitter" href="javascript:void(0);" style="width: 44px;height: 44px;background:url(//english.scio.gov.cn/images1/en/2018fpzt/tw.png) no-repeat;padding: 0px;"></a>
@@ -274,7 +274,7 @@
     </div>
 
     <div class="wrap">
-        <div class="box1"><a href="http://english.scio.gov.cn/index.htm">Home</a>&nbsp;>&nbsp;
+        <div class="box1"><a href="//english.scio.gov.cn/index.htm">Home</a>&nbsp;>&nbsp;
             <FOUNDER-XY type="position" data="{}">
                 <#list columns as column><a href="${column.url}" target="_self" class="">${column.name}</a>&nbsp;>&nbsp;</#list>
             </FOUNDER-XY>

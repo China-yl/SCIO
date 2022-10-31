@@ -358,7 +358,7 @@
         <div class="list fl" id="list" onclick="showlist()"><img src="//english.scio.gov.cn/images1/en/xigovernance/list.png" /></div>
         <div class="list1 fl" id="list1" onclick="closelist()"><img src="//english.scio.gov.cn/images1/en/xigovernance/closelist.png"></div>
         <div class="ban21">
-            <a href="http://english.scio.gov.cn/m/index.htm"><img src="//english.scio.gov.cn/images1/en/xigovernance/chinascio.png" / style="width: 32%;margin: 10px 34%;"></a>
+            <a href="//english.scio.gov.cn/m/index.htm"><img src="//english.scio.gov.cn/images1/en/xigovernance/chinascio.png" / style="width: 32%;margin: 10px 34%;"></a>
         </div>
         <div class="listshow" id="listshow">
             <div class="listtop">
@@ -366,6 +366,12 @@
                     <#list articles as article><a href="${article.urlPad}">${article.title}</a></#list>
                 </FOUNDER-XY><br><br>
                 <FOUNDER-XY type="articlelist" data="{'columnid':[7248448], 'articletype': 'all', 'article_attr': 'COMMON', 'columntype':'self', 'showall':'true', 'start': 1, 'count': 1}">
+                    <#list articles as article><a href="${article.urlPad}">${article.title}</a></#list>
+                </FOUNDER-XY><br><br>
+                <FOUNDER-XY type="articlelist" data="{'columnid':[7248448], 'articletype': 'all', 'article_attr': 'COMMON', 'columntype':'self', 'showall':'true', 'start': 2, 'count': 1}">
+                    <#list articles as article><a href="${article.urlPad}">${article.title}</a></#list>
+                </FOUNDER-XY><br><br>
+                <FOUNDER-XY type="articlelist" data="{'columnid':[7248448], 'articletype': 'all', 'article_attr': 'COMMON', 'columntype':'self', 'showall':'true', 'start': 3, 'count': 1}">
                     <#list articles as article><a href="${article.urlPad}">${article.title}</a></#list>
                 </FOUNDER-XY>
             </div>
@@ -494,7 +500,7 @@
             }, 500);
         });
         $(".pcbtn").click(function() {
-            window.location.href = "http://english.scio.gov.cn/featured/xigovernance/node_7248444.htm?word=pc ";
+            window.location.href = "//english.scio.gov.cn/featured/xigovernance/node_7248444.htm?word=pc ";
         });
     </script>
 

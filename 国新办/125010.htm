@@ -321,9 +321,7 @@
         </div>
 
         <div class="wrapr">
-            <FOUNDER-XY type="columnlist" data="{'columnid':[7247694],'columntype':'self'}">
-                <#list columns as column><iframe id="con_rightifr" src="${column.url!}" width="250" height="600" scrolling="no" marginheight="0" frameborder="0"></iframe></#list>
-            </FOUNDER-XY>
+            <iframe id="con_rightifr" src="//english.scio.gov.cn/node_7247694.htm" width="250" height="600" scrolling="no" marginheight="0" frameborder="0"></iframe>
         </div>
     </div>
 
@@ -331,7 +329,7 @@
         <div style=" width:1200px; margin:0 auto; text-align:center; font-size:12px; line-height:20px; clear:both; color:#f3f3f3; padding-top:60px;padding-bottom: 38px;">Copyright © english.scio.gov.cn<br /> Registration Number: 19010669-8<br /> All rights reserved. The content (including but not limited to text, photo, multimedia information, etc) published in this site belongs to english.scio.gov.cn.<br /> Without
             written authorization from english.scio.gov.cn, such content shall not be republished or used in any form.</div>
     </div>
-    <div class="homebtn" style="position: fixed;width: 50px;height: 50px;top:518px;right: 0;cursor: pointer;z-index: 100000;" onclick="window.open(&#39;http://english.scio.gov.cn/&#39;,&#39;_self&#39;)"><img style="width: 50px;height:50px;" src="//english.scio.gov.cn/images1/en/gxb/20171116/home.jpg" /></div>
+    <div class="homebtn" style="position: fixed;width: 50px;height: 50px;top:518px;right: 0;cursor: pointer;z-index: 100000;"><img style="width: 50px;height:50px;" src="//english.scio.gov.cn/images1/en/gxb/20171116/home.jpg" /></div>
 
     <div class="topbtn" style="position: fixed;width: 50px;height: 50px;top:572px;right: 0;cursor: pointer;z-index: 100000;"><img style="width: 50px;height:50px;" src="//english.scio.gov.cn/images1/en/gxb/20171116/totop.jpg" /></div>
 
@@ -399,6 +397,9 @@
                 scrollTop: 0
             }, 500);
         });
+        $('.homebtn').on('click', function() {
+            window.location.href = "//english.scio.gov.cn";
+        })
     </script>
 </body>
 

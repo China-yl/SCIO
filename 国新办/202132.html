@@ -273,7 +273,7 @@
         Registration Number: 19010669-8
     </div>
 
-    <div class="homebtn" style="position: fixed;width: 50px;height: 50px;top:518px;right: 0;cursor: pointer;z-index: 100000;" onclick="window.open(&#39;http://english.scio.gov.cn/&#39;,&#39;_self&#39;)"><img style="width: 50px;height:50px;" src="//english.scio.gov.cn/images1/en/gxb/20171211/home.png" /></div>
+    <div class="homebtn" style="position: fixed;width: 50px;height: 50px;top:518px;right: 0;cursor: pointer;z-index: 100000;"><img style="width: 50px;height:50px;" src="//english.scio.gov.cn/images1/en/gxb/20171211/home.png" /></div>
 
     <div class="topbtn" style="position: fixed;width: 50px;height: 50px;top:572px;right: 0;cursor: pointer;z-index: 100000;"><img style="width: 50px;height:50px;" src="//english.scio.gov.cn/images1/en/brics2018/totop.png" /></div>
 
@@ -315,6 +315,9 @@
                 scrollTop: 0
             }, 500);
         });
+        $('.homebtn').on('click', function() {
+            window.location.href = "//english.scio.gov.cn";
+        })
     </script>
 
 </body>
