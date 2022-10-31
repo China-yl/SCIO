@@ -1,0 +1,201 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>
+        <FOUNDER-XY type="columnlist" data="{'columnid':[],'columntype':'self'}">
+            <#list columns as column>${column.name}</#list>
+        </FOUNDER-XY> | english.scio.gov.cn</title>
+    <base target="_self" />
+    <FOUNDER-XY type="article" data="{}">
+        <meta name="keywords" content="${article.keyword}">
+    </FOUNDER-XY>
+    <FOUNDER-XY type="article" data="{}">
+        <meta name="filetype" content="0"></meta>
+        <meta name="publishedtype" content="1"></meta>
+        <meta name="pagetype" content="1"></meta>
+        <meta name="catalogs" content=""></meta>
+        <meta name="contentid" content="${article.id?c}"></meta>
+        <meta name="publishdate" content="${article.pubTime?string(" yyyy-MM-dd ")}"></meta>
+        <meta name="author" content="${article.liability}"></meta>
+    </FOUNDER-XY>
+
+    <style type="text/css">
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial;
+            width: 100%;
+            background-color: #ffffff;
+        }
+        
+        ul,
+        li {
+            list-style-type: none;
+        }
+        
+        a,
+        a:hover {
+            text-decoration: none;
+        }
+        
+        img {
+            width: 100%;
+            height: auto;
+        }
+        
+        .toplist {
+            width: 100%;
+            height: 90px;
+            padding: 0 3.125vw;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        
+        .logo {
+            width: 13vw;
+        }
+        
+        .toplist ul {
+            display: flex;
+            justify-content: flex-start;
+        }
+        
+        .toplist ul li {
+            margin: 0 40px;
+        }
+        
+        .toplist ul li a {
+            font-size: 18px;
+            color: #000;
+        }
+        
+        .toplist ul li span {
+            display: block;
+            width: 0;
+            height: 2px;
+            background-color: #dfab1c;
+            transition: width 0.5s;
+        }
+        
+        .toplist ul li:hover span {
+            width: 100%;
+        }
+        
+        .container {
+            width: 1160px;
+            margin: 0 auto;
+        }
+        
+        .content {
+            width: 100%;
+            padding: 40px 0;
+            background: url('http://images.china.cn/images1/en/governanceofchina2022/quotes1/bg_jianbian.jpg') repeat-y;
+        }
+        
+        .intro {
+            font-size: 30px;
+            line-height: 1.5;
+            color: #ffffff;
+            margin-bottom: 60px;
+        }
+        
+        .content img {
+            width: 750px;
+            height: auto;
+            margin: 0 auto 40px;
+            display: block;
+        }
+    </style>
+
+    <script type="text/javascript" src="//english.scio.gov.cn/images1/en/scio2021/js/jump.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics  -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112741182-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-112741182-1');
+    </script>
+
+    <!-- 百度统计  -->
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?fd2d485bd31a1b437014f46624329f5b";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+
+</head>
+
+<body>
+    <div class="toplist">
+        <div class="logo">
+            <a href="//english.scio.gov.cn/"><img src="//english.scio.gov.cn/images1/en/2018fpzt/logo.png"></a>
+        </div>
+        <ul>
+            <FOUNDER-XY type="columnlist" data="{'columnid':[8032950],'columntype':'self'}">
+                <#list columns as column>
+                    <li><a href="${column.url!}">Home</a><span></span></li>
+                </#list>
+            </FOUNDER-XY>
+            <FOUNDER-XY type="articlelist" data="{'columnid':[8032951],'articletype':'all','article_attr':'all','start':'0','count':'1'}">
+                <#list articles as article>
+                    <li><a href="${article.url}">${article.currentColName}</a><span></span></li>
+                </#list>
+            </FOUNDER-XY>
+            <FOUNDER-XY type="columnlist" data="{'columnid':[8032952],'columntype':'self'}">
+                <#list columns as column>
+                    <li><a href="${column.url!}">${column.name}</a><span></span></li>
+                </#list>
+            </FOUNDER-XY>
+            <FOUNDER-XY type="columnlist" data="{'columnid':[8032954],'columntype':'self'}">
+                <#list columns as column>
+                    <li><a href="${column.url!}">${column.name}</a><span></span></li>
+                </#list>
+            </FOUNDER-XY>
+            <FOUNDER-XY type="columnlist" data="{'columnid':[8032953],'columntype':'self'}">
+                <#list columns as column>
+                    <li><a href="${column.url!}">${column.name}</a><span></span></li>
+                </#list>
+            </FOUNDER-XY>
+        </ul>
+    </div>
+    <FOUNDER-XY type="article" data="{'articleid':''}">
+        <div class="banner">
+            <img src="${article.picSmall}">
+        </div>
+        <div class="content">
+            <div class="container">
+                <div class="intro">${article.summary}</div>
+                ${article.content}
+            </div>
+        </div>
+    </FOUNDER-XY>
+
+
+</body>
+<script type="text/javascript" src="http://images.china.cn/images1/resource/scripts/jquery/jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+    (function(window, $) {
+        $('.banner img').attr('src', $('.container img').eq(0).attr('src'));
+        $('.container p').eq(0).hide();
+        $('.container p').eq(1).hide();
+    })(window, jQuery)
+</script>
+
+</html>

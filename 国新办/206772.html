@@ -1,0 +1,267 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>
+        <FOUNDER-XY type="columnlist" data="{'columnid':[],'columntype':'self'}">
+            <#list columns as column>${column.name}</#list>
+        </FOUNDER-XY> | english.scio.gov.cn</title>
+    <base target="_self" />
+    <meta name="filetype" content="1" />
+    <meta name="publishedtype" content="1" />
+    <meta name="pagetype" content="2" />
+    <FOUNDER-XY type="columnlist" data="{'columnid':[],'columntype':'self'}">
+        <#list columns as column>
+            <meta name="catalogs" content="${column.id}">
+            </meta>
+            <meta itemprop="name" content="${column.name}" />
+        </#list>
+    </FOUNDER-XY>
+
+    <style type="text/css">
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial;
+            width: 100%;
+            background-color: #ffffff;
+        }
+        
+        ul,
+        li {
+            list-style-type: none;
+        }
+        
+        a,
+        a:hover {
+            text-decoration: none;
+        }
+        
+        img {
+            width: 100%;
+            height: auto;
+        }
+        
+        .toplist {
+            width: 100%;
+            height: 90px;
+            padding: 0 3.125vw;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        
+        .logo {
+            width: 13vw;
+        }
+        
+        .toplist ul {
+            display: flex;
+            justify-content: flex-start;
+        }
+        
+        .toplist ul li {
+            margin: 0 40px;
+        }
+        
+        .toplist ul li a {
+            font-size: 18px;
+            color: #000;
+        }
+        
+        .toplist ul li span {
+            display: block;
+            width: 0;
+            height: 2px;
+            background-color: #dfab1c;
+            transition: width 0.5s;
+        }
+        
+        .toplist ul li:hover span {
+            width: 100%;
+        }
+        
+        .container {
+            width: 1200px;
+            margin: 0 auto;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .column {
+            width: 196px;
+            height: 60px;
+            background-color: #932322;
+            font-size: 36px;
+            line-height: 60px;
+            font-weight: bold;
+            text-align: center;
+            color: #ffffff;
+            margin-bottom: 40px;
+        }
+        
+        .line {
+            width: 1px;
+            height: 100%;
+            background-color: #932322;
+            position: absolute;
+            top: 60px;
+            left: 98px;
+        }
+        
+        .list {
+            width: 920px;
+            margin: 0 auto;
+        }
+        
+        .list li {
+            overflow: hidden;
+            width: 100%;
+            padding: 20px;
+            background-color: #f6f9f9;
+            margin-bottom: 30px;
+        }
+        
+        .img {
+            float: left;
+            margin-right: 30px;
+        }
+        
+        .img img {
+            width: 180px;
+        }
+        
+        .art {
+            padding: 10px 0;
+        }
+        
+        .art a {
+            font-size: 20px;
+            line-height: 30px;
+            font-weight: bold;
+            color: #000;
+        }
+        
+        .art a:hover {
+            text-decoration: underline;
+        }
+        
+        .footer {
+            width: 100%;
+            margin: 0 auto;
+            background: #b04512;
+            line-height: 68px;
+            color: #ffffff;
+            text-align: center;
+            font-size: 16px;
+        }
+    </style>
+
+    <script type="text/javascript" src="//english.scio.gov.cn/images1/en/scio2021/js/jump.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics  -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112741182-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-112741182-1');
+    </script>
+
+    <!-- 百度统计  -->
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?fd2d485bd31a1b437014f46624329f5b";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+
+</head>
+
+<body>
+    <div class="toplist">
+        <div class="logo">
+            <a href="//english.scio.gov.cn/"><img src="//english.scio.gov.cn/images1/en/2018fpzt/logo.png"></a>
+        </div>
+        <ul>
+            <FOUNDER-XY type="columnlist" data="{'columnid':[8032950],'columntype':'self'}">
+                <#list columns as column>
+                    <li><a href="${column.url!}">Home</a><span></span></li>
+                </#list>
+            </FOUNDER-XY>
+            <FOUNDER-XY type="articlelist" data="{'columnid':[8032951],'articletype':'all','article_attr':'all','start':'0','count':'1'}">
+                <#list articles as article>
+                    <li><a href="${article.url}">${article.currentColName}</a><span></span></li>
+                </#list>
+            </FOUNDER-XY>
+            <FOUNDER-XY type="columnlist" data="{'columnid':[8032952],'columntype':'self'}">
+                <#list columns as column>
+                    <li><a href="${column.url!}">${column.name}</a><span></span></li>
+                </#list>
+            </FOUNDER-XY>
+            <FOUNDER-XY type="columnlist" data="{'columnid':[8032954],'columntype':'self'}">
+                <#list columns as column>
+                    <li><a href="${column.url!}">${column.name}</a><span></span></li>
+                </#list>
+            </FOUNDER-XY>
+            <FOUNDER-XY type="columnlist" data="{'columnid':[8032953],'columntype':'self'}">
+                <#list columns as column>
+                    <li><a href="${column.url!}">${column.name}</a><span></span></li>
+                </#list>
+            </FOUNDER-XY>
+        </ul>
+    </div>
+    <div class="banner">
+        <img src="http://images.china.cn/images1/en/governanceofchina2022/banner2.jpg">
+    </div>
+    <div class="container">
+        <div class="column">
+            <FOUNDER-XY type="columnlist" data="{'columnid':[],'columntype':'self'}">
+                <#list columns as column>${column.name}</#list>
+            </FOUNDER-XY>
+        </div>
+        <div class="line"></div>
+        <div class="list">
+            <ul>
+                <FOUNDER-XY type="articlelist" data="{'columnid':[], 'articletype': 'all', 'article_attr': 'all','start': 0, 'count': 50}">
+                    <#list articles as article>
+                        <li>
+                            <div class="img">
+                                <a href="${article.url}"><img src="${article.picBig}"></a>
+                            </div>
+                            <div class="art">
+                                <a href="${article.url}">${article.title}</a>
+                            </div>
+                        </li>
+                    </#list>
+                </FOUNDER-XY>
+            </ul>
+        </div>
+    </div>
+
+    <div class="footer">
+        Copyright © english.scio.gov.cn All rights reserved. Registration Number: 19010669-8
+    </div>
+</body>
+<script type="text/javascript" src="http://images.china.cn/images1/resource/scripts/jquery/jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+    (function(window, $) {
+        if ($('.img img').attr('src') == "") {
+            $('.img').hide();
+        }
+    })(window, jQuery)
+</script>
+
+</html>

@@ -1,0 +1,742 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>
+        <FOUNDER-XY type="columnlist" data="{'columnid':[],'columntype':'self'}">
+            <#list columns as column>${column.name}</#list>
+        </FOUNDER-XY> | english.scio.gov.cn</title>
+    <base target="_self" />
+    <meta name="filetype" content="1" />
+    <meta name="publishedtype" content="1" />
+    <meta name="pagetype" content="2" />
+    <FOUNDER-XY type="columnlist" data="{'columnid':[],'columntype':'self'}">
+        <#list columns as column>
+            <meta name="catalogs" content="${column.id}">
+            </meta>
+            <meta itemprop="name" content="${column.name}" />
+        </#list>
+    </FOUNDER-XY>
+
+    <style type="text/css">
+        * {
+            margin: 0px;
+            padding: 0px;
+            border: 0px;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial;
+            width: 100%;
+            min-width: 1200px;
+            background-color: #ffffff;
+            overflow-x: hidden;
+        }
+        
+        ul,
+        li {
+            list-style-type: none;
+        }
+        
+        a,
+        a:hover {
+            text-decoration: none;
+        }
+        
+        img {
+            width: 100%;
+            height: auto;
+        }
+        
+        .toplist {
+            width: 100%;
+            height: 90px;
+            padding: 0 3.125vw;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        
+        .logo {
+            width: 13vw;
+        }
+        
+        .toplist ul {
+            display: flex;
+            justify-content: flex-start;
+        }
+        
+        .toplist ul li {
+            margin: 0 40px;
+        }
+        
+        .toplist ul li a {
+            font-size: 18px;
+            color: #000;
+        }
+        
+        .toplist ul li span {
+            display: block;
+            width: 0;
+            height: 2px;
+            background-color: #dfab1c;
+            transition: width 0.5s;
+        }
+        
+        .toplist ul li:hover span {
+            width: 100%;
+        }
+        
+        .container {
+            width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .div1 {
+            width: 100%;
+            height: 372px;
+            background: url('http://images.china.cn/images1/en/governanceofchina2022/bg.jpg') no-repeat;
+            background-position: center;
+            margin-bottom: 50px;
+            overflow: hidden;
+        }
+        
+        .div1 .container {
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .bookimg {
+            padding-top: 27px;
+        }
+        
+        .bookimg a {
+            width: 520px;
+            height: 286px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-end;
+        }
+        
+        .bookimg a img {
+            width: 180px;
+            transition: all 0.5s;
+        }
+        
+        .bookimg a:hover img {
+            transform: scale(1.1);
+        }
+        
+        .bookintro p {
+            width: 500px;
+            height: 372px;
+            display: flex;
+            align-items: center;
+            margin-right: 90px;
+        }
+        
+        .bookintro p a {
+            display: block;
+            width: 100%;
+            font-size: 20px;
+            line-height: 32px;
+            color: #ffffff;
+        }
+        
+        .column {
+            width: 957px;
+            height: 75px;
+            margin: 0 auto;
+        }
+        
+        .div2 {
+            width: 100%;
+            background: url('http://images.china.cn/images1/en/governanceofchina2022/latest_bg.jpg') no-repeat;
+            background-position: center;
+            margin-bottom: 80px;
+        }
+        
+        .div2 .column {
+            margin-bottom: 40px;
+        }
+        
+        .div2 .content {
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .div2 .content dl {
+            background-color: rgba(255, 255, 255, 0);
+            transition: all 0.5s;
+        }
+        
+        .div2 .content dl:hover {
+            transform: scale(1.1);
+            background-color: rgba(255, 255, 255, 1);
+            box-shadow: 5px 0px 40px rgba(0, 0, 0, 0.3);
+        }
+        
+        .div2 .content dl dt {
+            width: 360px;
+            height: 240px;
+        }
+        
+        .div2 .content dl dd {
+            width: 360px;
+            height: 140px;
+            padding: 24px;
+        }
+        
+        .div2 .content dl dd a {
+            font-size: 20px;
+            line-height: 30px;
+            color: #000;
+        }
+        
+        .more {
+            width: 957px;
+            height: 54px;
+            margin: 15px auto 0;
+            background: url('http://images.china.cn/images1/en/governanceofchina2022/greyline.png') no-repeat;
+            background-position-y: center;
+        }
+        
+        .more a {
+            display: block;
+        }
+        
+        .more p {
+            width: 200px;
+            height: 54px;
+            border: 1px solid #000;
+            border-radius: 5px;
+            font-size: 16px;
+            line-height: 54px;
+            color: #000;
+            text-align: center;
+            background-color: #ffffff;
+            margin: 0 auto;
+        }
+        
+        .more:hover p {
+            border: unset;
+            color: #ffffff;
+            background-color: #cc1616;
+        }
+        
+        .div4 {
+            width: 100%;
+            margin-bottom: 80px;
+        }
+        
+        .div4 .column {
+            margin-bottom: 30px;
+        }
+        
+        .carousel {
+            width: 900px;
+            height: 368px;
+            margin: 0 auto;
+            position: relative;
+        }
+        
+        .bg {
+            width: 900px;
+            height: 200px;
+            background: #d9efef;
+            position: absolute;
+            left: 0;
+            bottom: 16px;
+        }
+        
+        .carousel .img {
+            width: 1000000000000px;
+            position: absolute;
+            left: 0px;
+            top: 0px;
+        }
+        
+        .carousel .img li {
+            float: left;
+            padding: 0 70px;
+            margin: 0;
+            border: 0;
+        }
+        
+        .carousel .img a {
+            display: block;
+            width: 760px;
+            height: 304px;
+            overflow: hidden;
+        }
+        
+        .carousel .img img {
+            width: 760px;
+            height: 304px;
+            transition: all 0.5s;
+        }
+        
+        .carousel .img li:hover img {
+            transform: scale(1.1);
+        }
+        
+        .carousel .num {
+            display: block;
+            width: 100%;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            text-align: right;
+            padding-right: 65px;
+        }
+        
+        .carousel .num li {
+            display: inline-block;
+            width: 4px;
+            height: 4px;
+            background: #d2d9e6;
+            margin-right: 8px;
+        }
+        
+        .carousel .num li:hover,
+        .carousel .num li.on {
+            box-shadow: 0px 0px 0px 4px rgba(150, 7, 13, 0.5);
+            background: #960807;
+        }
+        
+        .carousel .btn {
+            position: absolute;
+            top: 96px;
+            width: 52px;
+            height: 112px;
+            z-index: 10;
+            cursor: pointer;
+            opacity: 0.5;
+        }
+        
+        .carousel .btn_l {
+            left: 18px;
+            right: auto;
+        }
+        
+        .carousel .btn_r {
+            right: 18px;
+            left: auto;
+        }
+        
+        .carousel .btn:hover {
+            opacity: 1;
+        }
+        
+        .mubu1,
+        .mubu2 {
+            width: 900px;
+            height: 304px;
+            position: absolute;
+            top: 0;
+            z-index: 99999;
+        }
+        
+        .mubu1 {
+            left: -100%;
+        }
+        
+        .mubu2 {
+            right: -100%;
+        }
+        
+        .div5 {
+            width: 100%;
+            height: 560px;
+            background: url('http://images.china.cn/images1/en/governanceofchina2022/listen_bg.jpg') no-repeat;
+            background-position: center;
+            margin-bottom: 80px;
+            padding-top: 40px;
+        }
+        
+        .div5 .column {
+            margin-bottom: 30px;
+        }
+        
+        .div5 .content {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        
+        .div5 .content ul {
+            display: block;
+            height: 310px;
+        }
+        
+        .div5 .content ul li {
+            width: 570px;
+            height: 140px;
+            background: rgba(113, 43, 47, .4);
+            padding: 0 60px 0 30px;
+            border: 1px solid #fff;
+            border-radius: 10px;
+            transition: all 0.5s;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            float: left;
+        }
+        
+        .div5 .content ul li:nth-child(1) {
+            margin: 0 60px 30px 0;
+        }
+        
+        .div5 .content ul li:nth-child(2) {
+            margin: 0 0 30px 0;
+        }
+        
+        .div5 .content ul li:nth-child(3) {
+            margin: 0 60px 0 0;
+        }
+        
+        .div5 .content ul li:hover {
+            background: rgba(113, 43, 47, .8);
+        }
+        
+        .erji {
+            width: 96px;
+            height: 96px;
+            margin-right: 30px;
+        }
+        
+        .tit a {
+            display: block;
+            width: 300px;
+            font-size: 16px;
+            line-height: 24px;
+            color: #ffffff;
+        }
+        
+        .play {
+            width: 30px;
+            height: 30px;
+            cursor: pointer;
+        }
+        
+        .audio {
+            display: none;
+        }
+        
+        .div5 .more {
+            width: 200px;
+            background: none;
+            margin: 0;
+            float: right;
+        }
+        
+        .div5 .more p {
+            border: 1px solid #ffffff;
+            color: #ffffff;
+            background-color: #bd2610;
+        }
+        
+        .div5 .more:hover p {
+            color: #bd2610;
+            background-color: #ffffff;
+        }
+        
+        .div6 {
+            margin-bottom: 60px;
+        }
+        
+        .buy {
+            width: 960px;
+            height: 140px;
+            margin: 0 auto;
+        }
+        
+        .footer {
+            width: 100%;
+            margin: 0 auto;
+            background: #b04512;
+            line-height: 68px;
+            color: #ffffff;
+            text-align: center;
+            font-size: 16px;
+        }
+    </style>
+
+    <script type="text/javascript" src="//english.scio.gov.cn/images1/en/scio2021/js/jump.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics  -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112741182-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-112741182-1');
+    </script>
+
+    <!-- 百度统计  -->
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?fd2d485bd31a1b437014f46624329f5b";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+
+</head>
+
+<body>
+    <div class="toplist">
+        <div class="logo">
+            <a href="//english.scio.gov.cn/"><img src="//english.scio.gov.cn/images1/en/2018fpzt/logo.png"></a>
+        </div>
+        <ul>
+            <FOUNDER-XY type="columnlist" data="{'columnid':[8032950],'columntype':'self'}">
+                <#list columns as column>
+                    <li><a href="${column.url!}">Home</a><span></span></li>
+                </#list>
+            </FOUNDER-XY>
+            <FOUNDER-XY type="articlelist" data="{'columnid':[8032951],'articletype':'all','article_attr':'all','start':'0','count':'1'}">
+                <#list articles as article>
+                    <li><a href="${article.url}">${article.currentColName}</a><span></span></li>
+                </#list>
+            </FOUNDER-XY>
+            <FOUNDER-XY type="columnlist" data="{'columnid':[8032952],'columntype':'self'}">
+                <#list columns as column>
+                    <li><a href="${column.url!}">${column.name}</a><span></span></li>
+                </#list>
+            </FOUNDER-XY>
+            <FOUNDER-XY type="columnlist" data="{'columnid':[8032954],'columntype':'self'}">
+                <#list columns as column>
+                    <li><a href="${column.url!}">${column.name}</a><span></span></li>
+                </#list>
+            </FOUNDER-XY>
+            <FOUNDER-XY type="columnlist" data="{'columnid':[8032953],'columntype':'self'}">
+                <#list columns as column>
+                    <li><a href="${column.url!}">${column.name}</a><span></span></li>
+                </#list>
+            </FOUNDER-XY>
+        </ul>
+    </div>
+    <div class="banner">
+        <img src="http://images.china.cn/images1/en/governanceofchina2022/banner2.jpg">
+    </div>
+    <div class="div1">
+        <div class="container">
+            <div class="bookimg">
+                <FOUNDER-XY type="articlelist" data="{'columnid':[8032951],'articletype':'all','article_attr':'all','start':'0','count':'1'}">
+                    <#list articles as article>
+                        <a href="${article.url}"><img src="http://images.china.cn/images1/en/governanceofchina2022/xi4.png"></a>
+                    </#list>
+                </FOUNDER-XY>
+            </div>
+            <div class="bookintro">
+                <FOUNDER-XY type="articlelist" data="{'columnid':[8032951],'articletype':'all','article_attr':'all','start':'0','count':'1'}">
+                    <#list articles as article>
+                        <p><a href="${article.url}">${article.summary}</a></p>
+                    </#list>
+                </FOUNDER-XY>
+            </div>
+        </div>
+    </div>
+    <div class="div2">
+        <div class="container">
+            <div class="column"><img src="http://images.china.cn/images1/en/governanceofchina2022/latest.png"></div>
+            <div class="content">
+                <FOUNDER-XY type="articlelist" data="{'columnid':[8032952],'articletype':'all','article_attr':'all','start':'0','count':'3'}">
+                    <#list articles as article>
+                        <dl>
+                            <dt><a href="${article.url}"><img src="${article.picBig}"></a></dt>
+                            <dd><a href="${article.url}">${article.title}</a></dd>
+                        </dl>
+                    </#list>
+                </FOUNDER-XY>
+            </div>
+            <div class="more">
+                <FOUNDER-XY type="columnlist" data="{'columnid':[8032952],'columntype':'self'}">
+                    <#list columns as column>
+                        <a href="${column.url!}">
+                            <p>— MORE —</p>
+                        </a>
+                    </#list>
+                </FOUNDER-XY>
+            </div>
+        </div>
+    </div>
+    <div class="div4">
+        <div class="column">
+            <FOUNDER-XY type="columnlist" data="{'columnid':[8032954],'columntype':'self'}">
+                <#list columns as column>
+                    <a href="${column.url!}"><img src="http://images.china.cn/images1/en/governanceofchina2022/quotes.png"></a>
+                </#list>
+            </FOUNDER-XY>
+        </div>
+        <div class="carousel">
+            <div class="bg"></div>
+            <ul class="img">
+                <FOUNDER-XY type="articlelist" data="{'columnid':[8032954],'articletype':'all','article_attr':'all','start':0,'count':20}">
+                    <#list articles as article>
+                        <li>
+                            <a href="${article.url}"><img src="${article.picBig}"></a>
+                        </li>
+                    </#list>
+                </FOUNDER-XY>
+            </ul>
+            <ul class="num"></ul>
+            <div class="btn btn_l"><img src="http://images.china.cn/images1/en/governanceofchina2022/left.png"></div>
+            <div class="btn btn_r"><img src="http://images.china.cn/images1/en/governanceofchina2022/right.png"></div>
+            <div class="mubu1"></div>
+            <div class="mubu2"></div>
+        </div>
+    </div>
+    <div class="div5">
+        <div class="container">
+            <div class="column"><img src="http://images.china.cn/images1/en/governanceofchina2022/listen.png"></div>
+            <div class="content">
+                <ul>
+                    <FOUNDER-XY type="articlelist" data="{'columnid':[8032953],'articletype':'all','article_attr':'all','start':'0','count':'4'}">
+                        <#list articles as article>
+                            <li>
+                                <div class="erji"><img src="http://images.china.cn/images1/en/governanceofchina2022/erji.png"></div>
+                                <div class="tit"><a href="${article.url}">${article.title}</a></div>
+                                <div class="play"><img src="http://images.china.cn/images1/en/governanceofchina2022/play.png"></div>
+                                <div class="audio">${article.content}</div>
+                            </li>
+                        </#list>
+                    </FOUNDER-XY>
+                </ul>
+            </div>
+            <div class="more">
+                <FOUNDER-XY type="columnlist" data="{'columnid':[8032953],'columntype':'self'}">
+                    <#list columns as column>
+                        <a href="${column.url!}">
+                            <p>— MORE —</p>
+                        </a>
+                    </#list>
+                </FOUNDER-XY>
+            </div>
+        </div>
+    </div>
+    <div class="div6">
+        <div class="container">
+            <div class="buy">
+                <a href="https://www.amazon.com/stores/page/728073DA-7710-46F9-A352-F2D74EB60067?ingress=0&visitId=e59c8658-cf5a-4a25-a7e2-e8feec0e26c7"><img src="http://images.china.cn/images1/en/governanceofchina2022/buy.jpg"></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        Copyright © english.scio.gov.cn All rights reserved. Registration Number: 19010669-8
+    </div>
+</body>
+<script type="text/javascript" src="http://images.china.cn/images1/resource/scripts/jquery/jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+    (function(window, $) {
+        $(function() {
+            lun(".carousel", ".carousel .img", ".carousel .img li", ".carousel .num", ".carousel .num li", ".carousel .btn_r", ".carousel .btn_l", 900, "false");
+        })
+
+        function lun(a, b, c, d, e, f, g, w, p) {
+            var i = 1;
+            var clone = $(c).first().clone();
+            var clone1 = $(c).last().clone();
+            $(b).append(clone);
+            $(b).prepend(clone1);
+            $(b).stop().animate({
+                left: -1 * w
+            }, 500);
+            var size = $(c).length;
+            for (var j = 0; j < size - 2; j++) {
+                $(d).append("<li></li>");
+            }
+            $(c).eq(1).addClass("show");
+            $(e).first().addClass("on");
+            if (p == "true") {
+                var t = setInterval(function() {
+                    i++;
+                    move();
+                }, 2000);
+                $(a).hover(function() {
+                    clearInterval(t);
+                }, function() {
+                    t = setInterval(function() {
+                        i++;
+                        move();
+                    }, 2000);
+                });
+            }
+            $(e).hover(function() {
+                var index = $(this).index();
+                i = index + 1;
+                $(b).stop().animate({
+                    left: -i * w
+                }, 500);
+                $(c).eq(i).addClass("show").siblings().removeClass("show");
+                $(this).addClass("on").siblings().removeClass("on");
+            });
+
+            $(f).click(function() {
+                i++;
+                move();
+            })
+
+            $(g).click(function() {
+                i--;
+                move();
+            })
+
+            function move() {
+                if (i == size - 1) {
+                    $(b).css({
+                        left: 0
+                    });
+                    i = 1;
+                }
+
+                if (i == 0) {
+                    $(b).css({
+                        left: -(size - 1) * w
+                    });
+                    i = size - 2;
+                }
+                $(b).stop().animate({
+                    left: -i * w
+                }, 500);
+                if (i == size - 2) {
+                    $(c).eq(0).addClass("show").siblings().removeClass("show");
+                    $(e).eq(i - 1).addClass("on").siblings().removeClass("on");
+                } else {
+                    $(c).eq(i).addClass("show").siblings().removeClass("show");
+                    $(e).eq(i - 1).addClass("on").siblings().removeClass("on");
+                }
+            }
+        }
+
+        $('.play').each(function(i) {
+            $(this).click(function() {
+                if ($('audio')[i].paused) {
+                    $('audio').each(function(i) {
+                        $('audio')[i].pause();
+                        $('.play').find('img').attr('src', 'http://images.china.cn/images1/en/governanceofchina2022/play.png');
+                    });
+                    $('audio')[i].play();
+                    $(this).find('img').attr('src', 'http://images.china.cn/images1/en/governanceofchina2022/stop.png');
+                } else {
+                    $('audio')[i].pause();
+                    $(this).find('img').attr('src', 'http://images.china.cn/images1/en/governanceofchina2022/play.png');
+                }
+            })
+        })
+    })(window, jQuery)
+</script>
+
+</html>

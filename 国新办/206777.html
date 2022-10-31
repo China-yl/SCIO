@@ -1,0 +1,350 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>
+        <FOUNDER-XY type="columnlist" data="{'columnid':[],'columntype':'self'}">
+            <#list columns as column>${column.name}</#list>
+        </FOUNDER-XY> | english.scio.gov.cn</title>
+    <base target="_self" />
+    <FOUNDER-XY type="article" data="{}">
+        <meta name="keywords" content="${article.keyword}">
+    </FOUNDER-XY>
+    <FOUNDER-XY type="article" data="{}">
+        <meta name="filetype" content="0"></meta>
+        <meta name="publishedtype" content="1"></meta>
+        <meta name="pagetype" content="1"></meta>
+        <meta name="catalogs" content=""></meta>
+        <meta name="contentid" content="${article.id?c}"></meta>
+        <meta name="publishdate" content="${article.pubTime?string(" yyyy-MM-dd ")}"></meta>
+        <meta name="author" content="${article.liability}"></meta>
+    </FOUNDER-XY>
+
+    <style type="text/css">
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial;
+            width: 100%;
+            background-color: #ffffff;
+        }
+        
+        ul,
+        li {
+            list-style-type: none;
+        }
+        
+        a,
+        a:hover {
+            text-decoration: none;
+        }
+        
+        img {
+            width: 100%;
+            height: auto;
+        }
+        
+        .toplist {
+            width: 100%;
+            height: 90px;
+            padding: 0 3.125vw;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        
+        .logo {
+            width: 13vw;
+        }
+        
+        .toplist ul {
+            display: flex;
+            justify-content: flex-start;
+        }
+        
+        .toplist ul li {
+            margin: 0 40px;
+        }
+        
+        .toplist ul li a {
+            font-size: 18px;
+            color: #000;
+        }
+        
+        .toplist ul li span {
+            display: block;
+            width: 0;
+            height: 2px;
+            background-color: #dfab1c;
+            transition: width 0.5s;
+        }
+        
+        .toplist ul li:hover span {
+            width: 100%;
+        }
+        
+        .container {
+            width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .column {
+            font-size: 16px;
+            line-height: 48px;
+            color: #ffffff;
+            background-color: #b32a13;
+        }
+        
+        .column a {
+            color: #f98876;
+        }
+        
+        .content {
+            width: 100%;
+            height: 520px;
+            padding-top: 50px;
+            background: url('http://images.china.cn/images1/en/governanceofchina2022/bg_l.jpg');
+        }
+        
+        .content .container {
+            width: 990px;
+        }
+        
+        .img {
+            width: 180px;
+            height: 256px;
+            margin: 0 0 30px 35px;
+            display: inline-block;
+        }
+        
+        .con {
+            float: right;
+            width: 700px;
+            height: 256px;
+            margin-right: 35px;
+            position: relative;
+        }
+        
+        .tit {
+            font-size: 30px;
+            line-height: 1.25;
+            font-weight: bold;
+            color: #000;
+            margin: 10px 0;
+        }
+        
+        .time {
+            font-size: 16px;
+            color: #666;
+            margin-bottom: 16px;
+        }
+        
+        .summary {
+            font-size: 16px;
+            line-height: 1.5;
+            color: #000;
+        }
+        
+        .play {
+            width: 40px;
+            height: 40px;
+            cursor: pointer;
+            position: absolute;
+            left: 0;
+            bottom: 10px;
+        }
+        
+        .bshare-custom {
+            position: absolute;
+            left: 50px;
+            bottom: 10px;
+        }
+        
+        .bshare-custom a {
+            margin-right: 4px;
+            opacity: 0.5;
+        }
+        
+        .bshare-custom a:hover {
+            opacity: 1;
+        }
+        
+        .audio p {
+            display: none;
+        }
+        
+        #audio {
+            width: 990px;
+        }
+        
+        .next {
+            width: 100%;
+            text-align: right;
+            font-size: 16px;
+            line-height: 1.5;
+            margin-top: 20px;
+        }
+        
+        .next span {
+            color: #d5251c;
+        }
+        
+        .next a {
+            font-size: 16px;
+            line-height: 1.5;
+            color: #666;
+        }
+        
+        .footer {
+            width: 100%;
+            margin: 0 auto;
+            background: #b04512;
+            line-height: 68px;
+            color: #ffffff;
+            text-align: center;
+            font-size: 16px;
+        }
+    </style>
+
+    <script type="text/javascript" src="//english.scio.gov.cn/images1/en/scio2021/js/jump.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics  -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112741182-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-112741182-1');
+    </script>
+
+    <!-- 百度统计  -->
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?fd2d485bd31a1b437014f46624329f5b";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+
+</head>
+
+<body>
+    <div class="toplist">
+        <div class="logo">
+            <a href="//english.scio.gov.cn/"><img src="//english.scio.gov.cn/images1/en/2018fpzt/logo.png"></a>
+        </div>
+        <ul>
+            <FOUNDER-XY type="columnlist" data="{'columnid':[8032950],'columntype':'self'}">
+                <#list columns as column>
+                    <li><a href="${column.url!}">Home</a><span></span></li>
+                </#list>
+            </FOUNDER-XY>
+            <FOUNDER-XY type="articlelist" data="{'columnid':[8032951],'articletype':'all','article_attr':'all','start':'0','count':'1'}">
+                <#list articles as article>
+                    <li><a href="${article.url}">${article.currentColName}</a><span></span></li>
+                </#list>
+            </FOUNDER-XY>
+            <FOUNDER-XY type="columnlist" data="{'columnid':[8032952],'columntype':'self'}">
+                <#list columns as column>
+                    <li><a href="${column.url!}">${column.name}</a><span></span></li>
+                </#list>
+            </FOUNDER-XY>
+            <FOUNDER-XY type="columnlist" data="{'columnid':[8032954],'columntype':'self'}">
+                <#list columns as column>
+                    <li><a href="${column.url!}">${column.name}</a><span></span></li>
+                </#list>
+            </FOUNDER-XY>
+            <FOUNDER-XY type="columnlist" data="{'columnid':[8032953],'columntype':'self'}">
+                <#list columns as column>
+                    <li><a href="${column.url!}">${column.name}</a><span></span></li>
+                </#list>
+            </FOUNDER-XY>
+        </ul>
+    </div>
+    <div class="banner">
+        <img src="http://images.china.cn/images1/en/governanceofchina2022/banner2.jpg">
+    </div>
+    <div class="column">
+        <div class="container">
+            <FOUNDER-XY type="position" data="">
+                <#list columns as column><a href="${column.url!}">${column.name}</a>&nbsp;>&nbsp;</#list>
+            </FOUNDER-XY>
+        </div>
+    </div>
+    <div class="content">
+        <div class="container">
+            <FOUNDER-XY type="article" data="{}">
+                <div class="img">
+                    <img src="http://images.china.cn/site1007/2022-07/20/4bb3cb1a-f52a-49e8-96cb-7378e26aad0e.png">
+                </div>
+                <div class="con">
+                    <p class="tit">${article.title}</p>
+                    <p class="time">${article.shortTitle}</p>
+                    <p class="summary">${article.summary}</p>
+                    <div class="play"><img src="http://images.china.cn/images1/en/governanceofchina2022/play2.png"></div>
+                    <div class="bshare-custom icon-medium-plus">
+                        <a title="分享到Facebook" class="bshare-facebook" href="javascript:void(0);" style="width: 40px;height: 40px;background:url('http://images.china.cn/images1/en/governanceofchina2022/facebook.png') no-repeat;padding: 0px;"></a>
+                        <a title="分享到Twitter" class="bshare-twitter" href="javascript:void(0);" style="width: 40px;height: 40px;background:url('http://images.china.cn/images1/en/governanceofchina2022/twitter.png') no-repeat;padding: 0px;"></a>
+                        <a title="分享到微信" class="bshare-weixin" href="javascript:void(0);" style="width: 40px;height: 40px;background:url('http://images.china.cn/images1/en/governanceofchina2022/weixin.png') no-repeat;padding: 0px;;"></a>
+                    </div>
+                    <script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/buttonLite.js#style=-1&amp;uuid=72352d86-8c1b-4361-8d6b-12862c1a6656&amp;pophcol=2&amp;lang=zh"></script>
+                    <script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/bshareC0.js"></script>
+                </div>
+                <div class="audio">${article.content}</div>
+            </FOUNDER-XY>
+            <div class="next">
+                <span>Next: </span>
+                <FOUNDER-XY type="article" data="{}">
+                    <#list article.rels as rel>
+                        <a href="${rel.url}">${rel.title}</a>
+                    </#list>
+                </FOUNDER-XY>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        Copyright © english.scio.gov.cn All rights reserved. Registration Number: 19010669-8
+    </div>
+</body>
+<script type="text/javascript" src="http://images.china.cn/images1/resource/scripts/jquery/jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+    (function(window, $) {
+        $(".column .container").html($('.column .container').html().substring(0, $('.column .container').html().lastIndexOf('&nbsp;&gt;&nbsp;')));
+        if ($('.next>a').length == 0) {
+            $('.next').hide();
+        }
+        if ($.trim($('.summary').html()) == '') {
+            $('.summary').hide();
+        }
+        $('.play').click(function() {
+            if ($('#audio')[0].paused) {
+                $('#audio')[0].play();
+                $(this).find('img').attr('src', 'http://images.china.cn/images1/en/governanceofchina2022/stop2.png');
+            } else {
+                $('#audio')[0].pause();
+                $(this).find('img').attr('src', 'http://images.china.cn/images1/en/governanceofchina2022/play2.png');
+            }
+        })
+        $('#audio')[0].addEventListener('pause', function() {
+            $('.play img').attr('src', 'http://images.china.cn/images1/en/governanceofchina2022/play2.png');
+        })
+        $('#audio')[0].addEventListener('play', function() {
+            $('.play img').attr('src', 'http://images.china.cn/images1/en/governanceofchina2022/stop2.png');
+        })
+
+    })(window, jQuery)
+</script>
+
+</html>
